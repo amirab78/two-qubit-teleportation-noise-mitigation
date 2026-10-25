@@ -2,7 +2,8 @@
 
 ## 1.1.0 (2026-10-25)
 
-The replication on real hardware: a new day and a second device.
+The replication on real hardware: a new day and a second device. DOI:
+[10.5281/zenodo.23639665](https://doi.org/10.5281/zenodo.23639665).
 
 * Data: counts of eleven IBM jobs of 25 October 2026 on `ibm_kingston` and `ibm_fez`, with their calibration records,
   frozen circuits, pre-registered predictions (hashed before sending), approvals and the saved per-job analyses
