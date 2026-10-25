@@ -7,6 +7,7 @@ import sys
 
 import pytest
 
+from telecorr.hardware import data as D
 from telecorr.reference import number, printed, simulation
 
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -38,6 +39,19 @@ def test_readme_numbers_equal_their_sources():
         lo, hi = r["fieller95"]
         expected.append(f"| `{st}` | {r['F']['none']:.3f} | {r['F']['corr']:.3f} | {r['F']['native']:.3f} | "
                         f"{r['f']:.3f} [{lo:.3f}, {hi:.3f}] |")
+    for dev, r1, r2 in (("ibm_kingston", "x_K1_ibm_kingston.json", "x_K2_ibm_kingston.json"),
+                        ("ibm_fez", "x_F1_ibm_fez.json", "x_F2_ibm_fez.json")):
+        t1 = ref(f"replication/{r1}")["r1"]["tomo"]
+        b2 = {b["block"]: b for b in ref(f"replication/{r2}")["blocks"]}
+        for st in ("product_HT", "bell_30_70"):
+            b = b2[f"R2_N1corr_{st}"]
+            expected.append(f"| `{dev}` | `{st}` | {t1[f'R1_N1none_{st}']['F']:.3f} | {b['F']:.3f} | "
+                            f"{t1[f'R1_nativeA_{st}']['F']:.3f} | {b['recovered_fraction']:.3f} |")
+    K1 = ref("replication/x_K1_ibm_kingston.json")["r1"]["tomo"]
+    K2 = {b["block"]: b for b in ref("replication/x_K2_ibm_kingston.json")["blocks"]}
+    expected += [f"({K1['R1_N1old_product_HT']['F']:.3f} / {K1['R1_N1old_bell_30_70']['F']:.3f})",
+                 f"from F = {K1['R1_N2none16us_product_HT']['F']:.3f} to {K2['R2_N2corr16us_product_HT']['F']:.3f}",
+                 f"eleven jobs, {sum(j['usage_s'] for j in D.replication_preregistration('ledger.json')['jobs'])} s of QPU time"]
     missing = [e for e in expected if e not in README]
     assert not missing, missing
 

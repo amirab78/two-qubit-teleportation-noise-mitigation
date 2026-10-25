@@ -1,6 +1,6 @@
 # Methods, notation and limitations
 
-A compact reference for the methods implemented in `telecorr`, in the order of the eight notebooks. The proofs are in
+A compact reference for the methods implemented in `telecorr`, in the order of the nine notebooks. The proofs are in
 the theory reports of the research project. The claim labels (T = theorem, P = proposition, O = observation) follow
 them: T5.6 is result 6 of Part 9.5, which belongs to step 5. `docs/claims.md` lists the test that checks each one.
 
@@ -76,6 +76,12 @@ flip(Y) = x ⊕ z, which equals correcting before the measurement (T8.1). The re
 bootstrap. The recovered fraction f = (F_corr − F_none)/(F_native − F_none) has a delta-method error and an exact Fieller
 interval (P8.10).
 
+**9. Replication** (`hardware.replication`). The same estimators on eleven new jobs. Model 2 predicts each block from
+TOMO-9 matrices only: F = F_twirl(diag(R T₂), diag(R T₃)). The waiting phase is fitted as θ = 2π f t through the
+origin. Under DD the model keeps the non-z part of the native rotation and adds R_z(π ζ t) for pulsed spectators
+(Part 9.8). The z part of a TOMO-9 rotation gets a multinomial bootstrap σ, and z(t) = a + b t is a weighted
+least-squares fit. Same-job differences D = F(corrected) − F(device alone) remove the drift between jobs.
+
 ## Statements corrected during the study
 
 The repository uses the corrected versions only.
@@ -98,8 +104,10 @@ The repository uses the corrected versions only.
 
 ## Limitations
 
-* **One device, one day.** The hardware experiment ran on `ibm_kingston` on 4 October 2026 (196 s of QPU time). It
-  should be repeated on other days and devices.
+* **Two devices, two days.** The hardware experiment ran on `ibm_kingston` on 4 October 2026 (196 s of QPU time) and
+  was replicated on `ibm_kingston` and `ibm_fez` on 25 October 2026 (318 s). Each device used one chain and two
+  messages. The Fez runs had no waits and no DD. Between two jobs the device drifts by about ±0.03 in F, beyond
+  the shot-noise σ.
 * **The twin was optimistic.** The simulator built from IBM's calibration record missed the absolute hardware
   fidelities. The relative predictions and the TOMO-9 twirl model held.
 * **Not run on hardware:** the two-qubit correction (TOMO-75) and drift tracking (Kalman / ABC).
@@ -107,7 +115,9 @@ The repository uses the corrected versions only.
   simulation. Several of the study's assumptions are violated by the hardware data (readout errors, crosstalk detected
   on the device alone); the theory reports list them with their consequences.
 * **Open questions.** Why the crosstalk detector fires on the device alone; part of the native error that the twin
-  does not explain.
+  does not explain; the source of the extra z rotation under DD, which grows with the wait.
+* **The twirl model (model 2)** is a guide to about ±0.03. It underestimates what a coherent error costs an entangled
+  state, and under DD it leaves out the coherence the pulses cost.
 * **Statistical reproduction.** Calibrations that sample shot noise reproduce the study's runs in distribution, not draw
   by draw (the study sampled with Aer and its own random streams). Exact results, the hardware analysis and the
   tracking study reproduce to the last digit.

@@ -66,6 +66,9 @@ tracking test).
 | approved hash = frozen job hash = hash recorded when the job was sent, for all 4 jobs. | `tests/regression/test_data_integrity.py::test_job_hash_chain` |
 | Counts are complete | `tests/regression/test_data_integrity.py::test_counts_are_complete` |
 | No account information in data | `tests/regression/test_data_integrity.py::test_no_account_information_in_data` |
+| Every prediction file of the replication has the SHA-256 recorded before sending, the frozen job names that | `tests/regression/test_data_integrity.py::test_replication_predictions_hashed_before_sending` |
+| approved hash = frozen job hash = hash recorded when the job was sent, and usage <= the approved cap. | `tests/regression/test_data_integrity.py::test_replication_job_hash_chain` |
+| Replication counts are complete | `tests/regression/test_data_integrity.py::test_replication_counts_are_complete` |
 | Round1 equals saved | `tests/regression/test_hardware.py::test_round1_equals_saved` |
 | Round2 equals saved | `tests/regression/test_hardware.py::test_round2_equals_saved` |
 | Corrections and n0 rule | `tests/regression/test_hardware.py::test_corrections_and_n0_rule` |
@@ -74,6 +77,17 @@ tracking test).
 | Twirl model equals preregistered file | `tests/regression/test_hardware.py::test_twirl_model_equals_preregistered_file` |
 | All saved results match | `tests/regression/test_hardware.py::test_all_saved_results_match` |
 | The numbers quoted in the paper / README (rounded as printed there). | `tests/regression/test_hardware.py::test_headline_numbers` |
+| All saved results match | `tests/regression/test_replication.py::test_all_saved_results_match` |
+| Round1 equals saved | `tests/regression/test_replication.py::test_round1_equals_saved` |
+| K2 / F2 ran the corrections that the prediction files recorded before sending, and those are the | `tests/regression/test_replication.py::test_round2_was_built_from_round1` |
+| Three weeks later on the same device: the fresh correction recovers >= 90 % of N1's loss and reaches the | `tests/regression/test_replication.py::test_replication_on_kingston` |
+| ibm_fez, new chain, same pipeline: N1 0.706 / 0.511 -> 0.910 / 0.891; both pre-registered criteria pass. | `tests/regression/test_replication.py::test_second_device_without_tuning` |
+| The waiting phase grows linearly (axis -z, both legs near 15 kHz today); a fresh TOMO-9 recovers more than | `tests/regression/test_replication.py::test_waits_linear_and_corrected` |
+| Part 9.8's spectator phase holds as a DIFFERENCE (K3 - K4 = pi zeta t) but not absolutely: without spectator | `tests/regression/test_replication.py::test_dd_spectator_difference_and_absolute_failure` |
+| In one job on Fez: product_HT's 'corrected above native' was drift, bell_30_70's is real, and removing Fez's | `tests/regression/test_replication.py::test_g1_same_job` |
+| z(t) = a + b t under DD: the slope is about 8 sigma from zero on both legs (+2.5 / +2.7 kHz), so CONST is | `tests/regression/test_replication.py::test_g2_dd_rotation_grows_with_the_wait` |
+| G3-A fails at both waits; DD + correction is worse than K2's fresh correction without DD by > 4 sigma. | `tests/regression/test_replication.py::test_g3_correction_under_dd_barely_helps` |
+| Jobs within their caps | `tests/regression/test_replication.py::test_jobs_within_their_caps` |
 | Step1 unpreparation reads 00 in every shot | `tests/regression/test_simulation.py::test_step1_unpreparation_reads_00_in_every_shot` |
 | Step2 fidelity and purity of the coherent channel | `tests/regression/test_simulation.py::test_step2_fidelity_and_purity_of_the_coherent_channel` |
 | Step2 best bob side correction reaches lambda max | `tests/regression/test_simulation.py::test_step2_best_bob_side_correction_reaches_lambda_max` |

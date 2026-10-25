@@ -1,9 +1,11 @@
 # The hardware experiment: full record
 
-This page holds the details of the IBM experiment that notebook 8 summarises: the jobs, every pre-registered
-hypothesis, every block against its prediction, and the per-circuit checks. Every value is recomputed from the raw
-counts in `data/` by `python -m telecorr.hardware reproduce`; `--check` compares all of them (4711 values) with the
-saved results of the research project, and `tests/regression/test_hardware.py` does the same in the test suite.
+This page holds the details of the IBM experiment of 4 October 2026 that notebook 8 summarises: the jobs, every
+pre-registered hypothesis, every block against its prediction, and the per-circuit checks. Every value is recomputed
+from the raw counts in `data/` by `python -m telecorr.hardware reproduce --run 2026-10-04`; `--check` compares all of
+them (4711 values) with the saved results of the research project, and `tests/regression/test_hardware.py` does
+the same in the test suite. The replication of 25 October (notebook 9) has its own record:
+[replication.md](replication.md).
 
 ## Procedure
 

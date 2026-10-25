@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "telecorr"
-version = "1.0.0"
+version = "1.1.0"
 description = "Two-qubit quantum teleportation through a noisy channel, repaired by a counts-only parametric correction: methods, hardware data and analysis."
 readme = "README.md"
 license = { text = "MIT" }

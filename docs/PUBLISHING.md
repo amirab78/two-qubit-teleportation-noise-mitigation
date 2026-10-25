@@ -1,15 +1,28 @@
 # Publishing on GitHub and archiving on Zenodo (DOI)
 
-The repository is ready as a local git repository with a clean history and the tag `v1.0.0`; nothing has been pushed.
-These steps publish it on GitHub and connect it to Zenodo, which archives every GitHub release and gives it a DOI.
-The whole archive, code and data together, is about 4 MB, well within the limits of both services.
+These steps publish the repository on GitHub and connect it to Zenodo, which archives every GitHub release and gives
+it a DOI. The whole archive, code and data together, is about 7 MB, well within the limits of both services.
 
 ## 1. Status
 
 Done for v1.0.0: the metadata are filled in, the repository is on GitHub, and Zenodo archived the release as
 `10.5281/zenodo.23634581` (version DOI; the concept DOI for all versions is `10.5281/zenodo.23634580`).
-The tag `v1.0.0` is published: never move or delete it. Any later change goes into a new release (step 6).
+The tag `v1.0.0` is published: never move or delete it. Any later change goes into a new release.
 Steps 2 to 7 below record how the release was made, and serve for the next one.
+
+**v1.1.0 (the replication).** The repository is already on GitHub and connected to Zenodo, so only three steps
+remain: push `main`, wait for CI to pass, then push the tag and publish the release (step 5 with `v1.1.0`):
+
+```bash
+git push origin main
+```
+
+```bash
+git push origin v1.1.0
+```
+
+Zenodo then gives v1.1.0 its own version DOI under the same concept DOI. The README and `CITATION.cff` already cite
+the concept DOI; adding the v1.1.0 version DOI afterwards is optional (step 6).
 
 ## 2. Create the GitHub repository
 

@@ -1,9 +1,9 @@
 cff-version: 1.2.0
 message: "If you use this code or data, please cite it as below."
 title: "Two-qubit teleportation through a noisy channel, corrected from measurement counts: code and data"
-version: 1.0.0
+version: 1.1.0
 date-released: "2026-10-25"
-doi: "10.5281/zenodo.23634581"
+doi: "10.5281/zenodo.23634580"
 license: MIT
 repository-code: "https://github.com/amirab78/two-qubit-teleportation-noise-mitigation"
 type: software
@@ -23,5 +23,5 @@ abstract: >-
   Code, data and notebooks of a study of two-qubit quantum teleportation through a noisy channel whose correction
   (one parametric gate per channel qubit) is learned from measurement counts only. The package simulates the
   six-qubit protocol exactly, implements the counts-only calibrators, the ceiling of any correction, process
-  tomography (TOMO-9, TOMO-75) and drift tracking, and rebuilds every result of an experiment on the IBM device
-  ibm_kingston from its raw counts.
+  tomography (TOMO-9, TOMO-75) and drift tracking, and rebuilds every result of the experiments on the IBM devices
+  ibm_kingston (4 October 2026) and ibm_kingston and ibm_fez (the replication of 25 October 2026) from their raw counts.

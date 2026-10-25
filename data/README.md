@@ -1,7 +1,8 @@
 # Data
 
-Everything needed to rebuild the hardware results of this repository, and the saved results the notebooks and tests
-compare with. 48 files, 2.3 MB in total; every file is listed in `MANIFEST.json` with its source in the
+Everything needed to rebuild the hardware results of this repository (4 October 2026 and the replication of
+25 October), and the saved results the notebooks and tests
+compare with. 122 files, 5.0 MB in total; every file is listed in `MANIFEST.json` with its source in the
 research project, the SHA-256 of the source and of the shipped file, and the transformation applied.
 
 | folder | files | size |
@@ -10,7 +11,12 @@ research project, the SHA-256 of the source and of the shipped file, and the tra
 | `data/hardware/ibm_kingston_2026-10-04/circuits/` | 12 | 0.46 MB |
 | `data/hardware/ibm_kingston_2026-10-04/counts/` | 4 | 0.73 MB |
 | `data/hardware/ibm_kingston_2026-10-04/preregistration/` | 11 | 0.45 MB |
+| `data/hardware/ibm_kingston_ibm_fez_2026-10-25/calibration/` | 5 | 0.28 MB |
+| `data/hardware/ibm_kingston_ibm_fez_2026-10-25/circuits/` | 33 | 0.72 MB |
+| `data/hardware/ibm_kingston_ibm_fez_2026-10-25/counts/` | 11 | 1.18 MB |
+| `data/hardware/ibm_kingston_ibm_fez_2026-10-25/preregistration/` | 9 | 0.35 MB |
 | `data/reference/` | 14 | 0.56 MB |
+| `data/reference/replication/` | 16 | 0.15 MB |
 | `data/reference/simulation/` | 6 | 0.05 MB |
 
 ## The hardware experiment (`hardware/ibm_kingston_2026-10-04/`)
@@ -62,19 +68,52 @@ probe axis), `R2_ver_...` (the Round 2 TOMO-9 verification). The block keys:
 Versions: A = Pauli frame (all measurements at the end, Bob's corrections in software); B = mid-circuit measurement
 and feed-forward; C = deferred measurement.
 
+## The replication (`hardware/ibm_kingston_ibm_fez_2026-10-25/`)
+
+Eleven jobs on `ibm_kingston` and `ibm_fez` on 25 October 2026, in the same format (the record also holds `xhash`, the
+job hash that covers the DD options, and `x_options`, the DD options):
+
+| job | device | IBM job id | shots | DD | QPU usage (s) | approved cap (s) | created |
+|---|---|---|---|---|---|---|---|
+| K0 | ibm_kingston | dbeqnffsstms73fciu80 | 6000 | no | 4 | 10 | 2026-10-25T07:11:57 UTC |
+| K1 | ibm_kingston | dbeqouvgdj9s73fma3c0 | 349000 | no | 95 | 116 | 2026-10-25T07:15:07 UTC |
+| K2 | ibm_kingston | dber02gm94ac738sb5tg | 126000 | no | 36 | 44 | 2026-10-25T07:30:19 UTC |
+| K3 | ibm_kingston | dber2sfpc3tc739m7j00 | 63000 | yes | 19 | 24 | 2026-10-25T07:36:17 UTC |
+| K4 | ibm_kingston | dbere1nsstms73fck4pg | 63000 | yes | 19 | 24 | 2026-10-25T08:00:06 UTC |
+| F0 | ibm_fez | dberne7gdj9s73fmbpd0 | 5000 | no | 4 | 10 | 2026-10-25T08:20:08 UTC |
+| F1 | ibm_fez | dberor7pc3tc739m8tlg | 160000 | no | 44 | 54 | 2026-10-25T08:23:08 UTC |
+| F2 | ibm_fez | dberrs8m94ac738scpig | 72000 | no | 21 | 27 | 2026-10-25T08:29:37 UTC |
+| G1 | ibm_fez | dbes408m94ac738sd89g | 108000 | no | 30 | 38 | 2026-10-25T08:46:57 UTC |
+| G2 | ibm_kingston | dbes5lngdj9s73fmcl7g | 81000 | yes | 24 | 30 | 2026-10-25T08:50:30 UTC |
+| G3 | ibm_kingston | dbes9k7pc3tc739m9vkg | 72000 | yes | 22 | 27 | 2026-10-25T08:58:56 UTC |
+
+* `calibration/`: the job-time calibration records, one file per distinct record (four on Kingston, one on Fez,
+  named by their calibration time), time stamps in UTC. The Kingston chain is the one of 4 October; the Fez chain is
+  Q142-Q147.
+* `circuits/<job>_<device>.*`: the frozen jobs; the manifest also names the prediction file and its SHA-256.
+* `preregistration/`: the prediction files `x_pred_*.json` (twin, model 2, per-circuit distributions, go / no-go
+  limits, success criteria), `sha256.json` (their hashes and the time each was written), the approvals and the ledger.
+
+Block keys follow the 4 October scheme with the wait in the key (`R2_N2corr16us`), `N1old` (the correction stored
+from 4 October), rounds 3 / 4 for K3 / K4 (`DD`: message qubits pulsed, `DDU`: not pulsed) and rounds 5, 6, 7 for G1,
+G2, G3. `telecorr.hardware.replication.describe` turns a key into a plain name.
+
 ## Saved results (`reference/`)
 
 The research project's saved results that the regression tests and notebooks compare with: the hardware analysis
 (`8d_*`, `8e_*`, `9_8_*`), the twin's ladder and post-diction (`8c_ladder.json`, `8d_postdiction.json`), the project's
-table of final numbers (`final_numbers.json`) and, in `simulation/`, the saved simulation results used by notebooks 3,
-6 and 7.
+table of final numbers (`final_numbers.json`), in `simulation/` the saved simulation results used by notebooks 3, 6
+and 7, and in `replication/` the per-job analyses of the replication (`x_<job>.json`), the K1 retrodiction and the
+ideal-simulator tests run before each send.
 
 ## What was changed
 
 The counts and per-shot outcomes are unchanged (checked pub by pub when the data were made). Removed: every field
 naming the account, instance, plan quota or billing, and the id of a usage-detail metric. Converted: the time stamps
-of the calibration record, from the local time zone of the recording computer to UTC. Everything else is a byte copy.
-`scripts/clean_raw_data.py` documents how this folder was made from the research project.
+of the calibration records, from the local time zone of the recording computer to UTC. Removed from the saved
+per-job analyses of the replication: the IBM plan's quota fields. Everything else is a byte copy.
+`scripts/clean_raw_data.py` and `scripts/clean_raw_data_2026_10_25.py` document how this folder was made from the
+research project.
 
 ## Use and citation
 

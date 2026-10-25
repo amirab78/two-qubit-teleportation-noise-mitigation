@@ -3,7 +3,7 @@
 [![CI](https://github.com/amirab78/two-qubit-teleportation-noise-mitigation/actions/workflows/ci.yml/badge.svg)](https://github.com/amirab78/two-qubit-teleportation-noise-mitigation/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 ![Python 3.11 | 3.13](https://img.shields.io/badge/python-3.11%20%7C%203.13-blue.svg)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23634581.svg)](https://doi.org/10.5281/zenodo.23634581)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23634580.svg)](https://doi.org/10.5281/zenodo.23634580)
 
 Code, data and notebooks of the study *Two-qubit quantum teleportation through a noisy channel, repaired by a
 counts-only parametric correction* (Amir H. Abdolhosseini, 2026).
@@ -13,11 +13,11 @@ one parametric gate per channel qubit, is learned **from measurement counts only
 or the message. Coherent noise is removed completely. Incoherent noise sets a ceiling that the counts-only calibration
 reaches. Crosstalk needs a two-qubit correction. Process tomography with nine circuits (TOMO-9) is the most
 shot-efficient way to learn the correction. On a real IBM quantum computer, the correction learned from that device's
-own counts recovered the whole injected error.
+own counts recovered the whole injected error, and the result replicated three weeks later and on a second device.
 
 ![The six-qubit protocol](figures/protocol.png)
 
-## The study in eight steps
+## The study in nine steps
 
 Each step is one notebook in `notebooks/`, executed with its outputs saved. Each notebook asks one question, gives the
 model, applies the method from the `telecorr` package, shows the result, and leads to the next step.
@@ -32,6 +32,7 @@ model, applies the method from the `telecorr` package, shows the result, and lea
 | 6 | [Correlated noise](notebooks/06_correlated_noise.ipynb) | What does crosstalk change? | Local corrections stop at 0.8341 / 0.8291; a two-qubit correction reaches 0.9112 / 0.9073 (ceilings), learned by TOMO-75. |
 | 7 | [Efficient learning and tracking](notebooks/07_efficient_learning_and_tracking.ipynb) | What is the most shot-efficient method, also under drift? | TOMO-9: gap ≈ 4.9 / shots. Under slow drift a Kalman tracker (ABC) needs 3.3× fewer shots. |
 | 8 | [Real hardware](notebooks/08_real_hardware.ipynb) | Does it work on a real quantum computer? | Yes: see below. |
+| 9 | [Replication](notebooks/09_replication.ipynb) | Does it hold on a new day and on a second device? | Yes on both; DD is not a free improvement (see below). |
 
 ## On a real quantum computer
 
@@ -50,6 +51,25 @@ f = 1 lies inside both intervals: the correction recovered the whole injected lo
 noise would. An error of the device itself (the channel qubits waiting 8 µs) was partly corrected as well, from
 F = 0.562 to 0.809. Every hardware number is rebuilt from the raw counts in `data/`, without an account or a quantum
 computer. The full record of the experiment is in [docs/hardware.md](docs/hardware.md).
+
+### Replication: a new day and a second device
+
+On 25 October 2026 the experiment was repeated on `ibm_kingston` and on a second device, `ibm_fez`, with a new chain and
+no tuning (eleven jobs, 318 s of QPU time), with the same pre-registration:
+
+| device | message | F, no correction | F, learned correction | F, device alone | recovered fraction f |
+|---|---|---|---|---|---|
+| `ibm_kingston` | `product_HT` | 0.720 | 0.889 | 0.891 | 0.988 |
+| `ibm_kingston` | `bell_30_70` | 0.532 | 0.856 | 0.857 | 0.998 |
+| `ibm_fez` | `product_HT` | 0.706 | 0.910 | 0.890 | 1.114 |
+| `ibm_fez` | `bell_30_70` | 0.511 | 0.891 | 0.860 | 1.089 |
+
+The pre-registered replication criteria (F within 2σ of the device alone, f ≥ 0.9) passed on both devices. The
+correction stored from 4 October still worked
+(0.879 / 0.865). A fresh correction fixed the waiting error at 4, 8 and 16 µs (at 16 µs from F = 0.261 to 0.785),
+whose frequency had drifted since 4 October. On Fez, a same-job test showed that the "corrected above native" result
+was drift for `product_HT` and real for `bell_30_70`. Dynamical decoupling left a rotation that grows with the wait, and
+a correction learned under it barely helped. Details in notebook 9 and [docs/replication.md](docs/replication.md).
 
 ## Installation
 
@@ -89,8 +109,8 @@ print(calibrate.scores(None, T, msgs)["F"], "->", calibrate.scores(x, T, msgs)["
 | what | command | time |
 |---|---|---|
 | every test: proven results and saved numbers | `pytest` | 1.5 min |
-| every hardware number from the raw counts, compared with the saved results (4711 values) | `python -m telecorr.hardware reproduce --check` | 20 s |
-| the eight notebooks (executed in place) | `python scripts/run_notebooks.py` | 3 min |
+| every hardware number from the raw counts, compared with the saved results and predictions (8994 values) | `python -m telecorr.hardware reproduce --check` | 1 min |
+| the nine notebooks (executed in place) | `python scripts/run_notebooks.py` | 4 min |
 | the figures of this page | `python scripts/make_figures.py` | 20 s |
 
 [docs/claims.md](docs/claims.md) maps every proven result (theorem, proposition) to its test.
@@ -103,7 +123,7 @@ with the tolerance stated in each test.
 ```
 src/telecorr/          the package, one module per step (see its docstring)
   hardware/            the analysis of the IBM runs from the raw counts
-notebooks/             01-08, the study step by step (executed)
+notebooks/             01-09, the study step by step (executed)
 tests/unit/            proven results as tests
 tests/regression/      the saved numbers of the study reproduced
 data/                  hardware counts, calibration record, frozen circuits, pre-registration, saved results
@@ -114,29 +134,31 @@ figures/               the figures of this page
 
 ## Data
 
-`data/` (2.3 MB) holds the counts and per-shot outcomes of the four hardware jobs, the device calibration record in
-force when they ran, the frozen circuits, the pre-registration record, and the saved results that the tests compare
-with. Account and billing fields were removed; the counts are unchanged. See [data/README.md](data/README.md).
+`data/` (5.0 MB) holds the counts and per-shot outcomes of the fifteen hardware jobs (4 on 4 October, 11 on
+25 October), the device calibration records in force when they ran, the frozen circuits, the pre-registration
+records, and the saved results that the tests compare with. Account and billing fields were removed; the counts are unchanged. See [data/README.md](data/README.md).
 
 ## Limitations
 
-The hardware experiment ran on one device on one day. The device simulator built from IBM's calibration record was
-too optimistic in absolute fidelity; the relative predictions held. The two-qubit correction and drift tracking were
+The hardware experiments ran on two devices on two days, with one chain per device; between two jobs a device drifts
+by about ±0.03 in F. The device simulator built from IBM's calibration record was too optimistic in absolute
+fidelity; the relative predictions held. The two-qubit correction and drift tracking were
 not run on hardware. Steps 2–7 use model noise families. Details in [docs/methods.md](docs/methods.md#limitations).
 
 ## How to cite
 
-If you use this code or data, please cite the archived release:
+If you use this code or data, please cite the archived release. The DOI below covers all versions and resolves to
+the latest; v1.0.0 (4 October data only) is `10.5281/zenodo.23634581`.
 
 ```bibtex
 @software{telecorr_2026,
   author    = {Amir H. Abdolhosseini},
   title     = {Two-qubit teleportation through a noisy channel, corrected from measurement counts: code and data},
   year      = {2026},
-  version   = {1.0.0},
+  version   = {1.1.0},
   publisher = {Zenodo},
-  doi       = {10.5281/zenodo.23634581},
-  url       = {https://doi.org/10.5281/zenodo.23634581}
+  doi       = {10.5281/zenodo.23634580},
+  url       = {https://doi.org/10.5281/zenodo.23634580}
 }
 ```
 
