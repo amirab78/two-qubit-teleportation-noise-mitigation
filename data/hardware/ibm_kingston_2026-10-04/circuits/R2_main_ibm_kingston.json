@@ -1,0 +1,141 @@
+{
+ "name": "R2_main_ibm_kingston",
+ "device": "ibm_kingston",
+ "round": 2,
+ "options": {
+  "dd": false,
+  "twirl": false
+ },
+ "labels": [
+  "A_product@3000",
+  "A_bell@3000",
+  "B_product@3000",
+  "B_bell@3000",
+  "A_product_N2@3000",
+  "A_bell_N2@3000",
+  "A_product@2000"
+ ],
+ "index": {
+  "A_product@3000": [
+   "R2_N1corr_product_HT_XX",
+   "R2_N1corr_product_HT_XY",
+   "R2_N1corr_product_HT_XZ",
+   "R2_N1corr_product_HT_YX",
+   "R2_N1corr_product_HT_YY",
+   "R2_N1corr_product_HT_YZ",
+   "R2_N1corr_product_HT_ZX",
+   "R2_N1corr_product_HT_ZY",
+   "R2_N1corr_product_HT_ZZ",
+   "R2_N0corr_product_HT_XX",
+   "R2_N0corr_product_HT_XY",
+   "R2_N0corr_product_HT_XZ",
+   "R2_N0corr_product_HT_YX",
+   "R2_N0corr_product_HT_YY",
+   "R2_N0corr_product_HT_YZ",
+   "R2_N0corr_product_HT_ZX",
+   "R2_N0corr_product_HT_ZY",
+   "R2_N0corr_product_HT_ZZ"
+  ],
+  "A_bell@3000": [
+   "R2_N1corr_bell_30_70_XX",
+   "R2_N1corr_bell_30_70_XY",
+   "R2_N1corr_bell_30_70_XZ",
+   "R2_N1corr_bell_30_70_YX",
+   "R2_N1corr_bell_30_70_YY",
+   "R2_N1corr_bell_30_70_YZ",
+   "R2_N1corr_bell_30_70_ZX",
+   "R2_N1corr_bell_30_70_ZY",
+   "R2_N1corr_bell_30_70_ZZ",
+   "R2_N0corr_bell_30_70_XX",
+   "R2_N0corr_bell_30_70_XY",
+   "R2_N0corr_bell_30_70_XZ",
+   "R2_N0corr_bell_30_70_YX",
+   "R2_N0corr_bell_30_70_YY",
+   "R2_N0corr_bell_30_70_YZ",
+   "R2_N0corr_bell_30_70_ZX",
+   "R2_N0corr_bell_30_70_ZY",
+   "R2_N0corr_bell_30_70_ZZ"
+  ],
+  "B_product@3000": [
+   "R2_N1corr_unprep"
+  ],
+  "B_bell@3000": [
+   "R2_N1corrB_bell_30_70_XX",
+   "R2_N1corrB_bell_30_70_XY",
+   "R2_N1corrB_bell_30_70_XZ",
+   "R2_N1corrB_bell_30_70_YX",
+   "R2_N1corrB_bell_30_70_YY",
+   "R2_N1corrB_bell_30_70_YZ",
+   "R2_N1corrB_bell_30_70_ZX",
+   "R2_N1corrB_bell_30_70_ZY",
+   "R2_N1corrB_bell_30_70_ZZ"
+  ],
+  "A_product_N2@3000": [
+   "R2_N2corr_product_HT_XX",
+   "R2_N2corr_product_HT_XY",
+   "R2_N2corr_product_HT_XZ",
+   "R2_N2corr_product_HT_YX",
+   "R2_N2corr_product_HT_YY",
+   "R2_N2corr_product_HT_YZ",
+   "R2_N2corr_product_HT_ZX",
+   "R2_N2corr_product_HT_ZY",
+   "R2_N2corr_product_HT_ZZ"
+  ],
+  "A_bell_N2@3000": [
+   "R2_N2corr_bell_30_70_XX",
+   "R2_N2corr_bell_30_70_XY",
+   "R2_N2corr_bell_30_70_XZ",
+   "R2_N2corr_bell_30_70_YX",
+   "R2_N2corr_bell_30_70_YY",
+   "R2_N2corr_bell_30_70_YZ",
+   "R2_N2corr_bell_30_70_ZX",
+   "R2_N2corr_bell_30_70_ZY",
+   "R2_N2corr_bell_30_70_ZZ"
+  ],
+  "A_product@2000": [
+   "R2_ver_tomo9_s0_Z",
+   "R2_ver_tomo9_s0_X",
+   "R2_ver_tomo9_s0_Y",
+   "R2_ver_tomo9_s1_Z",
+   "R2_ver_tomo9_s1_X",
+   "R2_ver_tomo9_s1_Y",
+   "R2_ver_tomo9_s2_Z",
+   "R2_ver_tomo9_s2_X",
+   "R2_ver_tomo9_s2_Y"
+  ]
+ },
+ "shots": [
+  3000,
+  3000,
+  3000,
+  3000,
+  3000,
+  3000,
+  2000
+ ],
+ "has_params": [
+  true,
+  true,
+  true,
+  true,
+  true,
+  true,
+  true
+ ],
+ "n_pubs": 7,
+ "n_bindings": 73,
+ "shots_total": 210000,
+ "estimate_s": 75.5,
+ "max_seconds": 99,
+ "hash": "19af5580c8d3c835a326bb0371277a8bfa5cf316832b76988bfdcf9b24684929",
+ "frozen_utc": "2026-10-04T15:25:35.603208+00:00",
+ "fingerprints_sha": [
+  "c7360dfc0d63e20c40db8da78b00058e0e5e69d9a543f482921b7e13e1a2a1f7",
+  "19c235759b3b06fcca6532fc3ef9b87f7e4d45471b9579d55620efbcfea9c2c5",
+  "09adc7d140d561c1c610e00b2024d36c5ac00750fc446f50167f21064cc16d66",
+  "245b53cd78754976206c0dd7c60bafd058c51281f00fb2084f1428106aae7cd3",
+  "27660fe41ca912842029b200bb22bbea51e73ea701884f8f04313a3df85ba8e6",
+  "6b709a45b3fce3c8a3c750176b371d491974e9aaf2d8568505ca661291bee914",
+  "c7360dfc0d63e20c40db8da78b00058e0e5e69d9a543f482921b7e13e1a2a1f7"
+ ]
+}

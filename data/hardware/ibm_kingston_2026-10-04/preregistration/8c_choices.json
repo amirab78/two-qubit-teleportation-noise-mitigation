@@ -1,0 +1,35 @@
+{
+ "cfg": {
+  "tau_ns": 8000,
+  "B": "B",
+  "shots_tomo": 3000,
+  "dd_blocks": [
+   "N2none",
+   "N2corr"
+  ],
+  "twirl_blocks": []
+ },
+ "chosen_utc": "2026-10-04T11:27:41.618477+00:00",
+ "dd_study_done": true,
+ "why": {
+  "tau": "L3 loss 0.079 at tau = 8 us (target 0.05-0.10, closest to 0.075)",
+  "B": "F(measure) - F(measure_2) = -0.0043 +/- 0.0038 at 1 us latency -> measure_2",
+  "shots_tomo": "sigma_F(native, 3000 shots/basis) = 0.0060",
+  "dd": {
+   "N2none": "mean effect +0.0241 vs threshold 0.0120",
+   "N2corr": "mean effect -0.0234 vs threshold 0.0120",
+   "N1corr": "mean effect -0.0056 vs threshold 0.0120"
+  },
+  "twirl": "measurement twirling (readout symmetrised): mean effect -0.0007 vs threshold 0.0120; gate twirling has no effect on the twin (no coherent CZ error in it)"
+ },
+ "loss_by_tau": {
+  "0": 0.0,
+  "2000": 0.020147046175185368,
+  "4000": 0.03953817249466951,
+  "6000": 0.05682938804092047,
+  "8000": 0.07896820485809336,
+  "10000": 0.09844726430209277,
+  "15000": 0.14179786854261017,
+  "20000": 0.17922859885786313
+ }
+}

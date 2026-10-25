@@ -1,0 +1,32 @@
+{
+ "approved": [
+  {
+   "hash": "97385f5afb2e33ffb5d02ce7eb59885e6972dc8964597fa77a25b12b1ac6efa6",
+   "name": "R0_main_ibm_kingston",
+   "max_seconds": 10,
+   "note": "user OK in chat 2026-10-04 (pilot)",
+   "approved_utc": "2026-10-04T15:01:34.857179+00:00"
+  },
+  {
+   "hash": "75066e5295d8b7b3931a1e53928edd3a675d736683ea70a3686a88fb5d0d9f2a",
+   "name": "R1_main_ibm_kingston",
+   "max_seconds": 201,
+   "note": "user OK in chat 2026-10-04 (Round 1)",
+   "approved_utc": "2026-10-04T15:10:49.136952+00:00"
+  },
+  {
+   "hash": "19af5580c8d3c835a326bb0371277a8bfa5cf316832b76988bfdcf9b24684929",
+   "name": "R2_main_ibm_kingston",
+   "max_seconds": 99,
+   "note": "user OK in chat 2026-10-04 (Round 2 main, 'OK both')",
+   "approved_utc": "2026-10-04T15:37:06.027772+00:00"
+  },
+  {
+   "hash": "f6c8572d9395de0a2a78883b00de2621478a87eaf40bbefc726d09ca67d1fab2",
+   "name": "R2_dd_ibm_kingston",
+   "max_seconds": 28,
+   "note": "user OK in chat 2026-10-04 (Round 2 DD, 'OK both')",
+   "approved_utc": "2026-10-04T15:37:25.933143+00:00"
+  }
+ ]
+}

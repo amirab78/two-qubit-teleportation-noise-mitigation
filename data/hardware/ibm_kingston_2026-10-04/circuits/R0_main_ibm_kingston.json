@@ -1,0 +1,96 @@
+{
+ "name": "R0_main_ibm_kingston",
+ "device": "ibm_kingston",
+ "round": 0,
+ "options": {
+  "dd": false,
+  "twirl": false
+ },
+ "labels": [
+  "readout_111111@500",
+  "alice_product@500",
+  "alice_bell@500",
+  "A_product@500",
+  "A_bell@500",
+  "B_product@500",
+  "B_bell@500",
+  "C_product@500",
+  "A_product_N2@500",
+  "A_bell_N2@500"
+ ],
+ "index": {
+  "readout_111111@500": [
+   "R0_readout_111111"
+  ],
+  "alice_product@500": [
+   "R0_alice_product_HT_ZZ"
+  ],
+  "alice_bell@500": [
+   "R0_alice_bell_30_70_ZZ"
+  ],
+  "A_product@500": [
+   "R0_A_product_HT_XX"
+  ],
+  "A_bell@500": [
+   "R0_A_bell_30_70_ZZ"
+  ],
+  "B_product@500": [
+   "R0_B_unprep"
+  ],
+  "B_bell@500": [
+   "R0_B_bell_30_70_ZZ"
+  ],
+  "C_product@500": [
+   "R0_C_product_HT_XX"
+  ],
+  "A_product_N2@500": [
+   "R0_N2_product_HT_XX"
+  ],
+  "A_bell_N2@500": [
+   "R0_N2_bell_30_70_ZZ"
+  ]
+ },
+ "shots": [
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500
+ ],
+ "has_params": [
+  false,
+  true,
+  true,
+  true,
+  true,
+  true,
+  true,
+  true,
+  true,
+  true
+ ],
+ "n_pubs": 10,
+ "n_bindings": 10,
+ "shots_total": 5000,
+ "estimate_s": 3.75,
+ "max_seconds": 10,
+ "hash": "97385f5afb2e33ffb5d02ce7eb59885e6972dc8964597fa77a25b12b1ac6efa6",
+ "frozen_utc": "2026-10-04T11:42:11.639188+00:00",
+ "fingerprints_sha": [
+  "2b4a019a787098be420cc1f596c787a14f7697d00ccfb8badeb5ea5f38569aa6",
+  "234bd47d53664ebd007988931c4ab40be1260b291bcfd3a5ab82f5082b170bd0",
+  "4c812ab6ebef0a9481745f2dd9140f5edd15cc3c90f3afbee5e58a054c6045b5",
+  "c7360dfc0d63e20c40db8da78b00058e0e5e69d9a543f482921b7e13e1a2a1f7",
+  "19c235759b3b06fcca6532fc3ef9b87f7e4d45471b9579d55620efbcfea9c2c5",
+  "09adc7d140d561c1c610e00b2024d36c5ac00750fc446f50167f21064cc16d66",
+  "245b53cd78754976206c0dd7c60bafd058c51281f00fb2084f1428106aae7cd3",
+  "e0d851ec34abad4f6094ebc28d517bd073227228ec7562c40383238227d10773",
+  "27660fe41ca912842029b200bb22bbea51e73ea701884f8f04313a3df85ba8e6",
+  "6b709a45b3fce3c8a3c750176b371d491974e9aaf2d8568505ca661291bee914"
+ ]
+}

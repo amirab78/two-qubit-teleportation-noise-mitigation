@@ -1,0 +1,2317 @@
+{
+ "written_utc": "2026-10-06T20:27:57.121569+00:00",
+ "n": 315,
+ "numbers": {
+  "n0001": {
+   "src": "Stage9_Theory_Reports/9_2_Stage2_Coherent_Noise/results/9_2_numbers.json",
+   "path": "messages/product_HT/F",
+   "value": 0.7897667681057015,
+   "printed": "0.790"
+  },
+  "n0002": {
+   "src": "Stage9_Theory_Reports/9_2_Stage2_Coherent_Noise/results/9_2_numbers.json",
+   "path": "messages/bell_30_70/F",
+   "value": 0.6074124255681536,
+   "printed": "0.607"
+  },
+  "n0003": {
+   "src": "Stage9_Theory_Reports/9_2_Stage2_Coherent_Noise/results/9_2_numbers.json",
+   "path": "messages/product_HT/F",
+   "value": 0.7897667681057015,
+   "printed": "0.789767"
+  },
+  "n0004": {
+   "src": "Stage9_Theory_Reports/9_2_Stage2_Coherent_Noise/results/9_2_numbers.json",
+   "path": "messages/bell_30_70/F",
+   "value": 0.6074124255681536,
+   "printed": "0.607412"
+  },
+  "n0005": {
+   "src": "Stage9_Theory_Reports/9_2_Stage2_Coherent_Noise/results/9_2_numbers.json",
+   "path": "messages/product_HT/purity",
+   "value": 0.6646197329020651,
+   "printed": "0.664620"
+  },
+  "n0006": {
+   "src": "Stage9_Theory_Reports/9_2_Stage2_Coherent_Noise/results/9_2_numbers.json",
+   "path": "messages/bell_30_70/purity",
+   "value": 0.4582968892076725,
+   "printed": "0.458297"
+  },
+  "n0007": {
+   "src": "Stage3_Correction/Stage3_Parametric_Correction.ipynb",
+   "out_regex": "noisy channel \\+ correction\\s+= (0\\.\\d+)",
+   "nth": 0,
+   "raw": "0.999906",
+   "value": "0.999906",
+   "printed": "0.999906"
+  },
+  "n0008": {
+   "src": "Stage3_Correction/Stage3_Parametric_Correction.ipynb",
+   "out_regex": "noisy channel \\+ correction\\s+= (0\\.\\d+)",
+   "nth": 1,
+   "raw": "0.999874",
+   "value": "0.999874",
+   "printed": "0.999874"
+  },
+  "n0009": {
+   "src": "Stage4_AutoCalibration/Stage4_Auto_Recalibration.ipynb",
+   "out_regex": "\\*\\*worst (0\\.\\d+)\\*\\* \\|",
+   "nth": 0,
+   "raw": "0.9919",
+   "value": "0.9919",
+   "printed": "0.9919"
+  },
+  "n0010": {
+   "src": "Stage4_AutoCalibration/Stage4_Auto_Recalibration.ipynb",
+   "out_regex": "\\| worst (0\\.\\d+) \\| \\*\\*worst",
+   "nth": 0,
+   "raw": "0.9413",
+   "value": "0.9413",
+   "printed": "0.9413"
+  },
+  "n0011": {
+   "src": "Stage4_AutoCalibration/Stage4_Auto_Recalibration.ipynb",
+   "out_regex": "no correction\\s+= (0\\.\\d+)",
+   "nth": 0,
+   "raw": "0.449062",
+   "value": "0.449062",
+   "printed": "0.449062"
+  },
+  "n0012": {
+   "src": "Stage4_AutoCalibration/Stage4_Auto_Recalibration.ipynb",
+   "out_regex": "no correction\\s+= (0\\.\\d+)",
+   "nth": 1,
+   "raw": "0.202436",
+   "value": "0.202436",
+   "printed": "0.202436"
+  },
+  "n0013": {
+   "src": "Stage4_AutoCalibration/Stage4_Auto_Recalibration.ipynb",
+   "out_regex": "noisy channel \\+ correction\\s+= (0\\.\\d+)",
+   "nth": 0,
+   "raw": "0.999977",
+   "value": "0.999977",
+   "printed": "0.999977"
+  },
+  "n0014": {
+   "src": "Stage4_AutoCalibration/Stage4_Auto_Recalibration.ipynb",
+   "out_regex": "noisy channel \\+ correction\\s+= (0\\.\\d+)",
+   "nth": 1,
+   "raw": "0.999973",
+   "value": "0.999973",
+   "printed": "0.999973"
+  },
+  "n0015": {
+   "src": "Stage4_AutoCalibration/Stage4_Auto_Recalibration.ipynb",
+   "md_regex": "mean F = \\*\\*(0\\.\\d+)\\*\\*",
+   "nth": 0,
+   "raw": "0.9955",
+   "value": "0.9955",
+   "printed": "0.9955"
+  },
+  "n0016": {
+   "src": "Stage4_AutoCalibration/Stage4_Auto_Recalibration.ipynb",
+   "md_regex": "F ≥ 0\\.99 in \\*\\*(\\d+ of \\d+)\\*\\* steps",
+   "nth": 0,
+   "raw": "58 of 60",
+   "value": "58 of 60",
+   "printed": "58 of 60"
+  },
+  "n0017": {
+   "src": "Stage5_Incoherent_Noise/Stage5_Incoherent_Noise.ipynb",
+   "out_regex": "\\*\\*worst ([0-9.]+e-0\\d)\\*\\* \\|",
+   "nth": 0,
+   "raw": "9.3e-06",
+   "value": 9.3e-06,
+   "printed": "9.3·10⁻⁶"
+  },
+  "n0018": {
+   "src": "Stage5_Incoherent_Noise/Stage5_Incoherent_Noise.ipynb",
+   "md_regex": "and \\*\\*([0-9.]+·10⁻⁵)\\*\\* on 8 random channels",
+   "nth": 0,
+   "raw": "1.3·10⁻⁵",
+   "value": "1.3·10⁻⁵",
+   "printed": "1.3·10⁻⁵"
+  },
+  "n0019": {
+   "src": "Stage9_Theory_Reports/9_5_Stage5_Incoherent/results/9_5_numbers.json",
+   "path": "e4/product_HT/F_none",
+   "value": 0.7276275398719132,
+   "printed": "0.7276"
+  },
+  "n0020": {
+   "src": "Stage9_Theory_Reports/9_5_Stage5_Incoherent/results/9_5_numbers.json",
+   "path": "e4/bell_30_70/F_none",
+   "value": 0.5523142761855038,
+   "printed": "0.5523"
+  },
+  "n0021": {
+   "src": "Stage9_Theory_Reports/9_5_Stage5_Incoherent/results/9_5_numbers.json",
+   "path": "e4/product_HT/printed/rows/auto-calibrated correction/0",
+   "value": "0.917682",
+   "printed": "0.917682"
+  },
+  "n0022": {
+   "src": "Stage9_Theory_Reports/9_5_Stage5_Incoherent/results/9_5_numbers.json",
+   "path": "e4/bell_30_70/printed/rows/auto-calibrated correction/0",
+   "value": "0.885692",
+   "printed": "0.885692"
+  },
+  "n0023": {
+   "src": "Stage9_Theory_Reports/9_5_Stage5_Incoherent/results/9_5_numbers.json",
+   "path": "e4/product_HT/printed/rows/ceiling (exact inverse)/0",
+   "value": "0.917686",
+   "printed": "0.917686"
+  },
+  "n0024": {
+   "src": "Stage9_Theory_Reports/9_5_Stage5_Incoherent/results/9_5_numbers.json",
+   "path": "e4/bell_30_70/printed/rows/ceiling (exact inverse)/0",
+   "value": "0.885695",
+   "printed": "0.885695"
+  },
+  "n0025": {
+   "src": "Stage9_Theory_Reports/9_6_Stage6_Correlated/results/9_6_numbers.json",
+   "path": "nominal/rows/2/favg",
+   "value": 0.8468243643608673,
+   "printed": "0.8468"
+  },
+  "n0026": {
+   "src": "Stage9_Theory_Reports/9_6_Stage6_Correlated/results/9_6_numbers.json",
+   "path": "nominal/rows/4/favg",
+   "value": 0.9131232507777962,
+   "printed": "0.9131"
+  },
+  "n0027": {
+   "src": "Stage6_Correlated_Noise/Stage6_Correlated_Noise.ipynb",
+   "out_regex": "\\| no correction \\| ([0-9.]+) \\|",
+   "nth": 0,
+   "raw": "0.6577",
+   "value": "0.6577",
+   "printed": "0.6577"
+  },
+  "n0028": {
+   "src": "Stage6_Correlated_Noise/Stage6_Correlated_Noise.ipynb",
+   "out_regex": "\\| local TOMO-9 \\(Stage 7\\) \\| ([0-9.]+) \\|",
+   "nth": 0,
+   "raw": "0.8338",
+   "value": "0.8338",
+   "printed": "0.8338"
+  },
+  "n0029": {
+   "src": "Stage6_Correlated_Noise/Stage6_Correlated_Noise.ipynb",
+   "out_regex": "\\| two-qubit TOMO-75 \\| ([0-9.]+) \\|",
+   "nth": 0,
+   "raw": "0.9112",
+   "value": "0.9112",
+   "printed": "0.9112"
+  },
+  "n0030": {
+   "src": "Stage6_Correlated_Noise/Stage6_Correlated_Noise.ipynb",
+   "out_regex": "\\| two-qubit ceiling \\(exact inverse\\) \\| ([0-9.]+) \\|",
+   "nth": 0,
+   "raw": "0.9112",
+   "value": "0.9112",
+   "printed": "0.9112"
+  },
+  "n0031": {
+   "src": "Stage6_Correlated_Noise/Stage6_Correlated_Noise.ipynb",
+   "out_regex": "\\| no correction \\| ([0-9.]+) \\|",
+   "nth": 0,
+   "raw": "0.5784",
+   "value": "0.5784",
+   "printed": "0.5784"
+  },
+  "n0032": {
+   "src": "Stage6_Correlated_Noise/Stage6_Correlated_Noise.ipynb",
+   "out_regex": "\\| local TOMO-9 \\(Stage 7\\) \\| ([0-9.]+) \\|",
+   "nth": 0,
+   "raw": "0.8288",
+   "value": "0.8288",
+   "printed": "0.8288"
+  },
+  "n0033": {
+   "src": "Stage6_Correlated_Noise/Stage6_Correlated_Noise.ipynb",
+   "out_regex": "\\| two-qubit TOMO-75 \\| ([0-9.]+) \\|",
+   "nth": 0,
+   "raw": "0.9072",
+   "value": "0.9072",
+   "printed": "0.9072"
+  },
+  "n0034": {
+   "src": "Stage6_Correlated_Noise/Stage6_Correlated_Noise.ipynb",
+   "out_regex": "\\| two-qubit ceiling \\(exact inverse\\) \\| ([0-9.]+) \\|",
+   "nth": 0,
+   "raw": "0.9073",
+   "value": "0.9073",
+   "printed": "0.9073"
+  },
+  "n0035": {
+   "src": "Stage7_Reinforcement_Learning/Stage7_Reinforcement_Learning.ipynb",
+   "md_regex": "gap ≈ ([0-9.]+) / shots\\)",
+   "nth": 0,
+   "raw": "4.9",
+   "value": "4.9",
+   "printed": "4.9"
+  },
+  "n0036": {
+   "src": "Stage8_Hardware/8d_Hardware_Runs/results/8d_compare.json",
+   "path": "rows/0/F",
+   "value": 0.8750576974490385,
+   "printed": "0.875"
+  },
+  "n0037": {
+   "src": "Stage8_Hardware/8d_Hardware_Runs/results/8d_compare.json",
+   "path": "rows/1/F",
+   "value": 0.860779490499306,
+   "printed": "0.861"
+  },
+  "n0038": {
+   "src": "Stage8_Hardware/8d_Hardware_Runs/results/8d_compare.json",
+   "path": "rows/4/F",
+   "value": 0.7109277252226693,
+   "printed": "0.711"
+  },
+  "n0039": {
+   "src": "Stage8_Hardware/8d_Hardware_Runs/results/8d_compare.json",
+   "path": "rows/5/F",
+   "value": 0.5216527752521077,
+   "printed": "0.522"
+  },
+  "n0040": {
+   "src": "Stage8_Hardware/8d_Hardware_Runs/results/8d_compare.json",
+   "path": "rows/12/F",
+   "value": 0.884489677964378,
+   "printed": "0.884"
+  },
+  "n0041": {
+   "src": "Stage8_Hardware/8d_Hardware_Runs/results/8d_compare.json",
+   "path": "rows/13/F",
+   "value": 0.8523467632766748,
+   "printed": "0.852"
+  },
+  "n0042": {
+   "src": "Stage8_Hardware/8d_Hardware_Runs/results/8d_compare.json",
+   "path": "rows/8/F",
+   "value": 0.5623454121283148,
+   "printed": "0.562"
+  },
+  "n0043": {
+   "src": "Stage8_Hardware/8d_Hardware_Runs/results/8d_compare.json",
+   "path": "rows/9/F",
+   "value": 0.5935022460532753,
+   "printed": "0.594"
+  },
+  "n0044": {
+   "src": "Stage8_Hardware/8d_Hardware_Runs/results/8d_compare.json",
+   "path": "rows/14/F",
+   "value": 0.8089083087664437,
+   "printed": "0.809"
+  },
+  "n0045": {
+   "src": "Stage8_Hardware/8d_Hardware_Runs/results/8d_compare.json",
+   "path": "rows/15/F",
+   "value": 0.7642839862795587,
+   "printed": "0.764"
+  },
+  "n0046": {
+   "src": "Stage8_Hardware/8d_Hardware_Runs/results/8d_compare.json",
+   "path": "rows/19/F",
+   "value": 0.7748512240620428,
+   "printed": "0.775"
+  },
+  "n0047": {
+   "src": "Stage8_Hardware/8d_Hardware_Runs/results/8d_compare.json",
+   "path": "hypotheses/1/values/product_HT",
+   "value": 1.0574665333052693,
+   "printed": "1.06"
+  },
+  "n0048": {
+   "src": "Stage8_Hardware/8d_Hardware_Runs/results/8d_compare.json",
+   "path": "hypotheses/1/values/bell_30_70",
+   "value": 0.9751339931550825,
+   "printed": "0.98"
+  },
+  "n0049": {
+   "src": "Stage9_Theory_Reports/9_9_Methods_and_Validity/results/9_9_report_tables.json",
+   "path": "hardware_chain/budget/usage_consumed_seconds",
+   "value": 196,
+   "printed": "196"
+  },
+  "n0051": {
+   "src": "Stage9_Theory_Reports/9_9_Methods_and_Validity/results/9_9_report_tables.json",
+   "path": "hardware_chain/budget/n_hardware_jobs",
+   "value": 4,
+   "printed": "4"
+  },
+  "n0052": {
+   "src": "Stage9_Theory_Reports/9_9_Methods_and_Validity/results/9_9_report_tables.json",
+   "path": "claims_total/n",
+   "value": 199,
+   "printed": "199"
+  },
+  "n0053": {
+   "src": "Stage9_Theory_Reports/9_9_Methods_and_Validity/results/9_9_report_tables.json",
+   "path": "claims_total/n_sub",
+   "value": 924,
+   "printed": "924"
+  },
+  "n0054": {
+   "src": "Stage9_Theory_Reports/9_9_Methods_and_Validity/results/9_9_report_tables.json",
+   "path": "claims_total/T",
+   "value": 55,
+   "printed": "55"
+  },
+  "n0055": {
+   "src": "Stage9_Theory_Reports/9_9_Methods_and_Validity/results/9_9_report_tables.json",
+   "path": "claims_total/P",
+   "value": 108,
+   "printed": "108"
+  },
+  "n0056": {
+   "src": "Stage9_Theory_Reports/9_9_Methods_and_Validity/results/9_9_report_tables.json",
+   "path": "claims_total/O",
+   "value": 36,
+   "printed": "36"
+  },
+  "n0057": {
+   "src": "Stage9_Theory_Reports/9_9_Methods_and_Validity/results/9_9_checks.json",
+   "path": "claims",
+   "derived": "number of 9.9 claims",
+   "value": 7,
+   "printed": "7"
+  },
+  "derived:nsuball": {
+   "src": "nsub + 9_9_checks.json",
+   "value": "956",
+   "printed": "956",
+   "derived": "924 sub-checks of 9.0-9.8 + the sub-checks of the 9.9 claims"
+  },
+  "derived:nall": {
+   "src": "nclaims + n99",
+   "value": "206",
+   "printed": "206",
+   "derived": "199 claims of 9.0-9.8 (9_9_report_tables claims_total/n) + the 9.9 claims"
+  },
+  "n0058": {
+   "src": "Stage1_Noiseless/Stage1_Noiseless_Teleportation.ipynb",
+   "out_regex": "Fidelity = (1\\.\\d+)",
+   "nth": 0,
+   "raw": "1.000000",
+   "value": "1.000000",
+   "printed": "1.000000"
+  },
+  "n0059": {
+   "src": "Stage1_Noiseless/Stage1_Noiseless_Teleportation.ipynb",
+   "out_regex": "P\\(00\\) = (1\\.\\d+)",
+   "nth": 0,
+   "raw": "1.0000",
+   "value": "1.0000",
+   "printed": "1.0000"
+  },
+  "n0060": {
+   "src": "Stage1_Noiseless/Stage1_Noiseless_Teleportation.ipynb",
+   "out_regex": "\\{'00': (\\d+)\\}",
+   "nth": 0,
+   "raw": "8192",
+   "value": "8192",
+   "printed": "8192"
+  },
+  "n0061": {
+   "src": "Stage9_Theory_Reports/9_1_Stage1_Teleportation/Stage9_1_Teleportation.ipynb",
+   "md_regex": "identity's to \\$([^$]+)\\$",
+   "nth": 0,
+   "raw": "4.4\\cdot 10^{-16}",
+   "value": "4.4\\cdot 10^{-16}",
+   "printed": "4.4\\cdot 10^{-16}"
+  },
+  "n0062": {
+   "src": "Stage9_Theory_Reports/9_1_Stage1_Teleportation/Stage9_1_Teleportation.ipynb",
+   "md_regex": "bounds F ≥ ([0-9.]+)",
+   "nth": 0,
+   "raw": "0.99963",
+   "value": "0.99963",
+   "printed": "0.99963"
+  },
+  "n0063": {
+   "src": "Stage9_Theory_Reports/9_1_Stage1_Teleportation/Stage9_1_Teleportation.ipynb",
+   "md_regex": "one distribution \\(p = ([0-9.]+)\\)",
+   "nth": 0,
+   "raw": "0.87",
+   "value": "0.87",
+   "printed": "0.87"
+  },
+  "n0064": {
+   "src": "Stage9_Theory_Reports/9_1_Stage1_Teleportation/Stage9_1_Teleportation.ipynb",
+   "md_regex": "uniform outcomes \\(p = ([0-9.]+)\\)",
+   "nth": 0,
+   "raw": "0.83",
+   "value": "0.83",
+   "printed": "0.83"
+  },
+  "n0065": {
+   "src": "Stage9_Theory_Reports/9_1_Stage1_Teleportation/Stage9_1_Teleportation.ipynb",
+   "md_regex": "smallest p = ([0-9.]+)\\)",
+   "nth": 0,
+   "raw": "0.40",
+   "value": "0.40",
+   "printed": "0.40"
+  },
+  "n0066": {
+   "src": "Stage9_Theory_Reports/9_1_Stage1_Teleportation/Stage9_1_Teleportation.ipynb",
+   "md_regex": "wiring slips give ([0-9.]+–[0-9.]+)",
+   "nth": 0,
+   "raw": "0.25–0.92",
+   "value": "0.25–0.92",
+   "printed": "0.25–0.92"
+  },
+  "n0067": {
+   "src": "Stage9_Theory_Reports/9_1_Stage1_Teleportation/results/9_1_numbers.json",
+   "path": "wiring_haar/Stage 1 (correct)",
+   "value": 1.0,
+   "printed": "1.00"
+  },
+  "n0068": {
+   "src": "Stage9_Theory_Reports/9_1_Stage1_Teleportation/results/9_1_numbers.json",
+   "path": "wiring_haar/no correction",
+   "value": 0.25,
+   "printed": "0.25"
+  },
+  "n0069": {
+   "src": "Stage9_Theory_Reports/9_1_Stage1_Teleportation/results/9_1_numbers.json",
+   "path": "wiring_haar/m0 <-> m2 swapped (X and Z bits exchanged)",
+   "value": 0.4,
+   "printed": "0.40"
+  },
+  "n0070": {
+   "src": "Stage9_Theory_Reports/9_1_Stage1_Teleportation/results/9_1_numbers.json",
+   "path": "wiring_haar/only X corrections",
+   "value": 0.4,
+   "printed": "0.40"
+  },
+  "n0071": {
+   "src": "Stage9_Theory_Reports/9_1_Stage1_Teleportation/results/9_1_numbers.json",
+   "path": "wiring_haar/only Z corrections",
+   "value": 0.4,
+   "printed": "0.40"
+  },
+  "n0072": {
+   "src": "Stage9_Theory_Reports/9_2_Stage2_Coherent_Noise/results/9_2_numbers.json",
+   "path": "legs/2/axis_raw",
+   "value": [
+    0.1,
+    -0.5,
+    -0.1
+   ],
+   "printed": "(0.1, -0.5, -0.1)"
+  },
+  "n0073": {
+   "src": "Stage9_Theory_Reports/9_2_Stage2_Coherent_Noise/results/9_2_numbers.json",
+   "path": "legs/3/axis_raw",
+   "value": [
+    -0.7,
+    1.0,
+    0.1
+   ],
+   "printed": "(-0.7, 1.0, 0.1)"
+  },
+  "n0074": {
+   "src": "Stage9_Theory_Reports/9_2_Stage2_Coherent_Noise/results/9_2_numbers.json",
+   "path": "legs/2/angle",
+   "value": 0.5,
+   "printed": "0.5"
+  },
+  "n0075": {
+   "src": "Stage9_Theory_Reports/9_2_Stage2_Coherent_Noise/results/9_2_numbers.json",
+   "path": "legs/3/angle",
+   "value": 1.3,
+   "printed": "1.3"
+  },
+  "n0076": {
+   "src": "Stage2_Noise/Stage2_Coherent_Channel_Noise.ipynb",
+   "out_regex": "\\| H\\.T on each qubit \\| 1\\.0000 \\| [0-9.]+ \\| [0-9.]+ \\| 1\\.0000 \\| ([0-9.]+) \\|",
+   "nth": 0,
+   "raw": "0.7876",
+   "value": "0.7876",
+   "printed": "0.7876"
+  },
+  "n0077": {
+   "src": "Stage2_Noise/Stage2_Coherent_Channel_Noise.ipynb",
+   "out_regex": "\\| sqrt\\(0\\.3\\)\\\\\\|00> \\+ sqrt\\(0\\.7\\)\\\\\\|11> \\| 1\\.0000 \\| [0-9.]+ \\| [0-9.]+ \\| 1\\.0000 \\| ([0-9.]+) \\|",
+   "nth": 0,
+   "raw": "0.6089",
+   "value": "0.6089",
+   "printed": "0.6089"
+  },
+  "n0078": {
+   "src": "Stage2_Noise/Stage2_Coherent_Channel_Noise.ipynb",
+   "out_regex": "outcome q1=0, q3=0: prob 0\\.250 \\| r = [^|]+\\|r\\| = 1\\.000 \\| fidelity with Alice's qubit = ([0-9.]+)",
+   "nth": 0,
+   "raw": "0.9866",
+   "value": "0.9866",
+   "printed": "0.9866"
+  },
+  "n0079": {
+   "src": "Stage2_Noise/Stage2_Coherent_Channel_Noise.ipynb",
+   "out_regex": "outcome q1=0, q3=1: prob 0\\.250 \\| r = [^|]+\\|r\\| = 1\\.000 \\| fidelity with Alice's qubit = ([0-9.]+)",
+   "nth": 0,
+   "raw": "0.6447",
+   "value": "0.6447",
+   "printed": "0.6447"
+  },
+  "n0080": {
+   "src": "Stage2_Noise/Stage2_Coherent_Channel_Noise.ipynb",
+   "out_regex": "AVERAGE over outcomes   : r = \\([^)]*\\) \\|r\\| = ([0-9.]+)",
+   "nth": 1,
+   "raw": "0.643",
+   "value": "0.643",
+   "printed": "0.643"
+  },
+  "n0081": {
+   "src": "Stage2_Noise/Stage2_Coherent_Channel_Noise.ipynb",
+   "out_regex": "best fixed correction on Bob \\(q4,q5\\) F = ([0-9.]+)",
+   "nth": 0,
+   "raw": "0.7963",
+   "value": "0.7963",
+   "printed": "0.7963"
+  },
+  "n0082": {
+   "src": "Stage2_Noise/Stage2_Coherent_Channel_Noise.ipynb",
+   "out_regex": "best fixed correction on Bob \\(q4,q5\\) F = ([0-9.]+)",
+   "nth": 1,
+   "raw": "0.6074",
+   "value": "0.6074",
+   "printed": "0.6074"
+  },
+  "n0083": {
+   "src": "Stage2_Noise/Stage2_Coherent_Channel_Noise.ipynb",
+   "out_regex": "best fixed correction on channel \\(q2,q3\\) F = ([0-9.]+)",
+   "nth": 0,
+   "raw": "1.000000",
+   "value": "1.000000",
+   "printed": "1.000000"
+  },
+  "n0084": {
+   "src": "Stage9_Theory_Reports/9_2_Stage2_Coherent_Noise/Stage9_2_Coherent_Noise.ipynb",
+   "md_regex": "λ_max = ([0-9]+.[0-9]+) / ([0-9]+.[0-9]+)",
+   "nth": 0,
+   "raw": "0.796305",
+   "value": "0.796305",
+   "printed": "0.796305"
+  },
+  "n0085": {
+   "src": "Stage9_Theory_Reports/9_2_Stage2_Coherent_Noise/Stage9_2_Coherent_Noise.ipynb",
+   "md_regex": "λ_max = ([0-9]+.[0-9]+) / ([0-9]+.[0-9]+)",
+   "nth": 0,
+   "raw": "0.607437",
+   "value": "0.607437",
+   "printed": "0.607437"
+  },
+  "n0086": {
+   "src": "Stage9_Theory_Reports/9_2_Stage2_Coherent_Noise/Stage9_2_Coherent_Noise.ipynb",
+   "md_regex": "exact minima ([0-9.]+) \\(s = ([0-9.]+)\\)",
+   "nth": 0,
+   "raw": "0.4081",
+   "value": "0.4081",
+   "printed": "0.4081"
+  },
+  "n0087": {
+   "src": "Stage9_Theory_Reports/9_2_Stage2_Coherent_Noise/Stage9_2_Coherent_Noise.ipynb",
+   "md_regex": "exact minima ([0-9.]+) \\(s = ([0-9.]+)\\)",
+   "nth": 0,
+   "raw": "2.601",
+   "value": "2.601",
+   "printed": "2.601"
+  },
+  "n0088": {
+   "src": "Stage9_Theory_Reports/9_2_Stage2_Coherent_Noise/Stage9_2_Coherent_Noise.ipynb",
+   "md_regex": "/ ([0-9.]+) \\(s = ([0-9.]+)\\) \\(P2\\.7\\)",
+   "nth": 0,
+   "raw": "0.1567",
+   "value": "0.1567",
+   "printed": "0.1567"
+  },
+  "n0089": {
+   "src": "Stage9_Theory_Reports/9_2_Stage2_Coherent_Noise/Stage9_2_Coherent_Noise.ipynb",
+   "md_regex": "/ ([0-9.]+) \\(s = ([0-9.]+)\\) \\(P2\\.7\\)",
+   "nth": 0,
+   "raw": "2.191",
+   "value": "2.191",
+   "printed": "2.191"
+  },
+  "n0090": {
+   "src": "Stage9_Theory_Reports/9_2_Stage2_Coherent_Noise/results/9_2_numbers.json",
+   "path": "target_2c",
+   "value": 0.6985895968369276,
+   "printed": "0.699"
+  },
+  "n0091": {
+   "src": "Stage2_Noise/Stage2_Coherent_Channel_Noise.ipynb",
+   "md_regex": "strength = 1, (\\d+) shots\\)",
+   "nth": 0,
+   "raw": "8192",
+   "value": "8192",
+   "printed": "8192"
+  },
+  "n0092": {
+   "src": "Stage9_Theory_Reports/9_2_Stage2_Coherent_Noise/results/9_2_numbers.json",
+   "path": "incoherent/depolarizing/p_matched",
+   "value": 0.2786090855720568,
+   "printed": "0.279"
+  },
+  "n0093": {
+   "src": "Stage9_Theory_Reports/9_4_Stage4_AutoCalibration/results/9_4_numbers.json",
+   "path": "consts/threshold",
+   "value": 0.99,
+   "printed": "0.99"
+  },
+  "n0094": {
+   "src": "Stage9_Theory_Reports/9_4_Stage4_AutoCalibration/results/9_4_numbers.json",
+   "path": "consts/accept_cost",
+   "value": 0.01,
+   "printed": "0.01"
+  },
+  "n0095": {
+   "src": "Stage9_Theory_Reports/9_4_Stage4_AutoCalibration/results/9_4_numbers.json",
+   "path": "consts/COARSE/0/0",
+   "value": 2000,
+   "printed": "2000"
+  },
+  "n0096": {
+   "src": "Stage9_Theory_Reports/9_4_Stage4_AutoCalibration/results/9_4_numbers.json",
+   "path": "consts/n_random_starts",
+   "value": 6,
+   "printed": "6"
+  },
+  "n0097": {
+   "src": "Stage9_Theory_Reports/9_4_Stage4_AutoCalibration/results/9_4_numbers.json",
+   "path": "consts/monitor_shots",
+   "value": 4000,
+   "printed": "4000"
+  },
+  "n0098": {
+   "src": "Stage9_Theory_Reports/9_5_Stage5_Incoherent/results/9_5b_numbers.json",
+   "path": "consts/min_margin",
+   "value": 0.005,
+   "printed": "0.005"
+  },
+  "n0099": {
+   "src": "Stage9_Theory_Reports/9_5_Stage5_Incoherent/results/9_5b_numbers.json",
+   "path": "consts/agree_tol",
+   "value": 0.01,
+   "printed": "0.01"
+  },
+  "n0100": {
+   "src": "Stage9_Theory_Reports/9_3_Stage3_Correction/results/9_3_numbers.json",
+   "path": "calib_phases/0/0",
+   "value": 2000,
+   "printed": "2 000"
+  },
+  "n0101": {
+   "src": "Stage9_Theory_Reports/9_3_Stage3_Correction/results/9_3_numbers.json",
+   "path": "calib_phases/1/0",
+   "value": 20000,
+   "printed": "20 000"
+  },
+  "n0102": {
+   "src": "Stage9_Theory_Reports/9_3_Stage3_Correction/results/9_3_numbers.json",
+   "path": "calib_phases/2/0",
+   "value": 100000,
+   "printed": "100 000"
+  },
+  "n0103": {
+   "src": "Stage3_Correction/Stage3_Parametric_Correction.ipynb",
+   "out_regex": "residual rotation, 3 probes: \\{'q2': ([0-9.]+)",
+   "nth": 0,
+   "raw": "0.0164",
+   "value": "0.0164",
+   "printed": "0.0164"
+  },
+  "n0104": {
+   "src": "Stage3_Correction/Stage3_Parametric_Correction.ipynb",
+   "out_regex": "residual rotation, 3 probes: \\{'q2': [0-9.]+, 'q3': ([0-9.]+)",
+   "nth": 0,
+   "raw": "0.0163",
+   "value": "0.0163",
+   "printed": "0.0163"
+  },
+  "n0105": {
+   "src": "Stage3_Correction/Stage3_Parametric_Correction.ipynb",
+   "out_regex": "calibrated, 3 probes   H\\.T: [0-9.]+  30/70: [0-9.]+  random \\(30\\): mean ([0-9.]+)",
+   "nth": 0,
+   "raw": "0.9999",
+   "value": "0.9999",
+   "printed": "0.9999"
+  },
+  "n0106": {
+   "src": "Stage3_Correction/Stage3_Parametric_Correction.ipynb",
+   "out_regex": "calibrated, 3 probes   H\\.T: [0-9.]+  30/70: [0-9.]+  random \\(30\\): mean [0-9.]+, min ([0-9.]+)",
+   "nth": 0,
+   "raw": "0.9999",
+   "value": "0.9999",
+   "printed": "0.9999"
+  },
+  "n0107": {
+   "src": "Stage3_Correction/Stage3_Parametric_Correction.ipynb",
+   "out_regex": "no correction          H\\.T: [0-9.]+  30/70: [0-9.]+  random \\(30\\): mean ([0-9.]+)",
+   "nth": 0,
+   "raw": "0.6809",
+   "value": "0.6809",
+   "printed": "0.6809"
+  },
+  "n0108": {
+   "src": "Stage3_Correction/Stage3_Parametric_Correction.ipynb",
+   "out_regex": "calibrated, 1 probe    H\\.T: [0-9.]+  30/70: [0-9.]+  random \\(30\\): mean ([0-9.]+)",
+   "nth": 0,
+   "raw": "0.9754",
+   "value": "0.9754",
+   "printed": "0.9754"
+  },
+  "n0109": {
+   "src": "Stage3_Correction/Stage3_Parametric_Correction.ipynb",
+   "out_regex": "residual rotation, 1 probe : \\{'q2': [0-9.]+, 'q3': ([0-9.]+)",
+   "nth": 0,
+   "raw": "0.3373",
+   "value": "0.3373",
+   "printed": "0.3373"
+  },
+  "n0110": {
+   "src": "Stage9_Theory_Reports/9_3_Stage3_Correction/Stage9_3_Parametric_Correction.ipynb",
+   "md_regex": "\\(difference ([0-9.]+) rad\\)",
+   "nth": 0,
+   "raw": "3.14",
+   "value": "3.14",
+   "printed": "3.14"
+  },
+  "n0111": {
+   "src": "Stage9_Theory_Reports/9_3_Stage3_Correction/Stage9_3_Parametric_Correction.ipynb",
+   "md_regex": "\\(difference ([0-9.]+) rad after the map\\)",
+   "nth": 0,
+   "raw": "0.013",
+   "value": "0.013",
+   "printed": "0.013"
+  },
+  "n0112": {
+   "src": "Stage9_Theory_Reports/9_3_Stage3_Correction/Stage9_3_Parametric_Correction.ipynb",
+   "md_regex": "leaves ([0-9.]+) / ([0-9.]+) rad",
+   "nth": 0,
+   "raw": "0.016449",
+   "value": "0.016449",
+   "printed": "0.016449"
+  },
+  "n0113": {
+   "src": "Stage9_Theory_Reports/9_3_Stage3_Correction/Stage9_3_Parametric_Correction.ipynb",
+   "md_regex": "leaves ([0-9.]+) / ([0-9.]+) rad",
+   "nth": 0,
+   "raw": "0.016296",
+   "value": "0.016296",
+   "printed": "0.016296"
+  },
+  "n0114": {
+   "src": "Stage9_Theory_Reports/9_3_Stage3_Correction/Stage9_3_Parametric_Correction.ipynb",
+   "md_regex": "C = \\$([^$]+)\\$ = \\(5/6\\)",
+   "nth": 0,
+   "raw": "8.935\\cdot 10^{-5}",
+   "value": "8.935\\cdot 10^{-5}",
+   "printed": "8.935\\cdot 10^{-5}"
+  },
+  "n0115": {
+   "src": "Stage9_Theory_Reports/9_3_Stage3_Correction/Stage9_3_Parametric_Correction.ipynb",
+   "md_regex": "to within \\$([^$]+)\\$",
+   "nth": 0,
+   "raw": "1.0\\cdot 10^{-9}",
+   "value": "1.0\\cdot 10^{-9}",
+   "printed": "1.0\\cdot 10^{-9}"
+  },
+  "n0116": {
+   "src": "Stage9_Theory_Reports/9_3_Stage3_Correction/Stage9_3_Parametric_Correction.ipynb",
+   "md_regex": "within ([0-9.]+)° of x",
+   "nth": 0,
+   "raw": "3.3",
+   "value": "3.3",
+   "printed": "3.3"
+  },
+  "n0117": {
+   "src": "Stage9_Theory_Reports/9_4_Stage4_AutoCalibration/Stage9_4_Auto_Recalibration.ipynb",
+   "md_regex": "for all (\\d+) random channels with",
+   "nth": 0,
+   "raw": "135",
+   "value": "135",
+   "printed": "135"
+  },
+  "n0118": {
+   "src": "Stage9_Theory_Reports/9_4_Stage4_AutoCalibration/Stage9_4_Auto_Recalibration.ipynb",
+   "md_regex": "for ([0-9.]+) % of those with",
+   "nth": 0,
+   "raw": "99",
+   "value": "99",
+   "printed": "99"
+  },
+  "n0119": {
+   "src": "Stage9_Theory_Reports/9_4_Stage4_AutoCalibration/Stage9_4_Auto_Recalibration.ipynb",
+   "md_regex": "end cost \\$([^$]+)\\$",
+   "nth": 0,
+   "raw": "1.8\\cdot 10^{-11}",
+   "value": "1.8\\cdot 10^{-11}",
+   "printed": "1.8\\cdot 10^{-11}"
+  },
+  "n0120": {
+   "src": "Stage9_Theory_Reports/9_4_Stage4_AutoCalibration/Stage9_4_Auto_Recalibration.ipynb",
+   "md_regex": "early in ([0-9.]+) % of the coarse",
+   "nth": 0,
+   "raw": "83.7",
+   "value": "83.7",
+   "printed": "83.7"
+  },
+  "n0121": {
+   "src": "Stage9_Theory_Reports/9_4_Stage4_AutoCalibration/Stage9_4_Auto_Recalibration.ipynb",
+   "md_regex": "\\\\approx\\$ ([0-9]+\\.[0-9]+)",
+   "nth": 0,
+   "raw": "0.844",
+   "value": "0.844",
+   "printed": "0.844"
+  },
+  "n0122": {
+   "src": "Stage9_Theory_Reports/9_4_Stage4_AutoCalibration/Stage9_4_Auto_Recalibration.ipynb",
+   "md_regex": "printed ([0-9.]+) lies at the ([0-9.]+) %",
+   "nth": 0,
+   "raw": "0.1395",
+   "value": "0.1395",
+   "printed": "0.1395"
+  },
+  "n0123": {
+   "src": "Stage9_Theory_Reports/9_4_Stage4_AutoCalibration/Stage9_4_Auto_Recalibration.ipynb",
+   "md_regex": "printed ([0-9.]+) lies at the ([0-9.]+) %",
+   "nth": 0,
+   "raw": "97.3",
+   "value": "97.3",
+   "printed": "97.3"
+  },
+  "n0124": {
+   "src": "Stage9_Theory_Reports/9_4_Stage4_AutoCalibration/Stage9_4_Auto_Recalibration.ipynb",
+   "md_regex": "One of (\\d+) random channels",
+   "nth": 0,
+   "raw": "300",
+   "value": "300",
+   "printed": "300"
+  },
+  "n0125": {
+   "src": "Stage9_Theory_Reports/9_4_Stage4_AutoCalibration/Stage9_4_Auto_Recalibration.ipynb",
+   "md_regex": "worst message F = ([0-9.]+)",
+   "nth": 0,
+   "raw": "0.027",
+   "value": "0.027",
+   "printed": "0.027"
+  },
+  "n0126": {
+   "src": "Stage9_Theory_Reports/9_4_Stage4_AutoCalibration/Stage9_4_Auto_Recalibration.ipynb",
+   "md_regex": "Fisher p = ([0-9.]+)\\)",
+   "nth": 0,
+   "raw": "0.91",
+   "value": "0.91",
+   "printed": "0.91"
+  },
+  "n0127": {
+   "src": "Stage9_Theory_Reports/9_4_Stage4_AutoCalibration/Stage9_4_Auto_Recalibration.ipynb",
+   "md_regex": "in ([0-9.]+) % of the simulated E1 tables, the automatic rule in ([0-9.]+) %",
+   "nth": 0,
+   "raw": "100",
+   "value": "100",
+   "printed": "100"
+  },
+  "n0128": {
+   "src": "Stage9_Theory_Reports/9_4_Stage4_AutoCalibration/Stage9_4_Auto_Recalibration.ipynb",
+   "md_regex": "in ([0-9.]+) % of the simulated E1 tables, the automatic rule in ([0-9.]+) %",
+   "nth": 0,
+   "raw": "17.5",
+   "value": "17.5",
+   "printed": "17.5"
+  },
+  "n0129": {
+   "src": "Stage9_Theory_Reports/9_4_Stage4_AutoCalibration/Stage9_4_Auto_Recalibration.ipynb",
+   "md_regex": "probability ([0-9.]+), not the naive ([0-9.]+)",
+   "nth": 0,
+   "raw": "0.0335",
+   "value": "0.0335",
+   "printed": "0.0335"
+  },
+  "n0130": {
+   "src": "Stage9_Theory_Reports/9_4_Stage4_AutoCalibration/Stage9_4_Auto_Recalibration.ipynb",
+   "md_regex": "probability ([0-9.]+), not the naive ([0-9.]+)",
+   "nth": 0,
+   "raw": "0.0043",
+   "value": "0.0043",
+   "printed": "0.0043"
+  },
+  "n0131": {
+   "src": "Stage9_Theory_Reports/9_4_Stage4_AutoCalibration/Stage9_4_Auto_Recalibration.ipynb",
+   "md_regex": "F_\\{avg\\} > ([0-9.]+)\\$ and \\*\\*F > ([0-9.]+)",
+   "nth": 0,
+   "raw": "0.988",
+   "value": "0.988",
+   "printed": "0.988"
+  },
+  "n0132": {
+   "src": "Stage9_Theory_Reports/9_4_Stage4_AutoCalibration/Stage9_4_Auto_Recalibration.ipynb",
+   "md_regex": "F_\\{avg\\} > ([0-9.]+)\\$ and \\*\\*F > ([0-9.]+)",
+   "nth": 0,
+   "raw": "0.985",
+   "value": "0.985",
+   "printed": "0.985"
+  },
+  "n0133": {
+   "src": "Stage9_Theory_Reports/9_4_Stage4_AutoCalibration/Stage9_4_Auto_Recalibration.ipynb",
+   "md_regex": "threshold of ([0-9.]+), sharp to \\$([^$]+)\\$",
+   "nth": 0,
+   "raw": "0.988",
+   "value": "0.988",
+   "printed": "0.988"
+  },
+  "n0134": {
+   "src": "Stage9_Theory_Reports/9_4_Stage4_AutoCalibration/Stage9_4_Auto_Recalibration.ipynb",
+   "md_regex": "threshold of ([0-9.]+), sharp to \\$([^$]+)\\$",
+   "nth": 0,
+   "raw": "8.9\\cdot 10^{-5}",
+   "value": "8.9\\cdot 10^{-5}",
+   "printed": "8.9\\cdot 10^{-5}"
+  },
+  "n0135": {
+   "src": "Stage9_Theory_Reports/9_4_Stage4_AutoCalibration/Stage9_4_Auto_Recalibration.ipynb",
+   "md_regex": "are \\$([^$]+)\\$ \\(P4\\.11\\)",
+   "nth": 0,
+   "raw": "2\\cdot 10^{-76}",
+   "value": "2\\cdot 10^{-76}",
+   "printed": "2\\cdot 10^{-76}"
+  },
+  "n0136": {
+   "src": "Stage9_Theory_Reports/9_4_Stage4_AutoCalibration/Stage9_4_Auto_Recalibration.ipynb",
+   "md_regex": "linearly, ([0-9.]+) per step",
+   "nth": 0,
+   "raw": "0.00259",
+   "value": "0.00259",
+   "printed": "0.00259"
+  },
+  "n0137": {
+   "src": "Stage9_Theory_Reports/9_4_Stage4_AutoCalibration/Stage9_4_Auto_Recalibration.ipynb",
+   "md_regex": "its (\\d+) trigger times and ([0-9,]+) evaluations",
+   "nth": 0,
+   "raw": "14",
+   "value": "14",
+   "printed": "14"
+  },
+  "n0138": {
+   "src": "Stage9_Theory_Reports/9_4_Stage4_AutoCalibration/Stage9_4_Auto_Recalibration.ipynb",
+   "md_regex": "its (\\d+) trigger times and ([0-9,]+) evaluations",
+   "nth": 0,
+   "raw": "3,071",
+   "value": "3,071",
+   "printed": "3,071"
+  },
+  "n0139": {
+   "src": "Stage9_Theory_Reports/9_5_Stage5_Incoherent/Stage9_5_Incoherent_Noise.ipynb",
+   "md_regex": "E3: \\$([^$]+)\\$ rad",
+   "nth": 0,
+   "raw": "2.49\\cdot 10^{-3}",
+   "value": "2.49\\cdot 10^{-3}",
+   "printed": "2.49\\cdot 10^{-3}"
+  },
+  "n0140": {
+   "src": "Stage9_Theory_Reports/9_5_Stage5_Incoherent/Stage9_5_Incoherent_Noise.ipynb",
+   "md_regex": "lower by \\$([^$]+)\\$",
+   "nth": 0,
+   "raw": "1.19\\cdot 10^{-6}",
+   "value": "1.19\\cdot 10^{-6}",
+   "printed": "1.19\\cdot 10^{-6}"
+  },
+  "n0141": {
+   "src": "Stage9_Theory_Reports/9_5_Stage5_Incoherent/Stage9_5_Incoherent_Noise.ipynb",
+   "md_regex": "on (\\d+) channel pairs",
+   "nth": 0,
+   "raw": "120",
+   "value": "120",
+   "printed": "120"
+  },
+  "n0142": {
+   "src": "Stage9_Theory_Reports/9_5_Stage5_Incoherent/Stage9_5_Incoherent_Noise.ipynb",
+   "md_regex": "\\((\\d+) of them, E0–E4\\)",
+   "nth": 0,
+   "raw": "244",
+   "value": "244",
+   "printed": "244"
+  },
+  "n0143": {
+   "src": "Stage9_Theory_Reports/9_5_Stage5_Incoherent/Stage9_5_Incoherent_Noise.ipynb",
+   "md_regex": "fails on (\\d) of E2c's (\\d) channels",
+   "nth": 0,
+   "raw": "3",
+   "value": "3",
+   "printed": "3"
+  },
+  "n0144": {
+   "src": "Stage9_Theory_Reports/9_5_Stage5_Incoherent/Stage9_5_Incoherent_Noise.ipynb",
+   "md_regex": "fails on (\\d) of E2c's (\\d) channels",
+   "nth": 0,
+   "raw": "8",
+   "value": "8",
+   "printed": "8"
+  },
+  "n0145": {
+   "src": "Stage9_Theory_Reports/9_5_Stage5_Incoherent/Stage9_5_Incoherent_Noise.ipynb",
+   "md_regex": "at least (\\d+) evaluations / ([0-9.]+) M shots",
+   "nth": 0,
+   "raw": "95",
+   "value": "95",
+   "printed": "95"
+  },
+  "n0146": {
+   "src": "Stage9_Theory_Reports/9_5_Stage5_Incoherent/Stage9_5_Incoherent_Noise.ipynb",
+   "md_regex": "at least (\\d+) evaluations / ([0-9.]+) M shots",
+   "nth": 0,
+   "raw": "8.262",
+   "value": "8.262",
+   "printed": "8.262"
+  },
+  "n0147": {
+   "src": "Stage9_Theory_Reports/9_5_Stage5_Incoherent/Stage9_5_Incoherent_Noise.ipynb",
+   "md_regex": "predicted within (\\d+) %",
+   "nth": 0,
+   "raw": "25",
+   "value": "25",
+   "printed": "25"
+  },
+  "n0148": {
+   "src": "Stage9_Theory_Reports/9_5_Stage5_Incoherent/Stage9_5_Incoherent_Noise.ipynb",
+   "md_regex": "≈ ([0-9.]+) % false alarms",
+   "nth": 0,
+   "raw": "0.27",
+   "value": "0.27",
+   "printed": "0.27"
+  },
+  "n0149": {
+   "src": "Stage5_Incoherent_Noise/Stage5_Incoherent_Noise.ipynb",
+   "md_regex": "and \\*\\*([0-9.]+·10⁻⁵)\\*\\* on 8 random channels",
+   "nth": 0,
+   "raw": "1.3·10⁻⁵",
+   "value": "1.3·10⁻⁵",
+   "printed": "1.3·10⁻⁵"
+  },
+  "n0150": {
+   "src": "Stage5_Incoherent_Noise/Stage5_Incoherent_Noise.ipynb",
+   "md_regex": "It needs about \\*\\*([0-9.]+) M shots\\*\\* per calibration",
+   "nth": 0,
+   "raw": "8.8",
+   "value": "8.8",
+   "printed": "8.8"
+  },
+  "n0151": {
+   "src": "Stage5_Incoherent_Noise/Stage5_Incoherent_Noise.ipynb",
+   "md_regex": "gaps up to ([0-9.]+·10⁻²), with about",
+   "nth": 0,
+   "raw": "1.0·10⁻²",
+   "value": "1.0·10⁻²",
+   "printed": "1.0·10⁻²"
+  },
+  "n0152": {
+   "src": "Stage5_Incoherent_Noise/Stage5_Incoherent_Noise.ipynb",
+   "md_regex": "with about (\\d+) M shots\\)",
+   "nth": 0,
+   "raw": "25",
+   "value": "25",
+   "printed": "25"
+  },
+  "n0153": {
+   "src": "Stage9_Theory_Reports/9_5_Stage5_Incoherent/results/9_5_numbers.json",
+   "path": "e4/product_HT/printed/rows/auto-calibrated correction/1",
+   "value": "0.8455",
+   "printed": "0.8455"
+  },
+  "n0154": {
+   "src": "Stage9_Theory_Reports/9_5_Stage5_Incoherent/results/9_5_numbers.json",
+   "path": "e4/bell_30_70/printed/rows/auto-calibrated correction/1",
+   "value": "0.7893",
+   "printed": "0.7893"
+  },
+  "n0155": {
+   "src": "Stage9_Theory_Reports/9_5_Stage5_Incoherent/results/9_5_numbers.json",
+   "path": "e4/product_HT/printed/rows/no correction/1",
+   "value": "0.5807",
+   "printed": "0.5807"
+  },
+  "n0156": {
+   "src": "Stage9_Theory_Reports/9_5_Stage5_Incoherent/results/9_5_numbers.json",
+   "path": "e4/bell_30_70/printed/rows/no correction/1",
+   "value": "0.3992",
+   "printed": "0.3992"
+  },
+  "n0157": {
+   "src": "Stage9_Theory_Reports/9_6_Stage6_Correlated/Stage9_6_Correlated_Noise.ipynb",
+   "md_regex": "costs at most ([0-9.]+\\\\cdot 10\\^\\{-\\d+\\})",
+   "nth": 0,
+   "raw": "9.2\\cdot 10^{-4}",
+   "value": "9.2\\cdot 10^{-4}",
+   "printed": "9.2\\cdot 10^{-4}"
+  },
+  "n0158": {
+   "src": "Stage9_Theory_Reports/9_6_Stage6_Correlated/Stage9_6_Correlated_Noise.ipynb",
+   "md_regex": "correlated part: ([0-9.]+) of",
+   "nth": 0,
+   "raw": "0.0663",
+   "value": "0.0663",
+   "printed": "0.0663"
+  },
+  "n0159": {
+   "src": "Stage9_Theory_Reports/9_6_Stage6_Correlated/Stage9_6_Correlated_Noise.ipynb",
+   "md_regex": "a gain of \\$([^$]+)\\$",
+   "nth": 0,
+   "raw": "1.24\\cdot 10^{-5}",
+   "value": "1.24\\cdot 10^{-5}",
+   "printed": "1.24\\cdot 10^{-5}"
+  },
+  "n0160": {
+   "src": "Stage9_Theory_Reports/9_6_Stage6_Correlated/Stage9_6_Correlated_Noise.ipynb",
+   "md_regex": "inverse to \\$([^$]+)\\$",
+   "nth": 0,
+   "raw": "8.9\\cdot 10^{-16}",
+   "value": "8.9\\cdot 10^{-16}",
+   "printed": "8.9\\cdot 10^{-16}"
+  },
+  "n0161": {
+   "src": "Stage9_Theory_Reports/9_6_Stage6_Correlated/Stage9_6_Correlated_Noise.ipynb",
+   "md_regex": "e\\.g\\. ([0-9.]+) at amplitude damping ([0-9.]+)",
+   "nth": 0,
+   "raw": "0.0136",
+   "value": "0.0136",
+   "printed": "0.0136"
+  },
+  "n0162": {
+   "src": "Stage9_Theory_Reports/9_6_Stage6_Correlated/Stage9_6_Correlated_Noise.ipynb",
+   "md_regex": "e\\.g\\. ([0-9.]+) at amplitude damping ([0-9.]+)",
+   "nth": 0,
+   "raw": "0.5",
+   "value": "0.5",
+   "printed": "0.5"
+  },
+  "n0163": {
+   "src": "Stage9_Theory_Reports/9_6_Stage6_Correlated/Stage9_6_Correlated_Noise.ipynb",
+   "md_regex": "has (\\d+) classes",
+   "nth": 0,
+   "raw": "720",
+   "value": "720",
+   "printed": "720"
+  },
+  "n0164": {
+   "src": "Stage9_Theory_Reports/9_6_Stage6_Correlated/Stage9_6_Correlated_Noise.ipynb",
+   "md_regex": "≥ (\\d+) circuits are needed",
+   "nth": 0,
+   "raw": "135",
+   "value": "135",
+   "printed": "135"
+  },
+  "n0165": {
+   "src": "Stage9_Theory_Reports/9_6_Stage6_Correlated/Stage9_6_Correlated_Noise.ipynb",
+   "md_regex": "Stage 6's ([0-9.]+) / shots",
+   "nth": 0,
+   "raw": "37.6",
+   "value": "37.6",
+   "printed": "37.6"
+  },
+  "n0166": {
+   "src": "Stage9_Theory_Reports/9_6_Stage6_Correlated/Stage9_6_Correlated_Noise.ipynb",
+   "md_regex": "all (\\d+) saved runs fit",
+   "nth": 0,
+   "raw": "540",
+   "value": "540",
+   "printed": "540"
+  },
+  "n0167": {
+   "src": "Stage9_Theory_Reports/9_6_Stage6_Correlated/Stage9_6_Correlated_Noise.ipynb",
+   "md_regex": "\\(([0-9.]+) vs ([0-9.]+) shots\\)",
+   "nth": 0,
+   "raw": "7.29",
+   "value": "7.29",
+   "printed": "7.29"
+  },
+  "n0168": {
+   "src": "Stage9_Theory_Reports/9_6_Stage6_Correlated/Stage9_6_Correlated_Noise.ipynb",
+   "md_regex": "\\(([0-9.]+) vs ([0-9.]+) shots\\)",
+   "nth": 0,
+   "raw": "4.9",
+   "value": "4.9",
+   "printed": "4.9"
+  },
+  "n0169": {
+   "src": "Stage9_Theory_Reports/9_6_Stage6_Correlated/Stage9_6_Correlated_Noise.ipynb",
+   "md_regex": "needs ([0-9.]+–[0-9.]+)× the shots",
+   "nth": 0,
+   "raw": "4.9–8.7",
+   "value": "4.9–8.7",
+   "printed": "4.9–8.7"
+  },
+  "n0170": {
+   "src": "Stage9_Theory_Reports/9_6_Stage6_Correlated/Stage9_6_Correlated_Noise.ipynb",
+   "md_regex": "N = (\\d+), xt = ([0-9.]+): printed ([0-9.]+), exact ([0-9.]+)",
+   "nth": 0,
+   "raw": "300",
+   "value": "300",
+   "printed": "300"
+  },
+  "n0171": {
+   "src": "Stage9_Theory_Reports/9_6_Stage6_Correlated/Stage9_6_Correlated_Noise.ipynb",
+   "md_regex": "N = (\\d+), xt = ([0-9.]+): printed ([0-9.]+), exact ([0-9.]+)",
+   "nth": 0,
+   "raw": "0.5",
+   "value": "0.5",
+   "printed": "0.5"
+  },
+  "n0172": {
+   "src": "Stage9_Theory_Reports/9_6_Stage6_Correlated/Stage9_6_Correlated_Noise.ipynb",
+   "md_regex": "N = (\\d+), xt = ([0-9.]+): printed ([0-9.]+), exact ([0-9.]+)",
+   "nth": 0,
+   "raw": "0.29",
+   "value": "0.29",
+   "printed": "0.29"
+  },
+  "n0173": {
+   "src": "Stage9_Theory_Reports/9_6_Stage6_Correlated/Stage9_6_Correlated_Noise.ipynb",
+   "md_regex": "N = (\\d+), xt = ([0-9.]+): printed ([0-9.]+), exact ([0-9.]+)",
+   "nth": 0,
+   "raw": "0.011",
+   "value": "0.011",
+   "printed": "0.011"
+  },
+  "n0174": {
+   "src": "Stage9_Theory_Reports/9_6_Stage6_Correlated/Stage9_6_Correlated_Noise.ipynb",
+   "md_regex": "\\*\\*(\\d+) printed numbers\\*\\*|(\\d+) printed numbers are reproduced",
+   "nth": 0,
+   "raw": null,
+   "value": null,
+   "printed": null
+  },
+  "n0175": {
+   "src": "Stage9_Theory_Reports/9_6_Stage6_Correlated/results/9_6_numbers.json",
+   "path": "nominal/bound",
+   "value": 0.9131758615030152,
+   "printed": "0.91318"
+  },
+  "n0176": {
+   "src": "Stage9_Theory_Reports/9_6_Stage6_Correlated/Stage9_6_Correlated_Noise.ipynb",
+   "md_regex": "(\\d+) printed numbers are reproduced",
+   "nth": 0,
+   "raw": "682",
+   "value": "682",
+   "printed": "682"
+  },
+  "n0177": {
+   "src": "Stage9_Theory_Reports/9_7_Stage7_RL/Stage9_7_Reinforcement_Learning.ipynb",
+   "md_regex": "([0-9.]+) / ([0-9.]+) / ([0-9.]+) / (\\d+) % reproduced",
+   "nth": 0,
+   "raw": "0.365",
+   "value": "0.365",
+   "printed": "0.365"
+  },
+  "n0178": {
+   "src": "Stage9_Theory_Reports/9_7_Stage7_RL/Stage9_7_Reinforcement_Learning.ipynb",
+   "md_regex": "([0-9.]+) / ([0-9.]+) / ([0-9.]+) / (\\d+) % reproduced",
+   "nth": 0,
+   "raw": "0.529",
+   "value": "0.529",
+   "printed": "0.529"
+  },
+  "n0179": {
+   "src": "Stage9_Theory_Reports/9_7_Stage7_RL/Stage9_7_Reinforcement_Learning.ipynb",
+   "md_regex": "([0-9.]+) / ([0-9.]+) / ([0-9.]+) / (\\d+) % reproduced",
+   "nth": 0,
+   "raw": "0.820",
+   "value": "0.820",
+   "printed": "0.820"
+  },
+  "n0180": {
+   "src": "Stage9_Theory_Reports/9_7_Stage7_RL/Stage9_7_Reinforcement_Learning.ipynb",
+   "md_regex": "([0-9.]+) / ([0-9.]+) / ([0-9.]+) / (\\d+) % reproduced",
+   "nth": 0,
+   "raw": "30",
+   "value": "30",
+   "printed": "30"
+  },
+  "n0181": {
+   "src": "Stage9_Theory_Reports/9_7_Stage7_RL/Stage9_7_Reinforcement_Learning.ipynb",
+   "md_regex": "two rounds = \\*\\*([0-9.]+)\\*\\* \\(printed ([0-9.]+)\\)",
+   "nth": 0,
+   "raw": "15.44",
+   "value": "15.44",
+   "printed": "15.44"
+  },
+  "n0182": {
+   "src": "Stage9_Theory_Reports/9_7_Stage7_RL/Stage9_7_Reinforcement_Learning.ipynb",
+   "md_regex": "two rounds = \\*\\*([0-9.]+)\\*\\* \\(printed ([0-9.]+)\\)",
+   "nth": 0,
+   "raw": "15.5",
+   "value": "15.5",
+   "printed": "15.5"
+  },
+  "n0183": {
+   "src": "Stage9_Theory_Reports/9_7_Stage7_RL/Stage9_7_Reinforcement_Learning.ipynb",
+   "md_regex": "costs ([0-9.]+) instead of ([0-9.]+)",
+   "nth": 0,
+   "raw": "7.72",
+   "value": "7.72",
+   "printed": "7.72"
+  },
+  "n0184": {
+   "src": "Stage9_Theory_Reports/9_7_Stage7_RL/Stage9_7_Reinforcement_Learning.ipynb",
+   "md_regex": "costs ([0-9.]+) instead of ([0-9.]+)",
+   "nth": 0,
+   "raw": "5.96",
+   "value": "5.96",
+   "printed": "5.96"
+  },
+  "n0185": {
+   "src": "Stage9_Theory_Reports/9_7_Stage7_RL/Stage9_7_Reinforcement_Learning.ipynb",
+   "md_regex": "\\*\\*all (\\d+) saved runs\\*\\*",
+   "nth": 0,
+   "raw": "4320",
+   "value": "4320",
+   "printed": "4320"
+  },
+  "n0186": {
+   "src": "Stage9_Theory_Reports/9_7_Stage7_RL/Stage9_7_Reinforcement_Learning.ipynb",
+   "md_regex": "([0-9.]+) / ([0-9.]+) / ([0-9.]+) \\(IN / OOD / ARB\\)",
+   "nth": 0,
+   "raw": "1.29",
+   "value": "1.29",
+   "printed": "1.29"
+  },
+  "n0187": {
+   "src": "Stage9_Theory_Reports/9_7_Stage7_RL/Stage9_7_Reinforcement_Learning.ipynb",
+   "md_regex": "([0-9.]+) / ([0-9.]+) / ([0-9.]+) \\(IN / OOD / ARB\\)",
+   "nth": 0,
+   "raw": "1.35",
+   "value": "1.35",
+   "printed": "1.35"
+  },
+  "n0188": {
+   "src": "Stage9_Theory_Reports/9_7_Stage7_RL/Stage9_7_Reinforcement_Learning.ipynb",
+   "md_regex": "([0-9.]+) / ([0-9.]+) / ([0-9.]+) \\(IN / OOD / ARB\\)",
+   "nth": 0,
+   "raw": "1.32",
+   "value": "1.32",
+   "printed": "1.32"
+  },
+  "n0189": {
+   "src": "Stage9_Theory_Reports/9_7_Stage7_RL/Stage9_7_Reinforcement_Learning.ipynb",
+   "md_regex": "within ([0-9.]+) % of the true optimum",
+   "nth": 0,
+   "raw": "0.70",
+   "value": "0.70",
+   "printed": "0.70"
+  },
+  "n0190": {
+   "src": "Stage9_Theory_Reports/9_7_Stage7_RL/Stage9_7_Reinforcement_Learning.ipynb",
+   "md_regex": "bound is ≤ ([0-9.]+)×",
+   "nth": 0,
+   "raw": "1.36",
+   "value": "1.36",
+   "printed": "1.36"
+  },
+  "n0191": {
+   "src": "Stage9_Theory_Reports/9_7_Stage7_RL/Stage9_7_Reinforcement_Learning.ipynb",
+   "md_regex": "\\*\\*(\\d+) false alarms in (\\d+) static steps\\*\\*",
+   "nth": 0,
+   "raw": "2",
+   "value": "2",
+   "printed": "2"
+  },
+  "n0192": {
+   "src": "Stage9_Theory_Reports/9_7_Stage7_RL/Stage9_7_Reinforcement_Learning.ipynb",
+   "md_regex": "\\*\\*(\\d+) false alarms in (\\d+) static steps\\*\\*",
+   "nth": 0,
+   "raw": "59000",
+   "value": "59000",
+   "printed": "59000"
+  },
+  "n0193": {
+   "src": "Stage9_Theory_Reports/9_7_Stage7_RL/Stage9_7_Reinforcement_Learning.ipynb",
+   "md_regex": "within ([0-9.]+–[0-9.]+)× \\|",
+   "nth": 0,
+   "raw": "0.96–1.22",
+   "value": "0.96–1.22",
+   "printed": "0.96–1.22"
+  },
+  "n0194": {
+   "src": "Stage9_Theory_Reports/9_7_Stage7_RL/Stage9_7_Reinforcement_Learning.ipynb",
+   "md_regex": "with noise-free inputs\\*\\* \\(\\$([^$]+)\\$ / \\$([^$]+)\\$\\)",
+   "nth": 0,
+   "raw": "3.3\\cdot 10^{-3}",
+   "value": "3.3\\cdot 10^{-3}",
+   "printed": "3.3\\cdot 10^{-3}"
+  },
+  "n0195": {
+   "src": "Stage9_Theory_Reports/9_7_Stage7_RL/Stage9_7_Reinforcement_Learning.ipynb",
+   "md_regex": "with noise-free inputs\\*\\* \\(\\$([^$]+)\\$ / \\$([^$]+)\\$\\)",
+   "nth": 0,
+   "raw": "9.2\\cdot 10^{-4}",
+   "value": "9.2\\cdot 10^{-4}",
+   "printed": "9.2\\cdot 10^{-4}"
+  },
+  "n0196": {
+   "src": "Stage9_Theory_Reports/9_7_Stage7_RL/Stage9_7_Reinforcement_Learning.ipynb",
+   "md_regex": "costs only \\$([^$]+)\\$",
+   "nth": 0,
+   "raw": "5.9\\cdot 10^{-6}",
+   "value": "5.9\\cdot 10^{-6}",
+   "printed": "5.9\\cdot 10^{-6}"
+  },
+  "n0197": {
+   "src": "Stage9_Theory_Reports/9_7_Stage7_RL/Stage9_7_Reinforcement_Learning.ipynb",
+   "md_regex": "\\(sd \\$([^$]+)\\$\\)",
+   "nth": 0,
+   "raw": "2.4\\cdot 10^{-2}",
+   "value": "2.4\\cdot 10^{-2}",
+   "printed": "2.4\\cdot 10^{-2}"
+  },
+  "n0198": {
+   "src": "Stage9_Theory_Reports/9_7_Stage7_RL/Stage9_7_Reinforcement_Learning.ipynb",
+   "md_regex": "reward gain left \\(\\$([^$]+)\\$\\)",
+   "nth": 0,
+   "raw": "2.5\\cdot 10^{-3}",
+   "value": "2.5\\cdot 10^{-3}",
+   "printed": "2.5\\cdot 10^{-3}"
+  },
+  "n0199": {
+   "src": "Stage9_Theory_Reports/9_7_Stage7_RL/Stage9_7_Reinforcement_Learning.ipynb",
+   "md_regex": "in (\\d+) % of legs",
+   "nth": 0,
+   "raw": "59",
+   "value": "59",
+   "printed": "59"
+  },
+  "n0200": {
+   "src": "Stage9_Theory_Reports/9_7_Stage7_RL/Stage9_7_Reinforcement_Learning.ipynb",
+   "md_regex": "constant of ([0-9.]+) \\(TOMO-9 ([0-9.]+)\\); the network reaches (\\d+)",
+   "nth": 0,
+   "raw": "3.31",
+   "value": "3.31",
+   "printed": "3.31"
+  },
+  "n0201": {
+   "src": "Stage9_Theory_Reports/9_7_Stage7_RL/Stage9_7_Reinforcement_Learning.ipynb",
+   "md_regex": "constant of ([0-9.]+) \\(TOMO-9 ([0-9.]+)\\); the network reaches (\\d+)",
+   "nth": 0,
+   "raw": "3.32",
+   "value": "3.32",
+   "printed": "3.32"
+  },
+  "n0202": {
+   "src": "Stage9_Theory_Reports/9_7_Stage7_RL/Stage9_7_Reinforcement_Learning.ipynb",
+   "md_regex": "constant of ([0-9.]+) \\(TOMO-9 ([0-9.]+)\\); the network reaches (\\d+)",
+   "nth": 0,
+   "raw": "940",
+   "value": "940",
+   "printed": "940"
+  },
+  "n0203": {
+   "src": "Stage9_Theory_Reports/9_7_Stage7_RL/Stage9_7_Reinforcement_Learning.ipynb",
+   "md_regex": "matches optimal tomography \\(([0-9.]+) vs ([0-9.]+)\\)",
+   "nth": 0,
+   "raw": "5.1",
+   "value": "5.1",
+   "printed": "5.1"
+  },
+  "n0204": {
+   "src": "Stage9_Theory_Reports/9_7_Stage7_RL/Stage9_7_Reinforcement_Learning.ipynb",
+   "md_regex": "matches optimal tomography \\(([0-9.]+) vs ([0-9.]+)\\)",
+   "nth": 0,
+   "raw": "4.9",
+   "value": "4.9",
+   "printed": "4.9"
+  },
+  "n0205": {
+   "src": "Stage9_Theory_Reports/9_7_Stage7_RL/Stage9_7_Reinforcement_Learning.ipynb",
+   "md_regex": "within ([0-9.]+–[0-9.]+)× of the saved",
+   "nth": 0,
+   "raw": "0.996–1.026",
+   "value": "0.996–1.026",
+   "printed": "0.996–1.026"
+  },
+  "n0206": {
+   "src": "Stage9_Theory_Reports/9_7_Stage7_RL/Stage9_7_Reinforcement_Learning.ipynb",
+   "md_regex": "= ([0-9,]+) ≈ the largest action ([0-9,]+)",
+   "nth": 0,
+   "raw": "163,809",
+   "value": "163,809",
+   "printed": "163,809"
+  },
+  "n0207": {
+   "src": "Stage9_Theory_Reports/9_7_Stage7_RL/Stage9_7_Reinforcement_Learning.ipynb",
+   "md_regex": "= ([0-9,]+) ≈ the largest action ([0-9,]+)",
+   "nth": 0,
+   "raw": "180,000",
+   "value": "180,000",
+   "printed": "180,000"
+  },
+  "n0208": {
+   "src": "Stage9_Theory_Reports/9_7_Stage7_RL/Stage9_7_Reinforcement_Learning.ipynb",
+   "md_regex": "direct \\+\\$([^$]+)\\$, ([0-9.]+) SE",
+   "nth": 0,
+   "raw": "1.1\\cdot 10^{-4}",
+   "value": "1.1\\cdot 10^{-4}",
+   "printed": "1.1\\cdot 10^{-4}"
+  },
+  "n0209": {
+   "src": "Stage9_Theory_Reports/9_7_Stage7_RL/Stage9_7_Reinforcement_Learning.ipynb",
+   "md_regex": "direct \\+\\$([^$]+)\\$, ([0-9.]+) SE",
+   "nth": 0,
+   "raw": "3.1",
+   "value": "3.1",
+   "printed": "3.1"
+  },
+  "n0210": {
+   "src": "Stage9_Theory_Reports/9_7_Stage7_RL/Stage9_7_Reinforcement_Learning.ipynb",
+   "md_regex": "on ([0-9 ]+) paired channels",
+   "nth": 0,
+   "raw": "400 000",
+   "value": "400 000",
+   "printed": "400 000"
+  },
+  "n0211": {
+   "src": "Stage9_Theory_Reports/9_7_Stage7_RL/Stage9_7_Reinforcement_Learning.ipynb",
+   "md_regex": "at most ([0-9.]+) % \\(N = 100\\)",
+   "nth": 0,
+   "raw": "3.5",
+   "value": "3.5",
+   "printed": "3.5"
+  },
+  "s7gains": {
+   "src": "Stage7_Reinforcement_Learning/Stage7_Reinforcement_Learning.ipynb",
+   "cell": 91,
+   "printed": "{'very slow': '6.1× / 5.7×', 'slow': '3.3× / 2.9×', 'medium': '1.4× / 1.4×', 'fast (Stage 5 rates)': '0.7× / 0.9×', 'ARB, medium': '1.2× / 1.3×', 'Stage 5 exact sequence': '0.9× / 1.0×'}",
+   "value": {
+    "very slow": "6.1× / 5.7×",
+    "slow": "3.3× / 2.9×",
+    "medium": "1.4× / 1.4×",
+    "fast (Stage 5 rates)": "0.7× / 0.9×",
+    "ARB, medium": "1.2× / 1.3×",
+    "Stage 5 exact sequence": "0.9× / 1.0×"
+   }
+  },
+  "n0212": {
+   "src": "Stage8_Hardware/8e_Results_Summary/results/8e_numbers.json",
+   "path": "choice/main/device",
+   "value": "ibm_kingston",
+   "printed": "ibm_kingston"
+  },
+  "n0213": {
+   "src": "Stage8_Hardware/8d_Hardware_Runs/results/8d_compare.json",
+   "path": "rows/20/F",
+   "value": 0.49935025025416446,
+   "printed": "0.499"
+  },
+  "n0214": {
+   "src": "Stage8_Hardware/8d_Hardware_Runs/results/8d_compare.json",
+   "path": "hypotheses/6/evidence",
+   "value": "12 of 12 Round 1 blocks below the L3 prediction",
+   "printed": "12 of 12 Round 1 blocks below the L3 prediction"
+  },
+  "n0215": {
+   "src": "Stage8_Hardware/8e_Results_Summary/Stage8e_Final_Report.ipynb",
+   "md_regex": "\\(IBM Heron r2, (\\d+) qubits\\)",
+   "nth": 0,
+   "raw": "156",
+   "value": "156",
+   "printed": "156"
+  },
+  "n0216": {
+   "src": "Stage8_Hardware/8e_Results_Summary/Stage8e_Final_Report.ipynb",
+   "md_regex": "on (\\d+ October \\d{4})",
+   "nth": 0,
+   "raw": "4 October 2026",
+   "value": "4 October 2026",
+   "printed": "4 October 2026"
+  },
+  "n0217": {
+   "src": "Stage8_Hardware/8e_Results_Summary/results/8e_numbers.json",
+   "path": "choice/main/chain",
+   "value": [
+    21,
+    36,
+    41,
+    42,
+    43,
+    44
+   ],
+   "printed": "(21, 36, 41, 42, 43, 44)"
+  },
+  "n0218": {
+   "src": "Stage8_Hardware/8e_Results_Summary/results/8e_numbers.json",
+   "path": "devices/ibm_kingston/T1 median (us)",
+   "value": 237.95220222540468,
+   "printed": "238"
+  },
+  "n0219": {
+   "src": "Stage8_Hardware/8e_Results_Summary/results/8e_numbers.json",
+   "path": "devices/ibm_kingston/T2 median (us)",
+   "value": 151.91010287140236,
+   "printed": "152"
+  },
+  "n0220": {
+   "src": "Stage8_Hardware/8e_Results_Summary/results/8e_numbers.json",
+   "path": "devices/ibm_kingston/CZ error median",
+   "value": 0.0019873073150385445,
+   "printed": "0.0020"
+  },
+  "n0221": {
+   "src": "Stage8_Hardware/8e_Results_Summary/results/8e_numbers.json",
+   "path": "devices/ibm_kingston/readout error median",
+   "value": 0.0089111328125,
+   "printed": "0.0089"
+  },
+  "n0222": {
+   "src": "Stage8_Hardware/8e_Results_Summary/Stage8e_Final_Report.ipynb",
+   "md_regex": "([0-9,]+) shots in \\d jobs",
+   "nth": 0,
+   "raw": "705,000",
+   "value": "705,000",
+   "printed": "705,000"
+  },
+  "n0223": {
+   "src": "Stage8_Hardware/8e_Results_Summary/Stage8e_Final_Report.ipynb",
+   "md_regex": "were ≈ ([0-9.]+) too optimistic",
+   "nth": 0,
+   "raw": "0.09",
+   "value": "0.09",
+   "printed": "0.09"
+  },
+  "n0224": {
+   "src": "Stage8_Hardware/8e_Results_Summary/Stage8e_Final_Report.ipynb",
+   "md_regex": "within ([0-9.]+), before it was measured",
+   "nth": 0,
+   "raw": "0.018",
+   "value": "0.018",
+   "printed": "0.018"
+  },
+  "n0226": {
+   "src": "Stage8_Hardware/8e_Results_Summary/results/8e_numbers.json",
+   "path": "readout_measured/e1/0",
+   "value": 0.059375,
+   "printed": "0.059"
+  },
+  "n0227": {
+   "src": "Stage8_Hardware/8e_Results_Summary/results/8e_numbers.json",
+   "path": "readout_measured/e0/0",
+   "value": 0.02,
+   "printed": "0.020"
+  },
+  "n0228": {
+   "src": "Stage8_Hardware/8e_Results_Summary/results/8e_numbers.json",
+   "path": "chain/qubits/q0/prob_meas0_prep1",
+   "value": 0.005859375,
+   "printed": "0.006"
+  },
+  "n0229": {
+   "src": "Stage8_Hardware/8e_Results_Summary/results/8e_numbers.json",
+   "path": "chain/qubits/q0/prob_meas1_prep0",
+   "value": 0.001953125,
+   "printed": "0.002"
+  },
+  "n0230": {
+   "src": "Stage8_Hardware/8e_Results_Summary/results/8e_numbers.json",
+   "path": "tomo9/cal9/rotation_2/angle",
+   "value": 0.4735526580827164,
+   "printed": "0.474"
+  },
+  "n0231": {
+   "src": "Stage8_Hardware/8e_Results_Summary/results/8e_numbers.json",
+   "path": "tomo9/cal9/rotation_3/angle",
+   "value": 1.3199549508681716,
+   "printed": "1.320"
+  },
+  "n0232": {
+   "src": "Stage8_Hardware/8e_Results_Summary/results/8e_numbers.json",
+   "path": "tomo9/fingerprint/rotation_2/angle",
+   "value": 0.10837632290840477,
+   "printed": "0.108"
+  },
+  "n0233": {
+   "src": "Stage8_Hardware/8e_Results_Summary/results/8e_numbers.json",
+   "path": "tomo9/fingerprint/rotation_3/angle",
+   "value": 0.15932510232671504,
+   "printed": "0.159"
+  },
+  "n0234": {
+   "src": "Stage8_Hardware/8e_Results_Summary/results/8e_numbers.json",
+   "path": "corr_distance_rad",
+   "value": 0.11203406238864472,
+   "printed": "0.112"
+  },
+  "n0235": {
+   "src": "Stage8_Hardware/8e_Results_Summary/results/8e_numbers.json",
+   "path": "verification/rotation_2/angle",
+   "value": 0.050012403928381105,
+   "printed": "0.050"
+  },
+  "n0236": {
+   "src": "Stage8_Hardware/8e_Results_Summary/results/8e_numbers.json",
+   "path": "verification/rotation_3/angle",
+   "value": 0.04327857740899144,
+   "printed": "0.043"
+  },
+  "n0237": {
+   "src": "Stage8_Hardware/8e_Results_Summary/results/8e_numbers.json",
+   "path": "verification/ideal_device_rad",
+   "value": 0.1364368785839421,
+   "printed": "0.136"
+  },
+  "n0238": {
+   "src": "Stage8_Hardware/8e_Results_Summary/results/8e_numbers.json",
+   "path": "n2_phase/2/angle",
+   "value": 0.6417158758107983,
+   "printed": "0.642"
+  },
+  "n0239": {
+   "src": "Stage8_Hardware/8e_Results_Summary/results/8e_numbers.json",
+   "path": "n2_phase/3/angle",
+   "value": 1.1221992262802136,
+   "printed": "1.122"
+  },
+  "n0240": {
+   "src": "Stage8_Hardware/8e_Results_Summary/results/8e_numbers.json",
+   "path": "n2_phase/2/kHz",
+   "value": 12.766531711979173,
+   "printed": "12.8"
+  },
+  "n0241": {
+   "src": "Stage8_Hardware/8e_Results_Summary/results/8e_numbers.json",
+   "path": "n2_phase/3/kHz",
+   "value": 22.325444249549548,
+   "printed": "22.3"
+  },
+  "n0242": {
+   "src": "Stage8_Hardware/8e_Results_Summary/results/8e_numbers.json",
+   "path": "model/check_round1/max_abs_diff",
+   "value": 0.019335474628315308,
+   "printed": "0.019"
+  },
+  "n0243": {
+   "src": "Stage8_Hardware/8e_Results_Summary/results/8e_numbers.json",
+   "path": "model/round2_max_abs",
+   "value": 0.018419406026305207,
+   "printed": "0.018"
+  },
+  "n0244": {
+   "src": "Stage8_Hardware/8e_Results_Summary/results/8e_numbers.json",
+   "path": "success/recovered/product_HT/0",
+   "value": 1.0574665333052693,
+   "printed": "1.057"
+  },
+  "n0245": {
+   "src": "Stage8_Hardware/8e_Results_Summary/results/8e_numbers.json",
+   "path": "success/recovered/product_HT/1",
+   "value": 0.05725589066406447,
+   "printed": "0.057"
+  },
+  "n0246": {
+   "src": "Stage8_Hardware/8e_Results_Summary/results/8e_numbers.json",
+   "path": "success/recovered/bell_30_70/0",
+   "value": 0.9751339931550825,
+   "printed": "0.975"
+  },
+  "n0247": {
+   "src": "Stage8_Hardware/8e_Results_Summary/results/8e_numbers.json",
+   "path": "success/recovered/bell_30_70/1",
+   "value": 0.01974393384165279,
+   "printed": "0.020"
+  },
+  "n0248": {
+   "src": "Stage8_Hardware/8e_Results_Summary/results/8e_numbers.json",
+   "path": "success/d_oracle/product_HT/0",
+   "value": 0.004083333333333328,
+   "printed": "+0.0041"
+  },
+  "n0249": {
+   "src": "Stage8_Hardware/8e_Results_Summary/results/8e_numbers.json",
+   "path": "success/d_oracle/product_HT/1",
+   "value": 0.009181643755535011,
+   "printed": "0.0092"
+  },
+  "n0250": {
+   "src": "Stage8_Hardware/8e_Results_Summary/results/8e_numbers.json",
+   "path": "success/d_oracle/bell_30_70/0",
+   "value": 0.002858257569495537,
+   "printed": "+0.0029"
+  },
+  "n0251": {
+   "src": "Stage8_Hardware/8e_Results_Summary/results/8e_numbers.json",
+   "path": "success/d_oracle/bell_30_70/1",
+   "value": 0.006905287720734796,
+   "printed": "0.0069"
+  },
+  "n0252": {
+   "src": "Stage8_Hardware/8e_Results_Summary/Stage8e_Final_Report.ipynb",
+   "md_regex": "F_leg1 × F_leg2 =\\s*([0-9.]+) × ([0-9.]+) = \\*\\*([0-9.]+)\\*\\*",
+   "nth": 0,
+   "raw": "0.916",
+   "value": "0.916",
+   "printed": "0.916"
+  },
+  "n0253": {
+   "src": "Stage8_Hardware/8e_Results_Summary/Stage8e_Final_Report.ipynb",
+   "md_regex": "F_leg1 × F_leg2 =\\s*([0-9.]+) × ([0-9.]+) = \\*\\*([0-9.]+)\\*\\*",
+   "nth": 0,
+   "raw": "0.944",
+   "value": "0.944",
+   "printed": "0.944"
+  },
+  "n0254": {
+   "src": "Stage8_Hardware/8e_Results_Summary/Stage8e_Final_Report.ipynb",
+   "md_regex": "F_leg1 × F_leg2 =\\s*([0-9.]+) × ([0-9.]+) = \\*\\*([0-9.]+)\\*\\*",
+   "nth": 0,
+   "raw": "0.865",
+   "value": "0.865",
+   "printed": "0.865"
+  },
+  "n0255": {
+   "src": "Stage8_Hardware/8e_Results_Summary/Stage8e_Final_Report.ipynb",
+   "md_regex": "the loss of ([0-9.]+), split",
+   "nth": 0,
+   "raw": "0.124",
+   "value": "0.124",
+   "printed": "0.124"
+  },
+  "n0256": {
+   "src": "Stage8_Hardware/8e_Results_Summary/Stage8e_Final_Report.ipynb",
+   "md_regex": "≈ ([0-9.]+): gates, T1/T2",
+   "nth": 0,
+   "raw": "0.009",
+   "value": "0.009",
+   "printed": "0.009"
+  },
+  "n0257": {
+   "src": "Stage8_Hardware/8e_Results_Summary/Stage8e_Final_Report.ipynb",
+   "md_regex": "≈ ([0-9.]+): readout as IBM",
+   "nth": 0,
+   "raw": "0.022",
+   "value": "0.022",
+   "printed": "0.022"
+  },
+  "n0258": {
+   "src": "Stage8_Hardware/8e_Results_Summary/Stage8e_Final_Report.ipynb",
+   "md_regex": "≈ ([0-9.]+): readout \\*worse",
+   "nth": 0,
+   "raw": "0.036",
+   "value": "0.036",
+   "printed": "0.036"
+  },
+  "n0259": {
+   "src": "Stage8_Hardware/8e_Results_Summary/Stage8e_Final_Report.ipynb",
+   "md_regex": "≈ ([0-9.]+): errors that \\*\\*no record",
+   "nth": 0,
+   "raw": "0.057",
+   "value": "0.057",
+   "printed": "0.057"
+  },
+  "n0260": {
+   "src": "Stage8_Hardware/8e_Results_Summary/Stage8e_Final_Report.ipynb",
+   "md_regex": "gain of\\s+just ([+0-9.]+)",
+   "nth": 0,
+   "raw": "+0.006",
+   "value": "+0.006",
+   "printed": "+0.006"
+  },
+  "n0261": {
+   "src": "Stage8_Hardware/8e_Results_Summary/Stage8e_Final_Report.ipynb",
+   "md_regex": "([0-9.]+), far above the measured ([0-9.]+)",
+   "nth": 0,
+   "raw": "0.630",
+   "value": "0.630",
+   "printed": "0.630"
+  },
+  "n0262": {
+   "src": "Stage9_Theory_Reports/9_8_Stage8_Hardware/Stage9_8_Hardware.ipynb",
+   "md_regex": "at most \\$([^$]+)\\$, and the formula",
+   "nth": 0,
+   "raw": "6.8\\cdot 10^{-4}",
+   "value": "6.8\\cdot 10^{-4}",
+   "printed": "6.8\\cdot 10^{-4}"
+  },
+  "n0263": {
+   "src": "Stage9_Theory_Reports/9_8_Stage8_Hardware/Stage9_8_Hardware.ipynb",
+   "md_regex": "difference to \\$([^$]+)\\$",
+   "nth": 0,
+   "raw": "1.0\\cdot 10^{-3}",
+   "value": "1.0\\cdot 10^{-3}",
+   "printed": "1.0\\cdot 10^{-3}"
+  },
+  "n0264": {
+   "src": "Stage9_Theory_Reports/9_8_Stage8_Hardware/Stage9_8_Hardware.ipynb",
+   "md_regex": "σ_f ≈ ([0-9.]+) kHz",
+   "nth": 0,
+   "raw": "5.9",
+   "value": "5.9",
+   "printed": "5.9"
+  },
+  "n0265": {
+   "src": "Stage9_Theory_Reports/9_8_Stage8_Hardware/Stage9_8_Hardware.ipynb",
+   "md_regex": "legs by ([0-9.]+) / ([0-9.]+) rad",
+   "nth": 0,
+   "raw": "0.607",
+   "value": "0.607",
+   "printed": "0.607"
+  },
+  "n0266": {
+   "src": "Stage9_Theory_Reports/9_8_Stage8_Hardware/Stage9_8_Hardware.ipynb",
+   "md_regex": "legs by ([0-9.]+) / ([0-9.]+) rad",
+   "nth": 0,
+   "raw": "0.967",
+   "value": "0.967",
+   "printed": "0.967"
+  },
+  "n0267": {
+   "src": "Stage9_Theory_Reports/9_8_Stage8_Hardware/Stage9_8_Hardware.ipynb",
+   "md_regex": "\\(\\$([0-9.]+)\\$ / \\$([0-9.]+)\\$ rad",
+   "nth": 0,
+   "raw": "0.234",
+   "value": "0.234",
+   "printed": "0.234"
+  },
+  "n0268": {
+   "src": "Stage9_Theory_Reports/9_8_Stage8_Hardware/Stage9_8_Hardware.ipynb",
+   "md_regex": "\\(\\$([0-9.]+)\\$ / \\$([0-9.]+)\\$ rad",
+   "nth": 0,
+   "raw": "0.206",
+   "value": "0.206",
+   "printed": "0.206"
+  },
+  "n0269": {
+   "src": "Stage9_Theory_Reports/9_8_Stage8_Hardware/Stage9_8_Hardware.ipynb",
+   "md_regex": "\\(([0-9.]+) / ([0-9.]+) kHz, in no record",
+   "nth": 0,
+   "raw": "7.4",
+   "value": "7.4",
+   "printed": "7.4"
+  },
+  "n0270": {
+   "src": "Stage9_Theory_Reports/9_8_Stage8_Hardware/Stage9_8_Hardware.ipynb",
+   "md_regex": "\\(([0-9.]+) / ([0-9.]+) kHz, in no record",
+   "nth": 0,
+   "raw": "15.1",
+   "value": "15.1",
+   "printed": "15.1"
+  },
+  "n0271": {
+   "src": "Stage9_Theory_Reports/9_8_Stage8_Hardware/Stage9_8_Hardware.ipynb",
+   "md_regex": "predicts DD ([0-9.]+) / TOMO-9 \\+ DD ([0-9.]+)",
+   "nth": 0,
+   "raw": "0.786",
+   "value": "0.786",
+   "printed": "0.786"
+  },
+  "n0272": {
+   "src": "Stage9_Theory_Reports/9_8_Stage8_Hardware/Stage9_8_Hardware.ipynb",
+   "md_regex": "predicts DD ([0-9.]+) / TOMO-9 \\+ DD ([0-9.]+)",
+   "nth": 0,
+   "raw": "0.494",
+   "value": "0.494",
+   "printed": "0.494"
+  },
+  "n0273": {
+   "src": "Stage9_Theory_Reports/9_8_Stage8_Hardware/Stage9_8_Hardware.ipynb",
+   "md_regex": "t_x=([0-9.]+)\\$",
+   "nth": 0,
+   "raw": "0.063",
+   "value": "0.063",
+   "printed": "0.063"
+  },
+  "n0274": {
+   "src": "Stage9_Theory_Reports/9_8_Stage8_Hardware/Stage9_8_Hardware.ipynb",
+   "md_regex": "are real \\(\\$p=([^$]+)\\$ / \\$([^$]+)\\$\\)",
+   "nth": 0,
+   "raw": "1.5e-07",
+   "value": "1.5e-07",
+   "printed": "1.5e-07"
+  },
+  "n0275": {
+   "src": "Stage9_Theory_Reports/9_8_Stage8_Hardware/Stage9_8_Hardware.ipynb",
+   "md_regex": "are real \\(\\$p=([^$]+)\\$ / \\$([^$]+)\\$\\)",
+   "nth": 0,
+   "raw": "4.3e-18",
+   "value": "4.3e-18",
+   "printed": "4.3e-18"
+  },
+  "n0276": {
+   "src": "Stage9_Theory_Reports/9_8_Stage8_Hardware/Stage9_8_Hardware.ipynb",
+   "md_regex": "perfect correction \\(\\$p=([0-9.]+)\\$ / \\$([0-9.]+)\\$\\)",
+   "nth": 0,
+   "raw": "0.07",
+   "value": "0.07",
+   "printed": "0.07"
+  },
+  "n0277": {
+   "src": "Stage9_Theory_Reports/9_8_Stage8_Hardware/Stage9_8_Hardware.ipynb",
+   "md_regex": "perfect correction \\(\\$p=([0-9.]+)\\$ / \\$([0-9.]+)\\$\\)",
+   "nth": 0,
+   "raw": "0.09",
+   "value": "0.09",
+   "printed": "0.09"
+  },
+  "n0278": {
+   "src": "Stage9_Theory_Reports/9_8_Stage8_Hardware/Stage9_8_Hardware.ipynb",
+   "md_regex": "\\*\\*([0-9.]+)\\*\\* \\(95 % Fieller \\[([0-9.]+), ([0-9.]+)\\]\\) and \\*\\*([0-9.]+)\\*\\* \\(\\[([0-9.]+), ([0-9.]+)\\]\\)",
+   "nth": 0,
+   "raw": "1.057",
+   "value": "1.057",
+   "printed": "1.057"
+  },
+  "n0279": {
+   "src": "Stage9_Theory_Reports/9_8_Stage8_Hardware/Stage9_8_Hardware.ipynb",
+   "md_regex": "\\*\\*([0-9.]+)\\*\\* \\(95 % Fieller \\[([0-9.]+), ([0-9.]+)\\]\\)",
+   "nth": 0,
+   "raw": "0.952",
+   "value": "0.952",
+   "printed": "0.952"
+  },
+  "n0280": {
+   "src": "Stage9_Theory_Reports/9_8_Stage8_Hardware/Stage9_8_Hardware.ipynb",
+   "md_regex": "\\*\\*([0-9.]+)\\*\\* \\(95 % Fieller \\[([0-9.]+), ([0-9.]+)\\]\\)",
+   "nth": 0,
+   "raw": "1.177",
+   "value": "1.177",
+   "printed": "1.177"
+  },
+  "n0281": {
+   "src": "Stage9_Theory_Reports/9_8_Stage8_Hardware/Stage9_8_Hardware.ipynb",
+   "md_regex": "and \\*\\*([0-9.]+)\\*\\* \\(\\[([0-9.]+), ([0-9.]+)\\]\\)",
+   "nth": 0,
+   "raw": "0.975",
+   "value": "0.975",
+   "printed": "0.975"
+  },
+  "n0282": {
+   "src": "Stage9_Theory_Reports/9_8_Stage8_Hardware/Stage9_8_Hardware.ipynb",
+   "md_regex": "and \\*\\*([0-9.]+)\\*\\* \\(\\[([0-9.]+), ([0-9.]+)\\]\\)",
+   "nth": 0,
+   "raw": "0.934",
+   "value": "0.934",
+   "printed": "0.934"
+  },
+  "n0283": {
+   "src": "Stage9_Theory_Reports/9_8_Stage8_Hardware/Stage9_8_Hardware.ipynb",
+   "md_regex": "and \\*\\*([0-9.]+)\\*\\* \\(\\[([0-9.]+), ([0-9.]+)\\]\\)",
+   "nth": 0,
+   "raw": "1.017",
+   "value": "1.017",
+   "printed": "1.017"
+  },
+  "n0284": {
+   "src": "Stage9_Theory_Reports/9_8_Stage8_Hardware/Stage9_8_Hardware.ipynb",
+   "md_regex": "all (\\d+) model blocks agree",
+   "nth": 0,
+   "raw": "14",
+   "value": "14",
+   "printed": "14"
+  },
+  "n0285": {
+   "src": "Stage9_Theory_Reports/9_8_Stage8_Hardware/Stage9_8_Hardware.ipynb",
+   "md_regex": "agree with hardware, χ² p = ([0-9]+\\.[0-9]+)",
+   "nth": 0,
+   "raw": "0.30",
+   "value": "0.30",
+   "printed": "0.30"
+  },
+  "n0286": {
+   "src": "Stage9_Theory_Reports/9_8_Stage8_Hardware/Stage9_8_Hardware.ipynb",
+   "md_regex": "(\\d+) \\+ (\\d+) numbers",
+   "nth": 0,
+   "raw": "1550",
+   "value": "1550",
+   "printed": "1550"
+  },
+  "n0287": {
+   "src": "Stage9_Theory_Reports/9_8_Stage8_Hardware/Stage9_8_Hardware.ipynb",
+   "md_regex": "(\\d+) \\+ (\\d+) numbers",
+   "nth": 0,
+   "raw": "878",
+   "value": "878",
+   "printed": "878"
+  },
+  "n0288": {
+   "src": "Stage9_Theory_Reports/9_9_Methods_and_Validity/results/9_9_report_tables.json",
+   "path": "fit_family/M",
+   "value": 848,
+   "printed": "848"
+  },
+  "n0289": {
+   "src": "Stage9_Theory_Reports/9_9_Methods_and_Validity/results/9_9_report_tables.json",
+   "path": "fit_family/n_below_0.01",
+   "value": 5,
+   "printed": "5"
+  },
+  "n0290": {
+   "src": "Stage9_Theory_Reports/9_9_Methods_and_Validity/results/9_9_report_tables.json",
+   "path": "fit_family/exp_below_0.01",
+   "value": 8.48,
+   "printed": "8.5"
+  },
+  "n0291": {
+   "src": "Stage9_Theory_Reports/9_9_Methods_and_Validity/results/9_9_report_tables.json",
+   "path": "fit_family/n_below_0.001",
+   "value": 0,
+   "printed": "0"
+  },
+  "n0292": {
+   "src": "Stage9_Theory_Reports/9_9_Methods_and_Validity/results/9_9_report_tables.json",
+   "path": "fit_family/n_below_0.05",
+   "value": 46,
+   "printed": "46"
+  },
+  "n0293": {
+   "src": "Stage9_Theory_Reports/9_9_Methods_and_Validity/results/9_9_report_tables.json",
+   "path": "fit_family/exp_below_0.05",
+   "value": 42.400000000000006,
+   "printed": "42.4"
+  },
+  "n0294": {
+   "src": "Stage9_Theory_Reports/9_9_Methods_and_Validity/results/9_9_report_tables.json",
+   "path": "effects_holm",
+   "derived": "number of 'finding' rows",
+   "value": 36,
+   "printed": "36"
+  },
+  "n0295": {
+   "src": "Stage9_Theory_Reports/9_9_Methods_and_Validity/results/9_9_report_tables.json",
+   "path": "effects_holm",
+   "derived": "findings rejected by Holm at 0.05",
+   "value": 36,
+   "printed": "36"
+  },
+  "n0296": {
+   "src": "Stage9_Theory_Reports/9_9_Methods_and_Validity/results/9_9_report_tables.json",
+   "path": "effects_holm",
+   "derived": "findings rejected by Holm at 0.001",
+   "value": 34,
+   "printed": "34"
+  },
+  "n0297": {
+   "src": "Stage9_Theory_Reports/9_9_Methods_and_Validity/results/9_9_report_tables.json",
+   "path": "assumptions",
+   "derived": "assumptions",
+   "value": 16,
+   "printed": "16"
+  },
+  "n0298": {
+   "src": "Stage9_Theory_Reports/9_9_Methods_and_Validity/results/9_9_report_tables.json",
+   "path": "assumptions",
+   "derived": "assumptions whose status contains 'violated'",
+   "value": 5,
+   "printed": "5"
+  },
+  "n0299": {
+   "src": "Stage9_Theory_Reports/9_9_Methods_and_Validity/results/9_9_report_tables.json",
+   "path": "open",
+   "derived": "open questions",
+   "value": 13,
+   "printed": "13"
+  },
+  "n0300": {
+   "src": "Stage9_Theory_Reports/9_9_Methods_and_Validity/results/9_9_report_tables.json",
+   "path": "algorithms",
+   "derived": "algorithms",
+   "value": 14,
+   "printed": "14"
+  },
+  "n0301": {
+   "src": "Stage9_Theory_Reports/9_9_Methods_and_Validity/results/9_9_report_tables.json",
+   "path": "noise_models",
+   "derived": "noise models",
+   "value": 10,
+   "printed": "10"
+  },
+  "n0302": {
+   "src": "Stage9_Theory_Reports/9_9_Methods_and_Validity/results/9_9_report_tables.json",
+   "path": "integrity_chain",
+   "derived": "sessions in the chain",
+   "value": 13,
+   "printed": "13"
+  },
+  "n0303": {
+   "src": "Stage9_Theory_Reports/9_9_Methods_and_Validity/results/9_9_report_tables.json",
+   "path": "dof_curated",
+   "derived": "failed pre-registered criteria",
+   "value": 7,
+   "printed": "7"
+  },
+  "n0304": {
+   "src": "Stage9_Theory_Reports/9_9_Methods_and_Validity/results/9_9_report_tables.json",
+   "path": "dof_curated",
+   "derived": "reasoning errors caught",
+   "value": 7,
+   "printed": "7"
+  },
+  "n0305": {
+   "src": "Stage9_Theory_Reports/9_9_Methods_and_Validity/results/9_9_report_tables.json",
+   "path": "predictions",
+   "derived": "inside the 8c band",
+   "value": 3,
+   "printed": "3"
+  },
+  "n0306": {
+   "src": "Stage9_Theory_Reports/9_9_Methods_and_Validity/results/9_9_report_tables.json",
+   "path": "predictions",
+   "derived": "blocks with an 8c prediction band",
+   "value": 19,
+   "printed": "19"
+  },
+  "n0307": {
+   "src": "Stage9_Theory_Reports/9_9_Methods_and_Validity/Stage9_9_Methods_and_Validity.ipynb",
+   "md_regex": "(\\d+) criteria set after seeing data",
+   "nth": 0,
+   "raw": "15",
+   "value": "15",
+   "printed": "15"
+  },
+  "n0308": {
+   "src": "Stage9_Theory_Reports/9_9_Methods_and_Validity/Stage9_9_Methods_and_Validity.ipynb",
+   "md_regex": "Round 1 mean bias (-?[0-9.]+)",
+   "nth": 0,
+   "raw": "-0.113",
+   "value": "-0.113",
+   "printed": "-0.113"
+  },
+  "n0309": {
+   "src": "Stage9_Theory_Reports/9_9_Methods_and_Validity/results/9_9_report_tables.json",
+   "path": "dof_first_run",
+   "derived": "claims passing at their first run / claims (9.0-9.9 sessions)",
+   "value": "151 / 186",
+   "printed": "151 / 186"
+  },
+  "n0310": {
+   "src": "Stage9_Theory_Reports/9_8_Stage8_Hardware/results/9_8_numbers.json",
+   "path": "versions/qiskit",
+   "value": "2.5.2",
+   "printed": "2.5.2"
+  },
+  "n0311": {
+   "src": "Stage9_Theory_Reports/9_8_Stage8_Hardware/results/9_8_numbers.json",
+   "path": "versions/qiskit_aer",
+   "value": "0.17.2",
+   "printed": "0.17.2"
+  },
+  "n0312": {
+   "src": "Stage9_Theory_Reports/9_8_Stage8_Hardware/results/9_8_numbers.json",
+   "path": "versions/numpy",
+   "value": "2.2.4",
+   "printed": "2.2.4"
+  },
+  "n0313": {
+   "src": "Stage9_Theory_Reports/9_8_Stage8_Hardware/results/9_8_numbers.json",
+   "path": "versions/scipy",
+   "value": "1.15.2",
+   "printed": "1.15.2"
+  },
+  "n0314": {
+   "src": "Stage9_Theory_Reports/9_8_Stage8_Hardware/results/9_8_numbers.json",
+   "path": "versions/sympy",
+   "value": "1.13.3",
+   "printed": "1.13.3"
+  }
+ }
+}

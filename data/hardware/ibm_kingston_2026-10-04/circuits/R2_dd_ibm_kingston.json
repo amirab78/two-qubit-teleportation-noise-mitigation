@@ -1,0 +1,50 @@
+{
+ "name": "R2_dd_ibm_kingston",
+ "device": "ibm_kingston",
+ "round": 2,
+ "options": {
+  "dd": true,
+  "twirl": false
+ },
+ "labels": [
+  "A_product_N2@3000"
+ ],
+ "index": {
+  "A_product_N2@3000": [
+   "R2_DDN2none_product_HT_XX",
+   "R2_DDN2none_product_HT_XY",
+   "R2_DDN2none_product_HT_XZ",
+   "R2_DDN2none_product_HT_YX",
+   "R2_DDN2none_product_HT_YY",
+   "R2_DDN2none_product_HT_YZ",
+   "R2_DDN2none_product_HT_ZX",
+   "R2_DDN2none_product_HT_ZY",
+   "R2_DDN2none_product_HT_ZZ",
+   "R2_DDN2corr_product_HT_XX",
+   "R2_DDN2corr_product_HT_XY",
+   "R2_DDN2corr_product_HT_XZ",
+   "R2_DDN2corr_product_HT_YX",
+   "R2_DDN2corr_product_HT_YY",
+   "R2_DDN2corr_product_HT_YZ",
+   "R2_DDN2corr_product_HT_ZX",
+   "R2_DDN2corr_product_HT_ZY",
+   "R2_DDN2corr_product_HT_ZZ"
+  ]
+ },
+ "shots": [
+  3000
+ ],
+ "has_params": [
+  true
+ ],
+ "n_pubs": 1,
+ "n_bindings": 18,
+ "shots_total": 54000,
+ "estimate_s": 20.9,
+ "max_seconds": 28,
+ "hash": "f6c8572d9395de0a2a78883b00de2621478a87eaf40bbefc726d09ca67d1fab2",
+ "frozen_utc": "2026-10-04T15:25:35.626110+00:00",
+ "fingerprints_sha": [
+  "27660fe41ca912842029b200bb22bbea51e73ea701884f8f04313a3df85ba8e6"
+ ]
+}

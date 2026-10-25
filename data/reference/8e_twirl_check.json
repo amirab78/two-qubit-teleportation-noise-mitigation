@@ -1,0 +1,2132 @@
+{
+ "n_channels": 150,
+ "n_cases": 300,
+ "rows": [
+  {
+   "state": "product_HT",
+   "exact": 0.5882162893489246,
+   "diag_model": 0.5882162893489247,
+   "full_T_model": 0.5931931254379781,
+   "corrected": false
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.5878684259395768,
+   "diag_model": 0.5878684259395773,
+   "full_T_model": 0.5617375209953211,
+   "corrected": false
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.1824861551462538,
+   "diag_model": 0.18248615514625383,
+   "full_T_model": 0.18886621927786623,
+   "corrected": true
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.3718305439338333,
+   "diag_model": 0.37183054393383347,
+   "full_T_model": 0.13343201668007748,
+   "corrected": true
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.19485828500060343,
+   "diag_model": 0.19485828500060345,
+   "full_T_model": 0.36534938510125625,
+   "corrected": false
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.16260384203170736,
+   "diag_model": 0.16260384203170747,
+   "full_T_model": 0.13707647441113704,
+   "corrected": false
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.40372583798083594,
+   "diag_model": 0.40372583798083594,
+   "full_T_model": 0.4124456551817719,
+   "corrected": true
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.2791365973896454,
+   "diag_model": 0.27913659738964564,
+   "full_T_model": 0.20695031954788637,
+   "corrected": true
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.10146727378876383,
+   "diag_model": 0.1014672737887638,
+   "full_T_model": 0.11379101055085472,
+   "corrected": false
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.11414390715040033,
+   "diag_model": 0.11414390715040044,
+   "full_T_model": 0.07412514075895328,
+   "corrected": false
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.1119810761462546,
+   "diag_model": 0.11198107614625456,
+   "full_T_model": 0.33568047546830243,
+   "corrected": true
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.18545297538298983,
+   "diag_model": 0.18545297538298997,
+   "full_T_model": 0.059901196463623296,
+   "corrected": true
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.1827699692277711,
+   "diag_model": 0.1827699692277711,
+   "full_T_model": 0.18866568356711483,
+   "corrected": false
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.2236470601958287,
+   "diag_model": 0.22364706019582892,
+   "full_T_model": 0.5183183380713025,
+   "corrected": false
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.08164328896127249,
+   "diag_model": 0.08164328896127246,
+   "full_T_model": 0.08068483006006213,
+   "corrected": true
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.3096270841524703,
+   "diag_model": 0.3096270841524705,
+   "full_T_model": 0.5086871574180163,
+   "corrected": true
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.07729967929352845,
+   "diag_model": 0.07729967929352854,
+   "full_T_model": 0.11822663776110773,
+   "corrected": false
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.2671232271638271,
+   "diag_model": 0.26712322716382736,
+   "full_T_model": 0.21251646737926438,
+   "corrected": false
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.2850195253569755,
+   "diag_model": 0.2850195253569756,
+   "full_T_model": 0.08089627169679003,
+   "corrected": true
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.4569454008196704,
+   "diag_model": 0.4569454008196707,
+   "full_T_model": 0.28677234791085554,
+   "corrected": true
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.253504350149364,
+   "diag_model": 0.2535043501493639,
+   "full_T_model": 0.08334597932167409,
+   "corrected": false
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.13687106252982204,
+   "diag_model": 0.13687106252982212,
+   "full_T_model": 0.1539983135485583,
+   "corrected": false
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.28936066587823794,
+   "diag_model": 0.28936066587823783,
+   "full_T_model": 0.2483090370944066,
+   "corrected": true
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.430009452520046,
+   "diag_model": 0.43000945252004624,
+   "full_T_model": 0.5645486188824549,
+   "corrected": true
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.2680839846714666,
+   "diag_model": 0.26808398467146666,
+   "full_T_model": 0.02768420010061336,
+   "corrected": false
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.25185767811207105,
+   "diag_model": 0.25185767811207116,
+   "full_T_model": 0.13145570799236464,
+   "corrected": false
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.6322739702004235,
+   "diag_model": 0.6322739702004236,
+   "full_T_model": 0.659088034610628,
+   "corrected": true
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.6054801761535701,
+   "diag_model": 0.6054801761535705,
+   "full_T_model": 0.6959011782550276,
+   "corrected": true
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.12135895258402135,
+   "diag_model": 0.12135895258402132,
+   "full_T_model": 0.09675155052630866,
+   "corrected": false
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.41945919326068704,
+   "diag_model": 0.41945919326068737,
+   "full_T_model": 0.13795150848635568,
+   "corrected": false
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.22962745290285808,
+   "diag_model": 0.22962745290285802,
+   "full_T_model": 0.2535552959310947,
+   "corrected": true
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.19101301983146055,
+   "diag_model": 0.19101301983146066,
+   "full_T_model": 0.08967007292896845,
+   "corrected": true
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.09116901035150368,
+   "diag_model": 0.09116901035150367,
+   "full_T_model": 0.1577875681778515,
+   "corrected": false
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.22830082106737207,
+   "diag_model": 0.2283008210673722,
+   "full_T_model": 0.21010553030106413,
+   "corrected": false
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.34651153448377764,
+   "diag_model": 0.3465115344837776,
+   "full_T_model": 0.3403432017492671,
+   "corrected": true
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.503282027610374,
+   "diag_model": 0.5032820276103744,
+   "full_T_model": 0.7941603296772367,
+   "corrected": true
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.045488801531101006,
+   "diag_model": 0.04548880153110098,
+   "full_T_model": 0.00831642275359782,
+   "corrected": false
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.35203756369346995,
+   "diag_model": 0.3520375636934703,
+   "full_T_model": 0.19926288589946903,
+   "corrected": false
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.4838053757358267,
+   "diag_model": 0.4838053757358268,
+   "full_T_model": 0.35930810046729644,
+   "corrected": true
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.34239304469185705,
+   "diag_model": 0.3423930446918575,
+   "full_T_model": 0.29673287587275976,
+   "corrected": true
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.25972332741192894,
+   "diag_model": 0.2597233274119289,
+   "full_T_model": 0.020766862515836287,
+   "corrected": false
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.3639634678077356,
+   "diag_model": 0.3639634678077358,
+   "full_T_model": 0.17906447870938136,
+   "corrected": false
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.2612342045917296,
+   "diag_model": 0.26123420459172964,
+   "full_T_model": 0.18844664426790117,
+   "corrected": true
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.14818895890419215,
+   "diag_model": 0.14818895890419234,
+   "full_T_model": 0.17286629287178396,
+   "corrected": true
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.2251913543144058,
+   "diag_model": 0.22519135431440576,
+   "full_T_model": 0.16754879956217023,
+   "corrected": false
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.30605115258568477,
+   "diag_model": 0.306051152585685,
+   "full_T_model": 0.24980443610377834,
+   "corrected": false
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.16941226045431246,
+   "diag_model": 0.1694122604543125,
+   "full_T_model": 0.2051394406416309,
+   "corrected": true
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.19849561818921768,
+   "diag_model": 0.19849561818921782,
+   "full_T_model": 0.14112043633123783,
+   "corrected": true
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.2812497709747654,
+   "diag_model": 0.28124977097476545,
+   "full_T_model": 0.16916829300713276,
+   "corrected": false
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.2794786134527732,
+   "diag_model": 0.2794786134527734,
+   "full_T_model": 0.2759252852283227,
+   "corrected": false
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.13712546749037974,
+   "diag_model": 0.13712546749037968,
+   "full_T_model": 0.28408339809894806,
+   "corrected": true
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.1439729533727183,
+   "diag_model": 0.14397295337271845,
+   "full_T_model": 0.13588442356614358,
+   "corrected": true
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.21611561589799244,
+   "diag_model": 0.2161156158979925,
+   "full_T_model": 0.19519397034966976,
+   "corrected": false
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.4265704445742747,
+   "diag_model": 0.4265704445742749,
+   "full_T_model": 0.721411279976877,
+   "corrected": false
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.15914681311217851,
+   "diag_model": 0.15914681311217851,
+   "full_T_model": 0.04893895567072403,
+   "corrected": true
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.1701843086793684,
+   "diag_model": 0.1701843086793685,
+   "full_T_model": 0.4633986615819194,
+   "corrected": true
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.13804886155289184,
+   "diag_model": 0.1380488615528918,
+   "full_T_model": 0.14407235275808833,
+   "corrected": false
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.14293305898444272,
+   "diag_model": 0.14293305898444286,
+   "full_T_model": 0.20720518401587878,
+   "corrected": false
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.21877064631857002,
+   "diag_model": 0.21877064631857002,
+   "full_T_model": 0.060087085148243916,
+   "corrected": true
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.20219714166471245,
+   "diag_model": 0.20219714166471253,
+   "full_T_model": 0.05738251725244852,
+   "corrected": true
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.27083489168883346,
+   "diag_model": 0.27083489168883346,
+   "full_T_model": 0.4387857127715141,
+   "corrected": false
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.04458573674061434,
+   "diag_model": 0.044585736740614404,
+   "full_T_model": 0.013761685599553321,
+   "corrected": false
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.3126230884049517,
+   "diag_model": 0.3126230884049517,
+   "full_T_model": 0.5517743389675381,
+   "corrected": true
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.24997164288889706,
+   "diag_model": 0.24997164288889726,
+   "full_T_model": 0.20573231273078155,
+   "corrected": true
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.16645199457354737,
+   "diag_model": 0.16645199457354729,
+   "full_T_model": 0.0451327904251514,
+   "corrected": false
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.40382715046480444,
+   "diag_model": 0.4038271504648047,
+   "full_T_model": 0.2634861538616925,
+   "corrected": false
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.44036030271154003,
+   "diag_model": 0.44036030271154,
+   "full_T_model": 0.6278472542015283,
+   "corrected": true
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.29104063675847913,
+   "diag_model": 0.29104063675847935,
+   "full_T_model": 0.06801543904670802,
+   "corrected": true
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.14034546199600678,
+   "diag_model": 0.14034546199600678,
+   "full_T_model": 0.081584187701948,
+   "corrected": false
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.32765743088986804,
+   "diag_model": 0.3276574308898683,
+   "full_T_model": 0.15557037683729918,
+   "corrected": false
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.3072087173182135,
+   "diag_model": 0.30720871731821353,
+   "full_T_model": 0.15116512311385072,
+   "corrected": true
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.25315652562501545,
+   "diag_model": 0.25315652562501584,
+   "full_T_model": 0.09459884075361027,
+   "corrected": true
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.02453554946642679,
+   "diag_model": 0.024535549466426734,
+   "full_T_model": 0.024535446674944013,
+   "corrected": false
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.6572926640940925,
+   "diag_model": 0.657292664094093,
+   "full_T_model": 0.7558027754727068,
+   "corrected": false
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.208991074965371,
+   "diag_model": 0.2089910749653709,
+   "full_T_model": 0.44669253279886156,
+   "corrected": true
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.2022536012448803,
+   "diag_model": 0.20225360124488034,
+   "full_T_model": 0.08324942180689221,
+   "corrected": true
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.030405621614781837,
+   "diag_model": 0.030405621614781782,
+   "full_T_model": 0.045423905413583834,
+   "corrected": false
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.3303830538133589,
+   "diag_model": 0.3303830538133592,
+   "full_T_model": 0.4122915032227841,
+   "corrected": false
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.4281124810081835,
+   "diag_model": 0.42811248100818355,
+   "full_T_model": 0.4814600202361426,
+   "corrected": true
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.17575806217985482,
+   "diag_model": 0.17575806217985498,
+   "full_T_model": 0.1355201367755233,
+   "corrected": true
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.31766710610639104,
+   "diag_model": 0.31766710610639104,
+   "full_T_model": 0.5912367032807557,
+   "corrected": false
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.1299092409077553,
+   "diag_model": 0.1299092409077554,
+   "full_T_model": 0.19329759677553798,
+   "corrected": false
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.3892007287118215,
+   "diag_model": 0.38920072871182143,
+   "full_T_model": 0.17333021714613905,
+   "corrected": true
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.22101289493536627,
+   "diag_model": 0.22101289493536647,
+   "full_T_model": 0.27910086902726355,
+   "corrected": true
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.26518208704299884,
+   "diag_model": 0.26518208704299884,
+   "full_T_model": 0.031581670437534806,
+   "corrected": false
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.12579674080497555,
+   "diag_model": 0.12579674080497558,
+   "full_T_model": 0.09327332730937501,
+   "corrected": false
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.042268603818535186,
+   "diag_model": 0.0422686038185352,
+   "full_T_model": 0.04454105587379213,
+   "corrected": true
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.19944917525796674,
+   "diag_model": 0.19944917525796685,
+   "full_T_model": 0.19915745935856885,
+   "corrected": true
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.2232796933227747,
+   "diag_model": 0.2232796933227746,
+   "full_T_model": 0.21238539865562495,
+   "corrected": false
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.24004412857155266,
+   "diag_model": 0.24004412857155277,
+   "full_T_model": 0.3020649390693562,
+   "corrected": false
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.0958966862221893,
+   "diag_model": 0.09589668622218914,
+   "full_T_model": 0.17651905848745936,
+   "corrected": true
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.1410953197176875,
+   "diag_model": 0.1410953197176874,
+   "full_T_model": 0.07962438369875403,
+   "corrected": true
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.5094569609464736,
+   "diag_model": 0.5094569609464736,
+   "full_T_model": 0.7590290262757943,
+   "corrected": false
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.3207825407791123,
+   "diag_model": 0.3207825407791126,
+   "full_T_model": 0.1316333236521938,
+   "corrected": false
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.23551378673845108,
+   "diag_model": 0.2355137867384511,
+   "full_T_model": 0.13319126559270061,
+   "corrected": true
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.24580055453869568,
+   "diag_model": 0.24580055453869593,
+   "full_T_model": 0.08846630211479933,
+   "corrected": true
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.17226432557285365,
+   "diag_model": 0.17226432557285362,
+   "full_T_model": 0.022877566244943255,
+   "corrected": false
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.24715885136615065,
+   "diag_model": 0.2471588513661508,
+   "full_T_model": 0.2827751322988453,
+   "corrected": false
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.24942372456758166,
+   "diag_model": 0.24942372456758158,
+   "full_T_model": 0.1913019960534426,
+   "corrected": true
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.5170993724736787,
+   "diag_model": 0.517099372473679,
+   "full_T_model": 0.554335890698625,
+   "corrected": true
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.5736287768852373,
+   "diag_model": 0.5736287768852373,
+   "full_T_model": 0.3772771046438977,
+   "corrected": false
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.2947460196932136,
+   "diag_model": 0.2947460196932139,
+   "full_T_model": 0.4652176686041817,
+   "corrected": false
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.30929815879077904,
+   "diag_model": 0.30929815879077893,
+   "full_T_model": 0.13442241708306504,
+   "corrected": true
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.15245764639928022,
+   "diag_model": 0.15245764639928028,
+   "full_T_model": 0.3995091740212424,
+   "corrected": true
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.0565970840398283,
+   "diag_model": 0.056597084039828306,
+   "full_T_model": 0.07330379751633331,
+   "corrected": false
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.09759695015861655,
+   "diag_model": 0.0975969501586167,
+   "full_T_model": 0.09476140619167667,
+   "corrected": false
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.18841074439657368,
+   "diag_model": 0.18841074439657363,
+   "full_T_model": 0.24623359582202053,
+   "corrected": true
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.2840993436923071,
+   "diag_model": 0.2840993436923073,
+   "full_T_model": 0.44296048493124324,
+   "corrected": true
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.04444779592458921,
+   "diag_model": 0.04444779592458923,
+   "full_T_model": 0.042750050521034005,
+   "corrected": false
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.14586202891965894,
+   "diag_model": 0.14586202891965902,
+   "full_T_model": 0.15783500931199734,
+   "corrected": false
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.3334398306541056,
+   "diag_model": 0.3334398306541056,
+   "full_T_model": 0.3093300872209971,
+   "corrected": true
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.39504561010594097,
+   "diag_model": 0.39504561010594125,
+   "full_T_model": 0.23262308704710238,
+   "corrected": true
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.13082311617226974,
+   "diag_model": 0.13082311617226972,
+   "full_T_model": 0.20031589542434036,
+   "corrected": false
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.3004118762301191,
+   "diag_model": 0.3004118762301194,
+   "full_T_model": 0.1041298927850135,
+   "corrected": false
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.16807672782479569,
+   "diag_model": 0.16807672782479574,
+   "full_T_model": 0.13639422230441423,
+   "corrected": true
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.22511780836437714,
+   "diag_model": 0.22511780836437728,
+   "full_T_model": 0.3282202909477301,
+   "corrected": true
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.3929821803741227,
+   "diag_model": 0.3929821803741226,
+   "full_T_model": 0.7393398432557744,
+   "corrected": false
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.06886712688006666,
+   "diag_model": 0.06886712688006667,
+   "full_T_model": 0.04654010213081926,
+   "corrected": false
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.13351294872701208,
+   "diag_model": 0.13351294872701214,
+   "full_T_model": 0.03745635103177988,
+   "corrected": true
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.3035017455979919,
+   "diag_model": 0.30350174559799215,
+   "full_T_model": 0.50013077279017,
+   "corrected": true
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.5230887568119968,
+   "diag_model": 0.5230887568119968,
+   "full_T_model": 0.4062450979117265,
+   "corrected": false
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.3332192982586923,
+   "diag_model": 0.3332192982586925,
+   "full_T_model": 0.0345941425772214,
+   "corrected": false
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.2692233672543788,
+   "diag_model": 0.2692233672543788,
+   "full_T_model": 0.2614464973865003,
+   "corrected": true
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.13137330518493243,
+   "diag_model": 0.1313733051849326,
+   "full_T_model": 0.22663781962340981,
+   "corrected": true
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.5239125453071283,
+   "diag_model": 0.5239125453071283,
+   "full_T_model": 0.7393529118941626,
+   "corrected": false
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.36947000634806454,
+   "diag_model": 0.3694700063480648,
+   "full_T_model": 0.5107338874549738,
+   "corrected": false
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.4254203839987662,
+   "diag_model": 0.4254203839987662,
+   "full_T_model": 0.034331704251326825,
+   "corrected": true
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.09832655250917677,
+   "diag_model": 0.09832655250917681,
+   "full_T_model": 0.0772693032086447,
+   "corrected": true
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.17468817050261698,
+   "diag_model": 0.17468817050261692,
+   "full_T_model": 0.16344039869728363,
+   "corrected": false
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.3956982729088737,
+   "diag_model": 0.3956982729088739,
+   "full_T_model": 0.17086462646044775,
+   "corrected": false
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.30262798033961835,
+   "diag_model": 0.30262798033961835,
+   "full_T_model": 0.34033638235104624,
+   "corrected": true
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.23108432463086928,
+   "diag_model": 0.23108432463086942,
+   "full_T_model": 0.29374836911860175,
+   "corrected": true
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.4473602693397226,
+   "diag_model": 0.4473602693397226,
+   "full_T_model": 0.8586454552306885,
+   "corrected": false
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.08193449905873687,
+   "diag_model": 0.08193449905873691,
+   "full_T_model": 0.07337077889284616,
+   "corrected": false
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.15557776760120912,
+   "diag_model": 0.15557776760120912,
+   "full_T_model": 0.13460091153654047,
+   "corrected": true
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.11542125717323731,
+   "diag_model": 0.11542125717323742,
+   "full_T_model": 0.05851252091516501,
+   "corrected": true
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.4112485483704281,
+   "diag_model": 0.41124854837042807,
+   "full_T_model": 0.3313278178499271,
+   "corrected": false
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.2911196947468719,
+   "diag_model": 0.2911196947468721,
+   "full_T_model": 0.49196660898390093,
+   "corrected": false
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.2739467390758147,
+   "diag_model": 0.2739467390758147,
+   "full_T_model": 0.3080246924020107,
+   "corrected": true
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.3575759982807118,
+   "diag_model": 0.35757599828071196,
+   "full_T_model": 0.12620725186171444,
+   "corrected": true
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.3669814045898149,
+   "diag_model": 0.3669814045898148,
+   "full_T_model": 0.39859940326296217,
+   "corrected": false
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.27224821390874476,
+   "diag_model": 0.27224821390874493,
+   "full_T_model": 0.36984644181244813,
+   "corrected": false
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.2594581084739102,
+   "diag_model": 0.25945810847391015,
+   "full_T_model": 0.35451725959515257,
+   "corrected": true
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.2913227903178587,
+   "diag_model": 0.2913227903178588,
+   "full_T_model": 0.636403796619754,
+   "corrected": true
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.21356853588680674,
+   "diag_model": 0.2135685358868068,
+   "full_T_model": 0.029778718221713126,
+   "corrected": false
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.38617005996975556,
+   "diag_model": 0.38617005996975595,
+   "full_T_model": 0.24367428644311168,
+   "corrected": false
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.21579681708356488,
+   "diag_model": 0.21579681708356482,
+   "full_T_model": 0.030264659192284812,
+   "corrected": true
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.21701569716761165,
+   "diag_model": 0.21701569716761177,
+   "full_T_model": 0.042131364724945705,
+   "corrected": true
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.09952140396653689,
+   "diag_model": 0.0995214039665368,
+   "full_T_model": 0.06039508916545211,
+   "corrected": false
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.2707623607863853,
+   "diag_model": 0.2707623607863855,
+   "full_T_model": 0.3194444651765026,
+   "corrected": false
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.07227259730255015,
+   "diag_model": 0.07227259730255009,
+   "full_T_model": 0.08942080975079193,
+   "corrected": true
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.19353451001959598,
+   "diag_model": 0.1935345100195961,
+   "full_T_model": 0.3795636349568202,
+   "corrected": true
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.5961398070249169,
+   "diag_model": 0.5961398070249169,
+   "full_T_model": 0.4797617469199014,
+   "corrected": false
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.45546779689084615,
+   "diag_model": 0.45546779689084643,
+   "full_T_model": 0.6752083443778442,
+   "corrected": false
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.2852209215017273,
+   "diag_model": 0.28522092150172734,
+   "full_T_model": 0.5716358926192687,
+   "corrected": true
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.37275494356831435,
+   "diag_model": 0.37275494356831473,
+   "full_T_model": 0.4036319079074855,
+   "corrected": true
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.35583061977290065,
+   "diag_model": 0.35583061977290065,
+   "full_T_model": 0.45884345412842853,
+   "corrected": false
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.22691211031922184,
+   "diag_model": 0.22691211031922204,
+   "full_T_model": 0.24188920604608868,
+   "corrected": false
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.16553810641498723,
+   "diag_model": 0.16553810641498726,
+   "full_T_model": 0.1788163030960272,
+   "corrected": true
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.4336114637184893,
+   "diag_model": 0.43361146371848974,
+   "full_T_model": 0.15964841176221908,
+   "corrected": true
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.2534517120027954,
+   "diag_model": 0.2534517120027955,
+   "full_T_model": 0.19107085451575256,
+   "corrected": false
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.11289451883687543,
+   "diag_model": 0.11289451883687551,
+   "full_T_model": 0.1644398976870112,
+   "corrected": false
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.09768483028562551,
+   "diag_model": 0.09768483028562547,
+   "full_T_model": 0.052134912783676504,
+   "corrected": true
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.2846439575334259,
+   "diag_model": 0.2846439575334262,
+   "full_T_model": 0.10927071019351138,
+   "corrected": true
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.5766430957251821,
+   "diag_model": 0.576643095725182,
+   "full_T_model": 0.5861711973154594,
+   "corrected": false
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.5360205563101362,
+   "diag_model": 0.5360205563101366,
+   "full_T_model": 0.4367407070603232,
+   "corrected": false
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.1279279156816434,
+   "diag_model": 0.1279279156816434,
+   "full_T_model": 0.1507416470027978,
+   "corrected": true
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.09338334988225842,
+   "diag_model": 0.09338334988225844,
+   "full_T_model": 0.053539325147132416,
+   "corrected": true
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.3676361737432651,
+   "diag_model": 0.3676361737432652,
+   "full_T_model": 0.35443085028303534,
+   "corrected": false
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.2587010484954051,
+   "diag_model": 0.2587010484954053,
+   "full_T_model": 0.10003201457622518,
+   "corrected": false
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.1422772595468958,
+   "diag_model": 0.14227725954689585,
+   "full_T_model": 0.14749319569924949,
+   "corrected": true
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.3012349189891158,
+   "diag_model": 0.30123491898911603,
+   "full_T_model": 0.1353474595037481,
+   "corrected": true
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.23545203453271052,
+   "diag_model": 0.23545203453271052,
+   "full_T_model": 0.28811014819093017,
+   "corrected": false
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.10887924857780773,
+   "diag_model": 0.10887924857780783,
+   "full_T_model": 0.12020554207707343,
+   "corrected": false
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.17064568023890408,
+   "diag_model": 0.1706456802389041,
+   "full_T_model": 0.31392086247625756,
+   "corrected": true
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.1994871112904132,
+   "diag_model": 0.19948711129041335,
+   "full_T_model": 0.13657754578641287,
+   "corrected": true
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.016963915941067463,
+   "diag_model": 0.01696391594106742,
+   "full_T_model": 0.03297553372030958,
+   "corrected": false
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.032779267235418845,
+   "diag_model": 0.032779267235418796,
+   "full_T_model": 0.032611896683424714,
+   "corrected": false
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.16938923889135127,
+   "diag_model": 0.1693892388913512,
+   "full_T_model": 0.095414766753942,
+   "corrected": true
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.18689129715975888,
+   "diag_model": 0.1868912971597591,
+   "full_T_model": 0.16883934371847997,
+   "corrected": true
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.22206029045483328,
+   "diag_model": 0.2220602904548333,
+   "full_T_model": 0.06067541996372132,
+   "corrected": false
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.13521739585439468,
+   "diag_model": 0.1352173958543948,
+   "full_T_model": 0.07487643263177347,
+   "corrected": false
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.3424309005729302,
+   "diag_model": 0.3424309005729302,
+   "full_T_model": 0.22234956781391219,
+   "corrected": true
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.30444860011052877,
+   "diag_model": 0.3044486001105291,
+   "full_T_model": 0.33934979617957434,
+   "corrected": true
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.553694322837169,
+   "diag_model": 0.553694322837169,
+   "full_T_model": 0.8723882203012934,
+   "corrected": false
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.3510778836271451,
+   "diag_model": 0.3510778836271453,
+   "full_T_model": 0.44096578697835,
+   "corrected": false
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.15997901375644694,
+   "diag_model": 0.15997901375644696,
+   "full_T_model": 0.07938602287429551,
+   "corrected": true
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.4009499663919851,
+   "diag_model": 0.4009499663919854,
+   "full_T_model": 0.7328225367001548,
+   "corrected": true
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.6902437286912607,
+   "diag_model": 0.6902437286912608,
+   "full_T_model": 0.6511906448120904,
+   "corrected": false
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.6323583696130106,
+   "diag_model": 0.6323583696130111,
+   "full_T_model": 0.5040945321865249,
+   "corrected": false
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.06461884508141194,
+   "diag_model": 0.06461884508141194,
+   "full_T_model": 0.040423215337820194,
+   "corrected": true
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.07837734981511056,
+   "diag_model": 0.07837734981511063,
+   "full_T_model": 0.07716128037233339,
+   "corrected": true
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.07538659462069743,
+   "diag_model": 0.07538659462069741,
+   "full_T_model": 0.15468048822533556,
+   "corrected": false
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.2766080634961839,
+   "diag_model": 0.27660806349618416,
+   "full_T_model": 0.3142014478863853,
+   "corrected": false
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.32274444253658946,
+   "diag_model": 0.3227444425365894,
+   "full_T_model": 0.528170885558263,
+   "corrected": true
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.14867894249615876,
+   "diag_model": 0.1486789424961588,
+   "full_T_model": 0.16382312663552206,
+   "corrected": true
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.14031932473463588,
+   "diag_model": 0.14031932473463593,
+   "full_T_model": 0.12254693189560305,
+   "corrected": false
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.39029478728179773,
+   "diag_model": 0.390294787281798,
+   "full_T_model": 0.6919053239755493,
+   "corrected": false
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.25395841217062876,
+   "diag_model": 0.25395841217062876,
+   "full_T_model": 0.22940214874467618,
+   "corrected": true
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.33501692824278806,
+   "diag_model": 0.3350169282427883,
+   "full_T_model": 0.26679326119842983,
+   "corrected": true
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.15825637112408059,
+   "diag_model": 0.15825637112408059,
+   "full_T_model": 0.1212417608535589,
+   "corrected": false
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.2530153331002809,
+   "diag_model": 0.253015333100281,
+   "full_T_model": 0.3059486594995377,
+   "corrected": false
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.04080335543352809,
+   "diag_model": 0.04080335543352806,
+   "full_T_model": 0.005173670944370429,
+   "corrected": true
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.46179679751034197,
+   "diag_model": 0.4617967975103424,
+   "full_T_model": 0.31601420243240796,
+   "corrected": true
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.7394119999816029,
+   "diag_model": 0.7394119999816029,
+   "full_T_model": 0.7058143530379686,
+   "corrected": false
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.6213322419226112,
+   "diag_model": 0.6213322419226118,
+   "full_T_model": 0.5491154557640298,
+   "corrected": false
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.41139179533452647,
+   "diag_model": 0.41139179533452647,
+   "full_T_model": 0.1841235077033814,
+   "corrected": true
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.10396351678311172,
+   "diag_model": 0.10396351678311183,
+   "full_T_model": 0.13801208895860273,
+   "corrected": true
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.37773475012965835,
+   "diag_model": 0.3777347501296583,
+   "full_T_model": 0.10173115169142882,
+   "corrected": false
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.15017658233130649,
+   "diag_model": 0.1501765823313065,
+   "full_T_model": 0.09513475391551324,
+   "corrected": false
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.5876219418640001,
+   "diag_model": 0.5876219418640001,
+   "full_T_model": 0.6383950066803192,
+   "corrected": true
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.4611097515462991,
+   "diag_model": 0.46110975154629935,
+   "full_T_model": 0.47346732790756385,
+   "corrected": true
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.265271324857259,
+   "diag_model": 0.265271324857259,
+   "full_T_model": 0.04483117845387902,
+   "corrected": false
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.48629751617288147,
+   "diag_model": 0.48629751617288186,
+   "full_T_model": 0.3678526660641184,
+   "corrected": false
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.44287720666740027,
+   "diag_model": 0.44287720666740027,
+   "full_T_model": 0.08539086400758979,
+   "corrected": true
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.13037960014317695,
+   "diag_model": 0.13037960014317704,
+   "full_T_model": 0.1254433651271928,
+   "corrected": true
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.05710013307389856,
+   "diag_model": 0.05710013307389851,
+   "full_T_model": 0.046506333165854286,
+   "corrected": false
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.25526209470416905,
+   "diag_model": 0.2552620947041691,
+   "full_T_model": 0.28543426125466853,
+   "corrected": false
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.373955312057035,
+   "diag_model": 0.373955312057035,
+   "full_T_model": 0.594488496179732,
+   "corrected": true
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.22294443884888893,
+   "diag_model": 0.22294443884888912,
+   "full_T_model": 0.07868151586752059,
+   "corrected": true
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.2314599139845614,
+   "diag_model": 0.2314599139845614,
+   "full_T_model": 0.30535358747744495,
+   "corrected": false
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.15058895093622027,
+   "diag_model": 0.1505889509362204,
+   "full_T_model": 0.15586330504666873,
+   "corrected": false
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.2545649158003649,
+   "diag_model": 0.254564915800365,
+   "full_T_model": 0.12268365335786334,
+   "corrected": true
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.13334699355883228,
+   "diag_model": 0.13334699355883245,
+   "full_T_model": 0.19712417528366696,
+   "corrected": true
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.15877339537130172,
+   "diag_model": 0.1587733953713017,
+   "full_T_model": 0.38938022702331454,
+   "corrected": false
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.2415477955168446,
+   "diag_model": 0.24154779551684474,
+   "full_T_model": 0.07534991625126315,
+   "corrected": false
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.3120517238213248,
+   "diag_model": 0.31205172382132484,
+   "full_T_model": 0.3705716619985088,
+   "corrected": true
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.26452620259078585,
+   "diag_model": 0.2645262025907861,
+   "full_T_model": 0.3787530530254922,
+   "corrected": true
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.17264351336462996,
+   "diag_model": 0.17264351336463,
+   "full_T_model": 0.07785191826788537,
+   "corrected": false
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.13138614422804124,
+   "diag_model": 0.1313861442280414,
+   "full_T_model": 0.21356138673343725,
+   "corrected": false
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.0404857745747995,
+   "diag_model": 0.040485774574799446,
+   "full_T_model": 0.05456813284670574,
+   "corrected": true
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.5426383066968472,
+   "diag_model": 0.5426383066968476,
+   "full_T_model": 0.5537927374464047,
+   "corrected": true
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.4531950264120292,
+   "diag_model": 0.4531950264120292,
+   "full_T_model": 0.558974798641097,
+   "corrected": false
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.11427188190730166,
+   "diag_model": 0.1142718819073017,
+   "full_T_model": 0.048321287466055934,
+   "corrected": false
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.13302587719145104,
+   "diag_model": 0.1330258771914511,
+   "full_T_model": 0.04858306636503844,
+   "corrected": true
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.18378394985964497,
+   "diag_model": 0.18378394985964516,
+   "full_T_model": 0.29234099754256687,
+   "corrected": true
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.13706234051730704,
+   "diag_model": 0.13706234051730704,
+   "full_T_model": 0.19409713985651914,
+   "corrected": false
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.2710341626411584,
+   "diag_model": 0.2710341626411587,
+   "full_T_model": 0.09547331261263595,
+   "corrected": false
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.397982068395951,
+   "diag_model": 0.39798206839595096,
+   "full_T_model": 0.6601799822835417,
+   "corrected": true
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.16115829614585292,
+   "diag_model": 0.16115829614585306,
+   "full_T_model": 0.08112770892649963,
+   "corrected": true
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.14877077483344142,
+   "diag_model": 0.14877077483344148,
+   "full_T_model": 0.21462240921449222,
+   "corrected": false
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.18927290792983753,
+   "diag_model": 0.18927290792983775,
+   "full_T_model": 0.2473864754631906,
+   "corrected": false
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.201644367250562,
+   "diag_model": 0.201644367250562,
+   "full_T_model": 0.10474087557757675,
+   "corrected": true
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.13402957412915006,
+   "diag_model": 0.13402957412915018,
+   "full_T_model": 0.09871348615093631,
+   "corrected": true
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.19867241139345096,
+   "diag_model": 0.19867241139345093,
+   "full_T_model": 0.12896567046288168,
+   "corrected": false
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.30287569439154527,
+   "diag_model": 0.3028756943915455,
+   "full_T_model": 0.35424800320481076,
+   "corrected": false
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.34187452418895264,
+   "diag_model": 0.3418745241889526,
+   "full_T_model": 0.5887109093866915,
+   "corrected": true
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.12802094721412693,
+   "diag_model": 0.12802094721412696,
+   "full_T_model": 0.2171715275738042,
+   "corrected": true
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.24761392162524976,
+   "diag_model": 0.24761392162524973,
+   "full_T_model": 0.26872620116746776,
+   "corrected": false
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.26989461373443246,
+   "diag_model": 0.26989461373443263,
+   "full_T_model": 0.17287346880147542,
+   "corrected": false
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.21576651542676073,
+   "diag_model": 0.2157665154267607,
+   "full_T_model": 0.09577700976690946,
+   "corrected": true
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.23378988620088126,
+   "diag_model": 0.23378988620088142,
+   "full_T_model": 0.3551758783854688,
+   "corrected": true
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.2609610426910688,
+   "diag_model": 0.2609610426910688,
+   "full_T_model": 0.3511323340380462,
+   "corrected": false
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.6976124843313688,
+   "diag_model": 0.6976124843313694,
+   "full_T_model": 0.6833889069943964,
+   "corrected": false
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.22547105559267705,
+   "diag_model": 0.22547105559267705,
+   "full_T_model": 0.357784837503604,
+   "corrected": true
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.28622657998634604,
+   "diag_model": 0.2862265799863463,
+   "full_T_model": 0.2597465997590535,
+   "corrected": true
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.3511096928654599,
+   "diag_model": 0.35110969286545984,
+   "full_T_model": 0.022941457279471805,
+   "corrected": false
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.19714674402073606,
+   "diag_model": 0.19714674402073623,
+   "full_T_model": 0.30484415953150024,
+   "corrected": false
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.43905253568019675,
+   "diag_model": 0.43905253568019675,
+   "full_T_model": 0.6354934441103168,
+   "corrected": true
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.3194081365559637,
+   "diag_model": 0.3194081365559639,
+   "full_T_model": 0.1098138856092141,
+   "corrected": true
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.31123386374773465,
+   "diag_model": 0.31123386374773465,
+   "full_T_model": 0.7654658769639007,
+   "corrected": false
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.31483773304250695,
+   "diag_model": 0.31483773304250723,
+   "full_T_model": 0.15720966671683823,
+   "corrected": false
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.26229692266837545,
+   "diag_model": 0.2622969226683755,
+   "full_T_model": 0.17232056812948027,
+   "corrected": true
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.3655098338276306,
+   "diag_model": 0.3655098338276308,
+   "full_T_model": 0.20246036649927315,
+   "corrected": true
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.38408397622832857,
+   "diag_model": 0.38408397622832857,
+   "full_T_model": 0.43847001419608167,
+   "corrected": false
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.2002037331202647,
+   "diag_model": 0.20020373312026485,
+   "full_T_model": 0.32793669810838966,
+   "corrected": false
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.3943297380450316,
+   "diag_model": 0.3943297380450316,
+   "full_T_model": 0.4040948578036641,
+   "corrected": true
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.2607074202883658,
+   "diag_model": 0.2607074202883659,
+   "full_T_model": 0.09277725399920562,
+   "corrected": true
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.2863661532953029,
+   "diag_model": 0.2863661532953028,
+   "full_T_model": 0.49409025821458763,
+   "corrected": false
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.16669675422888364,
+   "diag_model": 0.16669675422888366,
+   "full_T_model": 0.1855378172794467,
+   "corrected": false
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.15291707217531042,
+   "diag_model": 0.15291707217531036,
+   "full_T_model": 0.20978561200491797,
+   "corrected": true
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.29492177998382535,
+   "diag_model": 0.2949217799838255,
+   "full_T_model": 0.2431489371716038,
+   "corrected": true
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.13171923599398713,
+   "diag_model": 0.1317192359939871,
+   "full_T_model": 0.2508339308389277,
+   "corrected": false
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.16389137805736648,
+   "diag_model": 0.1638913780573666,
+   "full_T_model": 0.08986128549576455,
+   "corrected": false
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.3005042902204468,
+   "diag_model": 0.3005042902204469,
+   "full_T_model": 0.3672976023636899,
+   "corrected": true
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.27297752927827135,
+   "diag_model": 0.27297752927827157,
+   "full_T_model": 0.43082850136757506,
+   "corrected": true
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.3237468511481793,
+   "diag_model": 0.32374685114817936,
+   "full_T_model": 0.32321834363563984,
+   "corrected": false
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.45224518151272963,
+   "diag_model": 0.45224518151273,
+   "full_T_model": 0.7134745922029063,
+   "corrected": false
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.07955151393735072,
+   "diag_model": 0.07955151393735074,
+   "full_T_model": 0.06992017796217977,
+   "corrected": true
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.4495890717627712,
+   "diag_model": 0.4495890717627716,
+   "full_T_model": 0.28312900762290844,
+   "corrected": true
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.020824261827505866,
+   "diag_model": 0.020824261827505894,
+   "full_T_model": 0.002819264545203876,
+   "corrected": false
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.22209386607735698,
+   "diag_model": 0.22209386607735715,
+   "full_T_model": 0.18095652267766021,
+   "corrected": false
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.47316465984664213,
+   "diag_model": 0.4731646598466422,
+   "full_T_model": 0.10710984203631731,
+   "corrected": true
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.09795321437973924,
+   "diag_model": 0.09795321437973938,
+   "full_T_model": 0.07109315051809942,
+   "corrected": true
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.2113808136276274,
+   "diag_model": 0.2113808136276274,
+   "full_T_model": 0.2892742722781112,
+   "corrected": false
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.17273768118566363,
+   "diag_model": 0.17273768118566385,
+   "full_T_model": 0.13391527158057728,
+   "corrected": false
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.4074741185516251,
+   "diag_model": 0.407474118551625,
+   "full_T_model": 0.7484307170621599,
+   "corrected": true
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.1490178931268802,
+   "diag_model": 0.14901789312688032,
+   "full_T_model": 0.20224128136196126,
+   "corrected": true
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.16245881233844983,
+   "diag_model": 0.16245881233844983,
+   "full_T_model": 0.2943413152755915,
+   "corrected": false
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.16682791960928775,
+   "diag_model": 0.16682791960928794,
+   "full_T_model": 0.18688909480976504,
+   "corrected": false
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.1276971064158586,
+   "diag_model": 0.12769710641585863,
+   "full_T_model": 0.05437405179063337,
+   "corrected": true
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.14900649450692516,
+   "diag_model": 0.14900649450692527,
+   "full_T_model": 0.04928121279833108,
+   "corrected": true
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.3694248288373545,
+   "diag_model": 0.36942482883735456,
+   "full_T_model": 0.5968157343189346,
+   "corrected": false
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.1805075468018339,
+   "diag_model": 0.18050754680183403,
+   "full_T_model": 0.13219734290352092,
+   "corrected": false
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.16066261481494698,
+   "diag_model": 0.16066261481494698,
+   "full_T_model": 0.031106276306074425,
+   "corrected": true
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.15907959188179155,
+   "diag_model": 0.15907959188179177,
+   "full_T_model": 0.06825352534199086,
+   "corrected": true
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.5914948282715189,
+   "diag_model": 0.5914948282715189,
+   "full_T_model": 0.4357126163118103,
+   "corrected": false
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.4186981220084424,
+   "diag_model": 0.4186981220084427,
+   "full_T_model": 0.48846121441571616,
+   "corrected": false
+  },
+  {
+   "state": "product_HT",
+   "exact": 0.4570993081314787,
+   "diag_model": 0.4570993081314787,
+   "full_T_model": 0.4486132400019685,
+   "corrected": true
+  },
+  {
+   "state": "bell_30_70",
+   "exact": 0.32417861907979617,
+   "diag_model": 0.32417861907979634,
+   "full_T_model": 0.557541572318112,
+   "corrected": true
+  }
+ ],
+ "max_diff_diag": 6.661338147750939e-16,
+ "mean_diff_full": 0.10782915168100753,
+ "max_diff_full": 0.454232013216166,
+ "frac_full_off_0p01": 0.9133333333333333,
+ "example_T_q3_N2": [
+  [
+   0.349,
+   0.712,
+   0.0020000000000000018
+  ],
+  [
+   -0.72,
+   0.3400000000000001,
+   0.04800000000000004
+  ],
+  [
+   -0.026000000000000023,
+   -0.0040000000000000036,
+   0.8999999999999999
+  ]
+ ],
+ "example_diag": [
+  0.349,
+  0.3400000000000001,
+  0.8999999999999999
+ ]
+}

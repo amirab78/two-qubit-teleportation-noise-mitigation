@@ -1,0 +1,437 @@
+{
+ "note": "source paths are relative to the research project folder (not shipped)",
+ "files": [
+  {
+   "path": "data/hardware/ibm_kingston_2026-10-04/counts/db16kn2vog1s73fhnpog.json.gz",
+   "what": "counts and per-shot outcomes, pilot (Round 0) (R0_main_ibm_kingston)",
+   "source": "Stage8_Hardware/shared/jobs/raw/db16kn2vog1s73fhnpog.json",
+   "source_sha256": "ab00b686f15e59e39e5e50a83b518f7672b892b9365cfb8af092ad72d1de86e0",
+   "sha256": "9c75b70d5c0ea143724e2c9fd4dde804e056b071c877f0160864c9251f58e23a",
+   "bytes": 5913,
+   "transform": "kept counts unchanged; record and metrics reduced to experiment fields; gzip"
+  },
+  {
+   "path": "data/hardware/ibm_kingston_2026-10-04/counts/db16p1bid5ic73eqnsug.json.gz",
+   "what": "counts and per-shot outcomes, Round 1 (R1_main_ibm_kingston)",
+   "source": "Stage8_Hardware/shared/jobs/raw/db16p1bid5ic73eqnsug.json",
+   "source_sha256": "924c62179c7ed3dec8504faa5dba088426fc52e91022b1da91ae3c3160626e1e",
+   "sha256": "836f4a05f2f7f975b558ecc2ee01c69b5bc2858f4296637cad9bc2a40654f37f",
+   "bytes": 436224,
+   "transform": "kept counts unchanged; record and metrics reduced to experiment fields; gzip"
+  },
+  {
+   "path": "data/hardware/ibm_kingston_2026-10-04/counts/db175bjid5ic73eqoav0.json.gz",
+   "what": "counts and per-shot outcomes, Round 2 main (R2_main_ibm_kingston)",
+   "source": "Stage8_Hardware/shared/jobs/raw/db175bjid5ic73eqoav0.json",
+   "source_sha256": "929984ea872f6d636967d4dac79ead8a47b3b4c435142f35ec206c4f07bf5502",
+   "sha256": "78211fa223e8c1769974f7d77233b65ff8ee5f13fc28bbec17128e1aedceee77",
+   "bytes": 227329,
+   "transform": "kept counts unchanged; record and metrics reduced to experiment fields; gzip"
+  },
+  {
+   "path": "data/hardware/ibm_kingston_2026-10-04/counts/db175givog1s73fhocjg.json.gz",
+   "what": "counts and per-shot outcomes, Round 2 dynamical decoupling (R2_dd_ibm_kingston)",
+   "source": "Stage8_Hardware/shared/jobs/raw/db175givog1s73fhocjg.json",
+   "source_sha256": "72b15432469cba0f4fec3c67e5552d7f120012d01e031b7b7a64b105cf6d6479",
+   "sha256": "0e43ad43c45dcaaaea02717cb79f3e0bc9602837e717780cd0377a14ef3dc75d",
+   "bytes": 57905,
+   "transform": "kept counts unchanged; record and metrics reduced to experiment fields; gzip"
+  },
+  {
+   "path": "data/hardware/ibm_kingston_2026-10-04/calibration/ibm_kingston_properties_20261004T1434Z.json.gz",
+   "what": "device calibration record in force when the 4 jobs ran",
+   "source": "Stage8_Hardware/shared/snapshots/ibm_kingston/jobs/props_<job id>.json (4 identical files)",
+   "source_sha256": "cd0fdd9270a1f8ab22a535ee603436be816af1b767dd4ea0adcec9b7317433b7",
+   "sha256": "03e68a6fac0df990f0c054cd1c8b5a08c50e254a58230b4470d42b399e8c40c0",
+   "bytes": 59686,
+   "transform": "time stamps converted to UTC; gzip"
+  },
+  {
+   "path": "data/hardware/ibm_kingston_2026-10-04/circuits/R0_main_ibm_kingston.json",
+   "what": "frozen job R0_main_ibm_kingston (pilot (Round 0)): label index, shots, hash",
+   "source": "Stage8_Hardware/8c_Twin_Study/results/jobs/ibm_kingston/R0_main_ibm_kingston.json",
+   "source_sha256": "2eb23dc77377261a057c14320a5c8ea55bfa8e169459181aee9e4f58433780b8",
+   "sha256": "2eb23dc77377261a057c14320a5c8ea55bfa8e169459181aee9e4f58433780b8",
+   "bytes": 2094,
+   "transform": "none (byte copy)"
+  },
+  {
+   "path": "data/hardware/ibm_kingston_2026-10-04/circuits/R0_main_ibm_kingston.qpy",
+   "what": "frozen job R0_main_ibm_kingston (pilot (Round 0)): transpiled circuits (QPY)",
+   "source": "Stage8_Hardware/8c_Twin_Study/results/jobs/ibm_kingston/R0_main_ibm_kingston.qpy",
+   "source_sha256": "5d9b18b3342e6a9d89d4b246cc088f00e03d8572f35e5cc4e8e9108bfb57472f",
+   "sha256": "5d9b18b3342e6a9d89d4b246cc088f00e03d8572f35e5cc4e8e9108bfb57472f",
+   "bytes": 121713,
+   "transform": "none (byte copy)"
+  },
+  {
+   "path": "data/hardware/ibm_kingston_2026-10-04/circuits/R0_main_ibm_kingston_params.npz",
+   "what": "frozen job R0_main_ibm_kingston (pilot (Round 0)): parameter values of every binding",
+   "source": "Stage8_Hardware/8c_Twin_Study/results/jobs/ibm_kingston/R0_main_ibm_kingston_params.npz",
+   "source_sha256": "033753a25ba33dc76aa9bb5aeb9093f1c991ad6e9f9195593eb2de4e63876438",
+   "sha256": "033753a25ba33dc76aa9bb5aeb9093f1c991ad6e9f9195593eb2de4e63876438",
+   "bytes": 3394,
+   "transform": "none (byte copy)"
+  },
+  {
+   "path": "data/hardware/ibm_kingston_2026-10-04/circuits/R1_main_ibm_kingston.json",
+   "what": "frozen job R1_main_ibm_kingston (Round 1): label index, shots, hash",
+   "source": "Stage8_Hardware/8c_Twin_Study/results/jobs/ibm_kingston/R1_main_ibm_kingston.json",
+   "source_sha256": "d68e8c211386cf6aaf2f3c82f5f77029202e3b79bc3c4e49b8fbf88e0617d3c8",
+   "sha256": "d68e8c211386cf6aaf2f3c82f5f77029202e3b79bc3c4e49b8fbf88e0617d3c8",
+   "bytes": 7658,
+   "transform": "none (byte copy)"
+  },
+  {
+   "path": "data/hardware/ibm_kingston_2026-10-04/circuits/R1_main_ibm_kingston.qpy",
+   "what": "frozen job R1_main_ibm_kingston (Round 1): transpiled circuits (QPY)",
+   "source": "Stage8_Hardware/8c_Twin_Study/results/jobs/ibm_kingston/R1_main_ibm_kingston.qpy",
+   "source_sha256": "69334f71db2b00960760e2e88eee083be426f07b7a116e6f634142b4d52217d3",
+   "sha256": "69334f71db2b00960760e2e88eee083be426f07b7a116e6f634142b4d52217d3",
+   "bytes": 166794,
+   "transform": "none (byte copy)"
+  },
+  {
+   "path": "data/hardware/ibm_kingston_2026-10-04/circuits/R1_main_ibm_kingston_params.npz",
+   "what": "frozen job R1_main_ibm_kingston (Round 1): parameter values of every binding",
+   "source": "Stage8_Hardware/8c_Twin_Study/results/jobs/ibm_kingston/R1_main_ibm_kingston_params.npz",
+   "source_sha256": "8b02d3382aca33c879ee87e7580e909c29048c8ee0ea85b4e114a02039e9ae16",
+   "sha256": "8b02d3382aca33c879ee87e7580e909c29048c8ee0ea85b4e114a02039e9ae16",
+   "bytes": 28836,
+   "transform": "none (byte copy)"
+  },
+  {
+   "path": "data/hardware/ibm_kingston_2026-10-04/circuits/R2_main_ibm_kingston.json",
+   "what": "frozen job R2_main_ibm_kingston (Round 2 main): label index, shots, hash",
+   "source": "Stage8_Hardware/8d_Hardware_Runs/results/jobs/ibm_kingston/R2_main_ibm_kingston.json",
+   "source_sha256": "3ae5a56baf27f3209067f5ad434031d695a2eb2ff436abfa53d399459b4a87e6",
+   "sha256": "3ae5a56baf27f3209067f5ad434031d695a2eb2ff436abfa53d399459b4a87e6",
+   "bytes": 3639,
+   "transform": "none (byte copy)"
+  },
+  {
+   "path": "data/hardware/ibm_kingston_2026-10-04/circuits/R2_main_ibm_kingston.qpy",
+   "what": "frozen job R2_main_ibm_kingston (Round 2 main): transpiled circuits (QPY)",
+   "source": "Stage8_Hardware/8d_Hardware_Runs/results/jobs/ibm_kingston/R2_main_ibm_kingston.qpy",
+   "source_sha256": "c0b7c04e5338672efa760030e3626cd551ce080eb8c09395b030437d408db745",
+   "sha256": "c0b7c04e5338672efa760030e3626cd551ce080eb8c09395b030437d408db745",
+   "bytes": 96881,
+   "transform": "none (byte copy)"
+  },
+  {
+   "path": "data/hardware/ibm_kingston_2026-10-04/circuits/R2_main_ibm_kingston_params.npz",
+   "what": "frozen job R2_main_ibm_kingston (Round 2 main): parameter values of every binding",
+   "source": "Stage8_Hardware/8d_Hardware_Runs/results/jobs/ibm_kingston/R2_main_ibm_kingston_params.npz",
+   "source_sha256": "4653e34e528bd761caeb48eaf95e6033adeda828e46c3d332cc20843c673bf54",
+   "sha256": "4653e34e528bd761caeb48eaf95e6033adeda828e46c3d332cc20843c673bf54",
+   "bytes": 13098,
+   "transform": "none (byte copy)"
+  },
+  {
+   "path": "data/hardware/ibm_kingston_2026-10-04/circuits/R2_dd_ibm_kingston.json",
+   "what": "frozen job R2_dd_ibm_kingston (Round 2 dynamical decoupling): label index, shots, hash",
+   "source": "Stage8_Hardware/8d_Hardware_Runs/results/jobs/ibm_kingston/R2_dd_ibm_kingston.json",
+   "source_sha256": "b522362f02fa41886f8764fba26b34bd3643542522350f701176dddc16d1f942",
+   "sha256": "b522362f02fa41886f8764fba26b34bd3643542522350f701176dddc16d1f942",
+   "bytes": 1202,
+   "transform": "none (byte copy)"
+  },
+  {
+   "path": "data/hardware/ibm_kingston_2026-10-04/circuits/R2_dd_ibm_kingston.qpy",
+   "what": "frozen job R2_dd_ibm_kingston (Round 2 dynamical decoupling): transpiled circuits (QPY)",
+   "source": "Stage8_Hardware/8d_Hardware_Runs/results/jobs/ibm_kingston/R2_dd_ibm_kingston.qpy",
+   "source_sha256": "5cd0fb90aa5a6a23fb170bb5ea748d4430aeb9d911d08fcb3446b4a1f471059a",
+   "sha256": "5cd0fb90aa5a6a23fb170bb5ea748d4430aeb9d911d08fcb3446b4a1f471059a",
+   "bytes": 12777,
+   "transform": "none (byte copy)"
+  },
+  {
+   "path": "data/hardware/ibm_kingston_2026-10-04/circuits/R2_dd_ibm_kingston_params.npz",
+   "what": "frozen job R2_dd_ibm_kingston (Round 2 dynamical decoupling): parameter values of every binding",
+   "source": "Stage8_Hardware/8d_Hardware_Runs/results/jobs/ibm_kingston/R2_dd_ibm_kingston_params.npz",
+   "source_sha256": "6f503a9d0a6befb6efb7db8c684e7971e2d28b61e3feb36931176215205cadac",
+   "sha256": "6f503a9d0a6befb6efb7db8c684e7971e2d28b61e3feb36931176215205cadac",
+   "bytes": 2850,
+   "transform": "none (byte copy)"
+  },
+  {
+   "path": "data/hardware/ibm_kingston_2026-10-04/preregistration/predictions_round1.json",
+   "what": "pre-registration record",
+   "source": "Stage8_Hardware/8c_Twin_Study/results/predictions_round1.json",
+   "source_sha256": "7f29ee28e3a26a190f3207048f7c60178867c6a7fb298b2216be2fad55f4497c",
+   "sha256": "7f29ee28e3a26a190f3207048f7c60178867c6a7fb298b2216be2fad55f4497c",
+   "bytes": 133027,
+   "transform": "none (byte copy)"
+  },
+  {
+   "path": "data/hardware/ibm_kingston_2026-10-04/preregistration/predictions_round2.json",
+   "what": "pre-registration record",
+   "source": "Stage8_Hardware/8c_Twin_Study/results/predictions_round2.json",
+   "source_sha256": "5f22f4b0c7b50c76548b998949bf6fb80dfb79687fd1fb8b4c68377715ec3660",
+   "sha256": "5f22f4b0c7b50c76548b998949bf6fb80dfb79687fd1fb8b4c68377715ec3660",
+   "bytes": 53196,
+   "transform": "none (byte copy)"
+  },
+  {
+   "path": "data/hardware/ibm_kingston_2026-10-04/preregistration/predictions_round1_ibm_fez.json",
+   "what": "pre-registration record",
+   "source": "Stage8_Hardware/8c_Twin_Study/results/predictions_round1_ibm_fez.json",
+   "source_sha256": "709b8a33b5f160b7744750640ff3989e9652d5aa02686bc2f1590637f6ecaba7",
+   "sha256": "709b8a33b5f160b7744750640ff3989e9652d5aa02686bc2f1590637f6ecaba7",
+   "bytes": 130785,
+   "transform": "none (byte copy)"
+  },
+  {
+   "path": "data/hardware/ibm_kingston_2026-10-04/preregistration/predictions_round2_ibm_fez.json",
+   "what": "pre-registration record",
+   "source": "Stage8_Hardware/8c_Twin_Study/results/predictions_round2_ibm_fez.json",
+   "source_sha256": "0f2482a9314376850ac32aeeb64154e70e102fd324ab4a8df64785913984e415",
+   "sha256": "0f2482a9314376850ac32aeeb64154e70e102fd324ab4a8df64785913984e415",
+   "bytes": 51080,
+   "transform": "none (byte copy)"
+  },
+  {
+   "path": "data/hardware/ibm_kingston_2026-10-04/preregistration/8c_predictions_sha256.json",
+   "what": "pre-registration record",
+   "source": "Stage8_Hardware/8c_Twin_Study/results/8c_predictions_sha256.json",
+   "source_sha256": "40a734d430b8571a221e0a525d46083fa2730ba2c954ba0e44fd152684fb5228",
+   "sha256": "40a734d430b8571a221e0a525d46083fa2730ba2c954ba0e44fd152684fb5228",
+   "bytes": 521,
+   "transform": "none (byte copy)"
+  },
+  {
+   "path": "data/hardware/ibm_kingston_2026-10-04/preregistration/predictions_round2_addendum.json",
+   "what": "pre-registration record",
+   "source": "Stage8_Hardware/8d_Hardware_Runs/results/predictions_round2_addendum.json",
+   "source_sha256": "1f6cb362f868ebd42de64cf54dd2102b4128e8c9bc81e35d05007d3ef1e7e43e",
+   "sha256": "1f6cb362f868ebd42de64cf54dd2102b4128e8c9bc81e35d05007d3ef1e7e43e",
+   "bytes": 69479,
+   "transform": "none (byte copy)"
+  },
+  {
+   "path": "data/hardware/ibm_kingston_2026-10-04/preregistration/predictions_round2_tomo_model.json",
+   "what": "pre-registration record",
+   "source": "Stage8_Hardware/8d_Hardware_Runs/results/predictions_round2_tomo_model.json",
+   "source_sha256": "28c702a12451deae5c78b8eba93c1b6e0ae49027991160e61b03d151c5831099",
+   "sha256": "28c702a12451deae5c78b8eba93c1b6e0ae49027991160e61b03d151c5831099",
+   "bytes": 2667,
+   "transform": "none (byte copy)"
+  },
+  {
+   "path": "data/hardware/ibm_kingston_2026-10-04/preregistration/8d_predictions_sha256.json",
+   "what": "pre-registration record",
+   "source": "Stage8_Hardware/8d_Hardware_Runs/results/8d_predictions_sha256.json",
+   "source_sha256": "087ed935d2708526dc38bbcf67611332a87969d25f7d80f2367d698845c884bf",
+   "sha256": "087ed935d2708526dc38bbcf67611332a87969d25f7d80f2367d698845c884bf",
+   "bytes": 334,
+   "transform": "none (byte copy)"
+  },
+  {
+   "path": "data/hardware/ibm_kingston_2026-10-04/preregistration/8c_choices.json",
+   "what": "pre-registration record",
+   "source": "Stage8_Hardware/8c_Twin_Study/results/8c_choices.json",
+   "source_sha256": "d16cd6e35f23eada1b7b24ec11d55baed79b43aab7070e5dc4c7553f56490cae",
+   "sha256": "d16cd6e35f23eada1b7b24ec11d55baed79b43aab7070e5dc4c7553f56490cae",
+   "bytes": 1087,
+   "transform": "none (byte copy)"
+  },
+  {
+   "path": "data/hardware/ibm_kingston_2026-10-04/preregistration/approvals.json",
+   "what": "pre-registration record",
+   "source": "Stage8_Hardware/shared/jobs/approved.json",
+   "source_sha256": "9318459e57da6d950d574c985f1cccd920b48986fa67cfc6394aaab123245be3",
+   "sha256": "9318459e57da6d950d574c985f1cccd920b48986fa67cfc6394aaab123245be3",
+   "bytes": 1078,
+   "transform": "none (byte copy)"
+  },
+  {
+   "path": "data/hardware/ibm_kingston_2026-10-04/preregistration/ledger.json",
+   "what": "job ledger: the 4 hardware jobs",
+   "source": "Stage8_Hardware/shared/jobs/hw_jobs.json",
+   "source_sha256": "359086ebb11ab1d90d662ce80a2a96a8b5d3408dbbe499e94303cef8d4a2d233",
+   "sha256": "15feb1551d470655fbde960d94fea47906e7795cf2d5b71b58a5b76074473076",
+   "bytes": 4731,
+   "transform": "local simulator runs removed; experiment fields only"
+  },
+  {
+   "path": "data/reference/8d_round1.json",
+   "what": "saved result used as a regression target",
+   "source": "Stage8_Hardware/8d_Hardware_Runs/results/8d_round1.json",
+   "source_sha256": "99a0c3a85accb7090c2dcc48c85574c33b52c5e987e7891b5e8537544dc8927b",
+   "sha256": "5f9799c01ff307b4a66d4d09df9126dfaf6eb7fc54d2dc528fabed47d62608a5",
+   "bytes": 152260,
+   "transform": "account quota fields and the usage-detail metric id removed"
+  },
+  {
+   "path": "data/reference/8d_round2.json",
+   "what": "saved result used as a regression target",
+   "source": "Stage8_Hardware/8d_Hardware_Runs/results/8d_round2.json",
+   "source_sha256": "25f2e2477be16a506330be036b238f883bbd042198d111402ddb2fd3705c0188",
+   "sha256": "30820cc78a82f393c99996e46582eabe8e473c54c4029175c9a05d552cedaac6",
+   "bytes": 91218,
+   "transform": "account quota fields and the usage-detail metric id removed"
+  },
+  {
+   "path": "data/reference/8d_compare.json",
+   "what": "saved result used as a regression target",
+   "source": "Stage8_Hardware/8d_Hardware_Runs/results/8d_compare.json",
+   "source_sha256": "36353ef3d409e454b10bb97142e679bf34479f862c576ccdf0ea776bdb22f30f",
+   "sha256": "36353ef3d409e454b10bb97142e679bf34479f862c576ccdf0ea776bdb22f30f",
+   "bytes": 16237,
+   "transform": "none (byte copy)"
+  },
+  {
+   "path": "data/reference/8d_jobs_table.json",
+   "what": "saved result used as a regression target",
+   "source": "Stage8_Hardware/8d_Hardware_Runs/results/8d_jobs_table.json",
+   "source_sha256": "9ac7df44538f2e8dff40286f4775b56d31a12dd3fc17f63a175bd24e09700860",
+   "sha256": "9ac7df44538f2e8dff40286f4775b56d31a12dd3fc17f63a175bd24e09700860",
+   "bytes": 2331,
+   "transform": "none (byte copy)"
+  },
+  {
+   "path": "data/reference/8c_ladder.json",
+   "what": "saved result used as a regression target",
+   "source": "Stage8_Hardware/8c_Twin_Study/results/8c_ladder.json",
+   "source_sha256": "dcfecbe4b2686f87186108711425bd2f03a513f9f547aa604b646840fdd287e5",
+   "sha256": "dcfecbe4b2686f87186108711425bd2f03a513f9f547aa604b646840fdd287e5",
+   "bytes": 32563,
+   "transform": "none (byte copy)"
+  },
+  {
+   "path": "data/reference/8d_postdiction.json",
+   "what": "saved result used as a regression target",
+   "source": "Stage8_Hardware/8d_Hardware_Runs/results/8d_postdiction.json",
+   "source_sha256": "04ddbc205375fc88fd72e8a412d3c50540a34e02a624c17ee3676699399a538f",
+   "sha256": "04ddbc205375fc88fd72e8a412d3c50540a34e02a624c17ee3676699399a538f",
+   "bytes": 2683,
+   "transform": "none (byte copy)"
+  },
+  {
+   "path": "data/reference/8e_numbers.json",
+   "what": "saved result used as a regression target",
+   "source": "Stage8_Hardware/8e_Results_Summary/results/8e_numbers.json",
+   "source_sha256": "12edef05e5b5c78acf2170bb5aaa0a65f210050daf301f6f730fb262224c16f6",
+   "sha256": "12edef05e5b5c78acf2170bb5aaa0a65f210050daf301f6f730fb262224c16f6",
+   "bytes": 50220,
+   "transform": "none (byte copy)"
+  },
+  {
+   "path": "data/reference/8e_error_budget.json",
+   "what": "saved result used as a regression target",
+   "source": "Stage8_Hardware/8e_Results_Summary/results/8e_error_budget.json",
+   "source_sha256": "ef476a10715de536c69bd6e20789113c3c28883c4352de3a76be0753ba38bd57",
+   "sha256": "ef476a10715de536c69bd6e20789113c3c28883c4352de3a76be0753ba38bd57",
+   "bytes": 3434,
+   "transform": "none (byte copy)"
+  },
+  {
+   "path": "data/reference/8e_n2_analysis.json",
+   "what": "saved result used as a regression target",
+   "source": "Stage8_Hardware/8e_Results_Summary/results/8e_n2_analysis.json",
+   "source_sha256": "8e5866a5dca88eb5138dd81b0eee6a2c0ad049c70b4623733e25152bce9865e5",
+   "sha256": "8e5866a5dca88eb5138dd81b0eee6a2c0ad049c70b4623733e25152bce9865e5",
+   "bytes": 6365,
+   "transform": "none (byte copy)"
+  },
+  {
+   "path": "data/reference/8e_twirl_check.json",
+   "what": "saved result used as a regression target",
+   "source": "Stage8_Hardware/8e_Results_Summary/results/8e_twirl_check.json",
+   "source_sha256": "ea2257fabb2bab4961b9fa38557cfc9601c596f04c9937fb138435b7be7d0343",
+   "sha256": "ea2257fabb2bab4961b9fa38557cfc9601c596f04c9937fb138435b7be7d0343",
+   "bytes": 52521,
+   "transform": "none (byte copy)"
+  },
+  {
+   "path": "data/reference/9_8_checks.json",
+   "what": "saved result used as a regression target",
+   "source": "Stage9_Theory_Reports/9_8_Stage8_Hardware/results/9_8_checks.json",
+   "source_sha256": "ceecf12e87bef8651e105b610ac159abac223f7b549da169f98bf165c4e9ee30",
+   "sha256": "ceecf12e87bef8651e105b610ac159abac223f7b549da169f98bf165c4e9ee30",
+   "bytes": 78177,
+   "transform": "none (byte copy)"
+  },
+  {
+   "path": "data/reference/9_8_boot.json",
+   "what": "saved result used as a regression target",
+   "source": "Stage9_Theory_Reports/9_8_Stage8_Hardware/results/9_8_boot.json",
+   "source_sha256": "e10c9f12f6cf1c93bf98c75622026f062cb05e8610166cdb3887d8a8f2f1ada8",
+   "sha256": "e10c9f12f6cf1c93bf98c75622026f062cb05e8610166cdb3887d8a8f2f1ada8",
+   "bytes": 1282,
+   "transform": "none (byte copy)"
+  },
+  {
+   "path": "data/reference/9_8_numbers.json",
+   "what": "saved result used as a regression target",
+   "source": "Stage9_Theory_Reports/9_8_Stage8_Hardware/results/9_8_numbers.json",
+   "source_sha256": "b51cddc84b4c02ebfe1502cdfc53b1b1853cc44294a20574fc39f96b71506be8",
+   "sha256": "b51cddc84b4c02ebfe1502cdfc53b1b1853cc44294a20574fc39f96b71506be8",
+   "bytes": 1906,
+   "transform": "none (byte copy)"
+  },
+  {
+   "path": "data/reference/final_numbers.json",
+   "what": "saved result used as a regression target",
+   "source": "Final_Report/results/final_numbers.json",
+   "source_sha256": "91e993a5be3c7d16c605d98774828d6fb1e708504639ad0505baa0f81213f5f2",
+   "sha256": "94313013d6af313cb04ab2e278d712082d3bce5fb07b00d62c75bc6dd664df50",
+   "bytes": 72599,
+   "transform": "the plan's quota entries (limit, remaining) removed"
+  },
+  {
+   "path": "data/reference/simulation/stage3_calibration.json",
+   "what": "saved simulation result used by the notebooks",
+   "source": "Stage3_Correction/calibration.json",
+   "source_sha256": "953a5fe5076c011b0e088dacce05821b9bd6ee245c7bf5cd5ce408ee013efc3d",
+   "sha256": "953a5fe5076c011b0e088dacce05821b9bd6ee245c7bf5cd5ce408ee013efc3d",
+   "bytes": 5446,
+   "transform": "none (byte copy)"
+  },
+  {
+   "path": "data/reference/simulation/6a_nominal.json",
+   "what": "saved simulation result used by the notebooks",
+   "source": "Stage6_Correlated_Noise/results/6a_nominal.json",
+   "source_sha256": "b9887c309b13c6d1b318c1189fd879b85143a00c3c6f3fef5d68af31142cfc7d",
+   "sha256": "b9887c309b13c6d1b318c1189fd879b85143a00c3c6f3fef5d68af31142cfc7d",
+   "bytes": 995,
+   "transform": "none (byte copy)"
+  },
+  {
+   "path": "data/reference/simulation/6a_tomo75_design.json",
+   "what": "saved simulation result used by the notebooks",
+   "source": "Stage6_Correlated_Noise/results/6a_tomo75_design.json",
+   "source_sha256": "e05d8a9e770bf07c18b915cecdf5a7983e26ef03f2b00e9bd9d23600b041b1eb",
+   "sha256": "e05d8a9e770bf07c18b915cecdf5a7983e26ef03f2b00e9bd9d23600b041b1eb",
+   "bytes": 2017,
+   "transform": "none (byte copy)"
+  },
+  {
+   "path": "data/reference/simulation/6b_detector_counts.json",
+   "what": "saved simulation result used by the notebooks",
+   "source": "Stage6_Correlated_Noise/results/6b_detector_counts.json",
+   "source_sha256": "9b3e41637e1a761eaaf23ee5099d37d98f06b2df4aafce4d80cc2734d0fab836",
+   "sha256": "9b3e41637e1a761eaaf23ee5099d37d98f06b2df4aafce4d80cc2734d0fab836",
+   "bytes": 1030,
+   "transform": "none (byte copy)"
+  },
+  {
+   "path": "data/reference/simulation/7f_tracking.json",
+   "what": "saved simulation result used by the notebooks",
+   "source": "Stage7_Reinforcement_Learning/results/7f_tracking.json",
+   "source_sha256": "1b93d75ddebea915e1bbf419c269fb8092f87916c6f675498c7d5de0a05e9eb6",
+   "sha256": "1b93d75ddebea915e1bbf419c269fb8092f87916c6f675498c7d5de0a05e9eb6",
+   "bytes": 20197,
+   "transform": "none (byte copy)"
+  },
+  {
+   "path": "data/reference/simulation/7g_controller.json",
+   "what": "saved simulation result used by the notebooks",
+   "source": "Stage7_Reinforcement_Learning/results/7g_controller.json",
+   "source_sha256": "78c18fb7dca5bb897b86fce07a90877691b43a93873e23369f551f53df4d0280",
+   "sha256": "78c18fb7dca5bb897b86fce07a90877691b43a93873e23369f551f53df4d0280",
+   "bytes": 21106,
+   "transform": "none (byte copy)"
+  }
+ ]
+}

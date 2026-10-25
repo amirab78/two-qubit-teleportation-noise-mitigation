@@ -1,0 +1,2410 @@
+{
+ "meta": {
+  "written_utc": "2026-10-06T15:35:06.576965+00:00",
+  "master_seed": 98001,
+  "tol_numeric": 1e-12,
+  "n_claims": 12,
+  "n_pass": 12,
+  "python": "3.13.3",
+  "versions": {
+   "numpy": "2.2.4",
+   "sympy": "1.13.3",
+   "scipy": "1.15.2",
+   "qiskit": "2.5.2",
+   "qiskit_aer": "0.17.2",
+   "matplotlib": "3.10.1"
+  }
+ },
+ "claims": [
+  {
+   "key": "frame",
+   "number": "8.1",
+   "kind": "T",
+   "label": "Theorem 8.1",
+   "short": "T8.1",
+   "title": "Pauli frame = live correction",
+   "uses": "8.2, 8.8, 8.12; Section 4",
+   "seed": 98001,
+   "checks": [
+    {
+     "level": "S",
+     "what": "for every Pauli basis B and every correction Z^z X^x: (Z^z X^x)^dag Pi_b^B (Z^z X^x) = Pi_{b xor f}^B with f = qt_hardware.frame_bit(0, B, z, x) (24 projector identities; basis rotations = qt_hardware.BASIS_U)",
+     "err": 0.0,
+     "exact": true,
+     "pass": true,
+     "basis_U_max_dev": 1.1102230246251565e-16
+    },
+    {
+     "level": "S",
+     "what": "non-Clifford basis (the un-preparation of product_HT, U = (T H)^dag): a Z correction maps its projectors onto the basis, X and Y do not (so no software frame exists: version B is needed for the un-preparation)",
+     "err": 0.0,
+     "exact": true,
+     "pass": true,
+     "conjugated_Pi0": {
+      "X": "neither",
+      "Y": "neither",
+      "Z": "Pi_1"
+     }
+    },
+    {
+     "level": "S",
+     "what": "readout matrix and frame flip: Fl M Fl - M = (e0 - e1) [[1, 1], [-1, -1]], so the flip commutes with the readout only if e0 = e1 (mitigation must be inverted for each Alice outcome BEFORE the frame)",
+     "err": 0.0,
+     "exact": true,
+     "pass": true
+    },
+    {
+     "level": "N",
+     "what": "random 2-qubit states x random Alice outcome x 9 bases: the physical correction before the measurement and Stage 8's software frame (frame_dist / frame_keys) give the same distribution",
+     "err": 1.1102230246251565e-16,
+     "cases": 1350,
+     "tol": 1e-12,
+     "pass": true
+    },
+    {
+     "level": "N",
+     "what": "Bob-only mitigation inverted per Alice outcome before the frame (Stage 8's mitigate_bob) = the exact frame-corrected pre-readout distribution (integer counts, rational readout matrices)",
+     "err": 5.551115123125783e-17,
+     "cases": 20,
+     "tol": 1e-12,
+     "pass": true,
+     "wrong_order_max_err": 0.026741071342354872
+    },
+    {
+     "level": "D",
+     "what": "control: inverting the readout AFTER the frame is wrong (error > 1e-3 when e0 != e1)",
+     "pass": true,
+     "wrong_order_max_err": 0.026741071342354872
+    },
+    {
+     "level": "D",
+     "what": "all 192 version-A circuits of Rounds 1-2 (528000 shots): the per-shot frame applied to the raw integers reproduces 8d's cached frame-corrected marginals",
+     "pass": true,
+     "n_circuits": 192,
+     "shots": 528000,
+     "max_dev": 0.0
+    },
+    {
+     "level": "D",
+     "what": "hardware (Round 1, native A, product_HT, X/Y bases): Bob's raw bits depend on Alice's outcome (G-test p < 1e-10), the frame-corrected bits carry < 10 % of that mutual information (criterion set before computing)",
+     "pass": true,
+     "rows": [
+      {
+       "basis": "XX",
+       "raw": {
+        "MI_bits": 0.6413147988911327,
+        "G": 2667.1532682165425,
+        "p": 0.0
+       },
+       "corrected": {
+        "MI_bits": 0.030246413161060533,
+        "G": 125.7912960278417,
+        "p": 1.4276544390350411e-09
+       }
+      },
+      {
+       "basis": "XY",
+       "raw": {
+        "MI_bits": 0.58378951568079,
+        "G": 2427.9123410075736,
+        "p": 0.0
+       },
+       "corrected": {
+        "MI_bits": 0.022978445573555585,
+        "G": 95.56466857776158,
+        "p": 1.6722685325323316e-05
+       }
+      },
+      {
+       "basis": "YX",
+       "raw": {
+        "MI_bits": 0.6087057474032274,
+        "G": 2531.5360356190877,
+        "p": 0.0
+       },
+       "corrected": {
+        "MI_bits": 0.029679965041239754,
+        "G": 123.43550452471803,
+        "p": 3.1166726115683626e-09
+       }
+      },
+      {
+       "basis": "YY",
+       "raw": {
+        "MI_bits": 0.6030801043718925,
+        "G": 2508.139643983049,
+        "p": 0.0
+       },
+       "corrected": {
+        "MI_bits": 0.03589558134035045,
+        "G": 149.2855260037443,
+        "p": 4.1650150751949066e-13
+       }
+      }
+     ]
+    }
+   ],
+   "pass": true,
+   "error": null,
+   "seconds": 59.956,
+   "levels": "SND"
+  },
+  {
+   "key": "spam",
+   "number": "8.2",
+   "kind": "T",
+   "label": "Theorem 8.2",
+   "short": "T8.2",
+   "title": "readout errors: lambda_hat = (1 - e0 - e1) lambda + (e1 - e0), and what the frame does to them",
+   "uses": "8.8, 8.11",
+   "seed": 98002,
+   "checks": [
+    {
+     "level": "S",
+     "what": "one qubit: measured lambda_hat = (1 - e0 - e1) lambda + (e1 - e0)  (e0 = P(1|0), e1 = P(0|1))",
+     "err": 0.0,
+     "exact": true,
+     "pass": true
+    },
+    {
+     "level": "S",
+     "what": "version A: the state carries the branch Pauli (sign (-1)^f), the read bit is flipped back by the frame: average = c lambda + (1 - 2q) d, q = P(flip bit = 1); the offset vanishes iff q = 1/2",
+     "err": 0.0,
+     "exact": true,
+     "pass": true
+    },
+    {
+     "level": "S",
+     "what": "Alice's message bit misread (P(1|0) = a0, P(0|1) = a1, P(bit = 1) = p_a): the frame applies a wrong Z with probability w = (1 - p_a) a0 + p_a a1, i.e. a Pauli-Z channel on Bob; w = (a0 + a1)/2 for uniform bits",
+     "err": 0.0,
+     "exact": true,
+     "pass": true
+    },
+    {
+     "level": "S",
+     "what": "Bob's readout under the frame (q = 1/2): every Pauli expectation shrinks by c = 1 - e0 - e1 = 1 - 4p, i.e. a Pauli channel with p_X = p_Y = p_Z = (e0 + e1)/4 (the per-qubit term of 8e's readout budget)",
+     "err": 0.0,
+     "exact": true,
+     "pass": true
+    },
+    {
+     "level": "S",
+     "what": "two qubits, product readout (version B, no frame): raw <P4 P5> = c4 c5 <P4P5> + c4 d5 <P4> + d4 c5 <P5> + d4 d5 (the formula behind 8c's 'raw B / C product_HT biased up')",
+     "err": 0.0,
+     "exact": true,
+     "pass": true
+    },
+    {
+     "level": "N",
+     "what": "full SPAM formula (exact enumeration of true / read Alice bits and Bob's bit) = c (1 - 2w) lambda + (1 - 2q) d (A) or c (1 - 2w) lambda + d (B), w = misread probability of the flip bit(s)",
+     "err": 5.551115123125783e-16,
+     "cases": 1800,
+     "tol": 1e-12,
+     "pass": true
+    },
+    {
+     "level": "D",
+     "what": "hardware: largest residual readout offset (1 - 2 q_hat) d over all 27 TOMO-9 circuits of Round 1 and both legs, with q_hat the MEASURED frame-bit frequency; criterion < 0.1 x the shot noise 1/sqrt(2000)",
+     "pass": true,
+     "max_offset": 0.0006824999999999997,
+     "shot_sigma": 0.022360679774997897,
+     "d_q4": 0.006500000000000001,
+     "d_q5": 0.008125
+    },
+    {
+     "level": "D",
+     "what": "all 21 tomography blocks of Rounds 1-2: the RAW linear F predicted from the mitigated expectations with the per-qubit readout formula agrees with the cached raw F within 2e-3 (criterion set before computing; the rest is the readout correlation of Bob's 4x4 matrix)",
+     "pass": true,
+     "max_abs_dev": 0.0010480694701173743,
+     "rows": [
+      {
+       "block": "R1_nativeA_product_HT",
+       "version": "A",
+       "F_raw": 0.8750576974490385,
+       "F_raw_pred": 0.8748070248578342,
+       "F_mit": 0.8839009716671542,
+       "mit_minus_raw": 0.008843274218115704
+      },
+      {
+       "block": "R1_nativeA_bell_30_70",
+       "version": "A",
+       "F_raw": 0.860779490499306,
+       "F_raw_pred": 0.860742250040684,
+       "F_mit": 0.8735361219322214,
+       "mit_minus_raw": 0.012756631432915388
+      },
+      {
+       "block": "R1_nativeB_product_HT",
+       "version": "B",
+       "F_raw": 0.8818657642211392,
+       "F_raw_pred": 0.8825534570588937,
+       "F_mit": 0.8819164095754227,
+       "mit_minus_raw": 5.064535428356276e-05
+      },
+      {
+       "block": "R1_nativeB_bell_30_70",
+       "version": "B",
+       "F_raw": 0.8460389602902058,
+       "F_raw_pred": 0.8470870297603231,
+       "F_mit": 0.8624261910315633,
+       "mit_minus_raw": 0.016387230741357506
+      },
+      {
+       "block": "R1_N1none_product_HT",
+       "version": "A",
+       "F_raw": 0.7109277252226693,
+       "F_raw_pred": 0.7106545965654414,
+       "F_mit": 0.7169882870224797,
+       "mit_minus_raw": 0.0060605617998104044
+      },
+      {
+       "block": "R1_N1none_bell_30_70",
+       "version": "A",
+       "F_raw": 0.5216527752521077,
+       "F_raw_pred": 0.5215721114383655,
+       "F_mit": 0.52712181013333,
+       "mit_minus_raw": 0.005469034881222301
+      },
+      {
+       "block": "R1_N1oracle_product_HT",
+       "version": "A",
+       "F_raw": 0.8804063446310447,
+       "F_raw_pred": 0.8800826256802959,
+       "F_mit": 0.889257018379231,
+       "mit_minus_raw": 0.008850673748186266
+      },
+      {
+       "block": "R1_N1oracle_bell_30_70",
+       "version": "A",
+       "F_raw": 0.8494885057071793,
+       "F_raw_pred": 0.8495680606606351,
+       "F_mit": 0.862109884395275,
+       "mit_minus_raw": 0.012621378688095763
+      },
+      {
+       "block": "R1_N2none_product_HT",
+       "version": "A",
+       "F_raw": 0.5623454121283148,
+       "F_raw_pred": 0.5623091575805603,
+       "F_mit": 0.5663364017153789,
+       "mit_minus_raw": 0.00399098958706412
+      },
+      {
+       "block": "R1_N2none_bell_30_70",
+       "version": "A",
+       "F_raw": 0.5935022460532753,
+       "F_raw_pred": 0.5931354803674567,
+       "F_mit": 0.6000784596832522,
+       "mit_minus_raw": 0.006576213629976957
+      },
+      {
+       "block": "R1_N1noneB_bell_30_70",
+       "version": "B",
+       "F_raw": 0.5192687852988473,
+       "F_raw_pred": 0.5197648821726315,
+       "F_mit": 0.5275819610041041,
+       "mit_minus_raw": 0.008313175705256803
+      },
+      {
+       "block": "R1_C_product_HT",
+       "version": "B",
+       "F_raw": 0.9185232136935428,
+       "F_raw_pred": 0.9191973155769919,
+       "F_mit": 0.9189928332443869,
+       "mit_minus_raw": 0.00046961955084401374
+      },
+      {
+       "block": "R2_N1corr_product_HT",
+       "version": "A",
+       "F_raw": 0.884489677964378,
+       "F_raw_pred": 0.8842353211176719,
+       "F_mit": 0.8935006912213821,
+       "mit_minus_raw": 0.009011013257004041
+      },
+      {
+       "block": "R2_N1corr_bell_30_70",
+       "version": "A",
+       "F_raw": 0.8523467632766748,
+       "F_raw_pred": 0.8522679192430213,
+       "F_mit": 0.8648865674019193,
+       "mit_minus_raw": 0.01253980412524447
+      },
+      {
+       "block": "R2_N2corr_product_HT",
+       "version": "A",
+       "F_raw": 0.8089083087664437,
+       "F_raw_pred": 0.8085993065245758,
+       "F_mit": 0.8166015708753726,
+       "mit_minus_raw": 0.0076932621089288444
+      },
+      {
+       "block": "R2_N2corr_bell_30_70",
+       "version": "A",
+       "F_raw": 0.7642839862795587,
+       "F_raw_pred": 0.7641307303799785,
+       "F_mit": 0.7748371954455802,
+       "mit_minus_raw": 0.010553209166021427
+      },
+      {
+       "block": "R2_N1corrB_bell_30_70",
+       "version": "B",
+       "F_raw": 0.8519256267731874,
+       "F_raw_pred": 0.8528630240423788,
+       "F_mit": 0.8682531692288974,
+       "mit_minus_raw": 0.016327542455709998
+      },
+      {
+       "block": "R2_N0corr_product_HT",
+       "version": "A",
+       "F_raw": 0.8725779175062984,
+       "F_raw_pred": 0.8721853047089608,
+       "F_mit": 0.8812155364442686,
+       "mit_minus_raw": 0.008637618937970215
+      },
+      {
+       "block": "R2_N0corr_bell_30_70",
+       "version": "A",
+       "F_raw": 0.8556072177678588,
+       "F_raw_pred": 0.8556418696049488,
+       "F_mit": 0.8683187949517133,
+       "mit_minus_raw": 0.012711577183854517
+      },
+      {
+       "block": "R2_DDN2none_product_HT",
+       "version": "A",
+       "F_raw": 0.7748512240620428,
+       "F_raw_pred": 0.7748227715308006,
+       "F_mit": 0.7823348369592582,
+       "mit_minus_raw": 0.007483612897215441
+      },
+      {
+       "block": "R2_DDN2corr_product_HT",
+       "version": "A",
+       "F_raw": 0.49935025025416446,
+       "F_raw_pred": 0.49920590569744916,
+       "F_mit": 0.5023722450685142,
+       "mit_minus_raw": 0.0030219948143497266
+      }
+     ]
+    }
+   ],
+   "pass": true,
+   "error": null,
+   "seconds": 0.719,
+   "levels": "SND"
+  },
+  {
+   "key": "tomo",
+   "number": "8.3",
+   "kind": "T",
+   "label": "Theorem 8.3",
+   "short": "T8.3",
+   "title": "linear tomography unbiased with an exact variance; MLE = the closest density matrix",
+   "uses": "8.10, Algorithms",
+   "seed": 98003,
+   "checks": [
+    {
+     "level": "S",
+     "what": "E[F_lin] = <psi|rho|psi> exactly: the 9-basis linear estimator with expected frequencies tr(rho Pi) returns the true fidelity for ANY Hermitian rho (both targets, exact amplitudes), hence F_lin is unbiased",
+     "err": 0.0,
+     "exact": true,
+     "pass": true
+    },
+    {
+     "level": "N",
+     "what": "F_lin = sum_B sum_k w_Bk f_Bk: the weights reproduce Stage 8's tomo_linear + fid on random counts (and the exact target amplitudes = Stage 8's target_state)",
+     "err": 2.7755575615628914e-16,
+     "cases": 150,
+     "tol": 1e-12,
+     "pass": true
+    },
+    {
+     "level": "N",
+     "what": "exact multinomial variance of a linear statistic: Var(sum w_k n_k / N) = (sum w^2 p - (sum w p)^2)/N (brute-force enumeration at N = 5)",
+     "err": 9.992007221626409e-16,
+     "cases": 40,
+     "tol": 1e-12,
+     "pass": true
+    },
+    {
+     "level": "N",
+     "what": "Stage 8's tomo_mle = the Frobenius-closest density matrix to the linear estimate: same eigenvectors, eigenvalues max(mu - t, 0) with trace 1 (KKT conditions of the projection), at 40 shots / basis",
+     "err": 3.774758283725532e-15,
+     "cases": 120,
+     "tol": 1e-12,
+     "pass": true,
+     "closer_random_competitors": 0
+    },
+    {
+     "level": "D",
+     "what": "control: none of 7200 random density matrices is closer to the linear estimate than tomo_mle's output",
+     "pass": true
+    },
+    {
+     "level": "D",
+     "what": "all 21 hardware blocks: 8d's bootstrap sigma (300 resamples) = the exact plug-in sigma within bootstrap noise (z of s^2/sigma^2 with sd sqrt(2/299): max |z| < 3.3, chi^2 p > 0.001); F itself recomputed to 1e-12",
+     "pass": true,
+     "rows": [
+      {
+       "block": "R1_nativeA_product_HT",
+       "F": 0.8750576974490385,
+       "F_lin_recomputed": 0.8750576974490387,
+       "sigma_boot": 0.00630710651816359,
+       "sigma_exact": 0.0064258049318060475,
+       "ratio": 0.9815278529457171,
+       "z": -0.447546489473218
+      },
+      {
+       "block": "R1_nativeA_bell_30_70",
+       "F": 0.860779490499306,
+       "F_lin_recomputed": 0.8607794904993061,
+       "sigma_boot": 0.0045819714819178925,
+       "sigma_exact": 0.005091389932064644,
+       "ratio": 0.8999451118566804,
+       "z": -2.32434163577867
+      },
+      {
+       "block": "R1_nativeB_product_HT",
+       "F": 0.8818657642211392,
+       "F_lin_recomputed": 0.8818657642211395,
+       "sigma_boot": 0.006844940692903527,
+       "sigma_exact": 0.006412151884530425,
+       "ratio": 1.067495096212119,
+       "z": 1.7062289451429267
+      },
+      {
+       "block": "R1_nativeB_bell_30_70",
+       "F": 0.8460389602902058,
+       "F_lin_recomputed": 0.8460389602902058,
+       "sigma_boot": 0.004692463327584769,
+       "sigma_exact": 0.005258518227658555,
+       "ratio": 0.8923546756771761,
+       "z": -2.4906821281621148
+      },
+      {
+       "block": "R1_N1none_product_HT",
+       "F": 0.7109277252226693,
+       "F_lin_recomputed": 0.7109277252226696,
+       "sigma_boot": 0.006504629005770797,
+       "sigma_exact": 0.00669101776690392,
+       "ratio": 0.9721434365254467,
+       "z": -0.6717174544825063
+      },
+      {
+       "block": "R1_N1none_bell_30_70",
+       "F": 0.5216527752521077,
+       "F_lin_recomputed": 0.5216527752521077,
+       "sigma_boot": 0.006889572912842113,
+       "sigma_exact": 0.007296820616618659,
+       "ratio": 0.9441883355541136,
+       "z": -1.326734137833142
+      },
+      {
+       "block": "R1_N1oracle_product_HT",
+       "F": 0.8804063446310447,
+       "F_lin_recomputed": 0.8804063446310448,
+       "sigma_boot": 0.0059808780600206345,
+       "sigma_exact": 0.006416424279592199,
+       "ratio": 0.9321201029431854,
+       "z": -1.6035994201509889
+      },
+      {
+       "block": "R1_N1oracle_bell_30_70",
+       "F": 0.8494885057071793,
+       "F_lin_recomputed": 0.8494885057071793,
+       "sigma_boot": 0.004883146923746358,
+       "sigma_exact": 0.005243371366991,
+       "ratio": 0.9312990787735557,
+       "z": -1.6223056859204645
+      },
+      {
+       "block": "R1_N2none_product_HT",
+       "F": 0.5623454121283148,
+       "F_lin_recomputed": 0.562345412128315,
+       "sigma_boot": 0.006226916197810864,
+       "sigma_exact": 0.006695927428297209,
+       "ratio": 0.9299557476527764,
+       "z": -1.6528766763697211
+      },
+      {
+       "block": "R1_N2none_bell_30_70",
+       "F": 0.5935022460532753,
+       "F_lin_recomputed": 0.5935022460532753,
+       "sigma_boot": 0.006862128888291613,
+       "sigma_exact": 0.006853607268628149,
+       "ratio": 1.001243377294534,
+       "z": 0.030424499071018057
+      },
+      {
+       "block": "R1_N1noneB_bell_30_70",
+       "F": 0.5192687852988473,
+       "F_lin_recomputed": 0.5192687852988472,
+       "sigma_boot": 0.007137619428100924,
+       "sigma_exact": 0.007310836654760698,
+       "ratio": 0.976306784730722,
+       "z": -0.5725309360398109
+      },
+      {
+       "block": "R1_C_product_HT",
+       "F": 0.9185232136935428,
+       "F_lin_recomputed": 0.9185232136935432,
+       "sigma_boot": 0.0071742285614459535,
+       "sigma_exact": 0.0077247438928798465,
+       "ratio": 0.9287335167265129,
+       "z": -1.6806533768226677
+      },
+      {
+       "block": "R2_N1corr_product_HT",
+       "F": 0.884489677964378,
+       "F_lin_recomputed": 0.8844896779643782,
+       "sigma_boot": 0.006966468236109233,
+       "sigma_exact": 0.006397487490565126,
+       "ratio": 1.0889381567972156,
+       "z": 2.271612782527426
+      },
+      {
+       "block": "R2_N1corr_bell_30_70",
+       "F": 0.8523467632766748,
+       "F_lin_recomputed": 0.8523467632766748,
+       "sigma_boot": 0.004882404594791099,
+       "sigma_exact": 0.005182816873162773,
+       "ratio": 0.942036871893498,
+       "z": -1.3763531547829604
+      },
+      {
+       "block": "R2_N2corr_product_HT",
+       "F": 0.8089083087664437,
+       "F_lin_recomputed": 0.808908308766444,
+       "sigma_boot": 0.006243964295982416,
+       "sigma_exact": 0.00656717494124331,
+       "ratio": 0.9507839142168941,
+       "z": -1.1739154891115067
+      },
+      {
+       "block": "R2_N2corr_bell_30_70",
+       "F": 0.7642839862795587,
+       "F_lin_recomputed": 0.7642839862795586,
+       "sigma_boot": 0.005939014978257172,
+       "sigma_exact": 0.006028626426008012,
+       "ratio": 0.9851356774464828,
+       "z": -0.3607911798257764
+      },
+      {
+       "block": "R2_N1corrB_bell_30_70",
+       "F": 0.8519256267731874,
+       "F_lin_recomputed": 0.8519256267731873,
+       "sigma_boot": 0.0050169829290567175,
+       "sigma_exact": 0.005176293011563758,
+       "ratio": 0.9692231328189606,
+       "z": -0.741037072792935
+      },
+      {
+       "block": "R2_N0corr_product_HT",
+       "F": 0.8725779175062984,
+       "F_lin_recomputed": 0.8725779175062988,
+       "sigma_boot": 0.006217790352565381,
+       "sigma_exact": 0.006439424593171455,
+       "ratio": 0.965581670008047,
+       "z": -0.8271827783046376
+      },
+      {
+       "block": "R2_N0corr_bell_30_70",
+       "F": 0.8556072177678588,
+       "F_lin_recomputed": 0.8556072177678588,
+       "sigma_boot": 0.004874327657945815,
+       "sigma_exact": 0.0051696783774959326,
+       "ratio": 0.942868647141415,
+       "z": -1.3571834168905714
+      },
+      {
+       "block": "R2_DDN2none_product_HT",
+       "F": 0.7748512240620428,
+       "F_lin_recomputed": 0.7748512240620431,
+       "sigma_boot": 0.006978996803484356,
+       "sigma_exact": 0.006609491275432826,
+       "ratio": 1.0559052902339041,
+       "z": 1.405324464968901
+      },
+      {
+       "block": "R2_DDN2corr_product_HT",
+       "F": 0.49935025025416446,
+       "F_lin_recomputed": 0.4993502502541647,
+       "sigma_boot": 0.006704101832084357,
+       "sigma_exact": 0.0066230069225713195,
+       "ratio": 1.0122444246942675,
+       "z": 0.30125878045275145
+      }
+     ],
+     "chi2": 41.72155394518839,
+     "p": 0.004560040763879479,
+     "max_abs_z": 2.4906821281621148
+    },
+    {
+     "level": "D",
+     "what": "8b's saved 400-repeat study (re-read, not re-run): the linear F is unbiased in all 6 cases (|z| < 3); the MLE F of a pure state is biased LOW (z < -3), as the projection theorem predicts (eigenvalues are clipped at 0)",
+     "pass": true,
+     "rows": [
+      {
+       "state": "product_HT",
+       "case": "pure (F = 1)",
+       "z_linear": 1.0958167928120204,
+       "z_mle": -25.99051016472139,
+       "bias_mle": -0.005948463806216053
+      },
+      {
+       "state": "product_HT",
+       "case": "hardware-like (92 % pure + 8 % white noise)",
+       "z_linear": -0.5456115747097029,
+       "z_mle": -0.7620521121447165,
+       "bias_mle": -0.00022505187028987184
+      },
+      {
+       "state": "product_HT",
+       "case": "N1, no correction",
+       "z_linear": 1.438748395504121,
+       "z_mle": 1.1964702920158077,
+       "bias_mle": 0.0003796811250670329
+      },
+      {
+       "state": "bell_30_70",
+       "case": "pure (F = 1)",
+       "z_linear": 1.5068653459658512,
+       "z_mle": -42.96624888174903,
+       "bias_mle": -0.0058543618191960745
+      },
+      {
+       "state": "bell_30_70",
+       "case": "hardware-like (92 % pure + 8 % white noise)",
+       "z_linear": -0.9422531220277903,
+       "z_mle": -1.0221085744435896,
+       "bias_mle": -0.00021149110929474801
+      },
+      {
+       "state": "bell_30_70",
+       "case": "N1, no correction",
+       "z_linear": 0.30910469077385416,
+       "z_mle": 0.25394940956151424,
+       "bias_mle": 8.276667135087568e-05
+      }
+     ]
+    }
+   ],
+   "pass": true,
+   "error": null,
+   "seconds": 2.122,
+   "levels": "SND"
+  },
+  {
+   "key": "relax",
+   "number": "8.4",
+   "kind": "P",
+   "label": "Proposition 8.4",
+   "short": "P8.4",
+   "title": "relaxation of an idle Bell pair: Kraus, CPTP iff T2 <= 2 T1, twirled leg, Ramsey vs echo",
+   "uses": "8.7, Noise model",
+   "seed": 98004,
+   "checks": [
+    {
+     "level": "S",
+     "what": "Kraus of thermal relaxation (amplitude damping gamma = 1 - e^{-t/T1} = 1 - u^2, then phase damping to the coherence c = e^{-t/T2}): Choi = [[1,0,0,c],[0,0,0,0],[0,0,gamma,0],[c,0,0,1-gamma]]; its only non-trivial block has det = 1 - gamma - c^2, so CPTP <=> c^2 <= 1 - gamma <=> T2 <= 2 T1 (the phase-damping Kraus needs v^2 = u^2 - c^2 >= 0)",
+     "err": 0.0,
+     "exact": true,
+     "pass": true
+    },
+    {
+     "level": "S",
+     "what": "PTM = [[1,0,0,0],[0,c,0,0],[0,0,c,0],[gamma,0,0,1-gamma]] (x, y keep e^{-t/T2}, z keeps e^{-t/T1}, offset gamma)",
+     "err": 0.0,
+     "exact": true,
+     "pass": true
+    },
+    {
+     "level": "S",
+     "what": "both halves of the Bell pair relax: <XX> = c_a c_b, <YY> = -c_a c_b, <ZZ> = (1-gamma_a)(1-gamma_b) + gamma_a gamma_b. Teleporting through this pair, the twirled leg keeps diag(<XX>, -<YY>, <ZZ>): x, y exactly e^{-t(1/T2a + 1/T2b)}, z = e^{-t(1/T1a + 1/T1b)} + gamma_a gamma_b (both halves decay towards |00>, which belongs to |Phi+>; 8e used the product only, an error of gamma_a gamma_b ~ 6e-4 at 8 us)",
+     "err": 0.0,
+     "exact": true,
+     "pass": true
+    },
+    {
+     "level": "S",
+     "what": "quasi-static Gaussian frequency noise (sd sigma) during a free wait: the average coherence factor is E[cos(2 pi delta t)] = exp(-2 pi^2 sigma^2 t^2); an echo (or DD) removes it, a Ramsey-type wait does not",
+     "err": 0.0,
+     "exact": true,
+     "pass": true
+    },
+    {
+     "level": "N",
+     "what": "qiskit-aer's thermal_relaxation_error(T1, T2, t) (used by the twin's device model on delays) has the Choi matrix of this definition (random T1, T2 <= 2 T1, t)",
+     "err": 1.5543122344752192e-15,
+     "cases": 60,
+     "tol": 1e-12,
+     "pass": true
+    },
+    {
+     "level": "N",
+     "what": "Stage 8's exact branching simulator (template A, relaxation injected on BOTH halves of the q2-q4 pair): Bob's frame-corrected leg map = diag(c_a c_b, c_a c_b, (1-gamma_a)(1-gamma_b) + gamma_a gamma_b)",
+     "err": 9.992007221626409e-16,
+     "cases": 4,
+     "tol": 1e-12,
+     "pass": true
+    },
+    {
+     "level": "D",
+     "what": "source (read only): qiskit-aer's device noise model builds its relaxation errors with thermal_relaxation_error",
+     "pass": true
+    },
+    {
+     "level": "D",
+     "what": "hardware: the z component kept over the 8 us wait (N2 / native, both legs) = (1-gamma_a)(1-gamma_b) + gamma_a gamma_b of the job-time T1 records (|z| < 3, delta-method sigma from the TOMO-9 binomials)",
+     "pass": true,
+     "rows": [
+      {
+       "leg": 2,
+       "qubits": [
+        36,
+        21
+       ],
+       "measured_xyz": [
+        0.9037655683597222,
+        0.9232631336558031,
+        0.9517455326720136
+       ],
+       "sd_xyz": [
+        0.02458777777768003,
+        0.027596000321257905,
+        0.017397855521649852
+       ],
+       "record_xy": 0.9535207311567164,
+       "record_z": 0.9512069174171792,
+       "z_xy": [
+        -2.023572981945538,
+        -1.09644865736594
+       ],
+       "z_z": 0.030958715237293974,
+       "sigma_f_kHz": 5.896261046796759,
+       "chi2_record_only": 5.044197752692133,
+       "chi2_fit": 0.2788880011770687,
+       "LR_p": 0.02903883360185235,
+       "T1": [
+        280.7735055888811,
+        360.7028224884829
+       ],
+       "T2": [
+        263.61743296683505,
+        463.8459525864548
+       ]
+      },
+      {
+       "leg": 3,
+       "qubits": [
+        43,
+        44
+       ],
+       "measured_xyz": [
+        0.9014384244305266,
+        0.8655535912438503,
+        0.9383497318904102
+       ],
+       "sd_xyz": [
+        0.02197225631942838,
+        0.020844256037602277,
+        0.012048719775345072
+       ],
+       "record_xy": 0.8932307512442597,
+       "record_z": 0.9370438644675618,
+       "z_xy": [
+        0.3735471253814522,
+        -1.3278075240718945
+       ],
+       "z_z": 0.1083822553098533,
+       "sigma_f_kHz": 3.0052712820403675,
+       "chi2_record_only": 1.8491208159899357,
+       "chi2_fit": 1.405527688240075,
+       "LR_p": 0.505393284640286,
+       "T1": [
+        212.11624593634758,
+        281.51865294326694
+       ],
+       "T2": [
+        86.44370527424438,
+        392.839460832423
+       ]
+      }
+     ]
+    },
+    {
+     "level": "D",
+     "what": "hardware: x, y components = echo-T2 record x one quasi-static Gaussian factor per leg (fitted sigma_f); residuals |z| < 3 (criterion set before computing)",
+     "pass": true,
+     "rows": [
+      {
+       "leg": 2,
+       "qubits": [
+        36,
+        21
+       ],
+       "measured_xyz": [
+        0.9037655683597222,
+        0.9232631336558031,
+        0.9517455326720136
+       ],
+       "sd_xyz": [
+        0.02458777777768003,
+        0.027596000321257905,
+        0.017397855521649852
+       ],
+       "record_xy": 0.9535207311567164,
+       "record_z": 0.9512069174171792,
+       "z_xy": [
+        -2.023572981945538,
+        -1.09644865736594
+       ],
+       "z_z": 0.030958715237293974,
+       "sigma_f_kHz": 5.896261046796759,
+       "chi2_record_only": 5.044197752692133,
+       "chi2_fit": 0.2788880011770687,
+       "LR_p": 0.02903883360185235,
+       "T1": [
+        280.7735055888811,
+        360.7028224884829
+       ],
+       "T2": [
+        263.61743296683505,
+        463.8459525864548
+       ]
+      },
+      {
+       "leg": 3,
+       "qubits": [
+        43,
+        44
+       ],
+       "measured_xyz": [
+        0.9014384244305266,
+        0.8655535912438503,
+        0.9383497318904102
+       ],
+       "sd_xyz": [
+        0.02197225631942838,
+        0.020844256037602277,
+        0.012048719775345072
+       ],
+       "record_xy": 0.8932307512442597,
+       "record_z": 0.9370438644675618,
+       "z_xy": [
+        0.3735471253814522,
+        -1.3278075240718945
+       ],
+       "z_z": 0.1083822553098533,
+       "sigma_f_kHz": 3.0052712820403675,
+       "chi2_record_only": 1.8491208159899357,
+       "chi2_fit": 1.405527688240075,
+       "LR_p": 0.505393284640286,
+       "T1": [
+        212.11624593634758,
+        281.51865294326694
+       ],
+       "T2": [
+        86.44370527424438,
+        392.839460832423
+       ]
+      }
+     ]
+    }
+   ],
+   "pass": true,
+   "error": null,
+   "seconds": 0.765,
+   "levels": "SND"
+  },
+  {
+   "key": "zz",
+   "number": "8.5",
+   "kind": "P",
+   "label": "Proposition 8.5",
+   "short": "P8.5",
+   "title": "static ZZ in IBM's frame and detuning on an idle Bell pair",
+   "uses": "8.6, 8.7",
+   "seed": 98005,
+   "checks": [
+    {
+     "level": "S",
+     "what": "IBM's frame: static ZZ = a phase e^{-iht} on |11> only (h = 2 pi zeta). On |Phi+> it equals R_z(-ht) on EITHER half (up to a global phase): a local, coherent, correctable rotation",
+     "err": 0.0,
+     "exact": true,
+     "pass": true
+    },
+    {
+     "level": "S",
+     "what": "the textbook form exp(-i theta ZZ/2) leaves |Phi+> unchanged (it is an eigenvector): the difference to IBM's |11>-phase is the single-qubit Z part, |11><11| = (I - Z1 - Z2 + Z1 Z2)/4 (8c's corrected plan)",
+     "err": 0.0,
+     "exact": true,
+     "pass": true
+    },
+    {
+     "level": "S",
+     "what": "detunings of the two halves ADD: exp(-i(alpha Z_a + beta Z_b))|Phi+> = R_z(2(alpha + beta)) on one half",
+     "err": 0.0,
+     "exact": true,
+     "pass": true
+    },
+    {
+     "level": "S",
+     "what": "a neighbour (spectator) in |0>: the |11>-phase does nothing in IBM's frame",
+     "err": 0.0,
+     "exact": true,
+     "pass": true
+    },
+    {
+     "level": "N",
+     "what": "4 qubits (Bell pair a-b, spectators in |0> on a and on b), random ZZ (1-8 kHz), detunings, waits: final pair = R_z(-2 pi t (zeta_ab + delta_a + delta_b)) |Phi+>, spectators untouched (1 - |overlap|)",
+     "err": 4.440892098500626e-16,
+     "cases": 200,
+     "tol": 1e-12,
+     "pass": true
+    },
+    {
+     "level": "D",
+     "what": "hardware (Round 1 TOMO-9 of the 8 us wait), PRE-REGISTERED form 'the total rotation axis is Z within the error law' (Wald test of x, y, p > 0.001): leg q3 passes, leg q2 FAILS (tilt 12.5 deg). Reported as a finding, not required: the N2 circuits also carry the native leg-q2 rotation (0.108 rad about ~ -X, claim 8.9)",
+     "pass": true,
+     "rows": [
+      {
+       "leg": 2,
+       "tilt_deg": 12.495291607712584,
+       "wald_xy": 48.9491554897931,
+       "p_xy": 2.3486912967629152e-11
+      },
+      {
+       "leg": 3,
+       "tilt_deg": 0.9957932968640233,
+       "wald_xy": 0.9779477165451189,
+       "p_xy": 0.6132553583388123
+      }
+     ],
+     "preregistered_pass": [
+      false,
+      true
+     ]
+    },
+    {
+     "level": "D",
+     "what": "POST HOC: after removing the native rotation measured independently (fingerprint circuits), the waiting rotation of both legs is about Z within the error law, for either composition order (Wald p > 0.001)",
+     "pass": true,
+     "rows": [
+      {
+       "leg": 2,
+       "wait_after_native": {
+        "rotvec": [
+         -0.04711479806100029,
+         -0.03725000994322265,
+         -0.6036084433271277
+        ],
+        "angle": 0.6065892517123076,
+        "wald_xy": 4.994628117258437,
+        "p_xy": 0.08230577047502163,
+        "tilt_deg": 5.682445907547382
+       },
+       "wait_before_native": {
+        "rotvec": [
+         -0.02926765664541856,
+         0.023846904709501064,
+         -0.6054132883437224
+        ],
+        "angle": 0.6065892517123076,
+        "wald_xy": 1.9355083169394547,
+        "p_xy": 0.3799353552601838,
+        "tilt_deg": 3.568267124452888
+       }
+      },
+      {
+       "leg": 3,
+       "wait_after_native": {
+        "rotvec": [
+         0.002211721148188381,
+         0.03155671525439988,
+         -0.9668915030117141
+        ],
+        "angle": 0.9674088569908466,
+        "wald_xy": 1.4491671409061022,
+        "p_xy": 0.48452629801624425,
+        "tilt_deg": 1.8738975951499826
+       },
+       "wait_before_native": {
+        "rotvec": [
+         -0.03680549978681765,
+         0.030931079237976437,
+         -0.9662134961316534
+        ],
+        "angle": 0.9674088569908466,
+        "wald_xy": 3.3286363708840865,
+        "p_xy": 0.18931969491145326,
+        "tilt_deg": 2.8485696669427085
+       }
+      }
+     ]
+    },
+    {
+     "level": "D",
+     "what": "the in-pair static ZZ of the record (2 pi zeta tau = 0.234 / 0.206 rad) explains only part of the angle (0.642 / 1.122 rad); by the addition rule the rest is the SUM of the two halves' detunings (in no record)",
+     "pass": true,
+     "rows": [
+      {
+       "leg": 2,
+       "angle": 0.6417158758107983,
+       "zz_rad": 0.23368383421613254,
+       "zz_kHz": 4.648992167020561,
+       "rest_kHz": 8.117539544958612,
+       "total_kHz": 12.766531711979173
+      },
+      {
+       "leg": 3,
+       "angle": 1.1221992262802136,
+       "zz_rad": 0.20612483047326177,
+       "zz_kHz": 4.100723207974819,
+       "rest_kHz": 18.22472104157473,
+       "total_kHz": 22.325444249549548
+      }
+     ]
+    }
+   ],
+   "pass": true,
+   "error": null,
+   "seconds": 0.188,
+   "levels": "SND"
+  },
+  {
+   "key": "dd",
+   "number": "8.6",
+   "kind": "P",
+   "label": "Proposition 8.6",
+   "short": "P8.6",
+   "title": "dynamical decoupling in the toggling frame: what survives, and the pulsed-spectator phase",
+   "uses": "8.7",
+   "seed": 98006,
+   "checks": [
+    {
+     "level": "S",
+     "what": "ideal X pulses at t/4 and 3t/4 on the set S = {1, 2} (3 qubits, any diagonal H): the evolution is exp(-i t H_eff) with H_eff = (H + X_S H X_S)/2: a single Z_i survives iff i is NOT pulsed, Z_i Z_j survives iff both or neither are pulsed (exact, all terms commute)",
+     "err": 0.0,
+     "exact": true,
+     "pass": true
+    },
+    {
+     "level": "S",
+     "what": "ideal X pulses at t/4 and 3t/4 on the set S = {1, 2, 3} (3 qubits, any diagonal H): the evolution is exp(-i t H_eff) with H_eff = (H + X_S H X_S)/2: a single Z_i survives iff i is NOT pulsed, Z_i Z_j survives iff both or neither are pulsed (exact, all terms commute)",
+     "err": 0.0,
+     "exact": true,
+     "pass": true
+    },
+    {
+     "level": "S",
+     "what": "ideal X pulses at t/4 and 3t/4 on the set S = {1} (3 qubits, any diagonal H): the evolution is exp(-i t H_eff) with H_eff = (H + X_S H X_S)/2: a single Z_i survives iff i is NOT pulsed, Z_i Z_j survives iff both or neither are pulsed (exact, all terms commute)",
+     "err": 0.0,
+     "exact": true,
+     "pass": true
+    },
+    {
+     "level": "S",
+     "what": "Bell pair (a, b) + spectator s in |0> coupled to a, ALL pulsed (IBM-frame couplings h|11><11|, detunings d): detunings and the in-pair ZZ drop out; the relative phase of |Phi+> is + h_s t / 2, i.e. R_z(+pi zeta_s t) on the pair, OPPOSITE in sense to the in-pair ZZ rotation R_z(-2 pi zeta t) of claim 8.5",
+     "err": 0.0,
+     "exact": true,
+     "pass": true
+    },
+    {
+     "level": "N",
+     "what": "5 qubits (pair, two pulsed spectators in |0>, one unpulsed spectator), random ZZ / detunings / waits, explicit pulses: the pair ends in R_z(pi t (zeta_s1 + zeta_s2))|Phi+>, the unpulsed spectator and all detunings drop out; the full unitary = exp(-i t H_eff)",
+     "err": 4.440892098500626e-16,
+     "cases": 100,
+     "tol": 1e-12,
+     "pass": true
+    },
+    {
+     "level": "D",
+     "what": "device map (Kingston snapshot of the job time): the Bell-pair qubits' neighbours are exactly Q36: {21, 41}, Q21: {20, 22, 36}, Q43: {42, 44, 56}, Q44: {43, 45}; inside the circuit only the idle message qubits Q41 (on Q36) and Q42 (on Q43) can be pulsed spectators",
+     "pass": true,
+     "neighbours": {
+      "36": [
+       21,
+       41
+      ],
+      "21": [
+       20,
+       22,
+       36
+      ],
+      "43": [
+       42,
+       44,
+       56
+      ],
+      "44": [
+       43,
+       45
+      ]
+     }
+    },
+    {
+     "level": "D",
+     "what": "runtime 0.50 source (read only): the DD option skip_reset_qubits defaults to False, i.e. IBM's DD also pulses qubits that are still in |0> at the start of the circuit (the message qubits during the 8 us wait)",
+     "pass": true,
+     "default": "False"
+    }
+   ],
+   "pass": true,
+   "error": null,
+   "seconds": 0.063,
+   "levels": "SND"
+  },
+  {
+   "key": "ddobs",
+   "number": "8.7",
+   "kind": "O",
+   "label": "Observation 8.7",
+   "short": "O8.7",
+   "title": "the DD shortfall: a zero-parameter spectator explanation",
+   "uses": "Section 5",
+   "seed": 98007,
+   "checks": [
+    {
+     "level": "D",
+     "what": "8e's incoherent part of the wait D = R_hat T(N2) recomputed with an own Procrustes from 8d's cached T (8e used Stage 7's): identical to 1e-12",
+     "pass": true,
+     "max_dev": 0.0
+    },
+    {
+     "level": "D",
+     "what": "hardware DD job (0.775 / 0.499), PLANNING version S0 (criterion fixed during planning after a scratch evaluation): zero-parameter spectator phases fit (chi^2 of 2 values, p > 0.001)",
+     "pass": true,
+     "S0": {
+      "scenario": "S0: as S1, but DD also removes the non-Z native rotation (the planning version)",
+      "DD": 0.7863342108287441,
+      "TOMO+DD": 0.49275220534901293,
+      "chi2": 3.6758319714573275,
+      "p": 0.15914874901037954
+     }
+    },
+    {
+     "level": "D",
+     "what": "POST HOC, the principled version S1 (DD refocuses EVERY Z phase - the wait and leg q3's almost pure-Z native rotation - but not leg q2's native X rotation; pulsed spectators add pi zeta t): p > 0.001, while every no-spectator / same-sense / in-pair-ZZ alternative is rejected (p < 0.001). Reported, not required: S2 (DD leaves the whole native rotation) is rejected too",
+     "pass": true,
+     "rows": [
+      {
+       "scenario": "S1: DD refocuses every Z phase (wait + native idle), keeps the non-Z native rotation; pulsed spectators add pi zeta t",
+       "DD": 0.7858605830807409,
+       "TOMO+DD": 0.49380145134518916,
+       "chi2": 3.173543754261813,
+       "p": 0.20458497234098597
+      },
+      {
+       "scenario": "S0: as S1, but DD also removes the non-Z native rotation (the planning version)",
+       "DD": 0.7863342108287441,
+       "TOMO+DD": 0.49275220534901293,
+       "chi2": 3.6758319714573275,
+       "p": 0.15914874901037954
+      },
+      {
+       "scenario": "S2: as S1, but DD leaves the WHOLE native rotation",
+       "DD": 0.788541667486851,
+       "TOMO+DD": 0.5416400609367805,
+       "chi2": 43.63962067119196,
+       "p": 3.340233097902142e-10
+      },
+      {
+       "scenario": "A1: no spectator phase (DD refocuses every Z phase only)",
+       "DD": 0.7900758770132218,
+       "TOMO+DD": 0.5435339462217682,
+       "chi2": 48.19422972198465,
+       "p": 3.4257525216886685e-11
+      },
+      {
+       "scenario": "A0: no spectator phase, DD removes the whole rotation (8e scenario A)",
+       "DD": 0.790488902740139,
+       "TOMO+DD": 0.5423932787151137,
+       "chi2": 46.24219526862814,
+       "p": 9.091486158593829e-11
+      },
+      {
+       "scenario": "S1': spectator phase in the SAME sense as the waiting rotation",
+       "DD": 0.7859884883539758,
+       "TOMO+DD": 0.5911022749075091,
+       "chi2": 189.85197848173166,
+       "p": 5.945202934500841e-42
+      },
+      {
+       "scenario": "B: in-pair ZZ survives DD (8d's reading; excluded by claim 8.6)",
+       "DD": 0.7736166758212826,
+       "TOMO+DD": 0.6319360187299794,
+       "chi2": 391.15362544444514,
+       "p": 1.153637717248762e-85
+      }
+     ],
+     "spectator_rad": {
+      "2": 0.10429089020408185,
+      "3": 0.11477431482500632
+     },
+     "hardware": {
+      "DD": [
+       0.7748512240620428,
+       0.006978996803484356
+      ],
+      "TOMO+DD": [
+       0.49935025025416446,
+       0.006704101832084357
+      ]
+     },
+     "S2": {
+      "scenario": "S2: as S1, but DD leaves the WHOLE native rotation",
+      "DD": 0.788541667486851,
+      "TOMO+DD": 0.5416400609367805,
+      "chi2": 43.63962067119196,
+      "p": 3.340233097902142e-10
+     }
+    },
+    {
+     "level": "D",
+     "what": "8e's one-parameter fit (DD leaves -0.10 x the phase, opposite sense) agrees in SENSE with the predicted spectator phases on both legs; magnitudes predicted 0.104 / 0.115 rad vs fitted (proportional to the phase) 0.065 / 0.114",
+     "pass": true,
+     "fit": {
+      "g": -0.10199999999999998,
+      "DD": 0.7874688061426987,
+      "TOMO+DD": 0.49770740463466484,
+      "chi2": 3.32868378558317,
+      "leftover_rad": {
+       "2": -0.06545501933270141,
+       "3": -0.11446432108058177
+      }
+     },
+     "predicted": {
+      "2": 0.10429089020408185,
+      "3": 0.11477431482500632
+     }
+    },
+    {
+     "level": "D",
+     "what": "DD alone: S1 predicts it within |z| < 3; the hypothesis explains why TOMO-9 + DD over-corrects below 0.5, but not the whole TOMO-9 - DD gap (the model's own TOMO-9 value is below the hardware's: a separate model shortfall)",
+     "pass": true,
+     "z_DD": 1.577498790829304,
+     "model_TOMO": 0.790488902740139,
+     "hardware_TOMO": [
+      0.8089083087664437,
+      0.006243964295982416
+     ]
+    },
+    {
+     "level": "D",
+     "what": "limit (reported): if DD ALSO restored the echo-T2 coherence of leg q2 (claim 8.4), DD alone would be predicted higher (0.806); the hypothesis uses the measured incoherent part unchanged",
+     "pass": true,
+     "F_DD_echo_restored": 0.8064081095464447
+    }
+   ],
+   "pass": true,
+   "error": null,
+   "seconds": 0.018,
+   "levels": "D"
+  },
+  {
+   "key": "branch",
+   "number": "8.8",
+   "kind": "P",
+   "label": "Proposition 8.8",
+   "short": "P8.8",
+   "title": "the teleportation twirl branch by branch on the real per-shot data",
+   "uses": "8.11, Section 5",
+   "seed": 98008,
+   "checks": [
+    {
+     "level": "N",
+     "what": "Stage 8's exact simulator, random channel unitaries: in Alice branch a the frame-corrected leg map is S_a F T^T F S_a (F = diag(1,-1,1): the Bloch map of G^T; S_a: signs of the branch Pauli) - T2.2 of Part 9.2 as a matrix; its average over the 16 branches is diag(T)",
+     "err": 8.326672684688674e-16,
+     "cases": 64,
+     "tol": 1e-12,
+     "pass": true
+    },
+    {
+     "level": "N",
+     "what": "full chain with random readout errors on all 6 qubits: exact joint distributions -> Stage 8's TOMO-9 fit -> T_phys = T_fit D^-1 (claim 8.2's readout factors) -> branch model = the exact conditional distributions of all 16 x 4 cells in all 9 bases",
+     "err": 4.440892098500626e-16,
+     "cases": 18,
+     "tol": 1e-12,
+     "pass": true
+    },
+    {
+     "level": "D",
+     "what": "hardware (Round 1, N1 without correction, per-shot data split by Alice's 16 outcomes): the branch model (T from the independent TOMO-9 circuits) beats the twirled null by Delta G^2 >= 100 (pre-registered)",
+     "pass": true,
+     "rows": [
+      {
+       "block": "R1_N1none_product_HT",
+       "branch": {
+        "G2": 690.2864194311694,
+        "X2": 687.6639149706091,
+        "dof": 567,
+        "p_gof": 0.00028608727165470565,
+        "rms_bloch_residual": 0.06705730306925561,
+        "rms_shot_noise": 0.06337037944837592,
+        "rms_model_error": 0.02192890566104139
+       },
+       "twirl_null": {
+        "G2": 7268.288047229679,
+        "X2": 6541.304701628615,
+        "dof": 567,
+        "p_gof": 0.0,
+        "rms_bloch_residual": 0.3253459141930946,
+        "rms_shot_noise": 0.06745221357623858,
+        "rms_model_error": 0.3182768649553498
+       }
+      },
+      {
+       "block": "R1_N1none_bell_30_70",
+       "branch": {
+        "G2": 614.3431787233085,
+        "X2": 609.3654290544741,
+        "dof": 567,
+        "p_gof": 0.08253420557319145,
+        "rms_bloch_residual": 0.0842886420481546,
+        "rms_shot_noise": 0.0715205165456611,
+        "rms_model_error": 0.044602588393093875
+       },
+       "twirl_null": {
+        "G2": 6017.746768596901,
+        "X2": 5847.212299296962,
+        "dof": 567,
+        "p_gof": 0.0,
+        "rms_bloch_residual": 0.17483827943676433,
+        "rms_shot_noise": 0.07247836010574267,
+        "rms_model_error": 0.15910786049969491
+       }
+      }
+     ]
+    },
+    {
+     "level": "D",
+     "what": "PRE-REGISTERED 'per-branch Bloch residual RMS <= 0.05' FAILED (0.067 / 0.084): the criterion was set below the shot-noise floor of a branch cell (~190 shots, sd ~ 0.07). Reported as a design error of the criterion, not required",
+     "pass": true,
+     "rms": [
+      0.06705730306925561,
+      0.0842886420481546
+     ],
+     "shot_floor": [
+      0.06337037944837592,
+      0.0715205165456611
+     ],
+     "preregistered_pass": [
+      false,
+      false
+     ]
+    },
+    {
+     "level": "D",
+     "what": "reported (no criterion, post hoc): the model error left after subtracting the shot noise (RMS over the conditional expectations) for the branch model vs the twirled null, and the goodness-of-fit p of the branch model",
+     "pass": true,
+     "model_error": [
+      0.02192890566104139,
+      0.044602588393093875
+     ],
+     "null_error": [
+      0.3182768649553498,
+      0.15910786049969491
+     ],
+     "p_gof": [
+      0.00028608727165470565,
+      0.08253420557319145
+     ]
+    },
+    {
+     "level": "D",
+     "what": "reported (no criterion): the same test on the native channel and on the 8 us wait",
+     "pass": true,
+     "rows": [
+      {
+       "block": "R1_nativeA_product_HT",
+       "branch": {
+        "G2": 754.7152991494079,
+        "X2": 745.3887558190355,
+        "dof": 567,
+        "p_gof": 1.9336285755014149e-07,
+        "rms_bloch_residual": 0.07229140277108538,
+        "rms_shot_noise": 0.06351340411941497,
+        "rms_model_error": 0.03452672025801425
+       },
+       "twirl_null": {
+        "G2": 1152.0245377180613,
+        "X2": 1126.2280548423469,
+        "dof": 567,
+        "p_gof": 4.028730693303403e-42,
+        "rms_bloch_residual": 0.09977481707916595,
+        "rms_shot_noise": 0.06368746674276406,
+        "rms_model_error": 0.07680443153275955
+       }
+      },
+      {
+       "block": "R1_nativeA_bell_30_70",
+       "branch": {
+        "G2": 672.5153239235859,
+        "X2": 660.3999666802463,
+        "dof": 567,
+        "p_gof": 0.0014544773004620596,
+        "rms_bloch_residual": 0.0734418632834605,
+        "rms_shot_noise": 0.07158407769635892,
+        "rms_model_error": 0.016414234764622823
+       },
+       "twirl_null": {
+        "G2": 828.039935984914,
+        "X2": 810.3685152753142,
+        "dof": 567,
+        "p_gof": 4.40529717740114e-12,
+        "rms_bloch_residual": 0.0738451037058203,
+        "rms_shot_noise": 0.07159301032739869,
+        "rms_model_error": 0.01809807209578796
+       }
+      },
+      {
+       "block": "R1_N2none_product_HT",
+       "branch": {
+        "G2": 711.4782590358977,
+        "X2": 702.2611323533728,
+        "dof": 567,
+        "p_gof": 3.282943404470268e-05,
+        "rms_bloch_residual": 0.0814138086229643,
+        "rms_shot_noise": 0.06547652559049318,
+        "rms_model_error": 0.0483842208896056
+       },
+       "twirl_null": {
+        "G2": 8749.489888335469,
+        "X2": 8706.76153877306,
+        "dof": 567,
+        "p_gof": 0.0,
+        "rms_bloch_residual": 0.3616070588348625,
+        "rms_shot_noise": 0.07019651195738655,
+        "rms_model_error": 0.3547282265456418
+       }
+      },
+      {
+       "block": "R1_N2none_bell_30_70",
+       "branch": {
+        "G2": 795.0169066565145,
+        "X2": 797.1822210993747,
+        "dof": 567,
+        "p_gof": 7.249302432792515e-10,
+        "rms_bloch_residual": 0.08645931113852666,
+        "rms_shot_noise": 0.07177689468026277,
+        "rms_model_error": 0.04820051734791886
+       },
+       "twirl_null": {
+        "G2": 2773.6587149629145,
+        "X2": 2657.5597334499453,
+        "dof": 567,
+        "p_gof": 1.1987893850204742e-286,
+        "rms_bloch_residual": 0.085912179164579,
+        "rms_shot_noise": 0.07178979636459992,
+        "rms_model_error": 0.04719245349349828
+       }
+      }
+     ]
+    },
+    {
+     "level": "S",
+     "what": "Alice's two bits of one leg (Bell measurement of message m and channel half c, reduced state rho_m (x) rho_c with rho_c = (I + t.sigma)/2): P(bit_z = 0) = (1 + r_x t_x)/2, P(bit_x = 0) = (1 + r_z t_z)/2, P(xor = 0) = (1 - r_y t_y)/2 (r = message Bloch vector, t = the channel half's offset = the non-unital part of the channel acting on half of a Bell pair; 9.2's P2.3 is the case t_z = gamma)",
+     "err": 0.0,
+     "exact": true,
+     "pass": true
+    },
+    {
+     "level": "D",
+     "what": "PRE-REGISTERED 'Alice's bits uniform up to readout in the unital blocks (max |z| < 3.4)': FAILED for product_HT (z down to -7.3), passed for bell_30_70. Reported as a FINDING: by the formula above, product_HT's message bit (r_x = 0.71) reads the channel half's offset t_x; implied t_x = +0.034 (leg q2, native) and +0.063 (leg q3, N1), i.e. the channel halves are measurably non-unital (invisible to TOMO-9, harmless to Bob after the twirl). bell_30_70 (r_x = 0) is uniform as it must be",
+     "pass": true,
+     "rows": [
+      {
+       "block": "R1_nativeA_product_HT",
+       "observed": [
+        0.4694074074074074,
+        0.49248148148148146,
+        0.4842592592592593,
+        0.502
+       ],
+       "predicted_unital": [
+        0.48031250000000003,
+        0.49787499999999996,
+        0.4931875,
+        0.4966875
+       ],
+       "z": [
+        -3.5865604861322273,
+        -1.7725070621753456,
+        -2.934391695320315,
+        1.7459039668762841
+       ],
+       "message_bloch": [
+        0.7071067811865475,
+        0.7071067811865475,
+        -1.1102230246251565e-16
+       ],
+       "implied_offsets": {
+        "leg2_t_x": [
+         0.033503608621054025,
+         0.009331165835594743,
+         3.590506182330495
+        ],
+        "leg3_t_x": [
+         0.015378199672982583,
+         0.008675057026238142,
+         1.7726914793148278
+        ]
+       }
+      },
+      {
+       "block": "R1_nativeA_bell_30_70",
+       "observed": [
+        0.4818148148148148,
+        0.4998888888888889,
+        0.49737037037037035,
+        0.49777777777777776
+       ],
+       "predicted_unital": [
+        0.48031250000000003,
+        0.49787499999999996,
+        0.4931875,
+        0.4966875
+       ],
+       "z": [
+        0.494094195605974,
+        0.6618374008981059,
+        1.3747590856737866,
+        0.35830970300597664
+       ],
+       "message_bloch": [
+        0.0,
+        0.0,
+        -0.40000000000000013
+       ],
+       "implied_offsets": {
+        "leg2_t_z": [
+         0.02124093116856795,
+         0.015451877688979387,
+         1.3746504855987465
+        ],
+        "leg3_t_z": [
+         0.005494659331121142,
+         0.015335129362422,
+         0.3583053785373041
+        ]
+       }
+      },
+      {
+       "block": "R1_N1none_product_HT",
+       "observed": [
+        0.476,
+        0.4757777777777778,
+        0.49033333333333334,
+        0.49296296296296294
+       ],
+       "predicted_unital": [
+        0.48031250000000003,
+        0.49787499999999996,
+        0.4931875,
+        0.4966875
+       ],
+       "z": [
+        -1.418332028372827,
+        -7.261953826405959,
+        -0.9380619549727622,
+        -1.2240346329864773
+       ],
+       "message_bloch": [
+        0.7071067811865475,
+        0.7071067811865475,
+        -1.1102230246251565e-16
+       ],
+       "implied_offsets": {
+        "leg2_t_x": [
+         0.013249251297181958,
+         0.009337905339674234,
+         1.4188675955933578
+        ],
+        "leg3_t_x": [
+         0.06300441805935235,
+         0.008665851240275694,
+         7.270424602551559
+        ]
+       }
+      },
+      {
+       "block": "R1_N1none_bell_30_70",
+       "observed": [
+        0.4817777777777778,
+        0.49796296296296294,
+        0.4948888888888889,
+        0.4965185185185185
+       ],
+       "predicted_unital": [
+        0.48031250000000003,
+        0.49787499999999996,
+        0.4931875,
+        0.4966875
+       ],
+       "z": [
+        0.4819131368545282,
+        0.028907840499004148,
+        0.5591853502878976,
+        -0.05553420025358013
+       ],
+       "message_bloch": [
+        0.0,
+        0.0,
+        -0.40000000000000013
+       ],
+       "implied_offsets": {
+        "leg2_t_z": [
+         0.008639781078526584,
+         0.015451284046222584,
+         0.5591626594062112
+        ],
+        "leg3_t_z": [
+         -0.0008516138666070369,
+         0.015334909069143025,
+         -0.05553432777248469
+        ]
+       }
+      }
+     ],
+     "preregistered_pass": false,
+     "bell_max_abs_z": 1.3747590856737866
+    },
+    {
+     "level": "D",
+     "what": "T1 during the 8 us wait makes the channel non-unital: Alice's channel bits shift by -c r_z gamma / 2 (P2.3 of Part 9.2; gamma from the T1 record, r_z = message's <Z>: -0.4 for bell_30_70, 0 for product_HT). N2 - native differences agree with the prediction (|z| < 3)",
+     "pass": true,
+     "rows": [
+      {
+       "state": "product_HT",
+       "bit": 2,
+       "qubit": 36,
+       "r_z_message": -1.1102230246251565e-16,
+       "gamma": 0.028090627339610985,
+       "predicted": 1.5353681628451893e-18,
+       "observed": 0.0008888888888888835,
+       "sd": 0.004301298906219873,
+       "z_vs_prediction": 0.20665592144817196,
+       "z_vs_zero": 0.2066559214481723
+      },
+      {
+       "state": "product_HT",
+       "bit": 3,
+       "qubit": 43,
+       "r_z_message": -1.1102230246251565e-16,
+       "gamma": 0.037012809276975145,
+       "predicted": 2.0384434919983857e-18,
+       "observed": -0.004296296296296298,
+       "sd": 0.004303274924396275,
+       "z_vs_prediction": -0.9983782983372939,
+       "z_vs_zero": -0.9983782983372934
+      },
+      {
+       "state": "bell_30_70",
+       "bit": 2,
+       "qubit": 36,
+       "r_z_message": -0.40000000000000013,
+       "gamma": 0.028090627339610985,
+       "predicted": 0.005531746788852896,
+       "observed": 0.007703703703703768,
+       "sd": 0.004303174275485059,
+       "z_vs_prediction": 0.5047336630599388,
+       "z_vs_zero": 1.7902374411353343
+      },
+      {
+       "state": "bell_30_70",
+       "bit": 3,
+       "qubit": 43,
+       "r_z_message": -0.40000000000000013,
+       "gamma": 0.037012809276975145,
+       "predicted": 0.007344266680783795,
+       "observed": 0.011703703703703772,
+       "sd": 0.004302906697318261,
+       "z_vs_prediction": 1.0131377065733143,
+       "z_vs_zero": 2.719952935767344
+      }
+     ]
+    }
+   ],
+   "pass": true,
+   "error": null,
+   "seconds": 1.966,
+   "levels": "SND"
+  },
+  {
+   "key": "signif",
+   "number": "8.9",
+   "kind": "P",
+   "label": "Proposition 8.9",
+   "short": "P8.9",
+   "title": "significance of TOMO-9 rotations (error law) and of the crosstalk detector",
+   "uses": "Section 5",
+   "seed": 98009,
+   "checks": [
+    {
+     "level": "S",
+     "what": "[e]^2 = e e^T - |e|^2 I and tr([e]^2 P) = e^T P e - |e|^2 tr P for symmetric P, so tr(exp([e]) P) = tr P - e^T (tr(P) I - P) e / 2 + O(e^3): the Hessian of the Procrustes objective is H = tr(P) I - P",
+     "err": 0.0,
+     "exact": true,
+     "pass": true
+    },
+    {
+     "level": "N",
+     "what": "first-order law of the Procrustes estimate: eps = H^-1 b with b_k = tr(E_k R* Delta), checked against central finite differences of the Procrustes map on random T (relative error)",
+     "err": 6.78463001675717e-10,
+     "cases": 40,
+     "tol": 1e-06,
+     "pass": true
+    },
+    {
+     "level": "D",
+     "what": "8b's saved floor study (400 runs, T = 0.95 I, 9 x 2000 shots, angle = max over the 2 legs): the law (each leg's angle Maxwell with scale sqrt(2/N)/(tr P - p), max of two) fits the saved angles (KS p > 0.001); median 0.0321 vs saved 0.0328, p95 0.0508 vs saved 0.0496",
+     "pass": true,
+     "scale": 0.016643566632465155,
+     "ks_p": 0.3172084421811646,
+     "law_median": 0.0321166743714742,
+     "law_p95": 0.050811748830741923,
+     "saved_median": 0.03284943946466169,
+     "saved_p95": 0.0496186937207468
+    },
+    {
+     "level": "D",
+     "what": "hardware: the native rotations (fingerprint 0.108 / 0.159 rad) are real (Wald chi^2_3 p < 0.001, both legs; H9), and the Round 2 verification angles (0.050 / 0.043 rad) are consistent with a perfect correction (p > 0.001): the 'no Round 3' decision rests on this",
+     "pass": true,
+     "rows": [
+      {
+       "source": "fingerprint",
+       "leg": 2,
+       "angle": 0.10837632290840081,
+       "cached_angle": 0.10837632290840477,
+       "sd_per_axis": [
+        0.018350409694735684,
+        0.017992352672394938,
+        0.01893959964660488
+       ],
+       "wald": 34.567226365386766,
+       "p": 1.5036734782579804e-07
+      },
+      {
+       "source": "fingerprint",
+       "leg": 3,
+       "angle": 0.15932510232671615,
+       "cached_angle": 0.15932510232671504,
+       "sd_per_axis": [
+        0.0168891174385386,
+        0.017108270246812194,
+        0.017267779465493772
+       ],
+       "wald": 83.96195550460442,
+       "p": 4.3346843433813805e-18
+      },
+      {
+       "source": "verification",
+       "leg": 2,
+       "angle": 0.050012403928376116,
+       "cached_angle": 0.050012403928381105,
+       "sd_per_axis": [
+        0.01810701521441185,
+        0.017960950214528502,
+        0.019035732084784304
+       ],
+       "wald": 7.022829840559499,
+       "p": 0.07117365671821595
+      },
+      {
+       "source": "verification",
+       "leg": 3,
+       "angle": 0.04327857740898549,
+       "cached_angle": 0.04327857740899144,
+       "sd_per_axis": [
+        0.01711004336281682,
+        0.01709589179927301,
+        0.017376316011784066
+       ],
+       "wald": 6.41225388031993,
+       "p": 0.0931879743591384
+      }
+     ]
+    },
+    {
+     "level": "D",
+     "what": "N0 + TOMO-9 vs native: no measurable gain (|z| < 3), as expected when the corrected rotations (0.11 / 0.16 rad) cost only ~ (angle/2)^2 per leg",
+     "pass": true,
+     "rows": [
+      {
+       "state": "product_HT",
+       "N0corr": 0.8725779175062984,
+       "native": 0.8750576974490385,
+       "z": -0.2799902704290123
+      },
+      {
+       "state": "bell_30_70",
+       "N0corr": 0.8556072177678588,
+       "native": 0.860779490499306,
+       "z": -0.7731571120034991
+      }
+     ]
+    },
+    {
+     "level": "D",
+     "what": "the crosstalk detector re-implemented from Stage 6's source reproduces 8d's cached statistics (X2, dof) on the real counts; native p = 2.1e-4 < 0.001 (fires), N1 p = 0.84 (silent)",
+     "pass": true,
+     "detector": {
+      "detector_fp": {
+       "own": {
+        "X2": 30.018652939301194,
+        "dof": 8,
+        "p": 0.0002097796696351407
+       },
+       "cached": {
+        "X2": 30.018652939301194,
+        "dof": 8,
+        "p": 0.0002097796696351407
+       }
+      },
+      "detector_cal": {
+       "own": {
+        "X2": 4.881621856656521,
+        "dof": 9,
+        "p": 0.8445030272675543
+       },
+       "cached": {
+        "X2": 4.881621856656521,
+        "dof": 9,
+        "p": 0.8445030272675543
+       }
+      }
+     }
+    }
+   ],
+   "pass": true,
+   "error": null,
+   "seconds": 1.405,
+   "levels": "SND"
+  },
+  {
+   "key": "recov",
+   "number": "8.10",
+   "kind": "P",
+   "label": "Proposition 8.10",
+   "short": "P8.10",
+   "title": "error propagation of the recovered fraction: delta method, Fieller, bootstrap",
+   "uses": "Section 5",
+   "seed": 98010,
+   "checks": [
+    {
+     "level": "S",
+     "what": "delta method for f = (F_corr - F_none)/(F_native - F_none) with three independent estimates: Var f = (s_c^2 + f^2 s_a^2 + (1 - f)^2 s_n^2)/(F_native - F_none)^2 (8d's published sigma omitted the s_n term)",
+     "err": 0.0,
+     "exact": true,
+     "pass": true
+    },
+    {
+     "level": "S",
+     "what": "Fieller pivot: N - f D = F_corr - f F_native - (1 - f) F_none has variance s_c^2 + f^2 s_a^2 + (1 - f)^2 s_n^2 (N = F_corr - F_none, D = F_native - F_none, Cov(N, D) = s_n^2): (N - fD)/sd ~ N(0, 1) exactly for normal estimates, so {f : |N - f D| <= z sd(f)} is an exact confidence set",
+     "err": 0.0,
+     "exact": true,
+     "pass": true
+    },
+    {
+     "level": "N",
+     "what": "Fieller endpoints solve (N - f D)^2 = z^2 (Var N - 2 f Cov + f^2 Var D) (bounded since D^2 > z^2 Var D)",
+     "err": 5.5077470362263625e-17,
+     "cases": 200,
+     "tol": 1e-12,
+     "pass": true
+    },
+    {
+     "level": "D",
+     "what": "the light bootstrap (2000 resamples of the saved counts, seed 98501) re-runs identically to its cache",
+     "pass": true,
+     "seconds_cache": 0.22,
+     "seconds_live": 0.07
+    },
+    {
+     "level": "D",
+     "what": "H2 with exact intervals: f = 1 (the whole injected loss recovered) lies inside the 95 % Fieller interval for both states (pre-registered in 8c as the success criterion's meaning)",
+     "pass": true,
+     "rows": [
+      {
+       "state": "product_HT",
+       "F": {
+        "native": 0.8750576974490387,
+        "none": 0.7109277252226696,
+        "corr": 0.8844896779643782,
+        "oracle": 0.8804063446310448
+       },
+       "sigma_exact": {
+        "native": 0.0064258049318060475,
+        "none": 0.00669101776690392,
+        "corr": 0.006397487490565126,
+        "oracle": 0.006416424279592199
+       },
+       "f": 1.0574665333052686,
+       "sigma_8d": 0.05524560209623145,
+       "sigma_delta": 0.056910399720106246,
+       "fieller68": [
+        1.0021608757799323,
+        1.1162159244446601
+       ],
+       "fieller95": [
+        0.9517084780203462,
+        1.1765756252931368
+       ],
+       "boot_q": {
+        "0.025": 0.9527037887191753,
+        "0.16": 1.0015217747654306,
+        "0.5": 1.0578996453081242,
+        "0.84": 1.1149971162240773,
+        "0.975": 1.1707715937639158
+       },
+       "boot_halfwidth68": 0.05673767072932334,
+       "P_boot_f_gt_1": 0.8495,
+       "tomo_minus_oracle": 0.004083333333333328,
+       "tomo_minus_oracle_sd": 0.009060813800519108,
+       "z_tomo_oracle": 0.45065856370422125
+      },
+      {
+       "state": "bell_30_70",
+       "F": {
+        "native": 0.8607794904993061,
+        "none": 0.5216527752521077,
+        "corr": 0.8523467632766748,
+        "oracle": 0.8494885057071793
+       },
+       "sigma_exact": {
+        "native": 0.005091389932064644,
+        "none": 0.007296820616618659,
+        "corr": 0.005182816873162773,
+        "oracle": 0.005243371366991
+       },
+       "f": 0.9751339931550822,
+       "sigma_8d": 0.02142340492444673,
+       "sigma_delta": 0.021170225334198104,
+       "fieller68": [
+        0.9541638761915485,
+        0.9965209582743728
+       ],
+       "fieller95": [
+        0.9343798874318523,
+        1.0174926033834273
+       ],
+       "boot_q": {
+        "0.025": 0.9352890663091761,
+        "0.16": 0.9546337375905929,
+        "0.5": 0.9756702479554372,
+        "0.84": 0.9967447280011609,
+        "0.975": 1.018597628274041
+       },
+       "boot_halfwidth68": 0.02105549520528399,
+       "P_boot_f_gt_1": 0.126,
+       "tomo_minus_oracle": 0.002858257569495537,
+       "tomo_minus_oracle_sd": 0.007372552748737836,
+       "z_tomo_oracle": 0.38768899550903374
+      }
+     ]
+    },
+    {
+     "level": "D",
+     "what": "delta-method sigma, Fieller 68 % half-width and bootstrap 68 % half-width agree within 20 % (criterion set before computing): the ratio is close to normal at these error sizes",
+     "pass": true,
+     "rows": [
+      {
+       "state": "product_HT",
+       "F": {
+        "native": 0.8750576974490387,
+        "none": 0.7109277252226696,
+        "corr": 0.8844896779643782,
+        "oracle": 0.8804063446310448
+       },
+       "sigma_exact": {
+        "native": 0.0064258049318060475,
+        "none": 0.00669101776690392,
+        "corr": 0.006397487490565126,
+        "oracle": 0.006416424279592199
+       },
+       "f": 1.0574665333052686,
+       "sigma_8d": 0.05524560209623145,
+       "sigma_delta": 0.056910399720106246,
+       "fieller68": [
+        1.0021608757799323,
+        1.1162159244446601
+       ],
+       "fieller95": [
+        0.9517084780203462,
+        1.1765756252931368
+       ],
+       "boot_q": {
+        "0.025": 0.9527037887191753,
+        "0.16": 1.0015217747654306,
+        "0.5": 1.0578996453081242,
+        "0.84": 1.1149971162240773,
+        "0.975": 1.1707715937639158
+       },
+       "boot_halfwidth68": 0.05673767072932334,
+       "P_boot_f_gt_1": 0.8495,
+       "tomo_minus_oracle": 0.004083333333333328,
+       "tomo_minus_oracle_sd": 0.009060813800519108,
+       "z_tomo_oracle": 0.45065856370422125
+      },
+      {
+       "state": "bell_30_70",
+       "F": {
+        "native": 0.8607794904993061,
+        "none": 0.5216527752521077,
+        "corr": 0.8523467632766748,
+        "oracle": 0.8494885057071793
+       },
+       "sigma_exact": {
+        "native": 0.005091389932064644,
+        "none": 0.007296820616618659,
+        "corr": 0.005182816873162773,
+        "oracle": 0.005243371366991
+       },
+       "f": 0.9751339931550822,
+       "sigma_8d": 0.02142340492444673,
+       "sigma_delta": 0.021170225334198104,
+       "fieller68": [
+        0.9541638761915485,
+        0.9965209582743728
+       ],
+       "fieller95": [
+        0.9343798874318523,
+        1.0174926033834273
+       ],
+       "boot_q": {
+        "0.025": 0.9352890663091761,
+        "0.16": 0.9546337375905929,
+        "0.5": 0.9756702479554372,
+        "0.84": 0.9967447280011609,
+        "0.975": 1.018597628274041
+       },
+       "boot_halfwidth68": 0.02105549520528399,
+       "P_boot_f_gt_1": 0.126,
+       "tomo_minus_oracle": 0.002858257569495537,
+       "tomo_minus_oracle_sd": 0.007372552748737836,
+       "z_tomo_oracle": 0.38768899550903374
+      }
+     ]
+    },
+    {
+     "level": "D",
+     "what": "TOMO-9 - oracle consistent with 0 (|z| < 3) for both states (H3)",
+     "pass": true
+    }
+   ],
+   "pass": true,
+   "error": null,
+   "seconds": 0.171,
+   "levels": "SND"
+  },
+  {
+   "key": "formulas",
+   "number": "8.11",
+   "kind": "P",
+   "label": "Proposition 8.11",
+   "short": "P8.11",
+   "title": "fidelity formulas of the twirl model, budget algebra and the model's accuracy",
+   "uses": "Section 5",
+   "seed": 98011,
+   "checks": [
+    {
+     "level": "S",
+     "what": "product_HT (each qubit's Bloch vector (1,1,0)/sqrt 2): a twirled leg keeps F_leg = 1 - p_Z - (p_X + p_Y)/2, and F = F_leg(q2) F_leg(q3) (8e's formula, proven)",
+     "err": 0.0,
+     "exact": true,
+     "pass": true
+    },
+    {
+     "level": "S",
+     "what": "bell_30_70 through twirled legs: F = (1 + 0.16 (lz2 + lz3) + lz2 lz3 + 0.84 (lx2 lx3 + ly2 ly3))/4",
+     "err": 0.0,
+     "exact": true,
+     "pass": true
+    },
+    {
+     "level": "S",
+     "what": "infidelity of a composition of two Pauli sources on one axis: 1 - F(l_A l_B) = eps_A + eps_B - 2 eps_A eps_B (eps = (1 - l)/2): additive to first order, remainder 2 eps_A eps_B >= 0 exactly",
+     "err": 0.0,
+     "exact": true,
+     "pass": true
+    },
+    {
+     "level": "N",
+     "what": "the closed forms = Stage 8's _leg_state_F (the model of 8d) on random twirled legs",
+     "err": 4.440892098500626e-16,
+     "cases": 200,
+     "tol": 1e-12,
+     "pass": true
+    },
+    {
+     "level": "D",
+     "what": "PRE-REGISTERED 'the per-leg split of the native loss into readout (8e's readout Pauli channel) + rest is additive within 2e-3': FAILED for leg q2 (cross term ~ -0.004), passed for leg q3. Reported as a finding: the shares of a budget overlap at second order (2 eps_A eps_B per axis), so any split of the 0.124 native loss is order-dependent by a few 1e-3 (8e's waterfall itself telescopes exactly)",
+     "pass": true,
+     "rows": [
+      {
+       "leg": "2",
+       "F_leg": 0.9162499999999999,
+       "F_leg_readout": 0.95171875,
+       "F_leg_rest_exact": 0.9606582041451439,
+       "additivity_remainder": -0.0038730458548560387
+      },
+      {
+       "leg": "3",
+       "F_leg": 0.9444999999999999,
+       "F_leg_readout": 0.98784375,
+       "F_leg_rest_exact": 0.9556084334602579,
+       "additivity_remainder": -0.0010478165397419525
+      }
+     ],
+     "preregistered_pass": [
+      false,
+      true
+     ]
+    },
+    {
+     "level": "D",
+     "what": "8d's twirl model vs hardware with BOTH uncertainties (model sigma from the TOMO-9 binomials, delta method): all 14 blocks, chi^2 p > 0.001 (criterion set before computing); the model values = 8d's time-stamped file",
+     "pass": true,
+     "rows": [
+      {
+       "block": "R1_nativeA_product_HT",
+       "model": 0.8653981249999991,
+       "model_sd": 0.005298529072371495,
+       "hardware": 0.8750576974490385,
+       "hardware_sd": 0.00630710651816359,
+       "z": -1.1726547510000342,
+       "cached_model": 0.8653981249999991
+      },
+      {
+       "block": "R1_nativeA_bell_30_70",
+       "model": 0.8486288700000001,
+       "model_sd": 0.005284566612364045,
+       "hardware": 0.860779490499306,
+       "hardware_sd": 0.0045819714819178925,
+       "z": -1.7372019936641034,
+       "cached_model": 0.8486288700000001
+      },
+      {
+       "block": "R1_N1none_product_HT",
+       "model": 0.6991736874999994,
+       "model_sd": 0.006935104157710805,
+       "hardware": 0.7109277252226693,
+       "hardware_sd": 0.006504629005770797,
+       "z": -1.2362000863988423,
+       "cached_model": 0.6991736874999994
+      },
+      {
+       "block": "R1_N1none_bell_30_70",
+       "model": 0.52965976,
+       "model_sd": 0.007390818038149901,
+       "hardware": 0.5216527752521077,
+       "hardware_sd": 0.006889572912842113,
+       "z": 0.7924585133086912,
+       "cached_model": 0.52965976
+      },
+      {
+       "block": "R1_N1oracle_product_HT",
+       "model": 0.87375713125979,
+       "model_sd": 0.0076874508011825155,
+       "hardware": 0.8804063446310447,
+       "hardware_sd": 0.0059808780600206345,
+       "z": -0.6826700498560155,
+       "cached_model": 0.87375713125979
+      },
+      {
+       "block": "R1_N1oracle_bell_30_70",
+       "model": 0.8532545828748861,
+       "model_sd": 0.008523875376023282,
+       "hardware": 0.8494885057071793,
+       "hardware_sd": 0.004883146923746358,
+       "z": 0.38337343234218413,
+       "cached_model": 0.8532545828748861
+      },
+      {
+       "block": "R1_N2none_product_HT",
+       "model": 0.5430099374999995,
+       "model_sd": 0.007312902414029841,
+       "hardware": 0.5623454121283148,
+       "hardware_sd": 0.006226916197810864,
+       "z": -2.0130961789068484,
+       "cached_model": 0.5430099374999995
+      },
+      {
+       "block": "R1_N2none_bell_30_70",
+       "model": 0.59953532,
+       "model_sd": 0.005824067503008283,
+       "hardware": 0.5935022460532753,
+       "hardware_sd": 0.006862128888291613,
+       "z": 0.6703060692096348,
+       "cached_model": 0.59953532
+      },
+      {
+       "block": "R2_N0corr_product_HT",
+       "model": 0.8711242837019499,
+       "model_sd": 0.005431710900494421,
+       "hardware": 0.8725779175062984,
+       "hardware_sd": 0.006217790352565381,
+       "z": -0.17606628684278514,
+       "cached_model": 0.8711242837019499
+      },
+      {
+       "block": "R2_N0corr_bell_30_70",
+       "model": 0.8551723602671112,
+       "model_sd": 0.005424492512719601,
+       "hardware": 0.8556072177678588,
+       "hardware_sd": 0.004874327657945815,
+       "z": -0.05962874850113669,
+       "cached_model": 0.8551723602671112
+      },
+      {
+       "block": "R2_N1corr_product_HT",
+       "model": 0.8780361575191611,
+       "model_sd": 0.007780004881829413,
+       "hardware": 0.884489677964378,
+       "hardware_sd": 0.006966468236109233,
+       "z": -0.6179646517609518,
+       "cached_model": 0.8780361575191611
+      },
+      {
+       "block": "R2_N1corr_bell_30_70",
+       "model": 0.8600356906705514,
+       "model_sd": 0.008542919451405182,
+       "hardware": 0.8523467632766748,
+       "hardware_sd": 0.004882404594791099,
+       "z": 0.7814202912978342,
+       "cached_model": 0.8600356906705514
+      },
+      {
+       "block": "R2_N2corr_product_HT",
+       "model": 0.7904889027401385,
+       "model_sd": 0.007860651592833136,
+       "hardware": 0.8089083087664437,
+       "hardware_sd": 0.006243964295982416,
+       "z": -1.8348267009585746,
+       "cached_model": 0.7904889027401385
+      },
+      {
+       "block": "R2_N2corr_bell_30_70",
+       "model": 0.7671938762195569,
+       "model_sd": 0.007073683274212595,
+       "hardware": 0.7642839862795587,
+       "hardware_sd": 0.005939014978257172,
+       "z": 0.31504994446309686,
+       "cached_model": 0.7671938762195569
+      }
+     ],
+     "chi2": 16.156949515851455,
+     "p": 0.3038838233880456,
+     "max_abs_z": 2.0130961789068484,
+     "max_dev_cached": 0.0
+    }
+   ],
+   "pass": true,
+   "error": null,
+   "seconds": 1.192,
+   "levels": "SND"
+  },
+  {
+   "key": "regen",
+   "number": "8.12",
+   "kind": "O",
+   "label": "Observation 8.12",
+   "short": "O8.12",
+   "title": "every cached 8d number regenerated from the raw counts",
+   "uses": "Section 5, Part 9.9",
+   "seed": 98012,
+   "checks": [
+    {
+     "level": "D",
+     "what": "Round 1: Stage 8's own analysis (private copy, detector re-implemented) re-run on the saved raw counts reproduces the cached r1 exactly (1550 numbers)",
+     "pass": true,
+     "n_numbers": 1550,
+     "max_dev": 0.0,
+     "bad": [],
+     "seconds": 6.2
+    },
+    {
+     "level": "D",
+     "what": "Round 2 (main + DD job): reproduced exactly (878 numbers)",
+     "pass": true,
+     "n_numbers": 878,
+     "max_dev": 0.0,
+     "bad": [],
+     "seconds": 4.6
+    },
+    {
+     "level": "D",
+     "what": "every circuit's measured marginals (pilot, Round 1, Round 2: 273 circuits) reproduced from the per-shot integers (5140 numbers)",
+     "pass": true,
+     "n_numbers": 5140,
+     "max_dev": 0.0
+    },
+    {
+     "level": "D",
+     "what": "8d's time-stamped Round 2 model prediction file reproduced by a read-only re-implementation of tomo_model8d (14 blocks)",
+     "pass": true,
+     "max_dev": 0.0
+    },
+    {
+     "level": "D",
+     "what": "the 4 frozen jobs reload with their hash check (QPY + parameters; Stage 8's load_job) and match the hash IBM ran (job ledger)",
+     "pass": true,
+     "hashes": {
+      "R0": {
+       "manifest": "97385f5afb2e33ffb5d02ce7eb59885e6972dc8964597fa77a25b12b1ac6efa6",
+       "ledger": "97385f5afb2e33ffb5d02ce7eb59885e6972dc8964597fa77a25b12b1ac6efa6"
+      },
+      "R1": {
+       "manifest": "75066e5295d8b7b3931a1e53928edd3a675d736683ea70a3686a88fb5d0d9f2a",
+       "ledger": "75066e5295d8b7b3931a1e53928edd3a675d736683ea70a3686a88fb5d0d9f2a"
+      },
+      "R2main": {
+       "manifest": "19af5580c8d3c835a326bb0371277a8bfa5cf316832b76988bfdcf9b24684929",
+       "ledger": "19af5580c8d3c835a326bb0371277a8bfa5cf316832b76988bfdcf9b24684929"
+      },
+      "R2dd": {
+       "manifest": "f6c8572d9395de0a2a78883b00de2621478a87eaf40bbefc726d09ca67d1fab2",
+       "ledger": "f6c8572d9395de0a2a78883b00de2621478a87eaf40bbefc726d09ca67d1fab2"
+      }
+     },
+     "seconds": 0.1
+    },
+    {
+     "level": "D",
+     "what": "every time-stamped prediction file still has the SHA-256 recorded before the hardware jobs",
+     "pass": true,
+     "files": {
+      "predictions_round1.json": true,
+      "predictions_round2.json": true,
+      "predictions_round1_ibm_fez.json": true,
+      "predictions_round2_ibm_fez.json": true,
+      "predictions_round2_addendum.json": true,
+      "predictions_round2_tomo_model.json": true
+     }
+    },
+    {
+     "level": "D",
+     "what": "re-read (details in Part 9.9): 8d's comparison table has 21 blocks; hypotheses H2, H3 hold, H1, H6, H8 do not (as in STAGE8.md)",
+     "pass": true,
+     "hypotheses": {
+      "H1": false,
+      "H2": true,
+      "H3": true,
+      "H4": null,
+      "H5/H10": true,
+      "H6": false,
+      "H7": true,
+      "H8": false,
+      "H9": null,
+      "H11": null
+     }
+    }
+   ],
+   "pass": true,
+   "error": null,
+   "seconds": 10.995,
+   "levels": "D"
+  }
+ ]
+}

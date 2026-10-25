@@ -1,0 +1,613 @@
+{
+ "very slow": {
+  "ABC target 0.001": {
+   "mean_gap": 0.00048174477229301403,
+   "p99_gap": 0.0014559492886053742,
+   "max_gap": 0.002352006176217336,
+   "shots_per_step": 519.5084745762712,
+   "total_shots": 57651.0,
+   "jump_detect_rate": null,
+   "false_alarm_rate": 8.474576271186441e-05
+  },
+  "ABC target 0.0003": {
+   "mean_gap": 0.00017083234053808744,
+   "p99_gap": 0.000486009083338549,
+   "max_gap": 0.000907844765909771,
+   "shots_per_step": 3454.5254237288136,
+   "total_shots": 230817.0,
+   "jump_detect_rate": null,
+   "false_alarm_rate": 8.474576271186441e-05
+  },
+  "ABC target 0.0001": {
+   "mean_gap": 6.360195773060701e-05,
+   "p99_gap": 0.0001977160651278043,
+   "max_gap": 0.0005817182924063857,
+   "shots_per_step": 15471.762711864407,
+   "total_shots": 939834.0,
+   "jump_detect_rate": null,
+   "false_alarm_rate": 0.0
+  },
+  "ABC target 3e-05": {
+   "mean_gap": 2.2943381303493575e-05,
+   "p99_gap": 0.00014578748379740067,
+   "max_gap": 0.0005817182924063857,
+   "shots_per_step": 72233.64406779662,
+   "total_shots": 4288785.0,
+   "jump_detect_rate": null,
+   "false_alarm_rate": 0.0
+  },
+  "TOMO-9 every step, N = 300": {
+   "mean_gap": 0.0017662089350141113,
+   "p99_gap": 0.005110452126155012,
+   "max_gap": 0.007838354194603547,
+   "shots_per_step": 2700.0,
+   "total_shots": 162000.0
+  },
+  "TOMO-9 every step, N = 1000": {
+   "mean_gap": 0.0005282969589501459,
+   "p99_gap": 0.001500412848770192,
+   "max_gap": 0.0026404931738832627,
+   "shots_per_step": 9000.0,
+   "total_shots": 540000.0
+  },
+  "TOMO-9 every step, N = 3000": {
+   "mean_gap": 0.00017694221170435717,
+   "p99_gap": 0.0004990165443760542,
+   "max_gap": 0.001041056124370443,
+   "shots_per_step": 27000.0,
+   "total_shots": 1620000.0
+  },
+  "TOMO-9 every step, N = 10000": {
+   "mean_gap": 5.26127356370337e-05,
+   "p99_gap": 0.00014805268388676465,
+   "max_gap": 0.000307138164901688,
+   "shots_per_step": 90000.0,
+   "total_shots": 5400000.0
+  },
+  "RL designer B every step, N = 300": {
+   "mean_gap": 0.001410048343226031,
+   "p99_gap": 0.004101796341101864,
+   "max_gap": 0.010501584087632687,
+   "shots_per_step": 3600.0,
+   "total_shots": 216000.0
+  },
+  "RL designer B every step, N = 1000": {
+   "mean_gap": 0.0004191184919453923,
+   "p99_gap": 0.0012348437969086738,
+   "max_gap": 0.002522437525781962,
+   "shots_per_step": 12000.0,
+   "total_shots": 720000.0
+  },
+  "RL designer B every step, N = 3000": {
+   "mean_gap": 0.00013954164104394912,
+   "p99_gap": 0.00039699507018890024,
+   "max_gap": 0.0009865293531309272,
+   "shots_per_step": 36000.0,
+   "total_shots": 2160000.0
+  }
+ },
+ "slow": {
+  "ABC target 0.001": {
+   "mean_gap": 0.0007058761684236359,
+   "p99_gap": 0.0023251570843717383,
+   "max_gap": 0.004542878433192121,
+   "shots_per_step": 564.1271186440678,
+   "total_shots": 60283.5,
+   "jump_detect_rate": null,
+   "false_alarm_rate": 8.474576271186441e-05
+  },
+  "ABC target 0.0003": {
+   "mean_gap": 0.00024398806360571143,
+   "p99_gap": 0.000791557198233899,
+   "max_gap": 0.0019054221117186243,
+   "shots_per_step": 4157.796610169492,
+   "total_shots": 272310.0,
+   "jump_detect_rate": null,
+   "false_alarm_rate": 8.474576271186441e-05
+  },
+  "ABC target 0.0001": {
+   "mean_gap": 8.689914863366695e-05,
+   "p99_gap": 0.00027469944797898555,
+   "max_gap": 0.0005502546827561572,
+   "shots_per_step": 21926.694915254237,
+   "total_shots": 1320675.0,
+   "jump_detect_rate": null,
+   "false_alarm_rate": 0.00016949152542372882
+  },
+  "ABC target 3e-05": {
+   "mean_gap": 2.8666604802709216e-05,
+   "p99_gap": 0.00013155382535426195,
+   "max_gap": 0.0005502546827561572,
+   "shots_per_step": 104136.35593220338,
+   "total_shots": 6171045.0,
+   "jump_detect_rate": null,
+   "false_alarm_rate": 0.00016949152542372882
+  },
+  "TOMO-9 every step, N = 300": {
+   "mean_gap": 0.0017707183336511925,
+   "p99_gap": 0.004984259347103072,
+   "max_gap": 0.0079430288570157,
+   "shots_per_step": 2700.0,
+   "total_shots": 162000.0
+  },
+  "TOMO-9 every step, N = 1000": {
+   "mean_gap": 0.0005318642470338443,
+   "p99_gap": 0.0015255963036966504,
+   "max_gap": 0.0024761352187038232,
+   "shots_per_step": 9000.0,
+   "total_shots": 540000.0
+  },
+  "TOMO-9 every step, N = 3000": {
+   "mean_gap": 0.00017728919393548032,
+   "p99_gap": 0.0005090493789992724,
+   "max_gap": 0.0009679813076820531,
+   "shots_per_step": 27000.0,
+   "total_shots": 1620000.0
+  },
+  "TOMO-9 every step, N = 10000": {
+   "mean_gap": 5.286025942976024e-05,
+   "p99_gap": 0.00015297842650681127,
+   "max_gap": 0.0002744792385082073,
+   "shots_per_step": 90000.0,
+   "total_shots": 5400000.0
+  },
+  "RL designer B every step, N = 300": {
+   "mean_gap": 0.001404079930975995,
+   "p99_gap": 0.004114829638762551,
+   "max_gap": 0.0077035056276730796,
+   "shots_per_step": 3600.0,
+   "total_shots": 216000.0
+  },
+  "RL designer B every step, N = 1000": {
+   "mean_gap": 0.00041290281290043586,
+   "p99_gap": 0.001185181338681103,
+   "max_gap": 0.002176896160788866,
+   "shots_per_step": 12000.0,
+   "total_shots": 720000.0
+  },
+  "RL designer B every step, N = 3000": {
+   "mean_gap": 0.00013712130190523096,
+   "p99_gap": 0.0003923275190911537,
+   "max_gap": 0.0006089239497761856,
+   "shots_per_step": 36000.0,
+   "total_shots": 2160000.0
+  }
+ },
+ "medium": {
+  "ABC target 0.001": {
+   "mean_gap": 0.0016551360980393633,
+   "p99_gap": 0.007131262099947566,
+   "max_gap": 0.6575885092504019,
+   "shots_per_step": 1938.1271186440679,
+   "total_shots": 141349.5,
+   "gap_at_jump": 0.0036146882766373008,
+   "gap_after_jump": 0.002487386522386622,
+   "jump_detect_rate": 0.9924999999999999,
+   "false_alarm_rate": 0.0011403508771929826
+  },
+  "ABC target 0.0003": {
+   "mean_gap": 0.00033363961638914117,
+   "p99_gap": 0.0013040589389231216,
+   "max_gap": 0.0031972470936533215,
+   "shots_per_step": 9330.559322033898,
+   "total_shots": 577503.0,
+   "gap_at_jump": 0.0001691581809816342,
+   "gap_after_jump": 0.00035995055980247797,
+   "jump_detect_rate": 1.0,
+   "false_alarm_rate": 0.0026315789473684214
+  },
+  "ABC target 0.0001": {
+   "mean_gap": 0.00010080491275820911,
+   "p99_gap": 0.00033848233126455255,
+   "max_gap": 0.0011367930748394928,
+   "shots_per_step": 39375.254237288136,
+   "total_shots": 2350140.0,
+   "gap_at_jump": 0.00017021059861346583,
+   "gap_after_jump": 9.49639125203186e-05,
+   "jump_detect_rate": 0.8725,
+   "false_alarm_rate": 0.009298245614035089
+  },
+  "ABC target 3e-05": {
+   "mean_gap": 3.9852013023553695e-05,
+   "p99_gap": 0.00027099040730132367,
+   "max_gap": 0.0009425676053237408,
+   "shots_per_step": 130487.54237288136,
+   "total_shots": 7725765.0,
+   "gap_at_jump": 0.00015845218417666785,
+   "gap_after_jump": 3.0504986836480118e-05,
+   "jump_detect_rate": 0.87,
+   "false_alarm_rate": 0.0193859649122807
+  },
+  "TOMO-9 every step, N = 300": {
+   "mean_gap": 0.0017764563107360491,
+   "p99_gap": 0.005098522777347346,
+   "max_gap": 0.01037390611830391,
+   "shots_per_step": 2700.0,
+   "total_shots": 162000.0,
+   "gap_at_jump": 0.001794689849484357,
+   "gap_after_jump": 0.0017179115479247417
+  },
+  "TOMO-9 every step, N = 1000": {
+   "mean_gap": 0.0005343991408968254,
+   "p99_gap": 0.0015236484158322342,
+   "max_gap": 0.002263597764381564,
+   "shots_per_step": 9000.0,
+   "total_shots": 540000.0,
+   "gap_at_jump": 0.0005414045601599946,
+   "gap_after_jump": 0.0005453313729088239
+  },
+  "TOMO-9 every step, N = 3000": {
+   "mean_gap": 0.00017744015725408617,
+   "p99_gap": 0.0005186917436384887,
+   "max_gap": 0.0009760160260962047,
+   "shots_per_step": 27000.0,
+   "total_shots": 1620000.0,
+   "gap_at_jump": 0.00017256440807130263,
+   "gap_after_jump": 0.00017390917662234607
+  },
+  "TOMO-9 every step, N = 10000": {
+   "mean_gap": 5.330471958332312e-05,
+   "p99_gap": 0.0001504579965174658,
+   "max_gap": 0.00024652993577889415,
+   "shots_per_step": 90000.0,
+   "total_shots": 5400000.0,
+   "gap_at_jump": 5.479019782431732e-05,
+   "gap_after_jump": 5.4894716331048426e-05
+  },
+  "RL designer B every step, N = 300": {
+   "mean_gap": 0.0013957067377017652,
+   "p99_gap": 0.004026234610786136,
+   "max_gap": 0.006445921110356689,
+   "shots_per_step": 3600.0,
+   "total_shots": 216000.0,
+   "gap_at_jump": 0.0013877828991843916,
+   "gap_after_jump": 0.0013834072342377725
+  },
+  "RL designer B every step, N = 1000": {
+   "mean_gap": 0.000418802402834427,
+   "p99_gap": 0.0012312925869973038,
+   "max_gap": 0.0019883865906759057,
+   "shots_per_step": 12000.0,
+   "total_shots": 720000.0,
+   "gap_at_jump": 0.0004329348618001172,
+   "gap_after_jump": 0.00042978346166419905
+  },
+  "RL designer B every step, N = 3000": {
+   "mean_gap": 0.00013949671240988607,
+   "p99_gap": 0.00040579343024742996,
+   "max_gap": 0.0007248942509106016,
+   "shots_per_step": 36000.0,
+   "total_shots": 2160000.0,
+   "gap_at_jump": 0.0001354703980652014,
+   "gap_after_jump": 0.00014340008482062016
+  }
+ },
+ "fast (Stage 5 rates)": {
+  "ABC target 0.001": {
+   "mean_gap": 0.0023290637698143105,
+   "p99_gap": 0.020401662977221905,
+   "max_gap": 0.06528642025582232,
+   "shots_per_step": 4431.228813559322,
+   "total_shots": 288442.5,
+   "gap_at_jump": 0.00021152009792423543,
+   "gap_after_jump": 0.0019909609747207086,
+   "jump_detect_rate": 0.9525,
+   "false_alarm_rate": 0.03491228070175439
+  },
+  "ABC target 0.0003": {
+   "mean_gap": 0.0004438834434787449,
+   "p99_gap": 0.003249866420424792,
+   "max_gap": 0.012590247737664928,
+   "shots_per_step": 14126.00847457627,
+   "total_shots": 860434.5,
+   "gap_at_jump": 0.00017968799429219224,
+   "gap_after_jump": 0.0003766097180911443,
+   "jump_detect_rate": 1.0,
+   "false_alarm_rate": 0.08456140350877193
+  },
+  "ABC target 0.0001": {
+   "mean_gap": 0.00012668629134757604,
+   "p99_gap": 0.0004591939959850782,
+   "max_gap": 0.0022293865943243674,
+   "shots_per_step": 47952.457627118645,
+   "total_shots": 2856195.0,
+   "gap_at_jump": 0.0001587128970513166,
+   "gap_after_jump": 0.00011234357968622016,
+   "jump_detect_rate": 0.8474999999999999,
+   "false_alarm_rate": 0.18008771929824563
+  },
+  "ABC target 3e-05": {
+   "mean_gap": 7.613096134499076e-05,
+   "p99_gap": 0.0004276657366925197,
+   "max_gap": 0.001323276487797398,
+   "shots_per_step": 152844.15254237287,
+   "total_shots": 9044805.0,
+   "gap_at_jump": 0.00011865524262253264,
+   "gap_after_jump": 6.171581750879201e-05,
+   "jump_detect_rate": 0.6375,
+   "false_alarm_rate": 0.2603508771929825
+  },
+  "TOMO-9 every step, N = 300": {
+   "mean_gap": 0.001782485849473833,
+   "p99_gap": 0.00513652000563002,
+   "max_gap": 0.008781611794904554,
+   "shots_per_step": 2700.0,
+   "total_shots": 162000.0,
+   "gap_at_jump": 0.0017695242435613633,
+   "gap_after_jump": 0.0016815866569249607
+  },
+  "TOMO-9 every step, N = 1000": {
+   "mean_gap": 0.000536226723211248,
+   "p99_gap": 0.0015259714782063813,
+   "max_gap": 0.0026137972083054573,
+   "shots_per_step": 9000.0,
+   "total_shots": 540000.0,
+   "gap_at_jump": 0.0005276358004945997,
+   "gap_after_jump": 0.0005158056866811319
+  },
+  "TOMO-9 every step, N = 3000": {
+   "mean_gap": 0.00017873754229163374,
+   "p99_gap": 0.0005172834464633215,
+   "max_gap": 0.0010209554084189554,
+   "shots_per_step": 27000.0,
+   "total_shots": 1620000.0,
+   "gap_at_jump": 0.0001795039928330655,
+   "gap_after_jump": 0.00018384361428289863
+  },
+  "TOMO-9 every step, N = 10000": {
+   "mean_gap": 5.3188486778009034e-05,
+   "p99_gap": 0.0001511627259713222,
+   "max_gap": 0.00024884243897937974,
+   "shots_per_step": 90000.0,
+   "total_shots": 5400000.0,
+   "gap_at_jump": 5.1538496958394575e-05,
+   "gap_after_jump": 5.1319751256525265e-05
+  },
+  "RL designer B every step, N = 300": {
+   "mean_gap": 0.0013948723903901754,
+   "p99_gap": 0.004073875561936362,
+   "max_gap": 0.007229093347994819,
+   "shots_per_step": 3600.0,
+   "total_shots": 216000.0,
+   "gap_at_jump": 0.0013899219652677651,
+   "gap_after_jump": 0.0013978736984719036
+  },
+  "RL designer B every step, N = 1000": {
+   "mean_gap": 0.0004241389694717561,
+   "p99_gap": 0.001224145561703064,
+   "max_gap": 0.0021524121305154242,
+   "shots_per_step": 12000.0,
+   "total_shots": 720000.0,
+   "gap_at_jump": 0.0004268554857322607,
+   "gap_after_jump": 0.00041848612901906
+  },
+  "RL designer B every step, N = 3000": {
+   "mean_gap": 0.00013954716984823057,
+   "p99_gap": 0.0004021541485652058,
+   "max_gap": 0.0007096800129482439,
+   "shots_per_step": 36000.0,
+   "total_shots": 2160000.0,
+   "gap_at_jump": 0.00014031059842777802,
+   "gap_after_jump": 0.00014606983669902872
+  }
+ },
+ "ARB, medium": {
+  "ABC target 0.001": {
+   "mean_gap": 0.0020831371075106736,
+   "p99_gap": 0.009531673838663173,
+   "max_gap": 0.5185903863867115,
+   "shots_per_step": 2232.762711864407,
+   "total_shots": 158733.0,
+   "gap_at_jump": 0.003936626440214765,
+   "gap_after_jump": 0.0012059505325993606,
+   "jump_detect_rate": 0.99,
+   "false_alarm_rate": 0.001929824561403509
+  },
+  "ABC target 0.0003": {
+   "mean_gap": 0.00037548781652678155,
+   "p99_gap": 0.0017096911239071768,
+   "max_gap": 0.003961090883817575,
+   "shots_per_step": 10766.72033898305,
+   "total_shots": 662236.5,
+   "gap_at_jump": 0.00019693738146599305,
+   "gap_after_jump": 0.0003195327162360456,
+   "jump_detect_rate": 1.0,
+   "false_alarm_rate": 0.004736842105263158
+  },
+  "ABC target 0.0001": {
+   "mean_gap": 0.00010094716551363873,
+   "p99_gap": 0.0003776093183985142,
+   "max_gap": 0.0009753780157025771,
+   "shots_per_step": 44164.57627118644,
+   "total_shots": 2632710.0,
+   "gap_at_jump": 0.00019750391285950437,
+   "gap_after_jump": 9.33015837179496e-05,
+   "jump_detect_rate": 0.99,
+   "false_alarm_rate": 0.014473684210526316
+  },
+  "ABC target 3e-05": {
+   "mean_gap": 3.7818233387227685e-05,
+   "p99_gap": 0.00028502348155685995,
+   "max_gap": 0.0009753780157025771,
+   "shots_per_step": 173791.01694915254,
+   "total_shots": 10280670.0,
+   "gap_at_jump": 8.930303386116888e-05,
+   "gap_after_jump": 2.932558385384837e-05,
+   "jump_detect_rate": 0.365,
+   "false_alarm_rate": 0.031228070175438594
+  },
+  "TOMO-9 every step, N = 300": {
+   "mean_gap": 0.0019574862944738013,
+   "p99_gap": 0.005756221831342044,
+   "max_gap": 0.010830319989064141,
+   "shots_per_step": 2700.0,
+   "total_shots": 162000.0,
+   "gap_at_jump": 0.0020066895525748616,
+   "gap_after_jump": 0.0019253352410855142
+  },
+  "TOMO-9 every step, N = 1000": {
+   "mean_gap": 0.0005868096056389245,
+   "p99_gap": 0.001734343736712785,
+   "max_gap": 0.0031386519097917898,
+   "shots_per_step": 9000.0,
+   "total_shots": 540000.0,
+   "gap_at_jump": 0.000584308963188015,
+   "gap_after_jump": 0.0005965170939076089
+  },
+  "TOMO-9 every step, N = 3000": {
+   "mean_gap": 0.00019581861383251726,
+   "p99_gap": 0.0005660665036071849,
+   "max_gap": 0.001119964716354005,
+   "shots_per_step": 27000.0,
+   "total_shots": 1620000.0,
+   "gap_at_jump": 0.0001954707551279747,
+   "gap_after_jump": 0.00019476949415341395
+  },
+  "TOMO-9 every step, N = 10000": {
+   "mean_gap": 5.845484025078144e-05,
+   "p99_gap": 0.0001702008155507251,
+   "max_gap": 0.0003289621437172485,
+   "shots_per_step": 90000.0,
+   "total_shots": 5400000.0,
+   "gap_at_jump": 5.777265966475071e-05,
+   "gap_after_jump": 6.0924177302228985e-05
+  },
+  "RL designer B every step, N = 300": {
+   "mean_gap": 0.0015813009607614722,
+   "p99_gap": 0.004726399172490671,
+   "max_gap": 0.008115092596830409,
+   "shots_per_step": 3600.0,
+   "total_shots": 216000.0,
+   "gap_at_jump": 0.001536831460733498,
+   "gap_after_jump": 0.0016195701319544969
+  },
+  "RL designer B every step, N = 1000": {
+   "mean_gap": 0.0004788683751716582,
+   "p99_gap": 0.001444127253143512,
+   "max_gap": 0.0031260870893471404,
+   "shots_per_step": 12000.0,
+   "total_shots": 720000.0,
+   "gap_at_jump": 0.0004667273934053346,
+   "gap_after_jump": 0.00046068378327905195
+  },
+  "RL designer B every step, N = 3000": {
+   "mean_gap": 0.0001580894358936993,
+   "p99_gap": 0.0004655885151369081,
+   "max_gap": 0.0007699824076619066,
+   "shots_per_step": 36000.0,
+   "total_shots": 2160000.0,
+   "gap_at_jump": 0.00015517401382602935,
+   "gap_after_jump": 0.00016171386920454332
+  }
+ },
+ "Stage 5 exact sequence": {
+  "ABC target 0.001": {
+   "mean_gap": 0.0018931184230296385,
+   "p99_gap": 0.012354692808807615,
+   "max_gap": 0.02299102643759221,
+   "shots_per_step": 3643.677966101695,
+   "total_shots": 241977.0,
+   "gap_at_jump": 0.0001840122936382016,
+   "gap_after_jump": 0.00150817003176981,
+   "jump_detect_rate": 1.0,
+   "false_alarm_rate": 0.010350877192982458
+  },
+  "ABC target 0.0003": {
+   "mean_gap": 0.00038000178967967303,
+   "p99_gap": 0.002170471035642389,
+   "max_gap": 0.00430653700196959,
+   "shots_per_step": 12572.28813559322,
+   "total_shots": 768765.0,
+   "gap_at_jump": 0.00017505891121956496,
+   "gap_after_jump": 0.0002707015872776414,
+   "jump_detect_rate": 1.0,
+   "false_alarm_rate": 0.018771929824561405
+  },
+  "ABC target 0.0001": {
+   "mean_gap": 0.00010372661917403716,
+   "p99_gap": 0.00035851993301133346,
+   "max_gap": 0.0006289706325667277,
+   "shots_per_step": 45180.0,
+   "total_shots": 2692620.0,
+   "gap_at_jump": 0.00014507434878821944,
+   "gap_after_jump": 0.00012261926246821044,
+   "jump_detect_rate": 0.5,
+   "false_alarm_rate": 0.05280701754385964
+  },
+  "ABC target 3e-05": {
+   "mean_gap": 4.5192564161252725e-05,
+   "p99_gap": 0.0002809553140013439,
+   "max_gap": 0.0005668756764686256,
+   "shots_per_step": 154145.08474576272,
+   "total_shots": 9121560.0,
+   "gap_at_jump": 0.00010062090090379949,
+   "gap_after_jump": 2.7861445548610918e-05,
+   "jump_detect_rate": 0.515,
+   "false_alarm_rate": 0.07456140350877193
+  },
+  "TOMO-9 every step, N = 300": {
+   "mean_gap": 0.001670165785388417,
+   "p99_gap": 0.004647980335646314,
+   "max_gap": 0.00806968371204686,
+   "shots_per_step": 2700.0,
+   "total_shots": 162000.0,
+   "gap_at_jump": 0.0018505297863685892,
+   "gap_after_jump": 0.0017576962532947877
+  },
+  "TOMO-9 every step, N = 1000": {
+   "mean_gap": 0.0004981199558350438,
+   "p99_gap": 0.0014592787492000183,
+   "max_gap": 0.0021702984170828277,
+   "shots_per_step": 9000.0,
+   "total_shots": 540000.0,
+   "gap_at_jump": 0.0004990539948166956,
+   "gap_after_jump": 0.0005197275954402509
+  },
+  "TOMO-9 every step, N = 3000": {
+   "mean_gap": 0.00016602382614727638,
+   "p99_gap": 0.00048095222064878157,
+   "max_gap": 0.0008131625216635241,
+   "shots_per_step": 27000.0,
+   "total_shots": 1620000.0,
+   "gap_at_jump": 0.0001751550225284315,
+   "gap_after_jump": 0.00017778653515346466
+  },
+  "TOMO-9 every step, N = 10000": {
+   "mean_gap": 4.983782375273734e-05,
+   "p99_gap": 0.00014089959021448833,
+   "max_gap": 0.00024229514674223296,
+   "shots_per_step": 90000.0,
+   "total_shots": 5400000.0,
+   "gap_at_jump": 5.184891886021115e-05,
+   "gap_after_jump": 4.9890223263375776e-05
+  },
+  "RL designer B every step, N = 300": {
+   "mean_gap": 0.001419931919219288,
+   "p99_gap": 0.004098989631342082,
+   "max_gap": 0.006331423119889323,
+   "shots_per_step": 3600.0,
+   "total_shots": 216000.0,
+   "gap_at_jump": 0.001490705198203744,
+   "gap_after_jump": 0.0014779699034585324
+  },
+  "RL designer B every step, N = 1000": {
+   "mean_gap": 0.0004249110985811315,
+   "p99_gap": 0.001242241972057269,
+   "max_gap": 0.0019456771910961734,
+   "shots_per_step": 12000.0,
+   "total_shots": 720000.0,
+   "gap_at_jump": 0.0004217130853611683,
+   "gap_after_jump": 0.00042803743725475577
+  },
+  "RL designer B every step, N = 3000": {
+   "mean_gap": 0.00014166120491986085,
+   "p99_gap": 0.00040659862949336335,
+   "max_gap": 0.0007411431648411959,
+   "shots_per_step": 36000.0,
+   "total_shots": 2160000.0,
+   "gap_at_jump": 0.0001439885045823236,
+   "gap_after_jump": 0.00015099652143661546
+  }
+ },
+ "_seconds": 675.5236449241638
+}

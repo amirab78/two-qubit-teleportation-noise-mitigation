@@ -1,0 +1,197 @@
+{
+ "jobs": [
+  {
+   "id": "db16kn2vog1s73fhnpog",
+   "where": "hardware",
+   "backend": "ibm_kingston",
+   "round": 0,
+   "purpose": "8d_pilot",
+   "labels": [
+    "readout_111111@500",
+    "alice_product@500",
+    "alice_bell@500",
+    "A_product@500",
+    "A_bell@500",
+    "B_product@500",
+    "B_bell@500",
+    "C_product@500",
+    "A_product_N2@500",
+    "A_bell_N2@500"
+   ],
+   "n_pubs": 10,
+   "shots": null,
+   "shots_total": 5000,
+   "estimate_s": 3.75,
+   "max_seconds": 10,
+   "dd": false,
+   "twirl": false,
+   "sampler": "v2",
+   "submitted_utc": "2026-10-04T15:01:51.867141+00:00",
+   "usage_s": 4,
+   "hash": "97385f5afb2e33ffb5d02ce7eb59885e6972dc8964597fa77a25b12b1ac6efa6",
+   "ibm_estimates_queued": [
+    {
+     "utc": "2026-10-04T15:02:27.681270+00:00",
+     "quantum_seconds": 3.762921526
+    },
+    {
+     "utc": "2026-10-04T15:02:44.218807+00:00",
+     "quantum_seconds": 3.762921526
+    }
+   ],
+   "status": "done"
+  },
+  {
+   "id": "db16p1bid5ic73eqnsug",
+   "where": "hardware",
+   "backend": "ibm_kingston",
+   "round": 1,
+   "purpose": "8d_round1",
+   "labels": [
+    "readout_000000@4000",
+    "readout_111111@4000",
+    "readout_010101@4000",
+    "readout_101010@4000",
+    "alice_product@1000",
+    "alice_bell@1000",
+    "A_product@3000",
+    "A_bell@3000",
+    "B_product@3000",
+    "B_bell@3000",
+    "A_product@2000",
+    "A_product_N2@3000",
+    "A_bell_N2@3000",
+    "A_product_N2@2000",
+    "C_product@2000"
+   ],
+   "n_pubs": 15,
+   "shots": null,
+   "shots_total": 436000,
+   "estimate_s": 154.6,
+   "max_seconds": 201,
+   "dd": false,
+   "twirl": false,
+   "sampler": "v2",
+   "submitted_utc": "2026-10-04T15:11:05.179040+00:00",
+   "usage_s": 117,
+   "hash": "75066e5295d8b7b3931a1e53928edd3a675d736683ea70a3686a88fb5d0d9f2a",
+   "ibm_estimates_queued": [
+    {
+     "utc": "2026-10-04T15:11:33.099588+00:00",
+     "quantum_seconds": 94.558616279
+    },
+    {
+     "utc": "2026-10-04T15:11:49.467885+00:00",
+     "quantum_seconds": 94.558616279
+    },
+    {
+     "utc": "2026-10-04T15:12:06.004218+00:00",
+     "quantum_seconds": 94.558616279
+    },
+    {
+     "utc": "2026-10-04T15:12:22.131173+00:00",
+     "quantum_seconds": 94.558616279
+    },
+    {
+     "utc": "2026-10-04T15:12:38.922329+00:00",
+     "quantum_seconds": 94.558616279
+    }
+   ],
+   "status": "done"
+  },
+  {
+   "id": "db175bjid5ic73eqoav0",
+   "where": "hardware",
+   "backend": "ibm_kingston",
+   "round": 2,
+   "purpose": "8d_round2_main",
+   "labels": [
+    "A_product@3000",
+    "A_bell@3000",
+    "B_product@3000",
+    "B_bell@3000",
+    "A_product_N2@3000",
+    "A_bell_N2@3000",
+    "A_product@2000"
+   ],
+   "n_pubs": 7,
+   "shots": null,
+   "shots_total": 210000,
+   "estimate_s": 75.5,
+   "max_seconds": 99,
+   "dd": false,
+   "twirl": false,
+   "sampler": "v2",
+   "submitted_utc": "2026-10-04T15:37:22.574176+00:00",
+   "usage_s": 58,
+   "hash": "19af5580c8d3c835a326bb0371277a8bfa5cf316832b76988bfdcf9b24684929",
+   "ibm_estimates_queued": [
+    {
+     "utc": "2026-10-04T15:38:42.107958+00:00",
+     "quantum_seconds": 62.180532663
+    },
+    {
+     "utc": "2026-10-04T15:38:59.302197+00:00",
+     "quantum_seconds": 62.180532663
+    },
+    {
+     "utc": "2026-10-04T15:39:16.969477+00:00",
+     "quantum_seconds": 62.180532663
+    },
+    {
+     "utc": "2026-10-04T15:39:34.431355+00:00",
+     "quantum_seconds": 62.180532663
+    }
+   ],
+   "status": "done"
+  },
+  {
+   "id": "db175givog1s73fhocjg",
+   "where": "hardware",
+   "backend": "ibm_kingston",
+   "round": 2,
+   "purpose": "8d_round2_dd",
+   "labels": [
+    "A_product_N2@3000"
+   ],
+   "n_pubs": 1,
+   "shots": null,
+   "shots_total": 54000,
+   "estimate_s": 20.9,
+   "max_seconds": 28,
+   "dd": true,
+   "twirl": false,
+   "sampler": "v2",
+   "submitted_utc": "2026-10-04T15:37:42.308113+00:00",
+   "usage_s": 17,
+   "hash": "f6c8572d9395de0a2a78883b00de2621478a87eaf40bbefc726d09ca67d1fab2",
+   "ibm_estimates_queued": [
+    {
+     "utc": "2026-10-04T15:38:08.473960+00:00",
+     "quantum_seconds": 17.114918338
+    },
+    {
+     "utc": "2026-10-04T15:38:25.816514+00:00",
+     "quantum_seconds": 17.114918338
+    },
+    {
+     "utc": "2026-10-04T15:38:43.188222+00:00",
+     "quantum_seconds": 17.114918338
+    },
+    {
+     "utc": "2026-10-04T15:39:00.433026+00:00",
+     "quantum_seconds": 17.114918338
+    },
+    {
+     "utc": "2026-10-04T15:39:18.313019+00:00",
+     "quantum_seconds": 17.114918338
+    },
+    {
+     "utc": "2026-10-04T15:39:35.814540+00:00",
+     "quantum_seconds": 17.114918338
+    }
+   ],
+   "status": "done"
+  }
+ ]
+}

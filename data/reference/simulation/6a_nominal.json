@@ -1,0 +1,42 @@
+{
+ "rows": [
+  {
+   "label": "no correction",
+   "favg": 0.5901991126464093,
+   "product_HT": 0.6576556353607809,
+   "bell": 0.5784449982571835
+  },
+  {
+   "label": "per-leg Procrustes (= TOMO-9 on each leg)",
+   "favg": 0.8468170219683062,
+   "product_HT": 0.8340500587683546,
+   "bell": 0.829067885915888
+  },
+  {
+   "label": "best local (6 parameters)",
+   "favg": 0.8468243643608673,
+   "product_HT": 0.834054392069244,
+   "bell": 0.8290899827771003
+  },
+  {
+   "label": "local + RZZ (7)",
+   "favg": 0.9051398367284771,
+   "product_HT": 0.9027634498703127,
+   "bell": 0.9009114942117711
+  },
+  {
+   "label": "best two-qubit (15)",
+   "favg": 0.9131232507777962,
+   "product_HT": 0.9112388148819438,
+   "bell": 0.9072644514775112
+  },
+  {
+   "label": "inverse of the unitary part",
+   "favg": 0.9131232507777964,
+   "product_HT": 0.911238814881944,
+   "bell": 0.9072644514775113
+  }
+ ],
+ "bound": 0.9131758615030152,
+ "_seconds": 0.5103917121887207
+}

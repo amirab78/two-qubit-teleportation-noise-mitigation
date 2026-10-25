@@ -1,0 +1,96 @@
+{
+ "written_utc": "2026-10-04T15:33:58.148708+00:00",
+ "round1_job": "db16p1bid5ic73eqnsug",
+ "model": "per leg: Pauli channel = diagonal of (correction rotation x TOMO-9 T matrix of Round 1); T from frame-corrected raw counts, so Alice's and Bob's readout errors are inside it; legs independent; exact for any unital single-qubit channel per leg (checked against exact_F)",
+ "blocks": {
+  "R1_nativeA_product_HT": {
+   "model_F": 0.8653981249999991,
+   "hardware_F": 0.8750576974490385,
+   "source_T": "fingerprint",
+   "correction": "none"
+  },
+  "R1_nativeA_bell_30_70": {
+   "model_F": 0.8486288700000001,
+   "hardware_F": 0.860779490499306,
+   "source_T": "fingerprint",
+   "correction": "none"
+  },
+  "R1_N1none_product_HT": {
+   "model_F": 0.6991736874999994,
+   "hardware_F": 0.7109277252226693,
+   "source_T": "cal9",
+   "correction": "none"
+  },
+  "R1_N1none_bell_30_70": {
+   "model_F": 0.52965976,
+   "hardware_F": 0.5216527752521077,
+   "source_T": "cal9",
+   "correction": "none"
+  },
+  "R1_N1oracle_product_HT": {
+   "model_F": 0.87375713125979,
+   "hardware_F": 0.8804063446310447,
+   "source_T": "cal9",
+   "correction": "oracle"
+  },
+  "R1_N1oracle_bell_30_70": {
+   "model_F": 0.8532545828748861,
+   "hardware_F": 0.8494885057071793,
+   "source_T": "cal9",
+   "correction": "oracle"
+  },
+  "R1_N2none_product_HT": {
+   "model_F": 0.5430099374999995,
+   "hardware_F": 0.5623454121283148,
+   "source_T": "calN2",
+   "correction": "none"
+  },
+  "R1_N2none_bell_30_70": {
+   "model_F": 0.59953532,
+   "hardware_F": 0.5935022460532753,
+   "source_T": "calN2",
+   "correction": "none"
+  },
+  "R2_N0corr_product_HT": {
+   "model_F": 0.8711242837019499,
+   "hardware_F": null,
+   "source_T": "fingerprint",
+   "correction": "learned"
+  },
+  "R2_N0corr_bell_30_70": {
+   "model_F": 0.8551723602671112,
+   "hardware_F": null,
+   "source_T": "fingerprint",
+   "correction": "learned"
+  },
+  "R2_N1corr_product_HT": {
+   "model_F": 0.8780361575191611,
+   "hardware_F": null,
+   "source_T": "cal9",
+   "correction": "learned"
+  },
+  "R2_N1corr_bell_30_70": {
+   "model_F": 0.8600356906705514,
+   "hardware_F": null,
+   "source_T": "cal9",
+   "correction": "learned"
+  },
+  "R2_N2corr_product_HT": {
+   "model_F": 0.7904889027401385,
+   "hardware_F": null,
+   "source_T": "calN2",
+   "correction": "learned"
+  },
+  "R2_N2corr_bell_30_70": {
+   "model_F": 0.7671938762195569,
+   "hardware_F": null,
+   "source_T": "calN2",
+   "correction": "learned"
+  }
+ },
+ "check_round1": {
+  "mean_diff": -0.005217847851032673,
+  "max_abs_diff": 0.019335474628315308,
+  "n": 8
+ }
+}
