@@ -75,3 +75,44 @@ def test_no_account_information_in_data():
             continue
         hits = {m.group(0) for m in pat.finditer(text)}
         assert not hits, (path.name, sorted(hits)[:5])
+
+
+# ------------------------------------------------------------------------------- the replication of 25 October 2026
+def test_replication_predictions_hashed_before_sending():
+    """Every prediction file of the replication has the SHA-256 recorded before sending, the frozen job names that
+    file and hash, and the file was written before the job was submitted."""
+    pre = D.replication_dir() / "preregistration"
+    rec = json.load(open(pre / "sha256.json", encoding="utf8"))
+    for name, r in rec.items():
+        assert sha(pre / name) == r["sha256"], name
+    for job in D.REPLICATION_JOBS:
+        man = D.replication_frozen(job); raw = D.replication_raw(job)
+        assert sha(pre / man["prediction_file"]) == man["prediction_sha256"], job
+        assert rec[man["prediction_file"]]["written_utc"] < raw["record"]["submitted_utc"], job
+
+
+def test_replication_job_hash_chain():
+    """approved hash = frozen job hash = hash recorded when the job was sent, and usage <= the approved cap."""
+    approved = {a["name"]: a for a in D.replication_preregistration("approvals.json")["approved"]}
+    ledger = {j["id"]: j for j in D.replication_preregistration("ledger.json")["jobs"]}
+    for job, (jid, dev) in D.REPLICATION_JOBS.items():
+        name = f"{job}_{dev}"
+        man = D.replication_frozen(job); raw = D.replication_raw(job)
+        assert raw["id"] == jid and ledger[jid]["name"] == name
+        assert approved[name]["xhash"] == man["xhash"] == raw["record"]["xhash"] == ledger[jid]["xhash"], name
+        assert man["hash"] == raw["record"]["hash"], name
+        assert raw["record"]["max_seconds"] == approved[name]["max_seconds"] == man["max_seconds"]
+        assert raw["record"]["usage_s"] <= raw["record"]["max_seconds"]
+        assert approved[name]["approved_utc"] < raw["record"]["submitted_utc"]
+
+
+def test_replication_counts_are_complete():
+    for job in D.REPLICATION_JOBS:
+        raw = D.replication_raw(job); idx = D.replication_frozen(job)["index"]
+        assert [p["label"] for p in raw["pubs"]] == list(idx)
+        for p in raw["pubs"]:
+            shots = int(p["label"].split("@")[1])
+            for reg, c in p["counts"].items():
+                tables = c if isinstance(c, list) else [c]
+                assert len(tables) == len(idx[p["label"]])
+                assert all(sum(t.values()) == shots for t in tables)

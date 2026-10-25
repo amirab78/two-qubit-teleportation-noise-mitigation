@@ -1,4 +1,5 @@
-"""Loading the shipped hardware data (``data/hardware/ibm_kingston_2026-10-04``).
+"""Loading the shipped hardware data (``data/hardware/ibm_kingston_2026-10-04`` and the replication of
+25 October 2026, ``data/hardware/ibm_kingston_ibm_fez_2026-10-25``).
 
 Roadmap: step 8 (real hardware).
 
@@ -106,6 +107,66 @@ def load_round(n: int) -> dict:
     for p in purposes:
         out.update(round_data(raw_job(p), frozen_job(p)["index"]))
     return out
+
+
+def _version_of(pub: str) -> str:
+    isa = pub.split("@")[0]
+    return "msg" if isa.startswith("alice_") else ("A" if isa.startswith("A_") else "raw")
+
+
+# --------------------------------------------------------------------------------------- the replication (25 Oct)
+REPLICATION_RUN = "ibm_kingston_ibm_fez_2026-10-25"
+#: job -> IBM job id; the frozen job is "<job>_<device>"
+REPLICATION_JOBS: dict[str, tuple[str, str]] = {
+    "K0": ("dbeqnffsstms73fciu80", "ibm_kingston"), "K1": ("dbeqouvgdj9s73fma3c0", "ibm_kingston"),
+    "K2": ("dber02gm94ac738sb5tg", "ibm_kingston"), "K3": ("dber2sfpc3tc739m7j00", "ibm_kingston"),
+    "K4": ("dbere1nsstms73fck4pg", "ibm_kingston"), "F0": ("dberne7gdj9s73fmbpd0", "ibm_fez"),
+    "F1": ("dberor7pc3tc739m8tlg", "ibm_fez"), "F2": ("dberrs8m94ac738scpig", "ibm_fez"),
+    "G1": ("dbes408m94ac738sd89g", "ibm_fez"), "G2": ("dbes5lngdj9s73fmcl7g", "ibm_kingston"),
+    "G3": ("dbes9k7pc3tc739m9vkg", "ibm_kingston"),
+}
+
+
+def replication_dir() -> Path:
+    return data_dir() / "hardware" / REPLICATION_RUN
+
+
+@lru_cache(maxsize=None)
+def replication_raw(job: str) -> dict:
+    """The cleaned raw result of one replication job (``"K1"``, ``"F2"``, ``"G3"`` ...)."""
+    return _json(replication_dir() / "counts" / f"{REPLICATION_JOBS[job][0]}.json.gz")
+
+
+@lru_cache(maxsize=None)
+def replication_frozen(job: str) -> dict:
+    """The frozen job manifest (labels, label index, shots, hash, prediction file and its SHA-256)."""
+    return _json(replication_dir() / "circuits" / f"{job}_{REPLICATION_JOBS[job][1]}.json")
+
+
+def replication_preregistration(name: str) -> dict:
+    """A pre-registration file of the replication, e.g. ``x_pred_K0K1.json`` or ``approvals.json``."""
+    return _json(replication_dir() / "preregistration" / name)
+
+
+def replication_reference(name: str) -> dict:
+    """A saved per-job analysis of the replication (``data/reference/replication/x_<job>.json``)."""
+    return _json(reference_dir() / "replication" / name)
+
+
+def replication_calibration(device: str, stamp: str) -> dict:
+    """A job-time calibration record of the replication (time stamps in UTC)."""
+    return _json(replication_dir() / "calibration" / f"{device}_properties_{stamp}.json.gz")
+
+
+def replication_job(job: str) -> tuple[dict, dict[str, int], dict[str, str]]:
+    """Binding-level data of one replication job, the shots of every binding and its post-processing version."""
+    man = replication_frozen(job)
+    data = round_data(replication_raw(job), man["index"])
+    shots, versions = {}, {}
+    for pub, labs in man["index"].items():
+        for lab in labs:
+            shots[lab] = int(pub.split("@")[1]); versions[lab] = _version_of(pub)
+    return data, shots, versions
 
 
 def labels_info(n: int) -> tuple[dict[str, str], dict[str, int]]:
