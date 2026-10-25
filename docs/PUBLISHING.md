@@ -4,27 +4,14 @@ The repository is ready as a local git repository with a clean history and the t
 These steps publish it on GitHub and connect it to Zenodo, which archives every GitHub release and gives it a DOI.
 The whole archive, code and data together, is about 4 MB, well within the limits of both services.
 
-## 1. Fill in the placeholders
+## 1. Before pushing
 
-Search for the placeholders in square brackets:
-
-```bash
-git grep -n -E "\[(Author name|Family name|Given names|ORCID|Affiliation|github-user|YYYY-MM-DD|Paper title|journal|Acknowledgements\.)\]"
-```
-
-| placeholder | where | what to write |
-|---|---|---|
-| `[Author name]`, `[Family name]`, `[Given names]` | `README.md`, `LICENSE`, `CITATION.cff`, `.zenodo.json`, `pyproject.toml` | your name |
-| `[ORCID]`, `[Affiliation]` | `CITATION.cff`, `.zenodo.json` | your ORCID iD (digits only in `.zenodo.json`) and affiliation |
-| `[github-user]` | `README.md`, `CITATION.cff`, `pyproject.toml` | your GitHub user or organisation name |
-| `[YYYY-MM-DD]` | `CITATION.cff`, `CHANGELOG.md` | the release date |
-| `[Paper title]`, `[journal]` | `README.md` | the paper, once known |
-| `[Acknowledgements.]`, the AI-use sentence | `README.md` | your wording; IBM asks users of its services to acknowledge them |
-
-Leave `[DOI]` for step 6. Then commit, and move the tag (it has never been pushed, so this is safe):
+The author, ORCID, affiliation, GitHub user and release date are filled in. The only placeholder left is `[DOI]`,
+which is filled in step 6. If you change any metadata before the first push, commit it and move the tag (it has
+never been pushed, so this is safe):
 
 ```bash
-git commit -am "Fill in author metadata"
+git commit -am "Update metadata"
 ```
 
 ```bash
@@ -73,7 +60,7 @@ On GitHub: **Releases** → **Draft a new release** → choose the tag `v1.0.0` 
 `CHANGELOG.md` → **Publish release**. Within a few minutes Zenodo archives the release and shows it in your Zenodo
 **GitHub** page with two DOIs:
 
-* the **version DOI** (this exact release, v1.0.0): cite this one in the paper and the thesis, because the results
+* the **version DOI** (this exact release, v1.0.0): cite this one, because the results
   were produced with exactly this code and data;
 * the **concept DOI** (all versions; it always resolves to the latest one).
 
@@ -92,7 +79,7 @@ git push
 
 The archived v1.0.0 itself keeps the placeholder (a release cannot contain its own DOI). To have an archived copy that
 shows the DOI, make a release `v1.0.1` the same way (step 5). Zenodo then gives it a new version DOI under the same
-concept DOI. For the paper, keep citing v1.0.0.
+concept DOI. In publications, keep citing v1.0.0.
 
 ## 7. Cite it
 
@@ -110,6 +97,6 @@ Use the BibTeX entry of the README with the version DOI, or the **Cite this repo
 * The screenshots of the IBM Quantum platform kept with the research project are not part of this repository; leave
   them out of any upload.
 * The tests check that no file contains credentials, e-mail addresses, IBM instance identifiers or local paths. Run
-  `pytest tests/test_repo.py` again after filling in the placeholders.
+  `pytest tests/test_repo.py` again after any change to the metadata.
 * Alternative without the GitHub integration: on Zenodo, **New upload** → reserve a DOI → put it into the files →
   upload a zip of the repository at the tag.

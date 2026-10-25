@@ -3,12 +3,9 @@
   "upload_type": "software",
   "version": "1.0.0",
   "creators": [
-    {"name": "[Family name], [Given names]", "affiliation": "[Affiliation]", "orcid": "[ORCID]"}
+    {"name": "Abdolhosseini, Amir H.", "affiliation": "University of Tehran, Faculty of Electrical and Computer Engineering", "orcid": "0009-0000-8979-8925"}
   ],
   "description": "Code, data and notebooks of a study of two-qubit quantum teleportation through a noisy channel whose correction (one parametric gate per channel qubit) is learned from measurement counts only. The package simulates the six-qubit protocol exactly, implements the counts-only calibrators, the ceiling of any correction, process tomography (TOMO-9, TOMO-75) and drift tracking, and rebuilds every result of an experiment on the IBM device ibm_kingston (4 October 2026) from its raw counts, which are included.",
   "license": "MIT",
-  "keywords": ["quantum teleportation", "quantum noise", "quantum channel correction", "process tomography", "Pauli twirl", "IBM Quantum"],
-  "related_identifiers": [
-    {"relation": "isSupplementTo", "identifier": "[paper DOI, when available]", "scheme": "doi"}
-  ]
+  "keywords": ["quantum teleportation", "quantum noise", "quantum channel correction", "process tomography", "Pauli twirl", "IBM Quantum"]
 }

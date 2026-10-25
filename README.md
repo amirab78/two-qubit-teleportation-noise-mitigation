@@ -1,12 +1,12 @@
 # Two-qubit teleportation through a noisy channel, corrected from measurement counts
 
-[![CI](https://github.com/[github-user]/teleportation-counts-correction/actions/workflows/ci.yml/badge.svg)](https://github.com/[github-user]/teleportation-counts-correction/actions/workflows/ci.yml)
+[![CI](https://github.com/amirab78/teleportation-counts-correction/actions/workflows/ci.yml/badge.svg)](https://github.com/amirab78/teleportation-counts-correction/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 ![Python 3.11 | 3.13](https://img.shields.io/badge/python-3.11%20%7C%203.13-blue.svg)
 [![DOI](https://zenodo.org/badge/DOI/[DOI].svg)](https://doi.org/[DOI])
 
 Code, data and notebooks of the study *Two-qubit quantum teleportation through a noisy channel, repaired by a
-counts-only parametric correction* ([Author name], 2026).
+counts-only parametric correction* (Amir H. Abdolhosseini, 2026).
 
 A two-qubit message is teleported through a channel whose qubits are disturbed by unknown noise. A correction box,
 one parametric gate per channel qubit, is learned **from measurement counts only**: the receiver never knows the noise
@@ -57,7 +57,7 @@ Python 3.11 or newer. The versions every result was produced with are pinned in 
 (`requirements-lock.txt` lists the complete environment).
 
 ```bash
-git clone https://github.com/[github-user]/teleportation-counts-correction.git
+git clone https://github.com/amirab78/teleportation-counts-correction.git
 ```
 
 ```bash
@@ -130,7 +130,7 @@ If you use this code or data, please cite the archived release:
 
 ```bibtex
 @software{telecorr_2026,
-  author    = {[Author name]},
+  author    = {Amir H. Abdolhosseini},
   title     = {Two-qubit teleportation through a noisy channel, corrected from measurement counts: code and data},
   year      = {2026},
   version   = {1.0.0},
@@ -140,12 +140,10 @@ If you use this code or data, please cite the archived release:
 }
 ```
 
-The paper: [Author name], *[Paper title]*, [journal], 2026 (in preparation). `CITATION.cff` holds the same metadata.
+`CITATION.cff` holds the same metadata.
 
 ## Licence and acknowledgements
 
 MIT licence (see `LICENSE`), for the code and the data.
 
-[Acknowledgements.] The hardware experiment used IBM Quantum services. [AI-use disclosure: parts of the code and
-documentation were prepared with the assistance of an AI model; the author reviewed and is responsible for all
-content.]
+The hardware experiment used IBM Quantum services.

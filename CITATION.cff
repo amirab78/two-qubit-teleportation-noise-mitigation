@@ -2,16 +2,16 @@ cff-version: 1.2.0
 message: "If you use this code or data, please cite it as below."
 title: "Two-qubit teleportation through a noisy channel, corrected from measurement counts: code and data"
 version: 1.0.0
-date-released: "[YYYY-MM-DD]"
+date-released: "2026-10-25"
 doi: "[DOI]"
 license: MIT
-repository-code: "https://github.com/[github-user]/teleportation-counts-correction"
+repository-code: "https://github.com/amirab78/teleportation-counts-correction"
 type: software
 authors:
-  - family-names: "[Family name]"
-    given-names: "[Given names]"
-    orcid: "https://orcid.org/[ORCID]"
-    affiliation: "[Affiliation]"
+  - family-names: "Abdolhosseini"
+    given-names: "Amir H."
+    orcid: "https://orcid.org/0009-0000-8979-8925"
+    affiliation: "University of Tehran, Faculty of Electrical and Computer Engineering"
 keywords:
   - quantum teleportation
   - quantum noise

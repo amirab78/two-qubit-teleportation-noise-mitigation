@@ -1,8 +1,8 @@
 # Changelog
 
-## 1.0.0 ([YYYY-MM-DD])
+## 1.0.0 (2026-10-25)
 
-First public release, accompanying the paper and the thesis.
+First public release.
 
 * `telecorr` package: exact six-qubit protocol and qiskit circuits; channels and the Pauli twirl; probe cost and
   counts-only calibrators (COBYLA, automatic recalibration, Rotosolve); ceilings (Procrustes, two-qubit with
