@@ -3,7 +3,7 @@
 [![CI](https://github.com/amirab78/two-qubit-teleportation-noise-mitigation/actions/workflows/ci.yml/badge.svg)](https://github.com/amirab78/two-qubit-teleportation-noise-mitigation/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 ![Python 3.11 | 3.13](https://img.shields.io/badge/python-3.11%20%7C%203.13-blue.svg)
-[![DOI](https://zenodo.org/badge/DOI/[DOI].svg)](https://doi.org/[DOI])
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23634581.svg)](https://doi.org/10.5281/zenodo.23634581)
 
 Code, data and notebooks of the study *Two-qubit quantum teleportation through a noisy channel, repaired by a
 counts-only parametric correction* (Amir H. Abdolhosseini, 2026).
@@ -135,8 +135,8 @@ If you use this code or data, please cite the archived release:
   year      = {2026},
   version   = {1.0.0},
   publisher = {Zenodo},
-  doi       = {[DOI]},
-  url       = {https://doi.org/[DOI]}
+  doi       = {10.5281/zenodo.23634581},
+  url       = {https://doi.org/10.5281/zenodo.23634581}
 }
 ```
 

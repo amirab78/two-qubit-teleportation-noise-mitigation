@@ -3,7 +3,7 @@ message: "If you use this code or data, please cite it as below."
 title: "Two-qubit teleportation through a noisy channel, corrected from measurement counts: code and data"
 version: 1.0.0
 date-released: "2026-10-25"
-doi: "[DOI]"
+doi: "10.5281/zenodo.23634581"
 license: MIT
 repository-code: "https://github.com/amirab78/two-qubit-teleportation-noise-mitigation"
 type: software

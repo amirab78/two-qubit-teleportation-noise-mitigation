@@ -4,23 +4,12 @@ The repository is ready as a local git repository with a clean history and the t
 These steps publish it on GitHub and connect it to Zenodo, which archives every GitHub release and gives it a DOI.
 The whole archive, code and data together, is about 4 MB, well within the limits of both services.
 
-## 1. Before pushing
+## 1. Status
 
-The author, ORCID, affiliation, GitHub user and release date are filled in. The only placeholder left is `[DOI]`,
-which is filled in step 6. If you change any metadata before the first push, commit it and move the tag (it has
-never been pushed, so this is safe):
-
-```bash
-git commit -am "Update metadata"
-```
-
-```bash
-git tag -d v1.0.0
-```
-
-```bash
-git tag -a v1.0.0 -m "Version 1.0.0"
-```
+Done for v1.0.0: the metadata are filled in, the repository is on GitHub, and Zenodo archived the release as
+`10.5281/zenodo.23634581` (version DOI; the concept DOI for all versions is `10.5281/zenodo.23634580`).
+The tag `v1.0.0` is published: never move or delete it. Any later change goes into a new release (step 6).
+Steps 2 to 7 below record how the release was made, and serve for the next one.
 
 ## 2. Create the GitHub repository
 
