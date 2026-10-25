@@ -19,6 +19,7 @@ CONDITION: dict[str, str] = {
     "oracle (exact inverse)": SLOTS[3],
     "DD": SLOTS[4],
     "TOMO-9 + DD": SLOTS[5],
+    "stored correction (4 Oct)": SLOTS[6],
     # simulation steps 1-7: the same entities keep the same colours
     "noiseless": SLOTS[2],
     "learned from counts": SLOTS[0],
