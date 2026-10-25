@@ -5,7 +5,7 @@ version: 1.0.0
 date-released: "2026-10-25"
 doi: "[DOI]"
 license: MIT
-repository-code: "https://github.com/amirab78/teleportation-counts-correction"
+repository-code: "https://github.com/amirab78/two-qubit-teleportation-noise-mitigation"
 type: software
 authors:
   - family-names: "Abdolhosseini"

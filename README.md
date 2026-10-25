@@ -1,6 +1,6 @@
 # Two-qubit teleportation through a noisy channel, corrected from measurement counts
 
-[![CI](https://github.com/amirab78/teleportation-counts-correction/actions/workflows/ci.yml/badge.svg)](https://github.com/amirab78/teleportation-counts-correction/actions/workflows/ci.yml)
+[![CI](https://github.com/amirab78/two-qubit-teleportation-noise-mitigation/actions/workflows/ci.yml/badge.svg)](https://github.com/amirab78/two-qubit-teleportation-noise-mitigation/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 ![Python 3.11 | 3.13](https://img.shields.io/badge/python-3.11%20%7C%203.13-blue.svg)
 [![DOI](https://zenodo.org/badge/DOI/[DOI].svg)](https://doi.org/[DOI])
@@ -57,11 +57,11 @@ Python 3.11 or newer. The versions every result was produced with are pinned in 
 (`requirements-lock.txt` lists the complete environment).
 
 ```bash
-git clone https://github.com/amirab78/teleportation-counts-correction.git
+git clone https://github.com/amirab78/two-qubit-teleportation-noise-mitigation.git
 ```
 
 ```bash
-cd teleportation-counts-correction
+cd two-qubit-teleportation-noise-mitigation
 ```
 
 ```bash

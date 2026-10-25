@@ -24,13 +24,13 @@ git tag -a v1.0.0 -m "Version 1.0.0"
 
 ## 2. Create the GitHub repository
 
-On github.com: **New repository** → name `teleportation-counts-correction`, visibility **Public**. Do **not** add a
+On github.com: **New repository** → name `two-qubit-teleportation-noise-mitigation`, visibility **Public**. Do **not** add a
 README, licence or `.gitignore` (the repository already has them).
 
 ## 3. Push
 
 ```bash
-git remote add origin https://github.com/<your-user>/teleportation-counts-correction.git
+git remote add origin https://github.com/amirab78/two-qubit-teleportation-noise-mitigation.git
 ```
 
 ```bash
@@ -43,7 +43,7 @@ Python 3.11 and 3.13; about 10 minutes).
 ## 4. Connect Zenodo
 
 1. Log in to [zenodo.org](https://zenodo.org) with your GitHub account (Log in → GitHub).
-2. Open your name (top right) → **GitHub**, find `teleportation-counts-correction` in the list (use **Sync now** if
+2. Open your name (top right) → **GitHub**, find `two-qubit-teleportation-noise-mitigation` in the list (use **Sync now** if
    it is missing) and switch it **On**.
 
 Zenodo takes the record's metadata (title, authors, description, licence, keywords) from `.zenodo.json`.
