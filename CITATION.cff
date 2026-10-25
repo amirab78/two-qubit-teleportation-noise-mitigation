@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite it as below."
+title: "Two-qubit teleportation through a noisy channel, corrected from measurement counts: code and data"
+version: 1.0.0
+date-released: "[YYYY-MM-DD]"
+doi: "[DOI]"
+license: MIT
+repository-code: "https://github.com/[github-user]/teleportation-counts-correction"
+type: software
+authors:
+  - family-names: "[Family name]"
+    given-names: "[Given names]"
+    orcid: "https://orcid.org/[ORCID]"
+    affiliation: "[Affiliation]"
+keywords:
+  - quantum teleportation
+  - quantum noise
+  - quantum channel correction
+  - process tomography
+  - Pauli twirl
+  - IBM Quantum
+abstract: >-
+  Code, data and notebooks of a study of two-qubit quantum teleportation through a noisy channel whose correction
+  (one parametric gate per channel qubit) is learned from measurement counts only. The package simulates the
+  six-qubit protocol exactly, implements the counts-only calibrators, the ceiling of any correction, process
+  tomography (TOMO-9, TOMO-75) and drift tracking, and rebuilds every result of an experiment on the IBM device
+  ibm_kingston from its raw counts.

@@ -1,0 +1,29 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.11", "3.13"]
+    env:
+      PYTHONDONTWRITEBYTECODE: "1"
+      MPLBACKEND: Agg
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install
+        run: python -m pip install -e ".[test,notebooks]"
+      - name: Tests
+        run: python -m pytest
+      - name: Hardware results from the raw counts
+        run: python -m telecorr.hardware reproduce --check
+      - name: Notebooks
+        run: python scripts/run_notebooks.py
