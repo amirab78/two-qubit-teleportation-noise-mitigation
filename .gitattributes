@@ -1,0 +1,7 @@
+* text=auto eol=lf
+data/** -text
+*.png binary
+*.gz binary
+*.qpy binary
+*.npz binary
+*.ipynb linguist-documentation
