@@ -1,0 +1,110 @@
+{
+ "wait_detuning_K1_kHz": {
+  "t_us": [
+   4.0,
+   8.0,
+   16.0
+  ],
+  "q2": 15.781274046296655,
+  "angles_q2": [
+   0.40752859906074224,
+   0.7787356085085324,
+   1.5910400995221274
+  ],
+  "residuals_q2": [
+   0.010901922195679536,
+   -0.014517745221592993,
+   0.00453339206187664
+  ],
+  "q3": 15.098087725594326,
+  "angles_q3": [
+   0.40524400494063845,
+   0.7368531787465195,
+   1.5224081516347978
+  ],
+  "residuals_q3": [
+   0.025787673084787577,
+   -0.022059484965182286,
+   0.004582824211394332
+  ]
+ },
+ "wait_detuning_8d_kHz": {
+  "q2": 12.766531711979173,
+  "q3": 22.325444249549548
+ },
+ "snapshot": "20261025T0641Z",
+ "models": {
+  "4-Oct detuning": {
+   "n_flagged": 6,
+   "worst": [
+    {
+     "label": "R1_N2none16us_product_HT_ZY",
+     "ok": false,
+     "register": "bob",
+     "tvd": 0.18175000000000002,
+     "threshold": 0.13025124999999996
+    },
+    {
+     "label": "R1_N2none16us_product_HT_YX",
+     "ok": false,
+     "register": "bob",
+     "tvd": 0.19824999999999998,
+     "threshold": 0.14605599999999994
+    },
+    {
+     "label": "R1_N2none16us_product_HT_ZX",
+     "ok": false,
+     "register": "bob",
+     "tvd": 0.19625000000000004,
+     "threshold": 0.13530099999999998
+    }
+   ],
+   "F": {
+    "R1_N2none4us_product_HT": 0.8139205562347496,
+    "R1_N2none8us_product_HT": 0.5730731853839448,
+    "R1_N2none16us_product_HT": 0.16638152063799963
+   },
+   "F_hardware": {
+    "R1_N2none4us_product_HT": 0.8084046291100034,
+    "R1_N2none8us_product_HT": 0.6261635698434057,
+    "R1_N2none16us_product_HT": 0.26098160171779805
+   }
+  },
+  "K1-fitted detuning": {
+   "n_flagged": 0,
+   "worst": [
+    {
+     "label": "R1_N2none4us_product_HT_XY",
+     "ok": true,
+     "register": "bob",
+     "tvd": 0.035499999999999976,
+     "threshold": 0.07910324999999993
+    },
+    {
+     "label": "R1_N2none4us_product_HT_YX",
+     "ok": true,
+     "register": "alice",
+     "tvd": 0.06449999999999999,
+     "threshold": 0.10555599999999993
+    },
+    {
+     "label": "R1_N2none4us_product_HT_YY",
+     "ok": true,
+     "register": "bob",
+     "tvd": 0.04575,
+     "threshold": 0.08255349999999997
+    }
+   ],
+   "F": {
+    "R1_N2none4us_product_HT": 0.8432768422879301,
+    "R1_N2none8us_product_HT": 0.6440165971263028,
+    "R1_N2none16us_product_HT": 0.2547963624321752
+   },
+   "F_hardware": {
+    "R1_N2none4us_product_HT": 0.8084046291100034,
+    "R1_N2none8us_product_HT": 0.6261635698434057,
+    "R1_N2none16us_product_HT": 0.26098160171779805
+   }
+  }
+ }
+}

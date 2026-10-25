@@ -1,0 +1,130 @@
+{
+ "name": "G3_ibm_kingston",
+ "device": "ibm_kingston",
+ "round": 7,
+ "options": {
+  "dd": true,
+  "twirl": false
+ },
+ "labels": [
+  "A_product_N2_8us@2000",
+  "A_product_N2_16us@2000"
+ ],
+ "index": {
+  "A_product_N2_8us@2000": [
+   "R7_DDU8usnone_product_HT_XX",
+   "R7_DDU8usnone_product_HT_XY",
+   "R7_DDU8usnone_product_HT_XZ",
+   "R7_DDU8usnone_product_HT_YX",
+   "R7_DDU8usnone_product_HT_YY",
+   "R7_DDU8usnone_product_HT_YZ",
+   "R7_DDU8usnone_product_HT_ZX",
+   "R7_DDU8usnone_product_HT_ZY",
+   "R7_DDU8usnone_product_HT_ZZ",
+   "R7_DDU8uscorr_product_HT_XX",
+   "R7_DDU8uscorr_product_HT_XY",
+   "R7_DDU8uscorr_product_HT_XZ",
+   "R7_DDU8uscorr_product_HT_YX",
+   "R7_DDU8uscorr_product_HT_YY",
+   "R7_DDU8uscorr_product_HT_YZ",
+   "R7_DDU8uscorr_product_HT_ZX",
+   "R7_DDU8uscorr_product_HT_ZY",
+   "R7_DDU8uscorr_product_HT_ZZ"
+  ],
+  "A_product_N2_16us@2000": [
+   "R7_DDU16usnone_product_HT_XX",
+   "R7_DDU16usnone_product_HT_XY",
+   "R7_DDU16usnone_product_HT_XZ",
+   "R7_DDU16usnone_product_HT_YX",
+   "R7_DDU16usnone_product_HT_YY",
+   "R7_DDU16usnone_product_HT_YZ",
+   "R7_DDU16usnone_product_HT_ZX",
+   "R7_DDU16usnone_product_HT_ZY",
+   "R7_DDU16usnone_product_HT_ZZ",
+   "R7_DDU16uscorr_product_HT_XX",
+   "R7_DDU16uscorr_product_HT_XY",
+   "R7_DDU16uscorr_product_HT_XZ",
+   "R7_DDU16uscorr_product_HT_YX",
+   "R7_DDU16uscorr_product_HT_YY",
+   "R7_DDU16uscorr_product_HT_YZ",
+   "R7_DDU16uscorr_product_HT_ZX",
+   "R7_DDU16uscorr_product_HT_ZY",
+   "R7_DDU16uscorr_product_HT_ZZ"
+  ]
+ },
+ "shots": [
+  2000,
+  2000
+ ],
+ "has_params": [
+  true,
+  true
+ ],
+ "n_pubs": 2,
+ "n_bindings": 36,
+ "shots_total": 72000,
+ "estimate_s": 27.2,
+ "max_seconds": 27,
+ "hash": "059ab61410e81602e49e374442852b74d2df905c4e0b6a5e30d0679970d48406",
+ "frozen_utc": "2026-10-25T08:57:46.164153+00:00",
+ "fingerprints_sha": [
+  "27660fe41ca912842029b200bb22bbea51e73ea701884f8f04313a3df85ba8e6",
+  "d0c4a93bc08fbab0fe454129a281224e9488a710eff32008e5dcb248c900e958"
+ ],
+ "x_options": {
+  "skip_reset_qubits": true,
+  "sequence_type": "XpXm"
+ },
+ "xhash": "a4cf710d0af28bb1c349096aad305cefcdcc09cad8cde48db38b0b5006e90273",
+ "estimate_detailed_s": 21.213056,
+ "estimate_measured_rate_s": 21.708000000000002,
+ "detailed_per_pub": [
+  {
+   "pub": "A_product_N2_8us@2000",
+   "shots": 36000,
+   "circuit_us": 10.636000000000001,
+   "per_shot_ms": 0.262848,
+   "seconds": 9.462528
+  },
+  {
+   "pub": "A_product_N2_16us@2000",
+   "shots": 36000,
+   "circuit_us": 18.636000000000003,
+   "per_shot_ms": 0.27084800000000003,
+   "seconds": 9.750528000000001
+  }
+ ],
+ "rep_delay_us": 250.0,
+ "prediction_file": "x_pred_G3.json",
+ "prediction_sha256": "d86ee4ba34ea0c5bde8239e6ba3fa72aac6da6d065e2f277f39408458b9334d2",
+ "rows_table": [
+  {
+   "block": "DDU 8us: DD alone",
+   "templates": "A_product_N2_8us",
+   "circuits": 9,
+   "shots_per_circuit": 2000,
+   "shots": 18000
+  },
+  {
+   "block": "DDU 8us: DD + G2 TOMO-9 correction (learned under DD)",
+   "templates": "A_product_N2_8us",
+   "circuits": 9,
+   "shots_per_circuit": 2000,
+   "shots": 18000
+  },
+  {
+   "block": "DDU 16us: DD alone",
+   "templates": "A_product_N2_16us",
+   "circuits": 9,
+   "shots_per_circuit": 2000,
+   "shots": 18000
+  },
+  {
+   "block": "DDU 16us: DD + G2 TOMO-9 correction (learned under DD)",
+   "templates": "A_product_N2_16us",
+   "circuits": 9,
+   "shots_per_circuit": 2000,
+   "shots": 18000
+  }
+ ]
+}

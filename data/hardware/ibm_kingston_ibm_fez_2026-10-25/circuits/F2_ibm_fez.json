@@ -1,0 +1,117 @@
+{
+ "name": "F2_ibm_fez",
+ "device": "ibm_fez",
+ "round": 2,
+ "options": {
+  "dd": false,
+  "twirl": false
+ },
+ "labels": [
+  "A_product@3000",
+  "A_bell@3000",
+  "A_product@2000"
+ ],
+ "index": {
+  "A_product@3000": [
+   "R2_N1corr_product_HT_XX",
+   "R2_N1corr_product_HT_XY",
+   "R2_N1corr_product_HT_XZ",
+   "R2_N1corr_product_HT_YX",
+   "R2_N1corr_product_HT_YY",
+   "R2_N1corr_product_HT_YZ",
+   "R2_N1corr_product_HT_ZX",
+   "R2_N1corr_product_HT_ZY",
+   "R2_N1corr_product_HT_ZZ"
+  ],
+  "A_bell@3000": [
+   "R2_N1corr_bell_30_70_XX",
+   "R2_N1corr_bell_30_70_XY",
+   "R2_N1corr_bell_30_70_XZ",
+   "R2_N1corr_bell_30_70_YX",
+   "R2_N1corr_bell_30_70_YY",
+   "R2_N1corr_bell_30_70_YZ",
+   "R2_N1corr_bell_30_70_ZX",
+   "R2_N1corr_bell_30_70_ZY",
+   "R2_N1corr_bell_30_70_ZZ"
+  ],
+  "A_product@2000": [
+   "R2_ver_tomo9_s0_Z",
+   "R2_ver_tomo9_s0_X",
+   "R2_ver_tomo9_s0_Y",
+   "R2_ver_tomo9_s1_Z",
+   "R2_ver_tomo9_s1_X",
+   "R2_ver_tomo9_s1_Y",
+   "R2_ver_tomo9_s2_Z",
+   "R2_ver_tomo9_s2_X",
+   "R2_ver_tomo9_s2_Y"
+  ]
+ },
+ "shots": [
+  3000,
+  3000,
+  2000
+ ],
+ "has_params": [
+  true,
+  true,
+  true
+ ],
+ "n_pubs": 3,
+ "n_bindings": 27,
+ "shots_total": 72000,
+ "estimate_s": 27.2,
+ "max_seconds": 27,
+ "hash": "a2bb20431f0a6c9874335cb0ed5e1847ef0f6bfc4b38949f817deb1425a7780a",
+ "frozen_utc": "2026-10-25T08:27:45.886437+00:00",
+ "fingerprints_sha": [
+  "ab3b87539a36e6d8de6c018fcd07f334080f8d94b7db929e9cee85734959a379",
+  "660c7c64fd365a391c572492a77a00291da8f0cad550c1bcfad6d242c4e10895",
+  "ab3b87539a36e6d8de6c018fcd07f334080f8d94b7db929e9cee85734959a379"
+ ],
+ "x_options": null,
+ "xhash": "692ec7c7ef70ab923880a70d63a2ea2febd9c3c47accbeffdbc0af2b675851c7",
+ "estimate_detailed_s": 20.275219999999997,
+ "estimate_measured_rate_s": 21.708000000000002,
+ "detailed_per_pub": [
+  {
+   "pub": "A_product@3000",
+   "shots": 27000,
+   "circuit_us": 2.104,
+   "per_shot_ms": 0.253788,
+   "seconds": 6.852276000000001
+  },
+  {
+   "pub": "A_bell@3000",
+   "shots": 27000,
+   "circuit_us": 2.196,
+   "per_shot_ms": 0.25388,
+   "seconds": 6.85476
+  },
+  {
+   "pub": "A_product@2000",
+   "shots": 18000,
+   "circuit_us": 2.104,
+   "per_shot_ms": 0.253788,
+   "seconds": 4.5681840000000005
+  }
+ ],
+ "rep_delay_us": 250.0,
+ "prediction_file": "x_pred_F2_ibm_fez.json",
+ "prediction_sha256": "2c58064c8dcce54aeec30d56d512a44e555224d9b9029c2646ca147ec8959cdd",
+ "rows_table": [
+  {
+   "block": "injected N1, fresh TOMO-9 correction",
+   "templates": "A_bell, A_product",
+   "circuits": 18,
+   "shots_per_circuit": 3000,
+   "shots": 54000
+  },
+  {
+   "block": "verification (TOMO-9 at the corrected point)",
+   "templates": "A_product",
+   "circuits": 9,
+   "shots_per_circuit": 2000,
+   "shots": 18000
+  }
+ ]
+}

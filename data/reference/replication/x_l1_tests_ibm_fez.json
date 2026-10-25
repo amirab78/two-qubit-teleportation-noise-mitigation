@@ -1,0 +1,122 @@
+{
+ "device": "ibm_fez",
+ "jobs": {
+  "F0": {
+   "circuits": 10,
+   "shots": 5000,
+   "labels": [
+    "F0_N1none_bell_30_70_XX",
+    "F0_N1none_bell_30_70_ZZ",
+    "F0_N1none_product_HT_XX",
+    "F0_N1none_product_HT_ZZ",
+    "F0_native_bell_30_70_XX",
+    "F0_native_bell_30_70_ZZ",
+    "F0_native_product_HT_XX",
+    "F0_native_product_HT_ZZ",
+    "F0_readout_000000",
+    "F0_readout_111111"
+   ]
+  },
+  "F1": {
+   "circuits": 58,
+   "shots": 160000
+  },
+  "F2": {
+   "circuits": 27,
+   "shots": 72000
+  }
+ },
+ "checks": [
+  {
+   "check": "F0: every pilot circuit returned counts",
+   "value": 10.0,
+   "range": [
+    10,
+    10
+   ],
+   "ok": true
+  },
+  {
+   "check": "F1 native F (product_HT)",
+   "value": 1.0007530617190203,
+   "range": [
+    0.98,
+    1.02
+   ],
+   "ok": true
+  },
+  {
+   "check": "F1 N1 none F - exact 0.7898 (product_HT)",
+   "value": 0.004341568719819278,
+   "range": [
+    -0.02,
+    0.02
+   ],
+   "ok": true
+  },
+  {
+   "check": "F1 native F (bell_30_70)",
+   "value": 0.9966530245837446,
+   "range": [
+    0.98,
+    1.02
+   ],
+   "ok": true
+  },
+  {
+   "check": "F1 N1 none F - exact 0.6074 (bell_30_70)",
+   "value": 0.007290197237853624,
+   "range": [
+    -0.02,
+    0.02
+   ],
+   "ok": true
+  },
+  {
+   "check": "F1 TOMO-9 of N1: distance to the exact inverse (rad)",
+   "value": 0.036539692162797455,
+   "range": [
+    0,
+    0.06
+   ],
+   "ok": true
+  },
+  {
+   "check": "F1 fingerprint: largest rotation (rad, ideal device -> 0)",
+   "value": 0.021445752329183495,
+   "range": [
+    0,
+    0.06
+   ],
+   "ok": true
+  },
+  {
+   "check": "F2 N1 + learned TOMO-9 F (product_HT)",
+   "value": 0.9954233378944346,
+   "range": [
+    0.98,
+    1.02
+   ],
+   "ok": true
+  },
+  {
+   "check": "F2 N1 + learned TOMO-9 F (bell_30_70)",
+   "value": 1.000155524560784,
+   "range": [
+    0.98,
+    1.02
+   ],
+   "ok": true
+  },
+  {
+   "check": "F2 verification: residual rotation (rad)",
+   "value": 0.01709126985357789,
+   "range": [
+    0,
+    0.06
+   ],
+   "ok": true
+  }
+ ],
+ "all_ok": true
+}

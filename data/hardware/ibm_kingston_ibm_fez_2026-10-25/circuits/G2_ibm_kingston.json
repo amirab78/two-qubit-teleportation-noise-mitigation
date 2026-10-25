@@ -1,0 +1,127 @@
+{
+ "name": "G2_ibm_kingston",
+ "device": "ibm_kingston",
+ "round": 6,
+ "options": {
+  "dd": true,
+  "twirl": false
+ },
+ "labels": [
+  "A_product_N2_4us@3000",
+  "A_product_N2_8us@3000",
+  "A_product_N2_16us@3000"
+ ],
+ "index": {
+  "A_product_N2_4us@3000": [
+   "R6_DDU4uscal_tomo9_s0_Z",
+   "R6_DDU4uscal_tomo9_s0_X",
+   "R6_DDU4uscal_tomo9_s0_Y",
+   "R6_DDU4uscal_tomo9_s1_Z",
+   "R6_DDU4uscal_tomo9_s1_X",
+   "R6_DDU4uscal_tomo9_s1_Y",
+   "R6_DDU4uscal_tomo9_s2_Z",
+   "R6_DDU4uscal_tomo9_s2_X",
+   "R6_DDU4uscal_tomo9_s2_Y"
+  ],
+  "A_product_N2_8us@3000": [
+   "R6_DDU8uscal_tomo9_s0_Z",
+   "R6_DDU8uscal_tomo9_s0_X",
+   "R6_DDU8uscal_tomo9_s0_Y",
+   "R6_DDU8uscal_tomo9_s1_Z",
+   "R6_DDU8uscal_tomo9_s1_X",
+   "R6_DDU8uscal_tomo9_s1_Y",
+   "R6_DDU8uscal_tomo9_s2_Z",
+   "R6_DDU8uscal_tomo9_s2_X",
+   "R6_DDU8uscal_tomo9_s2_Y"
+  ],
+  "A_product_N2_16us@3000": [
+   "R6_DDU16uscal_tomo9_s0_Z",
+   "R6_DDU16uscal_tomo9_s0_X",
+   "R6_DDU16uscal_tomo9_s0_Y",
+   "R6_DDU16uscal_tomo9_s1_Z",
+   "R6_DDU16uscal_tomo9_s1_X",
+   "R6_DDU16uscal_tomo9_s1_Y",
+   "R6_DDU16uscal_tomo9_s2_Z",
+   "R6_DDU16uscal_tomo9_s2_X",
+   "R6_DDU16uscal_tomo9_s2_Y"
+  ]
+ },
+ "shots": [
+  3000,
+  3000,
+  3000
+ ],
+ "has_params": [
+  true,
+  true,
+  true
+ ],
+ "n_pubs": 3,
+ "n_bindings": 27,
+ "shots_total": 81000,
+ "estimate_s": 30.35,
+ "max_seconds": 30,
+ "hash": "ec6f6abbfda157b9fbdde4495dbd5720e0f341e7437890bf18b3215138244204",
+ "frozen_utc": "2026-10-25T08:43:10.779203+00:00",
+ "fingerprints_sha": [
+  "e5e1cfd32f3d0460ff1314ad944e2771ee16cbe01ae12ba2b1a1757b799f8f67",
+  "27660fe41ca912842029b200bb22bbea51e73ea701884f8f04313a3df85ba8e6",
+  "d0c4a93bc08fbab0fe454129a281224e9488a710eff32008e5dcb248c900e958"
+ ],
+ "x_options": {
+  "skip_reset_qubits": true,
+  "sequence_type": "XpXm"
+ },
+ "xhash": "a1637cda210c97e83de019a254d0f135ba4a26c963e617886b49f26d89f7c20b",
+ "estimate_detailed_s": 23.398688,
+ "estimate_measured_rate_s": 24.084,
+ "detailed_per_pub": [
+  {
+   "pub": "A_product_N2_4us@3000",
+   "shots": 27000,
+   "circuit_us": 6.636,
+   "per_shot_ms": 0.2588480000000001,
+   "seconds": 6.988896000000001
+  },
+  {
+   "pub": "A_product_N2_8us@3000",
+   "shots": 27000,
+   "circuit_us": 10.636000000000001,
+   "per_shot_ms": 0.262848,
+   "seconds": 7.096896000000001
+  },
+  {
+   "pub": "A_product_N2_16us@3000",
+   "shots": 27000,
+   "circuit_us": 18.636000000000003,
+   "per_shot_ms": 0.27084800000000003,
+   "seconds": 7.312896
+  }
+ ],
+ "rep_delay_us": 250.0,
+ "prediction_file": "x_pred_G.json",
+ "prediction_sha256": "0a0e2974d41c87b8965d178d5734589bf9fd83fe28a7dad188ed176366d21997",
+ "rows_table": [
+  {
+   "block": "DDU: TOMO-9 under DD, wait 4us",
+   "templates": "A_product_N2_4us",
+   "circuits": 9,
+   "shots_per_circuit": 3000,
+   "shots": 27000
+  },
+  {
+   "block": "DDU: TOMO-9 under DD, wait 8us",
+   "templates": "A_product_N2_8us",
+   "circuits": 9,
+   "shots_per_circuit": 3000,
+   "shots": 27000
+  },
+  {
+   "block": "DDU: TOMO-9 under DD, wait 16us",
+   "templates": "A_product_N2_16us",
+   "circuits": 9,
+   "shots_per_circuit": 3000,
+   "shots": 27000
+  }
+ ]
+}

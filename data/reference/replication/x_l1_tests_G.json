@@ -1,0 +1,96 @@
+{
+ "checks": [
+  {
+   "check": "G1 R5_native_product_HT F (ideal)",
+   "value": 1.0123670928973922,
+   "range": [
+    0.97,
+    1.03
+   ],
+   "ok": true
+  },
+  {
+   "check": "G1 R5_N1corr_product_HT F (ideal)",
+   "value": 0.9937836723956815,
+   "range": [
+    0.95,
+    1.03
+   ],
+   "ok": true
+  },
+  {
+   "check": "G1 R5_fpcorr_product_HT F (ideal)",
+   "value": 1.0265722546288192,
+   "range": [
+    0.97,
+    1.03
+   ],
+   "ok": true
+  },
+  {
+   "check": "G1 R5_native_bell_30_70 F (ideal)",
+   "value": 1.0002474185189638,
+   "range": [
+    0.97,
+    1.03
+   ],
+   "ok": true
+  },
+  {
+   "check": "G1 R5_N1corr_bell_30_70 F (ideal)",
+   "value": 1.0040508654291718,
+   "range": [
+    0.95,
+    1.03
+   ],
+   "ok": true
+  },
+  {
+   "check": "G1 R5_fpcorr_bell_30_70 F (ideal)",
+   "value": 0.9986390094217927,
+   "range": [
+    0.97,
+    1.03
+   ],
+   "ok": true
+  },
+  {
+   "check": "G2 z rotation at 4us (ideal, rad)",
+   "value": 0.004167708592929566,
+   "range": [
+    0,
+    0.06
+   ],
+   "ok": true
+  },
+  {
+   "check": "G2 z rotation at 8us (ideal, rad)",
+   "value": 0.012937032497398561,
+   "range": [
+    0,
+    0.06
+   ],
+   "ok": true
+  },
+  {
+   "check": "G2 z rotation at 16us (ideal, rad)",
+   "value": 0.005344669186938934,
+   "range": [
+    0,
+    0.06
+   ],
+   "ok": true
+  }
+ ],
+ "all_ok": true,
+ "jobs": {
+  "G1": {
+   "circuits": 54,
+   "shots": 108000
+  },
+  "G2": {
+   "circuits": 27,
+   "shots": 81000
+  }
+ }
+}

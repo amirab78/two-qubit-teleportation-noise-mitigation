@@ -1,0 +1,81 @@
+{
+ "approved": [
+  {
+   "xhash": "45f3329c8c2400ac74f94e74ec006d987914083181242628d77f94dcf68f8bc0",
+   "name": "K0_ibm_kingston",
+   "max_seconds": 10,
+   "note": "user OK in chat: do the next (25 Oct)",
+   "approved_utc": "2026-10-25T07:11:58.228670+00:00"
+  },
+  {
+   "xhash": "2f77535369fbeca9652e840ab7af4ded711d18c4bdd2b628c1c73ca35f3648a5",
+   "name": "K1_ibm_kingston",
+   "max_seconds": 116,
+   "note": "user OK in chat: OK, send K1 (25 Oct)",
+   "approved_utc": "2026-10-25T07:15:07.257496+00:00"
+  },
+  {
+   "xhash": "6ffaa6daeea8b610adbaceb4a7ca61933fbfb6920ecfa76c73e85d4d324bced8",
+   "name": "K2_ibm_kingston",
+   "max_seconds": 44,
+   "note": "user OK in chat: OK, send K2 (25 Oct)",
+   "approved_utc": "2026-10-25T07:30:19.629274+00:00"
+  },
+  {
+   "xhash": "072cac30e28cf61b55b02fc78b63faf9f0436c2d6e7fd664324bdbb9d03c65ea",
+   "name": "K3_ibm_kingston",
+   "max_seconds": 24,
+   "note": "user OK in chat: OK, send K3 and then K4 (25 Oct)",
+   "approved_utc": "2026-10-25T07:36:17.965650+00:00"
+  },
+  {
+   "xhash": "804855961ac783dac41db4d6e91cab5e243198ed5c339f2a1ac7a4ec73951157",
+   "name": "K4_ibm_kingston",
+   "max_seconds": 24,
+   "note": "user OK in chat: OK, send K3 and then K4 (25 Oct)",
+   "approved_utc": "2026-10-25T08:00:06.839819+00:00"
+  },
+  {
+   "xhash": "9dd7ce972005b9477d70edf467195e292e26568af0358d820575d8829030d1cf",
+   "name": "F0_ibm_fez",
+   "max_seconds": 10,
+   "note": "user OK in chat 25 Oct: 'OK, send F0'",
+   "approved_utc": "2026-10-25T08:20:08.932731+00:00"
+  },
+  {
+   "xhash": "312b717aec5a823ee16fb05497b81e05f06b0a8ff0efd913f8ae82d4d91e0715",
+   "name": "F1_ibm_fez",
+   "max_seconds": 54,
+   "note": "user OK in chat 25 Oct: 'OK, send F1'",
+   "approved_utc": "2026-10-25T08:23:09.849690+00:00"
+  },
+  {
+   "xhash": "692ec7c7ef70ab923880a70d63a2ea2febd9c3c47accbeffdbc0af2b675851c7",
+   "name": "F2_ibm_fez",
+   "max_seconds": 27,
+   "note": "user OK in chat 25 Oct: 'OK, send F2'",
+   "approved_utc": "2026-10-25T08:29:37.664526+00:00"
+  },
+  {
+   "xhash": "5f5b1b1b66f45c6fd9a5c71faa4d9882d263cd327ec4d12b535786fa9d05a7cb",
+   "name": "G1_ibm_fez",
+   "max_seconds": 38,
+   "note": "user OK in chat 25 Oct: 'OK, send G1'",
+   "approved_utc": "2026-10-25T08:46:58.071827+00:00"
+  },
+  {
+   "xhash": "a1637cda210c97e83de019a254d0f135ba4a26c963e617886b49f26d89f7c20b",
+   "name": "G2_ibm_kingston",
+   "max_seconds": 30,
+   "note": "user OK in chat 25 Oct: 'OK, send G2'",
+   "approved_utc": "2026-10-25T08:50:30.556947+00:00"
+  },
+  {
+   "xhash": "a4cf710d0af28bb1c349096aad305cefcdcc09cad8cde48db38b0b5006e90273",
+   "name": "G3_ibm_kingston",
+   "max_seconds": 27,
+   "note": "user OK in chat 25 Oct: 'OK, send G3'",
+   "approved_utc": "2026-10-25T08:58:56.666185+00:00"
+  }
+ ]
+}

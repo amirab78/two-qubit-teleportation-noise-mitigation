@@ -1,0 +1,301 @@
+{
+ "device": "ibm_kingston",
+ "jobs": {
+  "K0": {
+   "circuits": 12,
+   "shots": 6000,
+   "labels": [
+    "K0_N1none_product_HT_XX",
+    "K0_N2none16us_product_HT_XX",
+    "K0_N2none16us_product_HT_ZZ",
+    "K0_N2none4us_product_HT_XX",
+    "K0_N2none4us_product_HT_ZZ",
+    "K0_N2none8us_product_HT_XX",
+    "K0_native_bell_30_70_XX",
+    "K0_native_bell_30_70_ZZ",
+    "K0_native_product_HT_XX",
+    "K0_native_product_HT_ZZ",
+    "K0_readout_000000",
+    "K0_readout_111111"
+   ]
+  },
+  "K1": {
+   "circuits": 130,
+   "shots": 349000
+  },
+  "K2": {
+   "circuits": 54,
+   "shots": 126000
+  },
+  "K3": {
+   "circuits": 27,
+   "shots": 63000,
+   "options": {
+    "skip_reset_qubits": false,
+    "sequence_type": "XpXm"
+   },
+   "xhash_differs_from_other_DD_job": null
+  },
+  "K4": {
+   "circuits": 27,
+   "shots": 63000,
+   "options": {
+    "skip_reset_qubits": true,
+    "sequence_type": "XpXm"
+   },
+   "xhash_differs_from_other_DD_job": null
+  }
+ },
+ "checks": [
+  {
+   "check": "K0: every pilot circuit returned counts",
+   "value": 12.0,
+   "range": [
+    12,
+    12
+   ],
+   "ok": true
+  },
+  {
+   "check": "K1 native F (product_HT)",
+   "value": 1.0007530617190203,
+   "range": [
+    0.98,
+    1.02
+   ],
+   "ok": true
+  },
+  {
+   "check": "K1 N1 none F - exact 0.7898 (product_HT)",
+   "value": 0.004341568719819278,
+   "range": [
+    -0.02,
+    0.02
+   ],
+   "ok": true
+  },
+  {
+   "check": "K1 N1 + stored correction F - exact 0.9931 (product_HT)",
+   "value": 0.0009016628298910145,
+   "range": [
+    -0.02,
+    0.02
+   ],
+   "ok": true
+  },
+  {
+   "check": "K1 native F (bell_30_70)",
+   "value": 0.9982332013201114,
+   "range": [
+    0.98,
+    1.02
+   ],
+   "ok": true
+  },
+  {
+   "check": "K1 N1 none F - exact 0.6074 (bell_30_70)",
+   "value": 0.0033173183957042607,
+   "range": [
+    -0.02,
+    0.02
+   ],
+   "ok": true
+  },
+  {
+   "check": "K1 N1 + stored correction F - exact 0.9920 (bell_30_70)",
+   "value": 0.003357258095338156,
+   "range": [
+    -0.02,
+    0.02
+   ],
+   "ok": true
+  },
+  {
+   "check": "K1 TOMO-9 of N1: distance to the exact inverse (rad)",
+   "value": 0.036539692162797455,
+   "range": [
+    0,
+    0.06
+   ],
+   "ok": true
+  },
+  {
+   "check": "K1 fingerprint: largest rotation (rad, ideal device -> 0)",
+   "value": 0.021445752329183495,
+   "range": [
+    0,
+    0.06
+   ],
+   "ok": true
+  },
+  {
+   "check": "K1 wait 4us: F none (ideal wait = identity)",
+   "value": 0.9977977596922076,
+   "range": [
+    0.98,
+    1.02
+   ],
+   "ok": true
+  },
+  {
+   "check": "K1 wait 4us: TOMO-9 rotation (rad, -> 0)",
+   "value": 0.026942652686582164,
+   "range": [
+    0,
+    0.06
+   ],
+   "ok": true
+  },
+  {
+   "check": "K1 wait 8us: F none (ideal wait = identity)",
+   "value": 0.9855319377890006,
+   "range": [
+    0.98,
+    1.02
+   ],
+   "ok": true
+  },
+  {
+   "check": "K1 wait 8us: TOMO-9 rotation (rad, -> 0)",
+   "value": 0.016684044866808644,
+   "range": [
+    0,
+    0.06
+   ],
+   "ok": true
+  },
+  {
+   "check": "K1 wait 16us: F none (ideal wait = identity)",
+   "value": 1.0104868890773493,
+   "range": [
+    0.98,
+    1.02
+   ],
+   "ok": true
+  },
+  {
+   "check": "K1 wait 16us: TOMO-9 rotation (rad, -> 0)",
+   "value": 0.030051069248061106,
+   "range": [
+    0,
+    0.06
+   ],
+   "ok": true
+  },
+  {
+   "check": "K2 N1 + learned TOMO-9 F (product_HT)",
+   "value": 0.9954233378944346,
+   "range": [
+    0.98,
+    1.02
+   ],
+   "ok": true
+  },
+  {
+   "check": "K2 N1 + learned TOMO-9 F (bell_30_70)",
+   "value": 1.000155524560784,
+   "range": [
+    0.98,
+    1.02
+   ],
+   "ok": true
+  },
+  {
+   "check": "K2 verification: residual rotation (rad)",
+   "value": 0.01709126985357789,
+   "range": [
+    0,
+    0.06
+   ],
+   "ok": true
+  },
+  {
+   "check": "K2 wait 4us + learned TOMO-9 F",
+   "value": 1.0036422191632393,
+   "range": [
+    0.98,
+    1.02
+   ],
+   "ok": true
+  },
+  {
+   "check": "K2 wait 8us + learned TOMO-9 F",
+   "value": 1.0018922191632393,
+   "range": [
+    0.98,
+    1.02
+   ],
+   "ok": true
+  },
+  {
+   "check": "K2 wait 16us + learned TOMO-9 F",
+   "value": 1.0015692063016142,
+   "range": [
+    0.98,
+    1.02
+   ],
+   "ok": true
+  },
+  {
+   "check": "K3 DD alone F (ideal)",
+   "value": 0.9961084198639873,
+   "range": [
+    0.98,
+    1.02
+   ],
+   "ok": true
+  },
+  {
+   "check": "K3 correction + DD F (ideal)",
+   "value": 1.0050137499498772,
+   "range": [
+    0.98,
+    1.02
+   ],
+   "ok": true
+  },
+  {
+   "check": "K3 TOMO-9 under DD rotation (rad)",
+   "value": 0.025005101672351992,
+   "range": [
+    0,
+    0.06
+   ],
+   "ok": true
+  },
+  {
+   "check": "K4 DD alone F (ideal)",
+   "value": 0.9961084198639873,
+   "range": [
+    0.98,
+    1.02
+   ],
+   "ok": true
+  },
+  {
+   "check": "K4 correction + DD F (ideal)",
+   "value": 1.0050137499498772,
+   "range": [
+    0.98,
+    1.02
+   ],
+   "ok": true
+  },
+  {
+   "check": "K4 TOMO-9 under DD rotation (rad)",
+   "value": 0.025005101672351992,
+   "range": [
+    0,
+    0.06
+   ],
+   "ok": true
+  },
+  {
+   "check": "K3 and K4: same circuits, different DD option -> different hash",
+   "value": null,
+   "range": null,
+   "ok": true
+  }
+ ],
+ "all_ok": true
+}

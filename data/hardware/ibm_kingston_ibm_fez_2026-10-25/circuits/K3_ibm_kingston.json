@@ -1,0 +1,114 @@
+{
+ "name": "K3_ibm_kingston",
+ "device": "ibm_kingston",
+ "round": 3,
+ "options": {
+  "dd": true,
+  "twirl": false
+ },
+ "labels": [
+  "A_product_N2_8us@3000",
+  "A_product_N2_8us@2000"
+ ],
+ "index": {
+  "A_product_N2_8us@3000": [
+   "R3_DDcal_tomo9_s0_Z",
+   "R3_DDcal_tomo9_s0_X",
+   "R3_DDcal_tomo9_s0_Y",
+   "R3_DDcal_tomo9_s1_Z",
+   "R3_DDcal_tomo9_s1_X",
+   "R3_DDcal_tomo9_s1_Y",
+   "R3_DDcal_tomo9_s2_Z",
+   "R3_DDcal_tomo9_s2_X",
+   "R3_DDcal_tomo9_s2_Y"
+  ],
+  "A_product_N2_8us@2000": [
+   "R3_DDnone_product_HT_XX",
+   "R3_DDnone_product_HT_XY",
+   "R3_DDnone_product_HT_XZ",
+   "R3_DDnone_product_HT_YX",
+   "R3_DDnone_product_HT_YY",
+   "R3_DDnone_product_HT_YZ",
+   "R3_DDnone_product_HT_ZX",
+   "R3_DDnone_product_HT_ZY",
+   "R3_DDnone_product_HT_ZZ",
+   "R3_DDcorr_product_HT_XX",
+   "R3_DDcorr_product_HT_XY",
+   "R3_DDcorr_product_HT_XZ",
+   "R3_DDcorr_product_HT_YX",
+   "R3_DDcorr_product_HT_YY",
+   "R3_DDcorr_product_HT_YZ",
+   "R3_DDcorr_product_HT_ZX",
+   "R3_DDcorr_product_HT_ZY",
+   "R3_DDcorr_product_HT_ZZ"
+  ]
+ },
+ "shots": [
+  3000,
+  2000
+ ],
+ "has_params": [
+  true,
+  true
+ ],
+ "n_pubs": 2,
+ "n_bindings": 27,
+ "shots_total": 63000,
+ "estimate_s": 24.05,
+ "max_seconds": 24,
+ "hash": "5d9dd0f35cd74a82d0a09359e9dd7a8db4780ec1f3c8d839931cd0d2e3aa11c2",
+ "frozen_utc": "2026-10-25T07:27:32.278294+00:00",
+ "fingerprints_sha": [
+  "27660fe41ca912842029b200bb22bbea51e73ea701884f8f04313a3df85ba8e6",
+  "27660fe41ca912842029b200bb22bbea51e73ea701884f8f04313a3df85ba8e6"
+ ],
+ "x_options": {
+  "skip_reset_qubits": false,
+  "sequence_type": "XpXm"
+ },
+ "xhash": "072cac30e28cf61b55b02fc78b63faf9f0436c2d6e7fd664324bdbb9d03c65ea",
+ "estimate_detailed_s": 18.559424,
+ "estimate_measured_rate_s": 19.332,
+ "detailed_per_pub": [
+  {
+   "pub": "A_product_N2_8us@3000",
+   "shots": 27000,
+   "circuit_us": 10.636000000000001,
+   "per_shot_ms": 0.262848,
+   "seconds": 7.096896000000001
+  },
+  {
+   "pub": "A_product_N2_8us@2000",
+   "shots": 36000,
+   "circuit_us": 10.636000000000001,
+   "per_shot_ms": 0.262848,
+   "seconds": 9.462528
+  }
+ ],
+ "rep_delay_us": 250.0,
+ "prediction_file": "x_pred_K234_ibm_kingston.json",
+ "prediction_sha256": "d7e0deb9ef50ec4c07ab7cc5cb01a0fe0dad6218ea12ceda61ee4277e75b84c4",
+ "rows_table": [
+  {
+   "block": "DD: TOMO-9 under DD",
+   "templates": "A_product_N2_8us",
+   "circuits": 9,
+   "shots_per_circuit": 3000,
+   "shots": 27000
+  },
+  {
+   "block": "DD: DD alone",
+   "templates": "A_product_N2_8us",
+   "circuits": 9,
+   "shots_per_circuit": 2000,
+   "shots": 18000
+  },
+  {
+   "block": "DD: K1 TOMO-9 correction + DD",
+   "templates": "A_product_N2_8us",
+   "circuits": 9,
+   "shots_per_circuit": 2000,
+   "shots": 18000
+  }
+ ]
+}

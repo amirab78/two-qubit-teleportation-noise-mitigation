@@ -1,0 +1,164 @@
+{
+ "job": "dberne7gdj9s73fmbpd0",
+ "xhash": "9dd7ce972005b9477d70edf467195e292e26568af0358d820575d8829030d1cf",
+ "check": [
+  {
+   "label": "F0_readout_000000",
+   "ok": true,
+   "register": "bob",
+   "tvd": 0.007000000000000003,
+   "threshold": 0.061800999999999995
+  },
+  {
+   "label": "F0_readout_111111",
+   "ok": true,
+   "register": "bob",
+   "tvd": 0.013000000000000001,
+   "threshold": 0.06300000000000001
+  },
+  {
+   "label": "F0_native_product_HT_XX",
+   "ok": true,
+   "register": "bob",
+   "tvd": 0.04899999999999996,
+   "threshold": 0.10260199999999996
+  },
+  {
+   "label": "F0_N1none_product_HT_XX",
+   "ok": true,
+   "register": "bob",
+   "tvd": 0.025000000000000022,
+   "threshold": 0.11681099999999985
+  },
+  {
+   "label": "F0_native_product_HT_ZZ",
+   "ok": true,
+   "register": "bob",
+   "tvd": 0.04700000000000003,
+   "threshold": 0.11840299999999994
+  },
+  {
+   "label": "F0_N1none_product_HT_ZZ",
+   "ok": true,
+   "register": "bob",
+   "tvd": 0.020000000000000004,
+   "threshold": 0.12040299999999997
+  },
+  {
+   "label": "F0_native_bell_30_70_XX",
+   "ok": true,
+   "register": "bob",
+   "tvd": 0.04099999999999997,
+   "threshold": 0.11260200000000001
+  },
+  {
+   "label": "F0_N1none_bell_30_70_XX",
+   "ok": true,
+   "register": "bob",
+   "tvd": 0.018000000000000002,
+   "threshold": 0.11960199999999999
+  },
+  {
+   "label": "F0_native_bell_30_70_ZZ",
+   "ok": true,
+   "register": "bob",
+   "tvd": 0.04100000000000002,
+   "threshold": 0.114
+  },
+  {
+   "label": "F0_N1none_bell_30_70_ZZ",
+   "ok": true,
+   "register": "bob",
+   "tvd": 0.06400000000000002,
+   "threshold": 0.12461199999999988
+  }
+ ],
+ "n_flagged": 0,
+ "physics": [
+  {
+   "label": "F0_readout_000000",
+   "quantity": "P(all 4 Alice bits = pattern)",
+   "hardware": 0.98,
+   "twin": 0.988,
+   "diff": -0.008000000000000007
+  },
+  {
+   "label": "F0_readout_111111",
+   "quantity": "P(all 4 Alice bits = pattern)",
+   "hardware": 0.98,
+   "twin": 0.96,
+   "diff": 0.020000000000000018
+  },
+  {
+   "label": "F0_native_product_HT_XX",
+   "quantity": "Bob <XX> parity (frame-corrected)",
+   "hardware": 0.39200000000000007,
+   "twin": 0.486,
+   "diff": -0.09399999999999992
+  },
+  {
+   "label": "F0_N1none_product_HT_XX",
+   "quantity": "Bob <XX> parity (frame-corrected)",
+   "hardware": 0.176,
+   "twin": 0.22200000000000003,
+   "diff": -0.04600000000000004
+  },
+  {
+   "label": "F0_native_product_HT_ZZ",
+   "quantity": "Bob <ZZ> parity (frame-corrected)",
+   "hardware": -0.05600000000000002,
+   "twin": 0.014000000000000012,
+   "diff": -0.07000000000000003
+  },
+  {
+   "label": "F0_N1none_product_HT_ZZ",
+   "quantity": "Bob <ZZ> parity (frame-corrected)",
+   "hardware": 0.04000000000000001,
+   "twin": 0.010000000000000009,
+   "diff": 0.03
+  },
+  {
+   "label": "F0_native_bell_30_70_XX",
+   "quantity": "Bob <XX> parity (frame-corrected)",
+   "hardware": 0.768,
+   "twin": 0.85,
+   "diff": -0.08199999999999996
+  },
+  {
+   "label": "F0_N1none_bell_30_70_XX",
+   "quantity": "Bob <XX> parity (frame-corrected)",
+   "hardware": 0.31199999999999994,
+   "twin": 0.348,
+   "diff": -0.03600000000000003
+  },
+  {
+   "label": "F0_native_bell_30_70_ZZ",
+   "quantity": "Bob <ZZ> parity (frame-corrected)",
+   "hardware": 0.8320000000000001,
+   "twin": 0.914,
+   "diff": -0.08199999999999996
+  },
+  {
+   "label": "F0_N1none_bell_30_70_ZZ",
+   "quantity": "Bob <ZZ> parity (frame-corrected)",
+   "hardware": 0.08399999999999996,
+   "twin": 0.21200000000000002,
+   "diff": -0.12800000000000006
+  }
+ ],
+ "usage": {
+  "usage_s": 4,
+  "estimate_detailed_s": 3.2686920000000006,
+  "estimate_measured_rate_s": 4.0200000000000005,
+  "cap_s": 10,
+  "ibm_estimate_queued_s": null,
+  "queue_s": 1.006804,
+  "run_wall_s": 6.50028
+ },
+ "pilot_rule": {
+  "usage_s": 4,
+  "limit_s": 10,
+  "ok": true
+ },
+ "calibration_snapshot": "20261025T0753Z"
+}

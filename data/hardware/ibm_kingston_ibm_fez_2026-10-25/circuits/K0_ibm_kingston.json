@@ -1,0 +1,147 @@
+{
+ "name": "K0_ibm_kingston",
+ "device": "ibm_kingston",
+ "round": 0,
+ "options": {
+  "dd": false,
+  "twirl": false
+ },
+ "labels": [
+  "readout_000000@500",
+  "readout_111111@500",
+  "A_product@500",
+  "A_bell@500",
+  "A_product_N2_4us@500",
+  "A_product_N2_8us@500",
+  "A_product_N2_16us@500"
+ ],
+ "index": {
+  "readout_000000@500": [
+   "K0_readout_000000"
+  ],
+  "readout_111111@500": [
+   "K0_readout_111111"
+  ],
+  "A_product@500": [
+   "K0_native_product_HT_XX",
+   "K0_native_product_HT_ZZ",
+   "K0_N1none_product_HT_XX"
+  ],
+  "A_bell@500": [
+   "K0_native_bell_30_70_XX",
+   "K0_native_bell_30_70_ZZ"
+  ],
+  "A_product_N2_4us@500": [
+   "K0_N2none4us_product_HT_XX",
+   "K0_N2none4us_product_HT_ZZ"
+  ],
+  "A_product_N2_8us@500": [
+   "K0_N2none8us_product_HT_XX"
+  ],
+  "A_product_N2_16us@500": [
+   "K0_N2none16us_product_HT_XX",
+   "K0_N2none16us_product_HT_ZZ"
+  ]
+ },
+ "shots": [
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500
+ ],
+ "has_params": [
+  false,
+  false,
+  true,
+  true,
+  true,
+  true,
+  true
+ ],
+ "n_pubs": 7,
+ "n_bindings": 12,
+ "shots_total": 6000,
+ "estimate_s": 4.1,
+ "max_seconds": 10,
+ "hash": "85fd0dea546e976662eafe22547b8c309e827181443b2d63168a0c7a1c0f8fa8",
+ "frozen_utc": "2026-10-25T07:06:01.950869+00:00",
+ "fingerprints_sha": [
+  "ea5070bfd02d915f009082e7ae7198e614e14563a5e83202adb8c996527b3499",
+  "2b4a019a787098be420cc1f596c787a14f7697d00ccfb8badeb5ea5f38569aa6",
+  "c7360dfc0d63e20c40db8da78b00058e0e5e69d9a543f482921b7e13e1a2a1f7",
+  "19c235759b3b06fcca6532fc3ef9b87f7e4d45471b9579d55620efbcfea9c2c5",
+  "e5e1cfd32f3d0460ff1314ad944e2771ee16cbe01ae12ba2b1a1757b799f8f67",
+  "27660fe41ca912842029b200bb22bbea51e73ea701884f8f04313a3df85ba8e6",
+  "d0c4a93bc08fbab0fe454129a281224e9488a710eff32008e5dcb248c900e958"
+ ],
+ "x_options": null,
+ "xhash": "45f3329c8c2400ac74f94e74ec006d987914083181242628d77f94dcf68f8bc0",
+ "estimate_detailed_s": 3.5529080000000004,
+ "estimate_measured_rate_s": 4.284000000000001,
+ "detailed_per_pub": [
+  {
+   "pub": "readout_000000@500",
+   "shots": 500,
+   "circuit_us": 2.18,
+   "per_shot_ms": 0.25439200000000006,
+   "seconds": 0.12719600000000003
+  },
+  {
+   "pub": "readout_111111@500",
+   "shots": 500,
+   "circuit_us": 2.212,
+   "per_shot_ms": 0.25442400000000004,
+   "seconds": 0.12721200000000002
+  },
+  {
+   "pub": "A_product@500",
+   "shots": 1500,
+   "circuit_us": 2.7,
+   "per_shot_ms": 0.254912,
+   "seconds": 0.38236800000000004
+  },
+  {
+   "pub": "A_bell@500",
+   "shots": 1000,
+   "circuit_us": 2.8000000000000003,
+   "per_shot_ms": 0.25501200000000007,
+   "seconds": 0.25501200000000007
+  },
+  {
+   "pub": "A_product_N2_4us@500",
+   "shots": 1000,
+   "circuit_us": 6.636,
+   "per_shot_ms": 0.2588480000000001,
+   "seconds": 0.2588480000000001
+  },
+  {
+   "pub": "A_product_N2_8us@500",
+   "shots": 500,
+   "circuit_us": 10.636000000000001,
+   "per_shot_ms": 0.262848,
+   "seconds": 0.131424
+  },
+  {
+   "pub": "A_product_N2_16us@500",
+   "shots": 1000,
+   "circuit_us": 18.636000000000003,
+   "per_shot_ms": 0.27084800000000003,
+   "seconds": 0.27084800000000003
+  }
+ ],
+ "rep_delay_us": 250.0,
+ "prediction_file": "x_pred_K0K1.json",
+ "prediction_sha256": "5dbf89f83a5af93b53ce844bdb98049e2db483b38a747a6df8f2918f9adf768c",
+ "rows_table": [
+  {
+   "block": "pilot",
+   "templates": "A_bell, A_product, A_product_N2_16us, A_product_N2_4us, A_product_N2_8us, readout_000000, readout_111111",
+   "circuits": 12,
+   "shots_per_circuit": 500,
+   "shots": 6000
+  }
+ ]
+}

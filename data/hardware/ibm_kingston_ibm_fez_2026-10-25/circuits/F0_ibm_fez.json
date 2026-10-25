@@ -1,0 +1,106 @@
+{
+ "name": "F0_ibm_fez",
+ "device": "ibm_fez",
+ "round": 0,
+ "options": {
+  "dd": false,
+  "twirl": false
+ },
+ "labels": [
+  "readout_000000@500",
+  "readout_111111@500",
+  "A_product@500",
+  "A_bell@500"
+ ],
+ "index": {
+  "readout_000000@500": [
+   "F0_readout_000000"
+  ],
+  "readout_111111@500": [
+   "F0_readout_111111"
+  ],
+  "A_product@500": [
+   "F0_native_product_HT_XX",
+   "F0_N1none_product_HT_XX",
+   "F0_native_product_HT_ZZ",
+   "F0_N1none_product_HT_ZZ"
+  ],
+  "A_bell@500": [
+   "F0_native_bell_30_70_XX",
+   "F0_N1none_bell_30_70_XX",
+   "F0_native_bell_30_70_ZZ",
+   "F0_N1none_bell_30_70_ZZ"
+  ]
+ },
+ "shots": [
+  500,
+  500,
+  500,
+  500
+ ],
+ "has_params": [
+  false,
+  false,
+  true,
+  true
+ ],
+ "n_pubs": 4,
+ "n_bindings": 10,
+ "shots_total": 5000,
+ "estimate_s": 3.75,
+ "max_seconds": 10,
+ "hash": "f61a78f0c149f6bfc507c38295c8865b156e30fd8f3647fdb6801e92e9712b7f",
+ "frozen_utc": "2026-10-25T08:18:56.005224+00:00",
+ "fingerprints_sha": [
+  "382109de9abb436d025e2bf7e7948fd6cc11c93bb3ac3ea3b3d37663a3c2587c",
+  "3ec431fb670bb4e8620d9ccac86161c651ff08c968bdb39b5b3e6622cd66fdc6",
+  "ab3b87539a36e6d8de6c018fcd07f334080f8d94b7db929e9cee85734959a379",
+  "660c7c64fd365a391c572492a77a00291da8f0cad550c1bcfad6d242c4e10895"
+ ],
+ "x_options": null,
+ "xhash": "9dd7ce972005b9477d70edf467195e292e26568af0358d820575d8829030d1cf",
+ "estimate_detailed_s": 3.2686920000000006,
+ "estimate_measured_rate_s": 4.0200000000000005,
+ "detailed_per_pub": [
+  {
+   "pub": "readout_000000@500",
+   "shots": 500,
+   "circuit_us": 1.6600000000000001,
+   "per_shot_ms": 0.253344,
+   "seconds": 0.126672
+  },
+  {
+   "pub": "readout_111111@500",
+   "shots": 500,
+   "circuit_us": 1.6840000000000002,
+   "per_shot_ms": 0.25336800000000004,
+   "seconds": 0.12668400000000002
+  },
+  {
+   "pub": "A_product@500",
+   "shots": 2000,
+   "circuit_us": 2.104,
+   "per_shot_ms": 0.253788,
+   "seconds": 0.507576
+  },
+  {
+   "pub": "A_bell@500",
+   "shots": 2000,
+   "circuit_us": 2.196,
+   "per_shot_ms": 0.25388,
+   "seconds": 0.50776
+  }
+ ],
+ "rep_delay_us": 250.0,
+ "prediction_file": "x_pred_F0F1_ibm_fez.json",
+ "prediction_sha256": "123ce1e9ea72a6a75e522f9290861f430ae9116c3184084ab1194839f0743135",
+ "rows_table": [
+  {
+   "block": "pilot",
+   "templates": "A_bell, A_product, readout_000000, readout_111111",
+   "circuits": 10,
+   "shots_per_circuit": 500,
+   "shots": 5000
+  }
+ ]
+}

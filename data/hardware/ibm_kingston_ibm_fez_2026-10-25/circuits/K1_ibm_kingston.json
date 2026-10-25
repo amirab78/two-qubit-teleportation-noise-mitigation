@@ -1,0 +1,420 @@
+{
+ "name": "K1_ibm_kingston",
+ "device": "ibm_kingston",
+ "round": 1,
+ "options": {
+  "dd": false,
+  "twirl": false
+ },
+ "labels": [
+  "readout_000000@4000",
+  "readout_111111@4000",
+  "readout_010101@4000",
+  "readout_101010@4000",
+  "A_product@3000",
+  "A_bell@3000",
+  "A_product@2000",
+  "A_product_N2_4us@2000",
+  "A_product_N2_8us@2000",
+  "A_product_N2_16us@2000",
+  "A_product_N2_4us@3000",
+  "A_product_N2_8us@3000",
+  "A_product_N2_16us@3000"
+ ],
+ "index": {
+  "readout_000000@4000": [
+   "readout_000000"
+  ],
+  "readout_111111@4000": [
+   "readout_111111"
+  ],
+  "readout_010101@4000": [
+   "readout_010101"
+  ],
+  "readout_101010@4000": [
+   "readout_101010"
+  ],
+  "A_product@3000": [
+   "R1_nativeA_product_HT_XX",
+   "R1_nativeA_product_HT_XY",
+   "R1_nativeA_product_HT_XZ",
+   "R1_nativeA_product_HT_YX",
+   "R1_nativeA_product_HT_YY",
+   "R1_nativeA_product_HT_YZ",
+   "R1_nativeA_product_HT_ZX",
+   "R1_nativeA_product_HT_ZY",
+   "R1_nativeA_product_HT_ZZ",
+   "R1_N1none_product_HT_XX",
+   "R1_N1none_product_HT_XY",
+   "R1_N1none_product_HT_XZ",
+   "R1_N1none_product_HT_YX",
+   "R1_N1none_product_HT_YY",
+   "R1_N1none_product_HT_YZ",
+   "R1_N1none_product_HT_ZX",
+   "R1_N1none_product_HT_ZY",
+   "R1_N1none_product_HT_ZZ",
+   "R1_N1old_product_HT_XX",
+   "R1_N1old_product_HT_XY",
+   "R1_N1old_product_HT_XZ",
+   "R1_N1old_product_HT_YX",
+   "R1_N1old_product_HT_YY",
+   "R1_N1old_product_HT_YZ",
+   "R1_N1old_product_HT_ZX",
+   "R1_N1old_product_HT_ZY",
+   "R1_N1old_product_HT_ZZ"
+  ],
+  "A_bell@3000": [
+   "R1_nativeA_bell_30_70_XX",
+   "R1_nativeA_bell_30_70_XY",
+   "R1_nativeA_bell_30_70_XZ",
+   "R1_nativeA_bell_30_70_YX",
+   "R1_nativeA_bell_30_70_YY",
+   "R1_nativeA_bell_30_70_YZ",
+   "R1_nativeA_bell_30_70_ZX",
+   "R1_nativeA_bell_30_70_ZY",
+   "R1_nativeA_bell_30_70_ZZ",
+   "R1_N1none_bell_30_70_XX",
+   "R1_N1none_bell_30_70_XY",
+   "R1_N1none_bell_30_70_XZ",
+   "R1_N1none_bell_30_70_YX",
+   "R1_N1none_bell_30_70_YY",
+   "R1_N1none_bell_30_70_YZ",
+   "R1_N1none_bell_30_70_ZX",
+   "R1_N1none_bell_30_70_ZY",
+   "R1_N1none_bell_30_70_ZZ",
+   "R1_N1old_bell_30_70_XX",
+   "R1_N1old_bell_30_70_XY",
+   "R1_N1old_bell_30_70_XZ",
+   "R1_N1old_bell_30_70_YX",
+   "R1_N1old_bell_30_70_YY",
+   "R1_N1old_bell_30_70_YZ",
+   "R1_N1old_bell_30_70_ZX",
+   "R1_N1old_bell_30_70_ZY",
+   "R1_N1old_bell_30_70_ZZ"
+  ],
+  "A_product@2000": [
+   "R1_cal9_tomo9_s0_Z",
+   "R1_cal9_tomo9_s0_X",
+   "R1_cal9_tomo9_s0_Y",
+   "R1_cal9_tomo9_s1_Z",
+   "R1_cal9_tomo9_s1_X",
+   "R1_cal9_tomo9_s1_Y",
+   "R1_cal9_tomo9_s2_Z",
+   "R1_cal9_tomo9_s2_X",
+   "R1_cal9_tomo9_s2_Y",
+   "R1_fp_tomo9_s0_Z",
+   "R1_fp_tomo9_s0_X",
+   "R1_fp_tomo9_s0_Y",
+   "R1_fp_tomo9_s1_Z",
+   "R1_fp_tomo9_s1_X",
+   "R1_fp_tomo9_s1_Y",
+   "R1_fp_tomo9_s2_Z",
+   "R1_fp_tomo9_s2_X",
+   "R1_fp_tomo9_s2_Y"
+  ],
+  "A_product_N2_4us@2000": [
+   "R1_N2none4us_product_HT_XX",
+   "R1_N2none4us_product_HT_XY",
+   "R1_N2none4us_product_HT_XZ",
+   "R1_N2none4us_product_HT_YX",
+   "R1_N2none4us_product_HT_YY",
+   "R1_N2none4us_product_HT_YZ",
+   "R1_N2none4us_product_HT_ZX",
+   "R1_N2none4us_product_HT_ZY",
+   "R1_N2none4us_product_HT_ZZ"
+  ],
+  "A_product_N2_8us@2000": [
+   "R1_N2none8us_product_HT_XX",
+   "R1_N2none8us_product_HT_XY",
+   "R1_N2none8us_product_HT_XZ",
+   "R1_N2none8us_product_HT_YX",
+   "R1_N2none8us_product_HT_YY",
+   "R1_N2none8us_product_HT_YZ",
+   "R1_N2none8us_product_HT_ZX",
+   "R1_N2none8us_product_HT_ZY",
+   "R1_N2none8us_product_HT_ZZ"
+  ],
+  "A_product_N2_16us@2000": [
+   "R1_N2none16us_product_HT_XX",
+   "R1_N2none16us_product_HT_XY",
+   "R1_N2none16us_product_HT_XZ",
+   "R1_N2none16us_product_HT_YX",
+   "R1_N2none16us_product_HT_YY",
+   "R1_N2none16us_product_HT_YZ",
+   "R1_N2none16us_product_HT_ZX",
+   "R1_N2none16us_product_HT_ZY",
+   "R1_N2none16us_product_HT_ZZ"
+  ],
+  "A_product_N2_4us@3000": [
+   "R1_calN24us_tomo9_s0_Z",
+   "R1_calN24us_tomo9_s0_X",
+   "R1_calN24us_tomo9_s0_Y",
+   "R1_calN24us_tomo9_s1_Z",
+   "R1_calN24us_tomo9_s1_X",
+   "R1_calN24us_tomo9_s1_Y",
+   "R1_calN24us_tomo9_s2_Z",
+   "R1_calN24us_tomo9_s2_X",
+   "R1_calN24us_tomo9_s2_Y"
+  ],
+  "A_product_N2_8us@3000": [
+   "R1_calN28us_tomo9_s0_Z",
+   "R1_calN28us_tomo9_s0_X",
+   "R1_calN28us_tomo9_s0_Y",
+   "R1_calN28us_tomo9_s1_Z",
+   "R1_calN28us_tomo9_s1_X",
+   "R1_calN28us_tomo9_s1_Y",
+   "R1_calN28us_tomo9_s2_Z",
+   "R1_calN28us_tomo9_s2_X",
+   "R1_calN28us_tomo9_s2_Y"
+  ],
+  "A_product_N2_16us@3000": [
+   "R1_calN216us_tomo9_s0_Z",
+   "R1_calN216us_tomo9_s0_X",
+   "R1_calN216us_tomo9_s0_Y",
+   "R1_calN216us_tomo9_s1_Z",
+   "R1_calN216us_tomo9_s1_X",
+   "R1_calN216us_tomo9_s1_Y",
+   "R1_calN216us_tomo9_s2_Z",
+   "R1_calN216us_tomo9_s2_X",
+   "R1_calN216us_tomo9_s2_Y"
+  ]
+ },
+ "shots": [
+  4000,
+  4000,
+  4000,
+  4000,
+  3000,
+  3000,
+  2000,
+  2000,
+  2000,
+  2000,
+  3000,
+  3000,
+  3000
+ ],
+ "has_params": [
+  false,
+  false,
+  false,
+  false,
+  true,
+  true,
+  true,
+  true,
+  true,
+  true,
+  true,
+  true,
+  true
+ ],
+ "n_pubs": 13,
+ "n_bindings": 130,
+ "shots_total": 349000,
+ "estimate_s": 124.15,
+ "max_seconds": 116,
+ "hash": "d9d39fa0cda47d9667913bc3b8fd1eb050b76c14807400a38894e059d50bac03",
+ "frozen_utc": "2026-10-25T07:06:07.013117+00:00",
+ "fingerprints_sha": [
+  "ea5070bfd02d915f009082e7ae7198e614e14563a5e83202adb8c996527b3499",
+  "2b4a019a787098be420cc1f596c787a14f7697d00ccfb8badeb5ea5f38569aa6",
+  "c57798c88232f8b144e9c87a6330b44f78aa6ddac1bc8d8fcfcde1d00f861568",
+  "8c03fa3ab5ed10dcda56bcae863955f0f0794c1ea55ab6f98243ba8024405d4e",
+  "c7360dfc0d63e20c40db8da78b00058e0e5e69d9a543f482921b7e13e1a2a1f7",
+  "19c235759b3b06fcca6532fc3ef9b87f7e4d45471b9579d55620efbcfea9c2c5",
+  "c7360dfc0d63e20c40db8da78b00058e0e5e69d9a543f482921b7e13e1a2a1f7",
+  "e5e1cfd32f3d0460ff1314ad944e2771ee16cbe01ae12ba2b1a1757b799f8f67",
+  "27660fe41ca912842029b200bb22bbea51e73ea701884f8f04313a3df85ba8e6",
+  "d0c4a93bc08fbab0fe454129a281224e9488a710eff32008e5dcb248c900e958",
+  "e5e1cfd32f3d0460ff1314ad944e2771ee16cbe01ae12ba2b1a1757b799f8f67",
+  "27660fe41ca912842029b200bb22bbea51e73ea701884f8f04313a3df85ba8e6",
+  "d0c4a93bc08fbab0fe454129a281224e9488a710eff32008e5dcb248c900e958"
+ ],
+ "x_options": null,
+ "xhash": "2f77535369fbeca9652e840ab7af4ded711d18c4bdd2b628c1c73ca35f3648a5",
+ "estimate_detailed_s": 92.215812,
+ "estimate_measured_rate_s": 94.83600000000001,
+ "detailed_per_pub": [
+  {
+   "pub": "readout_000000@4000",
+   "shots": 4000,
+   "circuit_us": 2.18,
+   "per_shot_ms": 0.25439200000000006,
+   "seconds": 1.0175680000000003
+  },
+  {
+   "pub": "readout_111111@4000",
+   "shots": 4000,
+   "circuit_us": 2.212,
+   "per_shot_ms": 0.25442400000000004,
+   "seconds": 1.0176960000000002
+  },
+  {
+   "pub": "readout_010101@4000",
+   "shots": 4000,
+   "circuit_us": 2.212,
+   "per_shot_ms": 0.25442400000000004,
+   "seconds": 1.0176960000000002
+  },
+  {
+   "pub": "readout_101010@4000",
+   "shots": 4000,
+   "circuit_us": 2.212,
+   "per_shot_ms": 0.25442400000000004,
+   "seconds": 1.0176960000000002
+  },
+  {
+   "pub": "A_product@3000",
+   "shots": 81000,
+   "circuit_us": 2.7,
+   "per_shot_ms": 0.254912,
+   "seconds": 20.647872000000003
+  },
+  {
+   "pub": "A_bell@3000",
+   "shots": 81000,
+   "circuit_us": 2.8000000000000003,
+   "per_shot_ms": 0.25501200000000007,
+   "seconds": 20.655972000000002
+  },
+  {
+   "pub": "A_product@2000",
+   "shots": 36000,
+   "circuit_us": 2.7,
+   "per_shot_ms": 0.254912,
+   "seconds": 9.176832000000001
+  },
+  {
+   "pub": "A_product_N2_4us@2000",
+   "shots": 18000,
+   "circuit_us": 6.636,
+   "per_shot_ms": 0.2588480000000001,
+   "seconds": 4.659264000000001
+  },
+  {
+   "pub": "A_product_N2_8us@2000",
+   "shots": 18000,
+   "circuit_us": 10.636000000000001,
+   "per_shot_ms": 0.262848,
+   "seconds": 4.731264
+  },
+  {
+   "pub": "A_product_N2_16us@2000",
+   "shots": 18000,
+   "circuit_us": 18.636000000000003,
+   "per_shot_ms": 0.27084800000000003,
+   "seconds": 4.8752640000000005
+  },
+  {
+   "pub": "A_product_N2_4us@3000",
+   "shots": 27000,
+   "circuit_us": 6.636,
+   "per_shot_ms": 0.2588480000000001,
+   "seconds": 6.988896000000001
+  },
+  {
+   "pub": "A_product_N2_8us@3000",
+   "shots": 27000,
+   "circuit_us": 10.636000000000001,
+   "per_shot_ms": 0.262848,
+   "seconds": 7.096896000000001
+  },
+  {
+   "pub": "A_product_N2_16us@3000",
+   "shots": 27000,
+   "circuit_us": 18.636000000000003,
+   "per_shot_ms": 0.27084800000000003,
+   "seconds": 7.312896
+  }
+ ],
+ "rep_delay_us": 250.0,
+ "prediction_file": "x_pred_K0K1.json",
+ "prediction_sha256": "5dbf89f83a5af93b53ce844bdb98049e2db483b38a747a6df8f2918f9adf768c",
+ "rows_table": [
+  {
+   "block": "readout calibration",
+   "templates": "readout_000000, readout_010101, readout_101010, readout_111111",
+   "circuits": 4,
+   "shots_per_circuit": 4000,
+   "shots": 16000
+  },
+  {
+   "block": "native, version A",
+   "templates": "A_bell, A_product",
+   "circuits": 18,
+   "shots_per_circuit": 3000,
+   "shots": 54000
+  },
+  {
+   "block": "injected N1, no correction",
+   "templates": "A_bell, A_product",
+   "circuits": 18,
+   "shots_per_circuit": 3000,
+   "shots": 54000
+  },
+  {
+   "block": "injected N1, stored 4-Oct correction",
+   "templates": "A_bell, A_product",
+   "circuits": 18,
+   "shots_per_circuit": 3000,
+   "shots": 54000
+  },
+  {
+   "block": "injected N1, calibration (TOMO-9)",
+   "templates": "A_product",
+   "circuits": 9,
+   "shots_per_circuit": 2000,
+   "shots": 18000
+  },
+  {
+   "block": "device fingerprint (TOMO-9)",
+   "templates": "A_product",
+   "circuits": 9,
+   "shots_per_circuit": 2000,
+   "shots": 18000
+  },
+  {
+   "block": "wait 4us, no correction",
+   "templates": "A_product_N2_4us",
+   "circuits": 9,
+   "shots_per_circuit": 2000,
+   "shots": 18000
+  },
+  {
+   "block": "wait 8us, no correction",
+   "templates": "A_product_N2_8us",
+   "circuits": 9,
+   "shots_per_circuit": 2000,
+   "shots": 18000
+  },
+  {
+   "block": "wait 16us, no correction",
+   "templates": "A_product_N2_16us",
+   "circuits": 9,
+   "shots_per_circuit": 2000,
+   "shots": 18000
+  },
+  {
+   "block": "wait 4us, calibration (TOMO-9)",
+   "templates": "A_product_N2_4us",
+   "circuits": 9,
+   "shots_per_circuit": 3000,
+   "shots": 27000
+  },
+  {
+   "block": "wait 8us, calibration (TOMO-9)",
+   "templates": "A_product_N2_8us",
+   "circuits": 9,
+   "shots_per_circuit": 3000,
+   "shots": 27000
+  },
+  {
+   "block": "wait 16us, calibration (TOMO-9)",
+   "templates": "A_product_N2_16us",
+   "circuits": 9,
+   "shots_per_circuit": 3000,
+   "shots": 27000
+  }
+ ]
+}

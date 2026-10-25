@@ -1,0 +1,74 @@
+{
+ "checks": [
+  {
+   "check": "G3 R7_DDU8usnone_product_HT F (ideal, zero correction)",
+   "value": 1.0062581252436775,
+   "range": [
+    0.97,
+    1.03
+   ],
+   "ok": true
+  },
+  {
+   "check": "G3 R7_DDU8uscorr_product_HT F (ideal, zero correction)",
+   "value": 1.011033041066446,
+   "range": [
+    0.97,
+    1.03
+   ],
+   "ok": true
+  },
+  {
+   "check": "G3 R7_DDU16usnone_product_HT F (ideal, zero correction)",
+   "value": 1.0069279635122506,
+   "range": [
+    0.97,
+    1.03
+   ],
+   "ok": true
+  },
+  {
+   "check": "G3 R7_DDU16uscorr_product_HT F (ideal, zero correction)",
+   "value": 1.0000226334263604,
+   "range": [
+    0.97,
+    1.03
+   ],
+   "ok": true
+  },
+  {
+   "check": "G3: 4 blocks",
+   "value": 4,
+   "range": [
+    4,
+    4
+   ],
+   "ok": true
+  }
+ ],
+ "all_ok": true,
+ "jobs": {
+  "G3": {
+   "circuits": 36,
+   "shots": 72000
+  }
+ },
+ "corrections": {
+  "8us": [
+   0.06388413052120061,
+   -2.1636248698801923,
+   2.0506611355759556,
+   0.0037684535096353567,
+   -2.117639725926038,
+   2.060083130851859
+  ],
+  "16us": [
+   0.07925393793159724,
+   -2.1448942785437706,
+   1.9240341040953541,
+   0.01577978045090468,
+   -1.1589313798993959,
+   0.949341925287118
+  ]
+ }
+}

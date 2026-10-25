@@ -1,0 +1,192 @@
+{
+ "job": "dbeqnffsstms73fciu80",
+ "xhash": "45f3329c8c2400ac74f94e74ec006d987914083181242628d77f94dcf68f8bc0",
+ "check": [
+  {
+   "label": "K0_readout_000000",
+   "ok": true,
+   "register": "alice",
+   "tvd": 0.02200000000000001,
+   "threshold": 0.072602
+  },
+  {
+   "label": "K0_readout_111111",
+   "ok": true,
+   "register": "bob",
+   "tvd": 0.009000000000000001,
+   "threshold": 0.06620399999999996
+  },
+  {
+   "label": "K0_native_product_HT_XX",
+   "ok": true,
+   "register": "bob",
+   "tvd": 0.02699999999999996,
+   "threshold": 0.10660699999999988
+  },
+  {
+   "label": "K0_native_product_HT_ZZ",
+   "ok": true,
+   "register": "bob",
+   "tvd": 0.05100000000000003,
+   "threshold": 0.12340799999999992
+  },
+  {
+   "label": "K0_N1none_product_HT_XX",
+   "ok": true,
+   "register": "alice",
+   "tvd": 0.117,
+   "threshold": 0.20540299999999997
+  },
+  {
+   "label": "K0_native_bell_30_70_XX",
+   "ok": true,
+   "register": "bob",
+   "tvd": 0.05599999999999999,
+   "threshold": 0.12300499999999995
+  },
+  {
+   "label": "K0_native_bell_30_70_ZZ",
+   "ok": true,
+   "register": "bob",
+   "tvd": 0.04999999999999999,
+   "threshold": 0.11080599999999996
+  },
+  {
+   "label": "K0_N2none4us_product_HT_XX",
+   "ok": true,
+   "register": "alice",
+   "tvd": 0.066,
+   "threshold": 0.1828059999999999
+  },
+  {
+   "label": "K0_N2none4us_product_HT_ZZ",
+   "ok": true,
+   "register": "bob",
+   "tvd": 0.019000000000000017,
+   "threshold": 0.11680100000000002
+  },
+  {
+   "label": "K0_N2none8us_product_HT_XX",
+   "ok": true,
+   "register": "alice",
+   "tvd": 0.10400000000000001,
+   "threshold": 0.18320399999999995
+  },
+  {
+   "label": "K0_N2none16us_product_HT_XX",
+   "ok": true,
+   "register": "bob",
+   "tvd": 0.26400000000000007,
+   "threshold": 0.32160200000000005
+  },
+  {
+   "label": "K0_N2none16us_product_HT_ZZ",
+   "ok": true,
+   "register": "bob",
+   "tvd": 0.019000000000000003,
+   "threshold": 0.1258159999999998
+  }
+ ],
+ "n_flagged": 0,
+ "physics": [
+  {
+   "label": "K0_readout_000000",
+   "quantity": "P(all 4 Alice bits = pattern)",
+   "hardware": 0.978,
+   "twin": 0.962,
+   "diff": 0.016000000000000014
+  },
+  {
+   "label": "K0_readout_111111",
+   "quantity": "P(all 4 Alice bits = pattern)",
+   "hardware": 0.946,
+   "twin": 0.9450000000000001,
+   "diff": 0.0009999999999998899
+  },
+  {
+   "label": "K0_native_product_HT_XX",
+   "quantity": "Bob <XX> parity (frame-corrected)",
+   "hardware": 0.416,
+   "twin": 0.42599999999999993,
+   "diff": -0.009999999999999953
+  },
+  {
+   "label": "K0_native_product_HT_ZZ",
+   "quantity": "Bob <ZZ> parity (frame-corrected)",
+   "hardware": 0.023999999999999994,
+   "twin": 0.010000000000000009,
+   "diff": 0.013999999999999985
+  },
+  {
+   "label": "K0_N1none_product_HT_XX",
+   "quantity": "Bob <XX> parity (frame-corrected)",
+   "hardware": 0.288,
+   "twin": 0.22599999999999992,
+   "diff": 0.062000000000000055
+  },
+  {
+   "label": "K0_native_bell_30_70_XX",
+   "quantity": "Bob <XX> parity (frame-corrected)",
+   "hardware": 0.784,
+   "twin": 0.8160000000000001,
+   "diff": -0.03200000000000003
+  },
+  {
+   "label": "K0_native_bell_30_70_ZZ",
+   "quantity": "Bob <ZZ> parity (frame-corrected)",
+   "hardware": 0.784,
+   "twin": 0.856,
+   "diff": -0.07199999999999995
+  },
+  {
+   "label": "K0_N2none4us_product_HT_XX",
+   "quantity": "Bob <XX> parity (frame-corrected)",
+   "hardware": 0.39199999999999996,
+   "twin": 0.372,
+   "diff": 0.019999999999999962
+  },
+  {
+   "label": "K0_N2none4us_product_HT_ZZ",
+   "quantity": "Bob <ZZ> parity (frame-corrected)",
+   "hardware": 0.008000000000000007,
+   "twin": 0.04600000000000004,
+   "diff": -0.038000000000000034
+  },
+  {
+   "label": "K0_N2none8us_product_HT_XX",
+   "quantity": "Bob <XX> parity (frame-corrected)",
+   "hardware": 0.284,
+   "twin": 0.14999999999999994,
+   "diff": 0.13400000000000004
+  },
+  {
+   "label": "K0_N2none16us_product_HT_XX",
+   "quantity": "Bob <XX> parity (frame-corrected)",
+   "hardware": 0.01599999999999996,
+   "twin": -0.03999999999999998,
+   "diff": 0.05599999999999994
+  },
+  {
+   "label": "K0_N2none16us_product_HT_ZZ",
+   "quantity": "Bob <ZZ> parity (frame-corrected)",
+   "hardware": -0.015999999999999986,
+   "twin": 0.0020000000000000018,
+   "diff": -0.017999999999999988
+  }
+ ],
+ "usage": {
+  "usage_s": 4,
+  "estimate_detailed_s": 3.5529080000000004,
+  "estimate_measured_rate_s": 4.284000000000001,
+  "cap_s": 10,
+  "ibm_estimate_queued_s": null,
+  "queue_s": 1.395853,
+  "run_wall_s": 9.451868
+ },
+ "pilot_rule": {
+  "usage_s": 4,
+  "limit_s": 10,
+  "ok": true
+ },
+ "calibration_snapshot": "20261025T0641Z"
+}

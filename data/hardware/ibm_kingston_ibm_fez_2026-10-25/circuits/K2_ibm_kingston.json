@@ -1,0 +1,204 @@
+{
+ "name": "K2_ibm_kingston",
+ "device": "ibm_kingston",
+ "round": 2,
+ "options": {
+  "dd": false,
+  "twirl": false
+ },
+ "labels": [
+  "A_product@3000",
+  "A_bell@3000",
+  "A_product@2000",
+  "A_product_N2_4us@2000",
+  "A_product_N2_8us@2000",
+  "A_product_N2_16us@2000"
+ ],
+ "index": {
+  "A_product@3000": [
+   "R2_N1corr_product_HT_XX",
+   "R2_N1corr_product_HT_XY",
+   "R2_N1corr_product_HT_XZ",
+   "R2_N1corr_product_HT_YX",
+   "R2_N1corr_product_HT_YY",
+   "R2_N1corr_product_HT_YZ",
+   "R2_N1corr_product_HT_ZX",
+   "R2_N1corr_product_HT_ZY",
+   "R2_N1corr_product_HT_ZZ"
+  ],
+  "A_bell@3000": [
+   "R2_N1corr_bell_30_70_XX",
+   "R2_N1corr_bell_30_70_XY",
+   "R2_N1corr_bell_30_70_XZ",
+   "R2_N1corr_bell_30_70_YX",
+   "R2_N1corr_bell_30_70_YY",
+   "R2_N1corr_bell_30_70_YZ",
+   "R2_N1corr_bell_30_70_ZX",
+   "R2_N1corr_bell_30_70_ZY",
+   "R2_N1corr_bell_30_70_ZZ"
+  ],
+  "A_product@2000": [
+   "R2_ver_tomo9_s0_Z",
+   "R2_ver_tomo9_s0_X",
+   "R2_ver_tomo9_s0_Y",
+   "R2_ver_tomo9_s1_Z",
+   "R2_ver_tomo9_s1_X",
+   "R2_ver_tomo9_s1_Y",
+   "R2_ver_tomo9_s2_Z",
+   "R2_ver_tomo9_s2_X",
+   "R2_ver_tomo9_s2_Y"
+  ],
+  "A_product_N2_4us@2000": [
+   "R2_N2corr4us_product_HT_XX",
+   "R2_N2corr4us_product_HT_XY",
+   "R2_N2corr4us_product_HT_XZ",
+   "R2_N2corr4us_product_HT_YX",
+   "R2_N2corr4us_product_HT_YY",
+   "R2_N2corr4us_product_HT_YZ",
+   "R2_N2corr4us_product_HT_ZX",
+   "R2_N2corr4us_product_HT_ZY",
+   "R2_N2corr4us_product_HT_ZZ"
+  ],
+  "A_product_N2_8us@2000": [
+   "R2_N2corr8us_product_HT_XX",
+   "R2_N2corr8us_product_HT_XY",
+   "R2_N2corr8us_product_HT_XZ",
+   "R2_N2corr8us_product_HT_YX",
+   "R2_N2corr8us_product_HT_YY",
+   "R2_N2corr8us_product_HT_YZ",
+   "R2_N2corr8us_product_HT_ZX",
+   "R2_N2corr8us_product_HT_ZY",
+   "R2_N2corr8us_product_HT_ZZ"
+  ],
+  "A_product_N2_16us@2000": [
+   "R2_N2corr16us_product_HT_XX",
+   "R2_N2corr16us_product_HT_XY",
+   "R2_N2corr16us_product_HT_XZ",
+   "R2_N2corr16us_product_HT_YX",
+   "R2_N2corr16us_product_HT_YY",
+   "R2_N2corr16us_product_HT_YZ",
+   "R2_N2corr16us_product_HT_ZX",
+   "R2_N2corr16us_product_HT_ZY",
+   "R2_N2corr16us_product_HT_ZZ"
+  ]
+ },
+ "shots": [
+  3000,
+  3000,
+  2000,
+  2000,
+  2000,
+  2000
+ ],
+ "has_params": [
+  true,
+  true,
+  true,
+  true,
+  true,
+  true
+ ],
+ "n_pubs": 6,
+ "n_bindings": 54,
+ "shots_total": 126000,
+ "estimate_s": 46.1,
+ "max_seconds": 44,
+ "hash": "91061466755f55ac355265919f813a33a4b0d490576338ebdba5dd2fe3b13214",
+ "frozen_utc": "2026-10-25T07:27:27.648232+00:00",
+ "fingerprints_sha": [
+  "c7360dfc0d63e20c40db8da78b00058e0e5e69d9a543f482921b7e13e1a2a1f7",
+  "19c235759b3b06fcca6532fc3ef9b87f7e4d45471b9579d55620efbcfea9c2c5",
+  "c7360dfc0d63e20c40db8da78b00058e0e5e69d9a543f482921b7e13e1a2a1f7",
+  "e5e1cfd32f3d0460ff1314ad944e2771ee16cbe01ae12ba2b1a1757b799f8f67",
+  "27660fe41ca912842029b200bb22bbea51e73ea701884f8f04313a3df85ba8e6",
+  "d0c4a93bc08fbab0fe454129a281224e9488a710eff32008e5dcb248c900e958"
+ ],
+ "x_options": null,
+ "xhash": "6ffaa6daeea8b610adbaceb4a7ca61933fbfb6920ecfa76c73e85d4d324bced8",
+ "estimate_detailed_s": 34.622156,
+ "estimate_measured_rate_s": 35.964000000000006,
+ "detailed_per_pub": [
+  {
+   "pub": "A_product@3000",
+   "shots": 27000,
+   "circuit_us": 2.7,
+   "per_shot_ms": 0.254912,
+   "seconds": 6.882624000000001
+  },
+  {
+   "pub": "A_bell@3000",
+   "shots": 27000,
+   "circuit_us": 2.8000000000000003,
+   "per_shot_ms": 0.25501200000000007,
+   "seconds": 6.8853240000000016
+  },
+  {
+   "pub": "A_product@2000",
+   "shots": 18000,
+   "circuit_us": 2.7,
+   "per_shot_ms": 0.254912,
+   "seconds": 4.5884160000000005
+  },
+  {
+   "pub": "A_product_N2_4us@2000",
+   "shots": 18000,
+   "circuit_us": 6.636,
+   "per_shot_ms": 0.2588480000000001,
+   "seconds": 4.659264000000001
+  },
+  {
+   "pub": "A_product_N2_8us@2000",
+   "shots": 18000,
+   "circuit_us": 10.636000000000001,
+   "per_shot_ms": 0.262848,
+   "seconds": 4.731264
+  },
+  {
+   "pub": "A_product_N2_16us@2000",
+   "shots": 18000,
+   "circuit_us": 18.636000000000003,
+   "per_shot_ms": 0.27084800000000003,
+   "seconds": 4.8752640000000005
+  }
+ ],
+ "rep_delay_us": 250.0,
+ "prediction_file": "x_pred_K234_ibm_kingston.json",
+ "prediction_sha256": "d7e0deb9ef50ec4c07ab7cc5cb01a0fe0dad6218ea12ceda61ee4277e75b84c4",
+ "rows_table": [
+  {
+   "block": "injected N1, fresh TOMO-9 correction",
+   "templates": "A_bell, A_product",
+   "circuits": 18,
+   "shots_per_circuit": 3000,
+   "shots": 54000
+  },
+  {
+   "block": "verification (TOMO-9 at the corrected point)",
+   "templates": "A_product",
+   "circuits": 9,
+   "shots_per_circuit": 2000,
+   "shots": 18000
+  },
+  {
+   "block": "wait 4us, fresh TOMO-9 correction",
+   "templates": "A_product_N2_4us",
+   "circuits": 9,
+   "shots_per_circuit": 2000,
+   "shots": 18000
+  },
+  {
+   "block": "wait 8us, fresh TOMO-9 correction",
+   "templates": "A_product_N2_8us",
+   "circuits": 9,
+   "shots_per_circuit": 2000,
+   "shots": 18000
+  },
+  {
+   "block": "wait 16us, fresh TOMO-9 correction",
+   "templates": "A_product_N2_16us",
+   "circuits": 9,
+   "shots_per_circuit": 2000,
+   "shots": 18000
+  }
+ ]
+}
